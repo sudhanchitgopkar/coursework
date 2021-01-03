@@ -1,6 +1,6 @@
 # Master Workflow
 This repository contains the amalgam of information created, organized, or otherwise developed by [sudhan chitgopkar](https://sudhanchitgopkar.com)
- during his time as a second year student at the university of georgia.
+ during his time at the university of georgia.
 
 ## School
 This directory contains all coursework and notes completed for registered & audited classes by [sudhan chitgopkar](https://sudhanchitgopkar.com) during his second year at uga. Notes are written natively as org files and exported to html, pdf, and tex formats. Notes and coursework may be omitted from this repository by request of professor or due to their sensitive nature. Completed coursework includes:
