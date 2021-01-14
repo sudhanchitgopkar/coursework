@@ -1,0 +1,46 @@
+* 01.14.21
+** Automaton (automata)
+- Self running machine requiring a continuous power source
+  - Historically used power sources include water, steam, and electricity
+- Course revolves around defining the mathematics powering machines
+** The Mathematics of Automata
+*** Mathematicians & History
+- Cantor defines sets as collections of objects
+- Cantor also argues that infinites can be of different magnitudes - there are infinitely more real numbers than natural numbers
+- Goedel eventually derives his incompleteness theorem
+  - No logical system that contains the natural numbers can prove its own soundness
+  - Every sound logical system containing the natural numbers contains valid statements that cannot be proved or disproved
+- In 1936, Turing proves The Halting Problem is not decidable, it is impossible
+  - The Halting Problem is an algorithm that can analyze any other algorithm and determine whether or not it goes into an infinite loop
+- Turing creates the turing machine as an object consisting of sets and processes wherein the object can use any finite process to complete an action.
+- Turing machine sets the basis for a computer, which leads to a series of important questions:
+  - What can & can't a machine do?
+  - What does it mean for a problem ot be harder than another?
+  - What does it mean for a machine to be more powerfule than another?
+*** Sequential Logic
+- Sentential Logic- based on boolean results
+  - Predicated on AND, OR, NOT
+  - XOR, XAND, etc. can be derived using the above
+** Necessary Review
+- Textbook Ch. 0
+- Logic Statements
+- Set Theory
+- Functions
+** Functions
+- Functions - something that maps objects from one set to another
+- Given f: a -> b;
+  - Everything in a is mapped to something in b
+    - For every x, such that x is an element of a, there exists a y, such that y is an element of b
+  - No one point in the domain can be mapped to two different points in the codomain
+    - Logically, you can't have a function that takes in one input and returns two different outputs
+    - If f maps x to y1 and to y2, y1 = y2
+    -\Ax\inAy_1,y_2\inB[f(x)=y1^f(x)=y2 -> y1 = y2]
+** TODO Types of Functions - Definition & Logical Statement
+  - Injective Functions
+  - Surjective Functions
+  - Proof by Induction (\forAll)
+  - Proof by Contradiction (\not\forEach)
+** Finite Automaton (Finite State Machine)
+- States are logical confirgurations
+- States are generally based upon input
+- Purpose of a state machine is to make a yes/no decision

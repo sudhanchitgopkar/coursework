@@ -1,0 +1,116 @@
+% Created 2021-01-14 Thu 13:59
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Sudhan Chitgopkar}
+\date{\today}
+\title{}
+\hypersetup{
+ pdfauthor={Sudhan Chitgopkar},
+ pdftitle={},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 27.1 (Org mode 9.5)}, 
+ pdflang={English}}
+\begin{document}
+
+\tableofcontents
+
+\section{01.14.21}
+\label{sec:org2dcc34e}
+\subsection{Automaton (automata)}
+\label{sec:org7d578eb}
+\begin{itemize}
+\item Self running machine requiring a continuous power source
+\begin{itemize}
+\item Historically used power sources include water, steam, and electricity
+\end{itemize}
+\item Course revolves around defining the mathematics powering machines
+\end{itemize}
+\subsection{The Mathematics of Automata}
+\label{sec:orgd89327e}
+\subsubsection{Mathematicians \& History}
+\label{sec:org9cceb3d}
+\begin{itemize}
+\item Cantor defines sets as collections of objects
+\item Cantor also argues that infinites can be of different magnitudes - there are infinitely more real numbers than natural numbers
+\item Goedel eventually derives his incompleteness theorem
+\begin{itemize}
+\item No logical system that contains the natural numbers can prove its own soundness
+\item Every sound logical system containing the natural numbers contains valid statements that cannot be proved or disproved
+\end{itemize}
+\item In 1936, Turing proves The Halting Problem is not decidable, it is impossible
+\begin{itemize}
+\item The Halting Problem is an algorithm that can analyze any other algorithm and determine whether or not it goes into an infinite loop
+\end{itemize}
+\item Turing creates the turing machine as an object consisting of sets and processes wherein the object can use any finite process to complete an action.
+\item Turing machine sets the basis for a computer, which leads to a series of important questions:
+\begin{itemize}
+\item What can \& can't a machine do?
+\item What does it mean for a problem ot be harder than another?
+\item What does it mean for a machine to be more powerfule than another?
+\end{itemize}
+\end{itemize}
+\subsubsection{Sequential Logic}
+\label{sec:org1a9b58d}
+\begin{itemize}
+\item Sentential Logic- based on boolean results
+\begin{itemize}
+\item Predicated on AND, OR, NOT
+\item XOR, XAND, etc. can be derived using the above
+\end{itemize}
+\end{itemize}
+\subsection{Necessary Review}
+\label{sec:org440ec9e}
+\begin{itemize}
+\item Textbook Ch. 0
+\item Logic Statements
+\item Set Theory
+\item Functions
+\end{itemize}
+\subsection{Functions}
+\label{sec:orga09a867}
+\begin{itemize}
+\item Functions - something that maps objects from one set to another
+\item Given f: a -> b;
+\begin{itemize}
+\item Everything in a is mapped to something in b
+\begin{itemize}
+\item For every x, such that x is an element of a, there exists a y, such that y is an element of b
+\end{itemize}
+\item No one point in the domain can be mapped to two different points in the codomain
+\begin{itemize}
+\item Logically, you can't have a function that takes in one input and returns two different outputs
+\item If f maps x to y1 and to y2, y1 = y2
+\end{itemize}
+-\Ax\inAy\textsubscript{1,y}\textsubscript{2\inB}[f(x)=y1\textsuperscript{f}(x)=y2 -> y1 = y2]
+\end{itemize}
+\end{itemize}
+\subsection{{\bfseries\sffamily TODO} Types of Functions - Definition \& Logical Statement}
+\label{sec:orgb285053}
+\begin{itemize}
+\item Injective Functions
+\item Surjective Functions
+\item Proof by Induction (\forAll)
+\item Proof by Contradiction (\textlnot{}\forEach)
+\end{itemize}
+\subsection{Finite Automaton (Finite State Machine)}
+\label{sec:org3d64faf}
+\begin{itemize}
+\item States are logical confirgurations
+\item States are generally based upon input
+\item Purpose of a state machine is to make a yes/no decision
+\end{itemize}
+\end{document}
