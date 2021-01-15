@@ -1,0 +1,18 @@
+* 01.15.21
+- Brain has a complex set of structures that work together to do both really important, and fundamentally flawed actions
+** Brain Stem
+- The reptilian brain
+- Really just an extensino of the spinal cord
+- Controls automatic actions, no effect on decision-making
+** Middle Brain (Limbic System)
+- Body's monitoring system to identify important elements of the environment
+- Discriminates things of importantance constantly and ambiently
+** Brain Cortex
+- Controls higher-level thinking
+- Moral decision-making, learning, conscious awareness
+** Hierarchy of the brain
+- Information goes from the brain stem, to the limbic system, to the brain cortex
+- Critically, the limbic system was never designed to collect all the information around you - that incomplete information is used for decision-making
+- Understanding the interplay and potential biases of the limbic system can help us understand decision-making and prevent bad decision making
+- Fear and the triggering of fear prevents higher-level decision making and can prevent the intake of new information
+- Sources of information can also have a significant effect on the processing of that information - can be seen through in-group/out-group bias
