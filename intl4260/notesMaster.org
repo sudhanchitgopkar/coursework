@@ -16,3 +16,10 @@
 - Understanding the interplay and potential biases of the limbic system can help us understand decision-making and prevent bad decision making
 - Fear and the triggering of fear prevents higher-level decision making and can prevent the intake of new information
 - Sources of information can also have a significant effect on the processing of that information - can be seen through in-group/out-group bias
+** Rational Decision-Making
+1. Pick a goal
+2. Evaluate all strategies
+   - Analyze costs
+   - Analyze benefits
+3. Select strategy with best cost/benefit ratio
+- Bias often occurs at stage 2 because of filtration of information through the limbic system
