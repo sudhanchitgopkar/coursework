@@ -31,6 +31,7 @@
     "capt-of"
     "hyperref")
    (LaTeX-add-labels
-    "sec:orgc980aa1"))
+    "sec:orgd197188"
+    "sec:org370efe2"))
  :latex)
 

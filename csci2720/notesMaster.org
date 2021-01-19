@@ -1,3 +1,27 @@
+* 01.19.20 (C++ Ch. 3)
+A look at class creation
+#+BEGIN_SRC cpp
+#include <iostream>
+using namespace std;
+
+//defining the class
+class GradeBook {
+  //holds all public vars, functions
+  public:
+  //public function
+  void displayMessage() {
+    cout << "Welcome to your Gradebook" << endl;
+  } //displayMesage
+} //GradeBook
+
+//main method
+int main () {
+  //creates a GradeBook object
+  GradeBook myGradeBook;
+  //calls above created function on object
+  myGradeBook.displayMessage();
+}
+#+END_SRC
 * 01.19.20 (C++ Ch. 2)
 A look at some basic C++ code
 #+BEGIN_SRC cpp
@@ -21,7 +45,8 @@ int main () {
 
   int num1{0}; //list initialization
   int num2 = 0; //regular initialization
- /*No difference between list & regular initializtion with primitive types. List initialization should be used for UDTs.*/
+ //No difference between list & regular initializtion with primitive types.
+ //List initialization should be used for UDTs.*/
 
   int sum{0}
 
@@ -32,6 +57,22 @@ int main () {
 
   std::cout << sum << std::endl;
   //endl is helpful because it flushes the buffer, which the newline character does not
+  return 0;
+}
+#+END_SRC
+
+A look at a common mistake
+#+BEGIN_SRC cpp
+#include <iostream>
+
+int main () {
+  int x {5};
+
+  if(x > 10); {
+    std::cout << x "> 10" << std::endl;
+  }
+  //still prints output because of semicolon after if statement
+
   return 0;
 }
 #+END_SRC

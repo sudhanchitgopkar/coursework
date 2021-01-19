@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-01-19 Tue 11:34 -->
+<!-- 2021-01-19 Tue 11:48 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -222,13 +222,45 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org4d23d9d">1. 01.19.20 (C++ Ch. 2)</a></li>
+<li><a href="#orgafc4d4b">1. 01.19.20 (C++ Ch. 3)</a></li>
+<li><a href="#orgf5f9a6c">2. 01.19.20 (C++ Ch. 2)</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org4d23d9d" class="outline-2">
-<h2 id="org4d23d9d"><span class="section-number-2">1</span> 01.19.20 (C++ Ch. 2)</h2>
+<div id="outline-container-orgafc4d4b" class="outline-2">
+<h2 id="orgafc4d4b"><span class="section-number-2">1</span> 01.19.20 (C++ Ch. 3)</h2>
 <div class="outline-text-2" id="text-1">
+<p>
+A look at class creation
+</p>
+<div class="org-src-container">
+<pre class="src src-cpp"><span style="color: #51afef; font-weight: bold;">#include</span> <span style="color: #99bb66;">&lt;iostream&gt;</span>
+<span style="color: #51afef;">using</span> <span style="color: #51afef;">namespace</span> <span style="color: #a9a1e1;">std</span>;
+
+<span style="color: #525252;">//</span><span style="color: #525252;">defining the class</span>
+<span style="color: #51afef;">class</span> <span style="color: #ECBE7B;">GradeBook</span> {
+  <span style="color: #525252;">//</span><span style="color: #525252;">holds all public vars, functions</span>
+  <span style="color: #51afef;">public</span>:
+  <span style="color: #525252;">//</span><span style="color: #525252;">public function</span>
+  <span style="color: #ECBE7B;">void</span> <span style="color: #c678dd;">displayMessage</span>() {
+    cout &lt;&lt; <span style="color: #99bb66;">"Welcome to your Gradebook"</span> &lt;&lt; endl;
+  } <span style="color: #525252;">//</span><span style="color: #525252;">displayMesage</span>
+} <span style="color: #525252;">//</span><span style="color: #525252;">GradeBook</span>
+
+<span style="color: #525252;">//</span><span style="color: #525252;">main method</span>
+<span style="color: #ECBE7B;">int</span> <span style="color: #c678dd;">main</span> () {
+  <span style="color: #525252;">//</span><span style="color: #525252;">creates a GradeBook object</span>
+  <span style="color: #ECBE7B;">GradeBook</span> <span style="color: #dcaeea;">myGradeBook</span>;
+  <span style="color: #525252;">//</span><span style="color: #525252;">calls above created function on object</span>
+  myGradeBook.displayMessage();
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf5f9a6c" class="outline-2">
+<h2 id="orgf5f9a6c"><span class="section-number-2">2</span> 01.19.20 (C++ Ch. 2)</h2>
+<div class="outline-text-2" id="text-2">
 <p>
 A look at some basic C++ code
 </p>
@@ -256,7 +288,8 @@ A look at some higher level C++ code
 
   <span style="color: #ECBE7B;">int</span> <span style="color: #dcaeea;">num1</span>{<span style="color: #dd8844; font-weight: bold;">0</span>}; <span style="color: #525252;">//</span><span style="color: #525252;">list initialization</span>
   <span style="color: #ECBE7B;">int</span> <span style="color: #dcaeea;">num2</span> = <span style="color: #dd8844; font-weight: bold;">0</span>; <span style="color: #525252;">//</span><span style="color: #525252;">regular initialization</span>
- <span style="color: #525252;">/*</span><span style="color: #525252;">No difference between list &amp; regular initializtion with primitive types. List initialization should be used for UDTs.</span><span style="color: #525252;">*/</span>
+ <span style="color: #525252;">//</span><span style="color: #525252;">No difference between list &amp; regular initializtion with primitive types.</span>
+ <span style="color: #525252;">//</span><span style="color: #525252;">List initialization should be used for UDTs.*/</span>
 
   <span style="color: #ECBE7B;">int</span> <span style="color: #dcaeea;">sum</span>{<span style="color: #dd8844; font-weight: bold;">0</span>}
 
@@ -271,12 +304,31 @@ A look at some higher level C++ code
 }
 </pre>
 </div>
+
+<p>
+A look at a common mistake
+</p>
+<div class="org-src-container">
+<pre class="src src-cpp"><span style="color: #51afef; font-weight: bold;">#include</span> <span style="color: #99bb66;">&lt;iostream&gt;</span>
+
+<span style="color: #ECBE7B;">int</span> <span style="color: #c678dd;">main</span> () {
+  <span style="color: #ECBE7B;">int</span> <span style="color: #dcaeea;">x</span> {<span style="color: #dd8844; font-weight: bold;">5</span>};
+
+  <span style="color: #51afef;">if</span>(x &gt; <span style="color: #dd8844; font-weight: bold;">10</span>); {
+    <span style="color: #a9a1e1;">std</span>::cout &lt;&lt; x <span style="color: #99bb66;">"&gt; 10"</span> &lt;&lt; <span style="color: #a9a1e1;">std</span>::endl;
+  }
+  <span style="color: #525252;">//</span><span style="color: #525252;">still prints output because of semicolon after if statement</span>
+
+  <span style="color: #51afef;">return</span> <span style="color: #dd8844; font-weight: bold;">0</span>;
+}
+</pre>
+</div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Sudhan Chitgopkar</p>
-<p class="date">Created: 2021-01-19 Tue 11:34</p>
+<p class="date">Created: 2021-01-19 Tue 11:48</p>
 </div>
 </body>
 </html>
