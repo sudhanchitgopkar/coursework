@@ -21,7 +21,7 @@ int main () {
 
   int num1{0}; //list initialization
   int num2 = 0; //regular initialization
- //Note, there is no difference between list and regular initialization for primitive types. When using UDTs, though, list-initialization may be better than regular initialization
+ /*No difference between list & regular initializtion with primitive types. List initialization should be used for UDTs.*/
 
   int sum{0}
 
