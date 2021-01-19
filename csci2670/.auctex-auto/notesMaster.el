@@ -31,14 +31,17 @@
     "capt-of"
     "hyperref")
    (LaTeX-add-labels
-    "sec:org31caa11"
-    "sec:orgf101d87"
-    "sec:orgf2e5d3c"
-    "sec:orgd79896c"
-    "sec:org5daff11"
-    "sec:org77ab074"
-    "sec:org5730708"
-    "sec:org698259b"
-    "sec:org41a15f8"))
+    "sec:orgba4c14a"
+    "sec:org4a1f1f2"
+    "sec:orgd4c451f"
+    "sec:org0edd81c"
+    "sec:orgbe4b392"
+    "sec:org93017c7"
+    "sec:orgf285e07"
+    "sec:org6955a0c"
+    "sec:org321676c"
+    "sec:orgcbfc6fc"
+    "sec:orgda83ead"
+    "sec:org1454d20"))
  :latex)
 

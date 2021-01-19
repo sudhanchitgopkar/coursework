@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-01-19 Tue 12:52 -->
+<!-- 2021-01-19 Tue 13:32 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -222,31 +222,137 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orga2ad378">1. 01.14.21</a>
+<li><a href="#org3722f98">1. 01.19.21</a>
 <ul>
-<li><a href="#orgacd8997">1.1. Automaton (automata)</a></li>
-<li><a href="#org09f5706">1.2. The Mathematics of Automata</a>
-<ul>
-<li><a href="#org2e1c5c2">1.2.1. Mathematicians &amp; History</a></li>
-<li><a href="#org3679c25">1.2.2. Sequential Logic</a></li>
+<li><a href="#org20c9b51">1.1. Domains &amp; Codomains</a></li>
+<li><a href="#org9639606">1.2. Strings</a></li>
 </ul>
 </li>
-<li><a href="#org4548189">1.3. Necessary Review</a></li>
-<li><a href="#org9f183cf">1.4. Functions</a></li>
-<li><a href="#org9a2b123">1.5. <span class="todo TODO">TODO</span> Types of Functions - Definition &amp; Logical Statement</a></li>
-<li><a href="#org8acb6b9">1.6. Finite Automaton (Finite State Machine)</a></li>
+<li><a href="#org7847a81">2. 01.14.21</a>
+<ul>
+<li><a href="#org989e186">2.1. Automaton (automata)</a></li>
+<li><a href="#org97d4b65">2.2. The Mathematics of Automata</a>
+<ul>
+<li><a href="#orgf5c59cc">2.2.1. Mathematicians &amp; History</a></li>
+<li><a href="#org866463a">2.2.2. Sequential Logic</a></li>
+</ul>
+</li>
+<li><a href="#orgc4ec168">2.3. Necessary Review</a></li>
+<li><a href="#orgb6feae2">2.4. Functions</a></li>
+<li><a href="#org6ffae61">2.5. <span class="todo TODO">TODO</span> Types of Functions - Definition &amp; Logical Statement</a></li>
+<li><a href="#org055b735">2.6. Finite Automaton (Finite State Machine)</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orga2ad378" class="outline-2">
-<h2 id="orga2ad378"><span class="section-number-2">1</span> 01.14.21</h2>
+<div id="outline-container-org3722f98" class="outline-2">
+<h2 id="org3722f98"><span class="section-number-2">1</span> 01.19.21</h2>
 <div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>Tuples are sequences which are always finite in length</li>
+<li>The deterministic finite automaton shown is a 5-tuple:
+<ol class="org-ol">
+<li>Q: finite nonempty set of states
+<ul class="org-ul">
+<li>state: configuration of logic of a machine</li>
+</ul></li>
+<li>&Sigma; (Sigma) - input alphabet
+<ul class="org-ul">
+<li>alphabet: a finite, nonempty set of symbols where symbols are an object of length 1</li>
+</ul></li>
+<li>&delta; (Delta) - transition function</li>
+<li>Q<sub>0</sub> &isin; Q - starting state</li>
+<li>F &sub; Q - set of final states</li>
+</ol></li>
+<li><p>
+For this deterministic finite automaton,
+</p>
+<ul class="org-ul">
+<li>&delta;: Q &times; &Sigma; &rarr; Q<sub>2</sub></li>
+</ul>
+<p>
+Represented as a table,
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">Step</td>
+<td class="org-left">State</td>
+<td class="org-right">Input</td>
+<td class="org-left">Transition</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">Q<sub>1</sub></td>
+<td class="org-right">1</td>
+<td class="org-left">Q<sub>1</sub> &rarr; Q<sub>2</sub></td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">Q<sub>2</sub></td>
+<td class="org-right">0</td>
+<td class="org-left">Q<sub>2</sub> &rarr; Q<sub>1</sub></td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">Q<sub>1</sub></td>
+<td class="org-right">1</td>
+<td class="org-left">Q<sub>1</sub> &rarr; Q<sub>2</sub></td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">Q<sub>2</sub></td>
+<td class="org-right">1</td>
+<td class="org-left">Q<sub>2</sub> &rarr; Q<sub>2</sub></td>
+</tr>
+</tbody>
+</table></li>
+</ul>
 </div>
-<div id="outline-container-orgacd8997" class="outline-3">
-<h3 id="orgacd8997"><span class="section-number-3">1.1</span> Automaton (automata)</h3>
+<div id="outline-container-org20c9b51" class="outline-3">
+<h3 id="org20c9b51"><span class="section-number-3">1.1</span> Domains &amp; Codomains</h3>
 <div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>Domain: set of all possible function inputs</li>
+<li>Codomain: set of all possible outputs</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9639606" class="outline-3">
+<h3 id="org9639606"><span class="section-number-3">1.2</span> Strings</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>In computer science, strings are character arrays</li>
+<li>In mathematics, strings are sequences of symbols</li>
+<li>Specifically a string over an alphabet, &Sigma;, is a sequence of symbols belonging to &Sigma;</li>
+<li>&epsilon; is the empty string</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org7847a81" class="outline-2">
+<h2 id="org7847a81"><span class="section-number-2">2</span> 01.14.21</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org989e186" class="outline-3">
+<h3 id="org989e186"><span class="section-number-3">2.1</span> Automaton (automata)</h3>
+<div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>Self running machine requiring a continuous power source
 <ul class="org-ul">
@@ -256,13 +362,13 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org09f5706" class="outline-3">
-<h3 id="org09f5706"><span class="section-number-3">1.2</span> The Mathematics of Automata</h3>
-<div class="outline-text-3" id="text-1-2">
+<div id="outline-container-org97d4b65" class="outline-3">
+<h3 id="org97d4b65"><span class="section-number-3">2.2</span> The Mathematics of Automata</h3>
+<div class="outline-text-3" id="text-2-2">
 </div>
-<div id="outline-container-org2e1c5c2" class="outline-4">
-<h4 id="org2e1c5c2"><span class="section-number-4">1.2.1</span> Mathematicians &amp; History</h4>
-<div class="outline-text-4" id="text-1-2-1">
+<div id="outline-container-orgf5c59cc" class="outline-4">
+<h4 id="orgf5c59cc"><span class="section-number-4">2.2.1</span> Mathematicians &amp; History</h4>
+<div class="outline-text-4" id="text-2-2-1">
 <ul class="org-ul">
 <li>Cantor defines sets as collections of objects</li>
 <li>Cantor also argues that infinites can be of different magnitudes - there are infinitely more real numbers than natural numbers</li>
@@ -285,9 +391,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org3679c25" class="outline-4">
-<h4 id="org3679c25"><span class="section-number-4">1.2.2</span> Sequential Logic</h4>
-<div class="outline-text-4" id="text-1-2-2">
+<div id="outline-container-org866463a" class="outline-4">
+<h4 id="org866463a"><span class="section-number-4">2.2.2</span> Sequential Logic</h4>
+<div class="outline-text-4" id="text-2-2-2">
 <ul class="org-ul">
 <li>Sentential Logic- based on boolean results
 <ul class="org-ul">
@@ -298,9 +404,9 @@
 </div>
 </div>
 </div>
-<div id="outline-container-org4548189" class="outline-3">
-<h3 id="org4548189"><span class="section-number-3">1.3</span> Necessary Review</h3>
-<div class="outline-text-3" id="text-1-3">
+<div id="outline-container-orgc4ec168" class="outline-3">
+<h3 id="orgc4ec168"><span class="section-number-3">2.3</span> Necessary Review</h3>
+<div class="outline-text-3" id="text-2-3">
 <ul class="org-ul">
 <li>Textbook Ch. 0</li>
 <li>Logic Statements</li>
@@ -309,9 +415,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org9f183cf" class="outline-3">
-<h3 id="org9f183cf"><span class="section-number-3">1.4</span> Functions</h3>
-<div class="outline-text-3" id="text-1-4">
+<div id="outline-container-orgb6feae2" class="outline-3">
+<h3 id="orgb6feae2"><span class="section-number-3">2.4</span> Functions</h3>
+<div class="outline-text-3" id="text-2-4">
 <ul class="org-ul">
 <li>Functions - something that maps objects from one set to another</li>
 <li>Given f: a &rarr; b;
@@ -328,15 +434,15 @@ No one point in the domain can be mapped to two different points in the codomain
 <li>If f maps x &rarr; y1 and &rarr; y2, y1 = y2</li>
 </ul>
 <p>
--&forall; x &isin; A y<sub>1,y</sub><sub>2</sub> &isin; B [f(x)=y1&and; f(x)=y2 &rarr; y1 = y2]
+-&forall; x &isin; A y<sub>1</sub>,y<sub>2</sub> &isin; B [f(x)=y<sub>1</sub> &and; f(x)=y<sub>2</sub> &rarr; y<sub>1</sub> = y<sub>2</sub>]
 </p></li>
 </ul></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org9a2b123" class="outline-3">
-<h3 id="org9a2b123"><span class="section-number-3">1.5</span> <span class="todo TODO">TODO</span> Types of Functions - Definition &amp; Logical Statement</h3>
-<div class="outline-text-3" id="text-1-5">
+<div id="outline-container-org6ffae61" class="outline-3">
+<h3 id="org6ffae61"><span class="section-number-3">2.5</span> <span class="todo TODO">TODO</span> Types of Functions - Definition &amp; Logical Statement</h3>
+<div class="outline-text-3" id="text-2-5">
 <ul class="org-ul">
 <li>Injective Functions</li>
 <li>Surjective Functions</li>
@@ -345,9 +451,9 @@ No one point in the domain can be mapped to two different points in the codomain
 </ul>
 </div>
 </div>
-<div id="outline-container-org8acb6b9" class="outline-3">
-<h3 id="org8acb6b9"><span class="section-number-3">1.6</span> Finite Automaton (Finite State Machine)</h3>
-<div class="outline-text-3" id="text-1-6">
+<div id="outline-container-org055b735" class="outline-3">
+<h3 id="org055b735"><span class="section-number-3">2.6</span> Finite Automaton (Finite State Machine)</h3>
+<div class="outline-text-3" id="text-2-6">
 <ul class="org-ul">
 <li>States are logical confirgurations</li>
 <li>States are generally based upon input</li>
@@ -359,7 +465,7 @@ No one point in the domain can be mapped to two different points in the codomain
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Sudhan Chitgopkar</p>
-<p class="date">Created: 2021-01-19 Tue 12:52</p>
+<p class="date">Created: 2021-01-19 Tue 13:32</p>
 </div>
 </body>
 </html>

@@ -1,3 +1,29 @@
+* 01.19.21
+- Tuples are sequences which are always finite in length
+- The deterministic finite automaton shown is a 5-tuple:
+  1. Q: finite nonempty set of states
+     - state: configuration of logic of a machine
+  2. \Sigma (Sigma) - input alphabet
+     - alphabet: a finite, nonempty set of symbols where symbols are an object of length 1
+  3. \delta (Delta) - transition function
+  4. Q_{0} \in Q - starting state
+  5. F \subset Q - set of final states
+- For this deterministic finite automaton,
+  + \delta: Q \times \Sigma \to Q_{2}
+  Represented as a table,
+  | Step | State | Input | Transition      |
+  |    1 | Q_{1} |     1 | Q_{1} \to Q_{2} |
+  |    2 | Q_{2} |     0 | Q_{2} \to Q_{1} |
+  |    3 | Q_{1} |     1 | Q_{1} \to Q_{2} |
+  |    4 | Q_{2} |     1 | Q_{2} \to Q_{2} |
+** Domains & Codomains
+- Domain: set of all possible function inputs
+- Codomain: set of all possible outputs
+** Strings
+- In computer science, strings are character arrays
+- In mathematics, strings are sequences of symbols
+- Specifically a string over an alphabet, \Sigma, is a sequence of symbols belonging to \Sigma
+- \epsilon is the empty string
 * 01.14.21
 ** Automaton (automata)
 - Self running machine requiring a continuous power source
@@ -34,7 +60,7 @@
   - No one point in the domain can be mapped to two different points in the codomain
     - Logically, you can't have a function that takes in one input and returns two different outputs
     - If f maps x \to y1 and \to y2, y1 = y2
-    -\forall x \in A y_1,y_2 \in B [f(x)=y1\land f(x)=y2 \to y1 = y2]
+    -\forall x \in A y_{1},y_{2} \in B [f(x)=y_{1} \land f(x)=y_{2} \to y_{1} = y_{2}]
 ** TODO Types of Functions - Definition & Logical Statement
   - Injective Functions
   - Surjective Functions
