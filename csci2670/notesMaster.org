@@ -1,4 +1,5 @@
-* 01.19.21
+* [#B] 01.19.21
+** Tuples & DFAs
 - Tuples are sequences which are always finite in length
 - The deterministic finite automaton shown is a 5-tuple:
   1. Q: finite nonempty set of states
@@ -24,6 +25,30 @@
 - In mathematics, strings are sequences of symbols
 - Specifically a string over an alphabet, \Sigma, is a sequence of symbols belonging to \Sigma
 - \epsilon is the empty string
+- Concatenation: If w_{1}, w_{2} \in \Sigma, w_{1} \cdot w_{2} = w_{1}w_{2}
+- If c \in \Sigma, then \epsilon \cdot c = c \cdot \epsilon = c
+** TODO Review Recursive Definitions
+- Base step: a step that can not be broken down any further, a fact that is always true regardless of the input
+- Recursive step:
+- Defining the length of a string over \Sigma
+  - Base: |\epsilon| = 0
+  - Recursive:
+    - let w be a string over \Sigma, and c \in \Sigma
+    - then |w \cdot c| = |w| + 1
+- Using this to define |1011|,
+  1) |1011| = |101 \cdot 1| = |101| + 1 =
+  2) |10 \cdot 1| + 1 = |10| + 1 + 1 =
+  3) |1 \cdot 0| + 1 + 1 = |1| + 1 + 1 + 1 =
+  4) |\epsilon \cdot 1| + 1 + 1 + 1 =
+  5) |\epsilon| + 1 + 1 + 1 + 1 =
+  6) 0 + 1 + 1 + 1 + 1 = 4
+** Languages
+- Languages over \Sigma - a set of finite strings over \Sigma
+- Langauges recognized by an automaton, M, L(M) is the language accepted by M
+- \emptyset is the empty language
+- \epsilon \neq \emptyset
+- \epsilon \neq {\epsilon}
+- \epsilon is not a symbol in any alphabet
 * 01.14.21
 ** Automaton (automata)
 - Self running machine requiring a continuous power source
