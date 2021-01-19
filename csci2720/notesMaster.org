@@ -22,6 +22,12 @@ int main () {
   myGradeBook.displayMessage();
 }
 #+END_SRC
+
+Class functions and vars are, by default, private. The public keyword must be used to denote any public parts of a class.
+
+Move implementations to a header file for use in main methods while separating out each file.
+
+When using header files, use quotation marks around them to indicate that they're a file on your machine. Use angle brackets around things to include form the C std lib.
 * 01.19.20 (C++ Ch. 2)
 A look at some basic C++ code
 #+BEGIN_SRC cpp
