@@ -28,18 +28,18 @@
 - Functions
 ** Functions
 - Functions - something that maps objects from one set to another
-- Given f: a -> b;
+- Given f: a \to b;
   - Everything in a is mapped to something in b
     - For every x, such that x is an element of a, there exists a y, such that y is an element of b
   - No one point in the domain can be mapped to two different points in the codomain
     - Logically, you can't have a function that takes in one input and returns two different outputs
-    - If f maps x to y1 and to y2, y1 = y2
-    -\Ax\inAy_1,y_2\inB[f(x)=y1^f(x)=y2 -> y1 = y2]
+    - If f maps x \to y1 and \to y2, y1 = y2
+    -\forall x \in A y_1,y_2 \in B [f(x)=y1\land f(x)=y2 \to y1 = y2]
 ** TODO Types of Functions - Definition & Logical Statement
   - Injective Functions
   - Surjective Functions
-  - Proof by Induction (\forAll)
-  - Proof by Contradiction (\not\forEach)
+  - Proof by Induction (\forall)
+  - Proof by Contradiction (\not\exists)
 ** Finite Automaton (Finite State Machine)
 - States are logical confirgurations
 - States are generally based upon input

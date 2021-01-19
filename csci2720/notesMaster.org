@@ -55,7 +55,7 @@ int main () {
   int num1{0}; //list initialization
   int num2 = 0; //regular initialization
  //No difference between list & regular initializtion with primitive types.
- //List initialization should be used for UDTs.*/
+ //List initialization should be used for UDTs.
 
   int sum{0}
 
@@ -65,7 +65,8 @@ int main () {
   sum = num1 + num2;
 
   std::cout << sum << std::endl;
-  //endl is helpful because it flushes the buffer, which the newline character does not
+  //endl is helpful because it flushes the buffer
+  //newline character does not
   return 0;
 }
 #+END_SRC
