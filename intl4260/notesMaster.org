@@ -10,6 +10,7 @@
 - Incentive structures are the expected values for each of the strategies considered
 - Incentive structures impose a certain course of action upon us, given that we are rational actors
 * Fearon
+** Introduction
 - Three reasons war may occur
   - People are sometimes irrational and don't consider the costs of war due to this irrationality or their biases
   - Leaders may enjoy benefits of war but not pay the costs
