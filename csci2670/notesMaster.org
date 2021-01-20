@@ -1,4 +1,4 @@
-* [#B] 01.19.21
+* 01.19.21
 ** Tuples & DFAs
 - Tuples are sequences which are always finite in length
 - The deterministic finite automaton shown is a 5-tuple:

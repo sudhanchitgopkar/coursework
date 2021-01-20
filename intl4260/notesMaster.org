@@ -1,3 +1,47 @@
+* 01.20.21
+** Rational Decision-Making
+- Rational decision-making defines how we make decisions
+- A person's or institutions goal is not relevant, the process of pursuing that goal is the factor driving decision-making
+- This allows us to generalize decision-making significantly more
+- Critical to consider the probabilistic nature of benefits and harms when considering rational decision-making
+- Expected Value = "weighted value" for all costs and benefits
+  - Same thing as "average payoff"
+** Incentive Structures
+- Incentive structures are the expected values for each of the strategies considered
+- Incentive structures impose a certain course of action upon us, given that we are rational actors
+* Fearon
+- Three reasons war may occur
+  - People are sometimes irrational and don't consider the costs of war due to this irrationality or their biases
+  - Leaders may enjoy benefits of war but not pay the costs
+  - People are rational and consider the risks but fight anyway (Rationalist explanation)
+- Flaws with contemporary rationalist arguments are that they don't address prewar bargains
+- Contemporary Rationalist reasons for war:
+  - Anarchy
+  - Benefits o/w costs
+  - Rational preventitive war
+  - Rational miscalculation due to lack of info
+  - Rational miscalculation due to diagreement about relative power
+- Fearon's reasons for war
+  - private or misrepresented info about relative capabilities
+  - relationships are not possible because at least one party has an incentive to cheat
+  - Despite being able to compromise, one or more party does not want to because of their beliefs on the issue
+** The Puzzle
+- People often see war as something nobody wants though wars can often simply be costly but worthwhile gambles
+- Wars are always ex post inefficient because no matter how small, the costs of fighting still exist
+** Anarchy
+- War occurs because there is nothing to prevent it
+- Does not explain why wars still occur due to their inefficiency, therefore does not explain war completely
+- Anarchy may lead to arms races and insecurity, but little war outside or preemptive war
+** Preventive War
+- If a declining power suspects that it may be attacked in the future by a rising power, it will find a preventive war rational
+- Theory does not consider diplomacy and timeframe
+- Why should the declining power fear an attack if it's inefficient, even for the rising power
+** Positive Expected Utility
+- Argues that war is rational when both sides have a positive expected utility from it
+- While often presented, this argument doesn't explain specific condition in which both parties fighting a war have positive expected utility
+* Expected Profit Khan Academy
+- Expected value can be calculated as the sum of all the outcome probabilities multiplied by their corresponding profits.
+- Considering all outcome probabilities should yeild a total probability sum of 1 (100%), with profits being positive (gains) or negative (losses)
 * 01.15.21
 - Brain has a complex set of structures that work together to do both really important, and fundamentally flawed actions
 ** Brain Stem
