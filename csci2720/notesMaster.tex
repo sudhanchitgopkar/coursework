@@ -1,4 +1,4 @@
-% Created 2021-01-21 Thu 11:35
+% Created 2021-01-21 Thu 12:21
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -26,25 +26,80 @@
  pdflang={English}}
 \begin{document}
 
-\tableofcontents \clearpage\section{01.21.20 (C++ Ch. 3)}
-\label{sec:orgcda033b}
+\tableofcontents \clearpage\section{01.21.20 (C++ Ch. 9)}
+\label{sec:org7c2c59f}
+\subsection{Encapsulation}
+\label{sec:org2f33709}
+\begin{itemize}
+\item Header files should not contain source code, it should only include prototypes in order to ensure proper information-hiding
+\item Source code should be placed in a different cpp file, which pulls from the prototypes in the header file
+\end{itemize}
+\subsection{Include Guards}
+\label{sec:org4b9017d}
+\begin{itemize}
+\item Consider the following classes: Student, Course, and Main
+\begin{itemize}
+\item Student uses Course
+\item Main uses Student and Course
+\item The main method would then look like:
+\end{itemize}
+\begin{verbatim}
+  #include "student.h"
+  #include "course.h"
+\end{verbatim}
+\begin{itemize}
+\item student.h compiles properly, but an error is thrown when course.h tries to be included because it has already been included through Student.
+\item To fix this, use header guards, as follows:
+\end{itemize}
+\begin{verbatim}
+  #ifndef FILENAME_H
+  #define FILENAME_H
+\end{verbatim}
+\item Include guards ensure that a prototype is not defined twice
+\item The header guard should be put in header files that are used in multiple places
+\end{itemize}
+\subsection{Writing Classes}
+\label{sec:org0bc9c88}
+\begin{itemize}
+\item Begin by including the necessary header file
+\item All methods and constructors must be preceded by the header file name and the scope resolution operator (::)
+\end{itemize}
+\subsection{Constructors \& Default Constructors}
+\label{sec:org89fa4d3}
+\begin{itemize}
+\item Constructors can call other methods and do data-checking
+\item Constructors can be called explicit with multiple parameters when the parameters are impossible to typecast, as follows:
+\end{itemize}
+\begin{verbatim}
+int main () {
+  explicit Time t (x = 0, y = 0, z = 0);
+} //main
+\end{verbatim}
+\section{01.21.20 (C++ Ch. 3)}
+\label{sec:orgaf2cfd5}
 \subsection{Objects and Object Sizes}
-\label{sec:orgaed776a}
+\label{sec:org3b3000d}
 \begin{itemize}
 \item An objects size will always be the sum of its data members. The size will not be affected by any methods that are called upon it.
 \item Because of this, objects can quickly become very large in size.
 \end{itemize}
 \subsection{UML Diagrams}
-\label{sec:orgdd05fb0}
+\label{sec:orgf272556}
 \begin{itemize}
 \item Classes are listed as individual boxes
 \begin{itemize}
 \item top box = class name
-\item middle compartment =
+\item middle compartment = data members : data type
+\item bottom compartment - methods and parameters
+\begin{itemize}
+\item - = private
+\item + = public
+\item \# = protected
+\end{itemize}
 \end{itemize}
 \end{itemize}
 \subsection{Constructors}
-\label{sec:orgc248836}
+\label{sec:org26d4733}
 \begin{itemize}
 \item Explicit constructors can be used to prevent implicit typecasting, as seen below:
 \end{itemize}
@@ -72,7 +127,7 @@ explicit Account (std::string accountName) //explicit constructor
   }
 \end{verbatim}
 \section{01.19.20 (C++ Ch. 3)}
-\label{sec:org529f060}
+\label{sec:org6c27adb}
 A look at class creation
 \begin{verbatim}
 #include <iostream>
@@ -108,7 +163,7 @@ int main () {
 \end{itemize}
 
 \section{01.19.20 (C++ Ch. 2)}
-\label{sec:orgb2b6948}
+\label{sec:org607754f}
 A look at some basic C++ code
 \begin{verbatim}
 #include <iostream> //enables program to output data

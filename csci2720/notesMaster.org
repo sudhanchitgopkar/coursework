@@ -1,3 +1,35 @@
+* 01.21.20 (C++ Ch. 9)
+** Encapsulation
+- Header files should not contain source code, it should only include prototypes in order to ensure proper information-hiding
+- Source code should be placed in a different cpp file, which pulls from the prototypes in the header file
+** Include Guards
+- Consider the following classes: Student, Course, and Main
+  - Student uses Course
+  - Main uses Student and Course
+  - The main method would then look like:
+  #+BEGIN_SRC cpp
+  #include "student.h"
+  #include "course.h"
+  #+END_SRC
+  - student.h compiles properly, but an error is thrown when course.h tries to be included because it has already been included through Student.
+  - To fix this, use header guards, as follows:
+  #+BEGIN_SRC cpp
+  #ifndef FILENAME_H
+  #define FILENAME_H
+  #+END_SRC
+- Include guards ensure that a prototype is not defined twice
+- The header guard should be put in header files that are used in multiple places
+** Writing Classes
+- Begin by including the necessary header file
+- All methods and constructors must be preceded by the header file name and the scope resolution operator (::)
+** Constructors & Default Constructors
+- Constructors can call other methods and do data-checking
+- Constructors can be called explicit with multiple parameters when the parameters are impossible to typecast, as follows:
+#+BEGIN_SRC cpp
+int main () {
+  explicit Time t (x = 0, y = 0, z = 0);
+} //main
+#+END_SRC
 * 01.21.20 (C++ Ch. 3)
 ** Objects and Object Sizes
 - An objects size will always be the sum of its data members. The size will not be affected by any methods that are called upon it.
@@ -5,7 +37,11 @@
 ** UML Diagrams
 - Classes are listed as individual boxes
   - top box = class name
-  - middle compartment =
+  - middle compartment = data members : data type
+  - bottom compartment - methods and parameters
+    - - = private
+    - + = public
+    - # = protected
 ** Constructors
 - Explicit constructors can be used to prevent implicit typecasting, as seen below:
 #+BEGIN_SRC cpp
