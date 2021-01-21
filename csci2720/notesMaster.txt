@@ -4,18 +4,80 @@ Sudhan Chitgopkar
 Table of Contents
 _________________
 
-1. 01.21.20 (C++ Ch. 3)
+1. 01.21.20 (C++ Ch. 9)
+.. 1. Encapsulation
+.. 2. Include Guards
+.. 3. Writing Classes
+.. 4. Constructors & Default Constructors
+2. 01.21.20 (C++ Ch. 3)
 .. 1. Objects and Object Sizes
 .. 2. UML Diagrams
 .. 3. Constructors
-2. 01.19.20 (C++ Ch. 3)
-3. 01.19.20 (C++ Ch. 2)
+3. 01.19.20 (C++ Ch. 3)
+4. 01.19.20 (C++ Ch. 2)
 
 
-1 01.21.20 (C++ Ch. 3)
+1 01.21.20 (C++ Ch. 9)
 ======================
 
-1.1 Objects and Object Sizes
+1.1 Encapsulation
+~~~~~~~~~~~~~~~~~
+
+  - Header files should not contain source code, it should only include
+    prototypes in order to ensure proper information-hiding
+  - Source code should be placed in a different cpp file, which pulls
+    from the prototypes in the header file
+
+
+1.2 Include Guards
+~~~~~~~~~~~~~~~~~~
+
+  - Consider the following classes: Student, Course, and Main
+    - Student uses Course
+    - Main uses Student and Course
+    - The main method would then look like:
+    ,----
+    |   #include "student.h"
+    |   #include "course.h"
+    `----
+    - student.h compiles properly, but an error is thrown when course.h
+      tries to be included because it has already been included through
+      Student.
+    - To fix this, use header guards, as follows:
+    ,----
+    |   #ifndef FILENAME_H
+    |   #define FILENAME_H
+    `----
+  - Include guards ensure that a prototype is not defined twice
+  - The header guard should be put in header files that are used in
+    multiple places
+
+
+1.3 Writing Classes
+~~~~~~~~~~~~~~~~~~~
+
+  - Begin by including the necessary header file
+  - All methods and constructors must be preceded by the header file
+    name and the scope resolution operator (::)
+
+
+1.4 Constructors & Default Constructors
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  - Constructors can call other methods and do data-checking
+  - Constructors can be called explicit with multiple parameters when
+    the parameters are impossible to typecast, as follows:
+  ,----
+  | int main () {
+  |   explicit Time t (x = 0, y = 0, z = 0);
+  | } //main
+  `----
+
+
+2 01.21.20 (C++ Ch. 3)
+======================
+
+2.1 Objects and Object Sizes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - An objects size will always be the sum of its data members. The size
@@ -23,15 +85,19 @@ _________________
   - Because of this, objects can quickly become very large in size.
 
 
-1.2 UML Diagrams
+2.2 UML Diagrams
 ~~~~~~~~~~~~~~~~
 
   - Classes are listed as individual boxes
     - top box = class name
-    - middle compartment =
+    - middle compartment = data members : data type
+    - bottom compartment - methods and parameters
+      - - = private
+      - + = public
+      - # = protected
 
 
-1.3 Constructors
+2.3 Constructors
 ~~~~~~~~~~~~~~~~
 
   - Explicit constructors can be used to prevent implicit typecasting,
@@ -59,7 +125,7 @@ _________________
   `----
 
 
-2 01.19.20 (C++ Ch. 3)
+3 01.19.20 (C++ Ch. 3)
 ======================
 
   A look at class creation
@@ -100,7 +166,7 @@ _________________
     modifying the values of data members or objects.
 
 
-3 01.19.20 (C++ Ch. 2)
+4 01.19.20 (C++ Ch. 2)
 ======================
 
   A look at some basic C++ code
