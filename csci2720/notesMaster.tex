@@ -1,4 +1,4 @@
-% Created 2021-01-19 Tue 12:10
+% Created 2021-01-21 Thu 11:35
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -26,10 +26,53 @@
  pdflang={English}}
 \begin{document}
 
-\tableofcontents
+\tableofcontents \clearpage\section{01.21.20 (C++ Ch. 3)}
+\label{sec:orgcda033b}
+\subsection{Objects and Object Sizes}
+\label{sec:orgaed776a}
+\begin{itemize}
+\item An objects size will always be the sum of its data members. The size will not be affected by any methods that are called upon it.
+\item Because of this, objects can quickly become very large in size.
+\end{itemize}
+\subsection{UML Diagrams}
+\label{sec:orgdd05fb0}
+\begin{itemize}
+\item Classes are listed as individual boxes
+\begin{itemize}
+\item top box = class name
+\item middle compartment =
+\end{itemize}
+\end{itemize}
+\subsection{Constructors}
+\label{sec:orgc248836}
+\begin{itemize}
+\item Explicit constructors can be used to prevent implicit typecasting, as seen below:
+\end{itemize}
+\begin{verbatim}
+class Student {
+  Student (int s) {
 
+  } //constructor
+} //Student
+
+int main () {
+  Student s {15}; //allowed, completes correctly
+  Student c {'C'}; //typecasts automatically, should not occur
+  //Note, () can be used in place of {} to construct objects
+}
+\end{verbatim}
+
+\begin{itemize}
+\item Ex. list initialization with an explicit constructor
+\end{itemize}
+\begin{verbatim}
+explicit Account (std::string accountName) //explicit constructor
+  : name{accountName} {
+  //insert constructor code here
+  }
+\end{verbatim}
 \section{01.19.20 (C++ Ch. 3)}
-\label{sec:orgbd15268}
+\label{sec:org529f060}
 A look at class creation
 \begin{verbatim}
 #include <iostream>
@@ -54,16 +97,18 @@ int main () {
 }
 \end{verbatim}
 
-Class functions and vars are, by default, private. The public keyword must be used to denote any public parts of a class.
+\begin{itemize}
+\item Class functions and vars are, by default, private. The public keyword must be used to denote any public parts of a class.
 
-Move implementations to a header file for use in main methods while separating out each file.
+\item Move implementations to a header file for use in main methods while separating out each file.
 
-When using header files, use quotation marks around them to indicate that they're a file on your machine. Use angle brackets around things to include form the C std lib.
+\item When using header files, use quotation marks around them to indicate that they're a file on your machine. Use angle brackets around things to include form the C std lib.
 
-The purpose of const functions is to prevent the function from modifying the values of data members or objects.
+\item The purpose of const functions is to prevent the function from modifying the values of data members or objects.
+\end{itemize}
 
 \section{01.19.20 (C++ Ch. 2)}
-\label{sec:org70ad978}
+\label{sec:orgb2b6948}
 A look at some basic C++ code
 \begin{verbatim}
 #include <iostream> //enables program to output data
@@ -87,7 +132,7 @@ int main () {
   int num1{0}; //list initialization
   int num2 = 0; //regular initialization
  //No difference between list & regular initializtion with primitive types.
- //List initialization should be used for UDTs.*/
+ //List initialization should be used for UDTs.
 
   int sum{0}
 
@@ -97,7 +142,8 @@ int main () {
   sum = num1 + num2;
 
   std::cout << sum << std::endl;
-  //endl is helpful because it flushes the buffer, which the newline character does not
+  //endl is helpful because it flushes the buffer
+  //newline character does not
   return 0;
 }
 \end{verbatim}

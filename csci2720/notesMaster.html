@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-01-19 Tue 21:46 -->
+<!-- 2021-01-21 Thu 11:35 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -222,14 +222,80 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgbb7f55e">1. 01.19.20 (C++ Ch. 3)</a></li>
-<li><a href="#org40fa984">2. 01.19.20 (C++ Ch. 2)</a></li>
+<li><a href="#orgb7e1a1e">1. 01.21.20 (C++ Ch. 3)</a>
+<ul>
+<li><a href="#org80db4b3">1.1. Objects and Object Sizes</a></li>
+<li><a href="#org9405add">1.2. UML Diagrams</a></li>
+<li><a href="#org4e166f4">1.3. Constructors</a></li>
+</ul>
+</li>
+<li><a href="#org904f514">2. 01.19.20 (C++ Ch. 3)</a></li>
+<li><a href="#org4f16a4d">3. 01.19.20 (C++ Ch. 2)</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgbb7f55e" class="outline-2">
-<h2 id="orgbb7f55e"><span class="section-number-2">1</span> 01.19.20 (C++ Ch. 3)</h2>
+<div id="outline-container-orgb7e1a1e" class="outline-2">
+<h2 id="orgb7e1a1e"><span class="section-number-2">1</span> 01.21.20 (C++ Ch. 3)</h2>
 <div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org80db4b3" class="outline-3">
+<h3 id="org80db4b3"><span class="section-number-3">1.1</span> Objects and Object Sizes</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>An objects size will always be the sum of its data members. The size will not be affected by any methods that are called upon it.</li>
+<li>Because of this, objects can quickly become very large in size.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9405add" class="outline-3">
+<h3 id="org9405add"><span class="section-number-3">1.2</span> UML Diagrams</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>Classes are listed as individual boxes
+<ul class="org-ul">
+<li>top box = class name</li>
+<li>middle compartment =</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4e166f4" class="outline-3">
+<h3 id="org4e166f4"><span class="section-number-3">1.3</span> Constructors</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li>Explicit constructors can be used to prevent implicit typecasting, as seen below:</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-cpp"><span style="color: #51afef;">class</span> <span style="color: #ECBE7B;">Student</span> {
+  <span style="color: #c678dd;">Student</span> (<span style="color: #ECBE7B;">int</span> <span style="color: #dcaeea;">s</span>) {
+
+  } <span style="color: #525252;">//</span><span style="color: #525252;">constructor</span>
+} <span style="color: #525252;">//</span><span style="color: #525252;">Student</span>
+
+<span style="color: #ECBE7B;">int</span> <span style="color: #c678dd;">main</span> () {
+  <span style="color: #ECBE7B;">Student</span> <span style="color: #dcaeea;">s</span> {<span style="color: #dd8844; font-weight: bold;">15</span>}; <span style="color: #525252;">//</span><span style="color: #525252;">allowed, completes correctly</span>
+  <span style="color: #ECBE7B;">Student</span> <span style="color: #dcaeea;">c</span> {<span style="color: #99bb66;">'C'</span>}; <span style="color: #525252;">//</span><span style="color: #525252;">typecasts automatically, should not occur</span>
+  <span style="color: #525252;">//</span><span style="color: #525252;">Note, () can be used in place of {} to construct objects</span>
+}
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>Ex. list initialization with an explicit constructor</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-cpp"><span style="color: #51afef;">explicit</span> <span style="color: #c678dd;">Account</span> (<span style="color: #a9a1e1;">std</span>::<span style="color: #ECBE7B;">string</span> <span style="color: #dcaeea;">accountName</span>) <span style="color: #525252;">//</span><span style="color: #525252;">explicit constructor</span>
+  : name{accountName} {
+  <span style="color: #525252;">//</span><span style="color: #525252;">insert constructor code here</span>
+  }
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org904f514" class="outline-2">
+<h2 id="org904f514"><span class="section-number-2">2</span> 01.19.20 (C++ Ch. 3)</h2>
+<div class="outline-text-2" id="text-2">
 <p>
 A look at class creation
 </p>
@@ -257,27 +323,21 @@ A look at class creation
 </pre>
 </div>
 
-<p>
-Class functions and vars are, by default, private. The public keyword must be used to denote any public parts of a class.
-</p>
+<ul class="org-ul">
+<li>Class functions and vars are, by default, private. The public keyword must be used to denote any public parts of a class.</li>
 
-<p>
-Move implementations to a header file for use in main methods while separating out each file.
-</p>
+<li>Move implementations to a header file for use in main methods while separating out each file.</li>
 
-<p>
-When using header files, use quotation marks around them to indicate that they&rsquo;re a file on your machine. Use angle brackets around things to include form the C std lib.
-</p>
+<li>When using header files, use quotation marks around them to indicate that they&rsquo;re a file on your machine. Use angle brackets around things to include form the C std lib.</li>
 
-<p>
-The purpose of const functions is to prevent the function from modifying the values of data members or objects.
-</p>
+<li>The purpose of const functions is to prevent the function from modifying the values of data members or objects.</li>
+</ul>
 </div>
 </div>
 
-<div id="outline-container-org40fa984" class="outline-2">
-<h2 id="org40fa984"><span class="section-number-2">2</span> 01.19.20 (C++ Ch. 2)</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-org4f16a4d" class="outline-2">
+<h2 id="org4f16a4d"><span class="section-number-2">3</span> 01.19.20 (C++ Ch. 2)</h2>
+<div class="outline-text-2" id="text-3">
 <p>
 A look at some basic C++ code
 </p>
@@ -346,7 +406,7 @@ A look at a common mistake
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Sudhan Chitgopkar</p>
-<p class="date">Created: 2021-01-19 Tue 21:46</p>
+<p class="date">Created: 2021-01-21 Thu 11:35</p>
 </div>
 </body>
 </html>

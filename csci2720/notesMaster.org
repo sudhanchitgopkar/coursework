@@ -1,3 +1,34 @@
+* 01.21.20 (C++ Ch. 3)
+** Objects and Object Sizes
+- An objects size will always be the sum of its data members. The size will not be affected by any methods that are called upon it.
+- Because of this, objects can quickly become very large in size.
+** UML Diagrams
+- Classes are listed as individual boxes
+  - top box = class name
+  - middle compartment =
+** Constructors
+- Explicit constructors can be used to prevent implicit typecasting, as seen below:
+#+BEGIN_SRC cpp
+class Student {
+  Student (int s) {
+
+  } //constructor
+} //Student
+
+int main () {
+  Student s {15}; //allowed, completes correctly
+  Student c {'C'}; //typecasts automatically, should not occur
+  //Note, () can be used in place of {} to construct objects
+}
+#+END_SRC
+
+- Ex. list initialization with an explicit constructor
+#+BEGIN_SRC cpp
+explicit Account (std::string accountName) //explicit constructor
+  : name{accountName} {
+  //insert constructor code here
+  }
+#+END_SRC
 * 01.19.20 (C++ Ch. 3)
 A look at class creation
 #+BEGIN_SRC cpp
@@ -23,13 +54,13 @@ int main () {
 }
 #+END_SRC
 
-Class functions and vars are, by default, private. The public keyword must be used to denote any public parts of a class.
+- Class functions and vars are, by default, private. The public keyword must be used to denote any public parts of a class.
 
-Move implementations to a header file for use in main methods while separating out each file.
+- Move implementations to a header file for use in main methods while separating out each file.
 
-When using header files, use quotation marks around them to indicate that they're a file on your machine. Use angle brackets around things to include form the C std lib.
+- When using header files, use quotation marks around them to indicate that they're a file on your machine. Use angle brackets around things to include form the C std lib.
 
-The purpose of const functions is to prevent the function from modifying the values of data members or objects.
+- The purpose of const functions is to prevent the function from modifying the values of data members or objects.
 
 * 01.19.20 (C++ Ch. 2)
 A look at some basic C++ code
