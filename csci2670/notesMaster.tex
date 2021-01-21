@@ -1,4 +1,4 @@
-% Created 2021-01-20 Wed 22:47
+% Created 2021-01-21 Thu 13:58
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -26,10 +26,73 @@
  pdflang={English}}
 \begin{document}
 
-\tableofcontents \clearpage\section{01.19.21}
-\label{sec:org1080857}
+\tableofcontents \clearpage\section{01.21.21}
+\label{sec:org4d34917}
+\subsection{Deterministic Finite Automata}
+\label{sec:org35eb888}
+\begin{itemize}
+\item We know that \(\delta\) = Q \texttimes{} \(\Sigma\) \(\to\) Q\textsubscript{2}
+\item We want a function that takes a starting state and a string, then returns the state after the machine has read that string
+\item Let's define \(\delta\)* = Q \texttimes{} \(\Sigma\)* \(\to\) Q
+\begin{itemize}
+\item \(\delta\)* takes a state and a string
+\item \(\delta\) takes a state and a symbol
+\end{itemize}
+\item Now, we need a recursive definition
+\begin{itemize}
+\item Base case:
+\begin{itemize}
+\item Let q\textsubscript{i} \(\in\) Q
+\item \(\delta\)*(q\textsubscript{i},\(\epsilon\)) = q\textsubscript{i}
+\end{itemize}
+\item Recursive step:
+\begin{itemize}
+\item If q\textsubscript{i} \(\in\) Q, w \(\in\) \(\Sigma\)*, and c \(\in\) \(\Sigma\)
+\item then \(\delta\)*(q, w \(\cdot\) c) = \(\delta\)(\(\delta\)*(q\textsubscript{i},w),c)
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\subsection{Aside: On \(\Sigma\) and \(\Sigma\)*}
+\label{sec:org76aa61f}
+\begin{itemize}
+\item \(\Sigma\)* is the universe of all strings over \(\Sigma\)
+\begin{itemize}
+\item \(\Sigma\) = \{0,1\}
+\item \(\Sigma\)* = \{\(\epsilon\),0,1,00,01,11,10,000,\ldots{}\}
+\end{itemize}
+\item We can see this recursively
+\begin{itemize}
+\item Base step: \(\epsilon\) \(\in\) \(\Sigma\)*
+\item Recursive step:
+\item Let w \(\in\) \(\Sigma\)*, let c \(\in\) \(\Sigma\)
+\item Then w \texttimes{} c \(\in\) \(\Sigma\)*
+\end{itemize}
+\item We can see this recursion graphically
+\end{itemize}
+\begin{center}
+\begin{tabular}{lrrl}
+w & c & w \(\cdot\) c & step\\
+\hline
+\(\epsilon\) &  & - & base\\
+\(\epsilon\) & 1 & 1 & recursive\\
+1 & 0 & 10 & recursive\\
+10 & 1 & 101 & recursive\\
+\end{tabular}
+\end{center}
+\subsection{Recursively Testing 101}
+\label{sec:org0544e03}
+\begin{itemize}
+\item Solve \(\delta\)*(q\textsubscript{1},101)
+\item \(\delta\)(\(\delta\)*(q\textsubscript{1},10),1)
+\item \(\delta\)*(q\textsubscript{1},10)
+\begin{itemize}
+\item \(\delta\)(\(\delta\)*(q\textsubscript{1},1),0)
+\end{itemize}
+\end{itemize}
+\section{01.19.21}
+\label{sec:org027332b}
 \subsection{Tuples \& DFAs}
-\label{sec:org4154304}
+\label{sec:org54b31ad}
 \begin{itemize}
 \item Tuples are sequences which are always finite in length
 \item The deterministic finite automaton shown is a 5-tuple:
@@ -62,13 +125,13 @@ Step & State & Input & Transition\\
 \end{center}
 \end{itemize}
 \subsection{Domains \& Codomains}
-\label{sec:orgdfb464a}
+\label{sec:orgeae68da}
 \begin{itemize}
 \item Domain: set of all possible function inputs
 \item Codomain: set of all possible outputs
 \end{itemize}
 \subsection{Strings}
-\label{sec:org9259da6}
+\label{sec:orga4498c4}
 \begin{itemize}
 \item In computer science, strings are character arrays
 \item In mathematics, strings are sequences of symbols
@@ -78,7 +141,7 @@ Step & State & Input & Transition\\
 \item If c \(\in\) \(\Sigma\), then \(\epsilon\) \(\cdot\) c = c \(\cdot\) \(\epsilon\) = c
 \end{itemize}
 \subsection{{\bfseries\sffamily TODO} Review Recursive Definitions}
-\label{sec:org4787492}
+\label{sec:orge608164}
 \begin{itemize}
 \item Base step: a step that can not be broken down any further, a fact that is always true regardless of the input
 \item Recursive step:
@@ -102,7 +165,7 @@ Step & State & Input & Transition\\
 \end{enumerate}
 \end{itemize}
 \subsection{Languages}
-\label{sec:org15de515}
+\label{sec:org8f9818f}
 \begin{itemize}
 \item Languages over \(\Sigma\) - a set of finite strings over \(\Sigma\)
 \item Langauges recognized by an automaton, M, L(M) is the language accepted by M
@@ -112,9 +175,9 @@ Step & State & Input & Transition\\
 \item \(\epsilon\) is not a symbol in any alphabet
 \end{itemize}
 \section{01.14.21}
-\label{sec:org8330122}
+\label{sec:org47c605c}
 \subsection{Automaton (automata)}
-\label{sec:org45ed3d7}
+\label{sec:org06f9417}
 \begin{itemize}
 \item Self running machine requiring a continuous power source
 \begin{itemize}
@@ -123,9 +186,9 @@ Step & State & Input & Transition\\
 \item Course revolves around defining the mathematics powering machines
 \end{itemize}
 \subsection{The Mathematics of Automata}
-\label{sec:org5681dd1}
+\label{sec:orgf18108a}
 \subsubsection{Mathematicians \& History}
-\label{sec:orge5b0207}
+\label{sec:orgf4d8506}
 \begin{itemize}
 \item Cantor defines sets as collections of objects
 \item Cantor also argues that infinites can be of different magnitudes - there are infinitely more real numbers than natural numbers
@@ -147,7 +210,7 @@ Step & State & Input & Transition\\
 \end{itemize}
 \end{itemize}
 \subsubsection{Sequential Logic}
-\label{sec:org9cc3259}
+\label{sec:org7e675eb}
 \begin{itemize}
 \item Sentential Logic- based on boolean results
 \begin{itemize}
@@ -156,7 +219,7 @@ Step & State & Input & Transition\\
 \end{itemize}
 \end{itemize}
 \subsection{Necessary Review}
-\label{sec:org3c8ed51}
+\label{sec:orgd862a3b}
 \begin{itemize}
 \item Textbook Ch. 0
 \item Logic Statements
@@ -164,7 +227,7 @@ Step & State & Input & Transition\\
 \item Functions
 \end{itemize}
 \subsection{Functions}
-\label{sec:orgadcf5e5}
+\label{sec:org0d55e44}
 \begin{itemize}
 \item Functions - something that maps objects from one set to another
 \item Given f: a \(\to\) b;
@@ -182,7 +245,7 @@ Step & State & Input & Transition\\
 \end{itemize}
 \end{itemize}
 \subsection{{\bfseries\sffamily TODO} Types of Functions - Definition \& Logical Statement}
-\label{sec:orgcb6acd6}
+\label{sec:org31405ba}
 \begin{itemize}
 \item Injective Functions
 \item Surjective Functions
@@ -190,7 +253,7 @@ Step & State & Input & Transition\\
 \item Proof by Contradiction (\textlnot{}\(\exists\))
 \end{itemize}
 \subsection{Finite Automaton (Finite State Machine)}
-\label{sec:org7361b71}
+\label{sec:org6be22a7}
 \begin{itemize}
 \item States are logical confirgurations
 \item States are generally based upon input

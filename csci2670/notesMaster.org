@@ -1,3 +1,38 @@
+* 01.21.21
+** Deterministic Finite Automata
+- We know that \delta = Q \times \Sigma \to Q_{2}
+- We want a function that takes a starting state and a string, then returns the state after the machine has read that string
+- Let's define \delta* = Q \times \Sigma* \to Q
+  - \delta* takes a state and a string
+  - \delta takes a state and a symbol
+- Now, we need a recursive definition
+  - Base case:
+    - Let q_{i} \in Q
+    - \delta*(q_{i},\epsilon) = q_{i}
+  - Recursive step:
+    - If q_{i} \in Q, w \in \Sigma*, and c \in \Sigma
+    - then \delta*(q, w \cdot c) = \delta(\delta*(q_{i},w),c)
+** Aside: On \Sigma and \Sigma*
+- \Sigma* is the universe of all strings over \Sigma
+      - \Sigma = {0,1}
+      - \Sigma* = {\epsilon,0,1,00,01,11,10,000,...}
+- We can see this recursively
+    - Base step: \epsilon \in \Sigma*
+    - Recursive step:
+    - Let w \in \Sigma*, let c \in \Sigma
+    - Then w \times c \in \Sigma*
+- We can see this recursion graphically
+| w        | c | w \cdot c | step      |
+|----------+---+-----------+-----------|
+| \epsilon |   |         - | base      |
+| \epsilon | 1 |         1 | recursive |
+| 1        | 0 |        10 | recursive |
+| 10       | 1 |       101 | recursive |
+** Recursively Testing 101
+- Solve \delta*(q_{1},101)
+- \delta(\delta*(q_{1},10),1)
+- \delta*(q_{1},10)
+  - \delta(\delta*(q_{1},1),0)
 * 01.19.21
 ** Tuples & DFAs
 - Tuples are sequences which are always finite in length
