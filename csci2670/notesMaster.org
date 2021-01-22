@@ -32,7 +32,8 @@
 - Solve \delta*(q_{1},101)
 - \delta(\delta*(q_{1},10),1)
 - \delta*(q_{1},10)
-  - \delta(\delta*(q_{1},1),0)
+- \delta(\delta*(q_{1},1),0)
+*** TODO Complete Recursion Sequence
 * 01.19.21
 ** Tuples & DFAs
 - Tuples are sequences which are always finite in length
