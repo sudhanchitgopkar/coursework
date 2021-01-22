@@ -1,3 +1,20 @@
+#+TITLE: American Foreign Pol. Decision Making
+#+AUTHOR: Sudhan Chitgopkar
+* 01.22.21
+** Calculating Costs of War
+*** Constants
+- Fight occurs over $100
+- Cost of war: $20
+- P(Winning): 50%
+*** Expected Value
+- (Gains Winning) + (Gains Fighting) - (Cost of War)
+- (0.5 \times 100) + (0) - (1 \times 20) = 50 - 20 = $30
+- Because each side could negotiate in order to get an expected value of 31 <, it is not a rational deciison to go to war
+*** Miscalculation
+- When both sides overestimate the probability of winning, their expected value goes up, thereby making their minimum threshold for negotiation too high for the other side.
+- Consider miscalculation wherein both sides believe they have an 80% probability of winning:
+  - EV_{war} = (0.8 \times 100) + (0) - (1 \times 20) = 80 - 20 = 60.
+  - Both sides therefore want an expected value of > 60, which is impossible given the limited value of the thing being fought over
 * 01.20.21
 ** Rational Decision-Making
 - Rational decision-making defines how we make decisions
