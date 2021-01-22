@@ -1,0 +1,122 @@
+                        ________________________
+
+                         STRATEGIC INTELLIGENCE
+
+                           Sudhan Chitgopkar
+                        ________________________
+
+
+Table of Contents
+_________________
+
+1. 01.20.20 (Intelligence Structure)
+.. 1. What is Intelligence
+.. 2. Levels of Analysis
+.. 3. US Intelligence Community
+..... 1. Independent
+..... 2. Departments of Agencies
+..... 3. Department of Defense
+.. 4. Questions to Consider
+
+
+1 01.20.20 (Intelligence Structure)
+===================================
+
+1.1 What is Intelligence
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+  - Process
+  - Activity - the actual job conducted by an individual or organization
+    to obtain intelligence
+  - Final Product - the final report or analysis derived through the
+    process of gaining intelligence that is eventually disseminated
+  - Elements of Intelligence
+    1. Dependent on confidential sources and methods for full
+       effectiveness
+    2. Performed by officers of the state, for the state
+    3. Focused on foreigners - usually other states, but often foreign
+       subjects, corporations, or groups
+    4. Linked to the production and dissemination of information
+    5. Involved in influencing foreign entities through means that can't
+       trace back to the acting government
+  - Concise Definition: Intelligence is secret, state activity to
+    understand or influence foreign entities
+
+
+1.2 Levels of Analysis
+~~~~~~~~~~~~~~~~~~~~~~
+
+  - Strategic Intelligence - broad, policy-oriented approach to
+    intelligence. Understands the effects of intelligence and
+    international factors on the world
+  - Operational Intelligence - group-focused intelligence, understanding
+    interplay between groups of people or institutions
+  - Tactical Intelligence - low-level intelligence focused on field
+    scenarios and day-to-day operations of intelligence
+
+
+1.3 US Intelligence Community
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1.3.1 Independent
+-----------------
+
+  - Office of the Director of National Intelligence (ODNI) -
+    intermediary oversight agency consolidating all of the intelligence
+    and pushing it to policy-makers
+  - Central Intelligence Agency (CIA) - Leading expert in clandestine
+    operations for the US, uses their own paramilitary. Only independent
+    agency that runs operations
+
+
+1.3.2 Departments of Agencies
+-----------------------------
+
+  - Department of Energy Office of Intelligence and Counterintelligence
+    (DOE-OIC) - leading experts in nuclear weapons, energy
+    infrastructure, and security maintenance
+  - Department of Homeland Security's Office of Intelligence and
+    Analysis - Domestic security focus
+  - FBI Intelligence Branch (FBIIB) - Focus on federal crimes and
+    domestic security
+  - DEA Office of National Security Agency (DEAONSI) - focus on drugs
+    and drug trade
+  - Department of Small Business Innovation Research (DOSBIR) - focused
+    on diplomatic intelligence
+  - Dept of Treasury Intelligence Agency (USDTOIA) - understanding how
+    the US dollar could be used in criminal activities
+  - US Coast Guard Intelligence (USCGI) - charged with keeping ports,
+    waterways, cargo, and coasts safe
+
+
+1.3.3 Department of Defense
+---------------------------
+
+  - Defense Intelligence Agency (DIA) - DoD's version of the CIA,
+    focused on troop movements, troop aquisitions
+  - National Security Agency/Central Security Service (NSA/CSS) -
+    leading experts in signal communications and telecommunications
+  - National Geospatial Intelligence Agency (NGA) - focuses on GIS,
+    geography
+  - National Reconnaissance Office (NRO) - one of the most secret
+    agencies, existence wasn't acknowledged until the '50's, control spy
+    sattelite network
+  - US Army Intelligence (USAI) - control field operations and movement
+    of troops
+  - Office of Naval Intelligence (ONI) - control water-based troop
+    movements, cargo movement, and political intelligence
+  - US Marine Corps Intelligence (USMCI) - provide tactical intelligence
+    for troop movements through surge and occupancy operations, also
+    provide counterintelligence consultation to the rest of the USIC
+  - US Air Force Intelligence, Surveillance, and Reconnaissance
+    (USAFISR/16AF) - focus on imagery intelligence, security
+    countermeasures, telecommunications
+
+
+1.4 Questions to Consider
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  - Do you agree with the concise definition of intelligence?
+  - Which level of analysis would you most focus on?
+  - Can you see the bureaucracy of the intelligence community helping or
+    hurting its overall mission?

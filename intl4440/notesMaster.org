@@ -1,7 +1,6 @@
 #+TITLE: Strategic Intelligence
 #+AUTHOR: Sudhan Chitgopkar
-
-* Week 2 (Intelligence Structure)
+* 01.20.20 (Intelligence Structure)
 ** What is Intelligence
 - Process
 - Activity - the actual job conducted by an individual or organization to obtain intelligence
