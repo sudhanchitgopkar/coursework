@@ -1,0 +1,296 @@
+                _______________________________________
+
+                 AMERICAN FOREIGN POL. DECISION MAKING
+
+                           Sudhan Chitgopkar
+                _______________________________________
+
+
+Table of Contents
+_________________
+
+1. TODO Putnam
+2. Fearon
+.. 1. Introduction
+.. 2. The Puzzle
+.. 3. Anarchy
+.. 4. Preventive War
+.. 5. Positive Expected Utility
+.. 6. Utility and Rationality
+.. 7. War and Private information
+.. 8. War & Commitment Problems
+.. 9. Conclusion
+3. 01.22.21
+.. 1. Calculating Costs of War
+..... 1. Constants
+..... 2. Expected Value
+..... 3. Miscalculation
+4. 01.20.21
+.. 1. Rational Decision-Making
+.. 2. Incentive Structures
+5. Expected Profit Khan Academy
+6. 01.15.21
+.. 1. Brain Stem
+.. 2. Middle Brain (Limbic System)
+.. 3. Brain Cortex
+.. 4. Hierarchy of the brain
+.. 5. Rational Decision-Making
+
+
+1 TODO Putnam
+=============
+
+
+2 Fearon
+========
+
+2.1 Introduction
+~~~~~~~~~~~~~~~~
+
+  - Three reasons war may occur
+    - People are sometimes irrational and don't consider the costs of
+      war due to this irrationality or their biases
+    - Leaders may enjoy benefits of war but not pay the costs
+    - People are rational and consider the risks but fight anyway
+      (Rationalist explanation)
+  - Flaws with contemporary rationalist arguments are that they don't
+    address prewar bargains
+  - Contemporary Rationalist reasons for war:
+    - Anarchy
+    - Benefits o/w costs
+    - Rational preventitive war
+    - Rational miscalculation due to lack of info
+    - Rational miscalculation due to diagreement about relative power
+  - Fearon's reasons for war
+    - private or misrepresented info about relative capabilities
+    - relationships are not possible because at least one party has an
+      incentive to cheat
+    - Despite being able to compromise, one or more party does not want
+      to because of their beliefs on the issue
+
+
+2.2 The Puzzle
+~~~~~~~~~~~~~~
+
+  - People often see war as something nobody wants though wars can often
+    simply be costly but worthwhile gambles
+  - Wars are always ex post inefficient because no matter how small, the
+    costs of fighting still exist
+
+
+2.3 Anarchy
+~~~~~~~~~~~
+
+  - War occurs because there is nothing to prevent it
+  - Does not explain why wars still occur due to their inefficiency,
+    therefore does not explain war completely
+  - Anarchy may lead to arms races and insecurity, but little war
+    outside or preemptive war
+
+
+2.4 Preventive War
+~~~~~~~~~~~~~~~~~~
+
+  - If a declining power suspects that it may be attacked in the future
+    by a rising power, it will find a preventive war rational
+  - Theory does not consider diplomacy and timeframe
+  - Why should the declining power fear an attack if it's inefficient,
+    even for the rising power
+
+
+2.5 Positive Expected Utility
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  - Argues that war is rational when both sides have a positive expected
+    utility from it
+  - While often presented, this argument doesn't explain specific
+    condition in which both parties fighting a war have positive
+    expected utility
+
+
+2.6 Utility and Rationality
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  - Positive expected utility alone is not enough to provide a
+    rationalist explanatino for war
+  - Indivisibility of factors of war can also be a rational explanation
+    of war
+
+
+2.7 War and Private information
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  - War is often the product of rational miscalculation
+  - Leaders overestimate their chance of military victory
+  - State lack information about other side's willingness to fight
+  - Truly rational agents will make the same prediction about the
+    outcome of an uncertain event when given the same set of facts
+    - This does not happen when miscalculation occurs, which leads to
+      war
+  - There also exist incentives to misrepresent in bargaining
+  - Combination of private info about relative power or will to fight
+    and strategic incentive to misrepresent positions in baragaining
+    constitute a rational explanation of war
+
+
+2.8 War & Commitment Problems
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  - With anarchy, states become suspicious of one another and build
+    weapons and engage in attacks
+  - Anarchy matters when it seems as if a states preferences and
+    opportunities for action imply that one or both sides in a dispute
+    have incentives to renege on peaceful bargains which would be
+    mutually preferable to war
+  - Preemptive war is one such case where if one wants to go to war,
+    doing so stealthily would be the most save. While both parties would
+    prefer to live in peace, they are constantly afraid of doing so
+    because of the anarchic state of internaitonal affairs
+    - Seems to work similar to the prisoner's dilemm
+  - The same principle can be applied to preventive war, lack of trust
+    is not the driving factor behind war in these instances. Rather,
+    circumstances that give one party an incentive to renege are
+
+
+2.9 Conclusion
+~~~~~~~~~~~~~~
+
+  - Because fighting is costly and risky, rational actors should prefer
+    negotiations to war
+  - Rational actors may be unable to agree on these negotiations because
+    - private information about resolve and capability, and the
+      incentives that exist to misrepresent these
+    - inability to commit to hold ip a deal
+  - Not arguing irrelevance for empirical studies concluding that war is
+    based on irrationality
+
+
+3 01.22.21
+==========
+
+3.1 Calculating Costs of War
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+3.1.1 Constants
+---------------
+
+  - Fight occurs over $100
+  - Cost of war: $20
+  - P(Winning): 50%
+
+
+3.1.2 Expected Value
+--------------------
+
+  - (Gains Winning) + (Gains Fighting) - (Cost of War)
+  - (0.5 * 100) + (0) - (1 * 20) = 50 - 20 = $30
+  - Because each side could negotiate in order to get an expected value
+    of 31 <, it is not a rational deciison to go to war
+
+
+3.1.3 Miscalculation
+--------------------
+
+  - When both sides overestimate the probability of winning, their
+    expected value goes up, thereby making their minimum threshold for
+    negotiation too high for the other side.
+  - Consider miscalculation wherein both sides believe they have an 80%
+    probability of winning:
+    - EV_{war} = (0.8 * 100) + (0) - (1 * 20) = 80 - 20 = 60.
+    - Both sides therefore want an expected value of > 60, which is
+      impossible given the limited value of the thing being fought over
+
+
+4 01.20.21
+==========
+
+4.1 Rational Decision-Making
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  - Rational decision-making defines how we make decisions
+  - A person's or institutions goal is not relevant, the process of
+    pursuing that goal is the factor driving decision-making
+  - This allows us to generalize decision-making significantly more
+  - Critical to consider the probabilistic nature of benefits and harms
+    when considering rational decision-making
+  - Expected Value = "weighted value" for all costs and benefits
+    - Same thing as "average payoff"
+
+
+4.2 Incentive Structures
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+  - Incentive structures are the expected values for each of the
+    strategies considered
+  - Incentive structures impose a certain course of action upon us,
+    given that we are rational actors
+
+
+5 Expected Profit Khan Academy
+==============================
+
+  - Expected value can be calculated as the sum of all the outcome
+    probabilities multiplied by their corresponding profits.
+  - Considering all outcome probabilities should yeild a total
+    probability sum of 1 (100%), with profits being positive (gains) or
+    negative (losses)
+
+
+6 01.15.21
+==========
+
+  - Brain has a complex set of structures that work together to do both
+    really important, and fundamentally flawed actions
+
+
+6.1 Brain Stem
+~~~~~~~~~~~~~~
+
+  - The reptilian brain
+  - Really just an extensino of the spinal cord
+  - Controls automatic actions, no effect on decision-making
+
+
+6.2 Middle Brain (Limbic System)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  - Body's monitoring system to identify important elements of the
+    environment
+  - Discriminates things of importantance constantly and ambiently
+
+
+6.3 Brain Cortex
+~~~~~~~~~~~~~~~~
+
+  - Controls higher-level thinking
+  - Moral decision-making, learning, conscious awareness
+
+
+6.4 Hierarchy of the brain
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  - Information goes from the brain stem, to the limbic system, to the
+    brain cortex
+  - Critically, the limbic system was never designed to collect all the
+    information around you - that incomplete information is used for
+    decision-making
+  - Understanding the interplay and potential biases of the limbic
+    system can help us understand decision-making and prevent bad
+    decision making
+  - Fear and the triggering of fear prevents higher-level decision
+    making and can prevent the intake of new information
+  - Sources of information can also have a significant effect on the
+    processing of that information - can be seen through
+    in-group/out-group bias
+
+
+6.5 Rational Decision-Making
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  1. Pick a goal
+  2. Evaluate all strategies
+     - Analyze costs
+     - Analyze benefits
+  3. Select strategy with best cost/benefit ratio
+  - Bias often occurs at stage 2 because of filtration of information
+    through the limbic system

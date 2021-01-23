@@ -1,31 +1,7 @@
 #+TITLE: American Foreign Pol. Decision Making
 #+AUTHOR: Sudhan Chitgopkar
-* 01.22.21
-** Calculating Costs of War
-*** Constants
-- Fight occurs over $100
-- Cost of war: $20
-- P(Winning): 50%
-*** Expected Value
-- (Gains Winning) + (Gains Fighting) - (Cost of War)
-- (0.5 \times 100) + (0) - (1 \times 20) = 50 - 20 = $30
-- Because each side could negotiate in order to get an expected value of 31 <, it is not a rational deciison to go to war
-*** Miscalculation
-- When both sides overestimate the probability of winning, their expected value goes up, thereby making their minimum threshold for negotiation too high for the other side.
-- Consider miscalculation wherein both sides believe they have an 80% probability of winning:
-  - EV_{war} = (0.8 \times 100) + (0) - (1 \times 20) = 80 - 20 = 60.
-  - Both sides therefore want an expected value of > 60, which is impossible given the limited value of the thing being fought over
-* 01.20.21
-** Rational Decision-Making
-- Rational decision-making defines how we make decisions
-- A person's or institutions goal is not relevant, the process of pursuing that goal is the factor driving decision-making
-- This allows us to generalize decision-making significantly more
-- Critical to consider the probabilistic nature of benefits and harms when considering rational decision-making
-- Expected Value = "weighted value" for all costs and benefits
-  - Same thing as "average payoff"
-** Incentive Structures
-- Incentive structures are the expected values for each of the strategies considered
-- Incentive structures impose a certain course of action upon us, given that we are rational actors
+* TODO Putnam
+
 * Fearon
 ** Introduction
 - Three reasons war may occur
@@ -57,6 +33,55 @@
 ** Positive Expected Utility
 - Argues that war is rational when both sides have a positive expected utility from it
 - While often presented, this argument doesn't explain specific condition in which both parties fighting a war have positive expected utility
+** Utility and Rationality
+- Positive expected utility alone is not enough to provide a rationalist explanatino for war
+- Indivisibility of factors of war can also be a rational explanation of war
+** War and Private information
+- War is often the product of rational miscalculation
+- Leaders overestimate their chance of military victory
+- State lack information about other side's willingness to fight
+- Truly rational agents will make the same prediction about the outcome of an uncertain event when given the same set of facts
+  - This does not happen when miscalculation occurs, which leads to war
+- There also exist incentives to misrepresent in bargaining
+- Combination of private info about relative power or will to fight and strategic incentive to misrepresent positions in baragaining constitute a rational explanation of war
+** War & Commitment Problems
+- With anarchy, states become suspicious of one another and build weapons and engage in attacks
+- Anarchy matters when it seems as if a states preferences and opportunities for action imply that one or both sides in a dispute have incentives to renege on peaceful bargains which would be mutually preferable to war
+- Preemptive war is one such case where if one wants to go to war, doing so stealthily would be the most save. While both parties would prefer to live in peace, they are constantly afraid of doing so because of the anarchic state of internaitonal affairs
+  - Seems to work similar to the prisoner's dilemm
+- The same principle can be applied to preventive war, lack of trust is not the driving factor behind war in these instances. Rather, circumstances that give one party an incentive to renege are
+** Conclusion
+- Because fighting is costly and risky, rational actors should prefer negotiations to war
+- Rational actors may be unable to agree on these negotiations because
+  - private information about resolve and capability, and the incentives that exist to misrepresent these
+  - inability to commit to hold ip a deal
+- Not arguing irrelevance for empirical studies concluding that war is based on irrationality
+* 01.22.21
+** Calculating Costs of War
+*** Constants
+- Fight occurs over $100
+- Cost of war: $20
+- P(Winning): 50%
+*** Expected Value
+- (Gains Winning) + (Gains Fighting) - (Cost of War)
+- (0.5 \times 100) + (0) - (1 \times 20) = 50 - 20 = $30
+- Because each side could negotiate in order to get an expected value of 31 <, it is not a rational deciison to go to war
+*** Miscalculation
+- When both sides overestimate the probability of winning, their expected value goes up, thereby making their minimum threshold for negotiation too high for the other side.
+- Consider miscalculation wherein both sides believe they have an 80% probability of winning:
+  - EV_{war} = (0.8 \times 100) + (0) - (1 \times 20) = 80 - 20 = 60.
+  - Both sides therefore want an expected value of > 60, which is impossible given the limited value of the thing being fought over
+* 01.20.21
+** Rational Decision-Making
+- Rational decision-making defines how we make decisions
+- A person's or institutions goal is not relevant, the process of pursuing that goal is the factor driving decision-making
+- This allows us to generalize decision-making significantly more
+- Critical to consider the probabilistic nature of benefits and harms when considering rational decision-making
+- Expected Value = "weighted value" for all costs and benefits
+  - Same thing as "average payoff"
+** Incentive Structures
+- Incentive structures are the expected values for each of the strategies considered
+- Incentive structures impose a certain course of action upon us, given that we are rational actors
 * Expected Profit Khan Academy
 - Expected value can be calculated as the sum of all the outcome probabilities multiplied by their corresponding profits.
 - Considering all outcome probabilities should yeild a total probability sum of 1 (100%), with profits being positive (gains) or negative (losses)
