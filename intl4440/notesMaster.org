@@ -1,5 +1,25 @@
 #+TITLE: Strategic Intelligence
 #+AUTHOR: Sudhan Chitgopkar
+* Turner
+- While US intelligence is not funadmentally unique, it has a series of norms that make it very distinctive
+-
+* Warner
+- No official definition for intelligence exists
+** Intelligence Definitions
+- National Security Act of 1947 defines foreign intelligence as "information relating to the capabilities, intentions, or activities of foreign governments or elements thereof."
+- Hoover Commission 1955 define that "intelligence deals with all the things which should be jnown in advance of initiating a course of action"
+- Brown-Aspin Commission defines that intelligence is "simply and boradly information about things foreign - people, places, things, and events - needed by the government for the conduct of its functions"
+- Joint Chief if Staffs Dictionary of Military and Associated Terms defines it as "the product resulting from the collection, processing, integration, analysis, evaluation, and interpretation of available information concerning foreign countries or areas" or as "information and knowledge about an adversary obtained through observation, investigation, analysis, or understanding"
+- CIA defines intelligence as "the knowledge and foreknowledge of the world around us - the prelude to decision and action by US policymakers"
+** Definition Analysis
+- Most definitions stress information over organization
+- Defining intelligence simply as information is generally to broad for intelligence professionals to carry out their jobs
+- Not every single peiece of information is intelligence
+- Intelligence can then be considered both an action and a product
+- Shulsky emphasizes the secret nature of this information as being a critical aspect of intelligence
+** Final Steps
+- Intelligence is then an activity and a product conducted through confidential circumstances on behalf of states so that policy-makers can understand foreign developments, and that it includes clandestine operations performed to cause certain foreign effects
+- Difference between law enforcement and intelligence is secrecy
 * 01.20.20 (Intelligence Structure)
 ** What is Intelligence
 - Process
