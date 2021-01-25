@@ -1,3 +1,5 @@
+#+TITLE: Theory of Computing
+#+AUTHOR: Sudhan Chitgopkar
 * 01.21.21
 ** Deterministic Finite Automata
 - We know that \delta = Q \times \Sigma \to Q_{2}

@@ -1,4 +1,4 @@
-% Created 2021-01-24 Sun 19:36
+% Created 2021-01-25 Mon 12:37
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -16,20 +16,21 @@
 \usepackage{hyperref}
 \author{Sudhan Chitgopkar}
 \date{\today}
-\title{}
+\title{Theory of Computing}
 \hypersetup{
  pdfauthor={Sudhan Chitgopkar},
- pdftitle={},
+ pdftitle={Theory of Computing},
  pdfkeywords={},
  pdfsubject={},
  pdfcreator={Emacs 27.1 (Org mode 9.5)}, 
  pdflang={English}}
 \begin{document}
 
+\maketitle
 \tableofcontents \clearpage\section{01.21.21}
-\label{sec:org1888593}
+\label{sec:org089f7ef}
 \subsection{Deterministic Finite Automata}
-\label{sec:org8faaa67}
+\label{sec:org9c5254d}
 \begin{itemize}
 \item We know that \(\delta\) = Q \texttimes{} \(\Sigma\) \(\to\) Q\textsubscript{2}
 \item We want a function that takes a starting state and a string, then returns the state after the machine has read that string
@@ -53,7 +54,7 @@
 \end{itemize}
 \end{itemize}
 \subsection{Aside: On \(\Sigma\) and \(\Sigma\)*}
-\label{sec:orgf8fba5d}
+\label{sec:orgd0d6dd2}
 \begin{itemize}
 \item \(\Sigma\)* is the universe of all strings over \(\Sigma\)
 \begin{itemize}
@@ -80,7 +81,7 @@ w & c & w \(\cdot\) c & step\\
 \end{tabular}
 \end{center}
 \subsection{Recursively Testing 101}
-\label{sec:org19021be}
+\label{sec:org8015d81}
 \begin{itemize}
 \item Solve \(\delta\)*(q\textsubscript{1},101)
 \item \(\delta\)(\(\delta\)*(q\textsubscript{1},10),1)
@@ -88,11 +89,11 @@ w & c & w \(\cdot\) c & step\\
 \item \(\delta\)(\(\delta\)*(q\textsubscript{1},1),0)
 \end{itemize}
 \subsubsection{{\bfseries\sffamily TODO} Complete Recursion Sequence}
-\label{sec:orga7e8ac4}
+\label{sec:org6dacc77}
 \section{01.19.21}
-\label{sec:orgc5a8c8a}
+\label{sec:orgf8e22f6}
 \subsection{Tuples \& DFAs}
-\label{sec:org7f53ec8}
+\label{sec:org3e79e65}
 \begin{itemize}
 \item Tuples are sequences which are always finite in length
 \item The deterministic finite automaton shown is a 5-tuple:
@@ -114,24 +115,25 @@ w & c & w \(\cdot\) c & step\\
 \item \(\delta\): Q \texttimes{} \(\Sigma\) \(\to\) Q\textsubscript{2}
 \end{itemize}
 Represented as a table,
+\end{itemize}
 \begin{center}
 \begin{tabular}{rlrl}
 Step & State & Input & Transition\\
+\hline
 1 & Q\textsubscript{1} & 1 & Q\textsubscript{1} \(\to\) Q\textsubscript{2}\\
 2 & Q\textsubscript{2} & 0 & Q\textsubscript{2} \(\to\) Q\textsubscript{1}\\
 3 & Q\textsubscript{1} & 1 & Q\textsubscript{1} \(\to\) Q\textsubscript{2}\\
 4 & Q\textsubscript{2} & 1 & Q\textsubscript{2} \(\to\) Q\textsubscript{2}\\
 \end{tabular}
 \end{center}
-\end{itemize}
 \subsection{Domains \& Codomains}
-\label{sec:orgb99538e}
+\label{sec:org0b7a88a}
 \begin{itemize}
 \item Domain: set of all possible function inputs
 \item Codomain: set of all possible outputs
 \end{itemize}
 \subsection{Strings}
-\label{sec:org2ab68a3}
+\label{sec:orgbb211b0}
 \begin{itemize}
 \item In computer science, strings are character arrays
 \item In mathematics, strings are sequences of symbols
@@ -141,7 +143,7 @@ Step & State & Input & Transition\\
 \item If c \(\in\) \(\Sigma\), then \(\epsilon\) \(\cdot\) c = c \(\cdot\) \(\epsilon\) = c
 \end{itemize}
 \subsection{{\bfseries\sffamily TODO} Review Recursive Definitions}
-\label{sec:org42170db}
+\label{sec:org126ef5f}
 \begin{itemize}
 \item Base step: a step that can not be broken down any further, a fact that is always true regardless of the input
 \item Recursive step:
@@ -165,7 +167,7 @@ Step & State & Input & Transition\\
 \end{enumerate}
 \end{itemize}
 \subsection{Languages}
-\label{sec:org0b2c6ff}
+\label{sec:org868539c}
 \begin{itemize}
 \item Languages over \(\Sigma\) - a set of finite strings over \(\Sigma\)
 \item Langauges recognized by an automaton, M, L(M) is the language accepted by M
@@ -175,9 +177,9 @@ Step & State & Input & Transition\\
 \item \(\epsilon\) is not a symbol in any alphabet
 \end{itemize}
 \section{01.14.21}
-\label{sec:org57ec522}
+\label{sec:orgd90752c}
 \subsection{Automaton (automata)}
-\label{sec:org5fa65df}
+\label{sec:org1e3125b}
 \begin{itemize}
 \item Self running machine requiring a continuous power source
 \begin{itemize}
@@ -186,9 +188,9 @@ Step & State & Input & Transition\\
 \item Course revolves around defining the mathematics powering machines
 \end{itemize}
 \subsection{The Mathematics of Automata}
-\label{sec:orgf0ec9f2}
+\label{sec:org78e93a5}
 \subsubsection{Mathematicians \& History}
-\label{sec:orgdc1c82d}
+\label{sec:orga554f5a}
 \begin{itemize}
 \item Cantor defines sets as collections of objects
 \item Cantor also argues that infinites can be of different magnitudes - there are infinitely more real numbers than natural numbers
@@ -210,7 +212,7 @@ Step & State & Input & Transition\\
 \end{itemize}
 \end{itemize}
 \subsubsection{Sequential Logic}
-\label{sec:org2c4e78e}
+\label{sec:orgfa23220}
 \begin{itemize}
 \item Sentential Logic- based on boolean results
 \begin{itemize}
@@ -219,7 +221,7 @@ Step & State & Input & Transition\\
 \end{itemize}
 \end{itemize}
 \subsection{Necessary Review}
-\label{sec:org8a5d43a}
+\label{sec:orgf5ac559}
 \begin{itemize}
 \item Textbook Ch. 0
 \item Logic Statements
@@ -227,7 +229,7 @@ Step & State & Input & Transition\\
 \item Functions
 \end{itemize}
 \subsection{Functions}
-\label{sec:org4cc0602}
+\label{sec:org933f9ca}
 \begin{itemize}
 \item Functions - something that maps objects from one set to another
 \item Given f: a \(\to\) b;
@@ -245,7 +247,7 @@ Step & State & Input & Transition\\
 \end{itemize}
 \end{itemize}
 \subsection{{\bfseries\sffamily TODO} Types of Functions - Definition \& Logical Statement}
-\label{sec:org5b6a207}
+\label{sec:org7fd6063}
 \begin{itemize}
 \item Injective Functions
 \item Surjective Functions
@@ -253,7 +255,7 @@ Step & State & Input & Transition\\
 \item Proof by Contradiction (\textlnot{}\(\exists\))
 \end{itemize}
 \subsection{Finite Automaton (Finite State Machine)}
-\label{sec:org711a5e4}
+\label{sec:org7ea3f04}
 \begin{itemize}
 \item States are logical confirgurations
 \item States are generally based upon input
