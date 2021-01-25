@@ -1,4 +1,4 @@
-% Created 2021-01-23 Sat 19:10
+% Created 2021-01-24 Sun 19:36
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -27,9 +27,9 @@
 \begin{document}
 
 \tableofcontents \clearpage\section{01.21.21}
-\label{sec:orgd9069af}
+\label{sec:org1888593}
 \subsection{Deterministic Finite Automata}
-\label{sec:orgdfa844f}
+\label{sec:org8faaa67}
 \begin{itemize}
 \item We know that \(\delta\) = Q \texttimes{} \(\Sigma\) \(\to\) Q\textsubscript{2}
 \item We want a function that takes a starting state and a string, then returns the state after the machine has read that string
@@ -53,7 +53,7 @@
 \end{itemize}
 \end{itemize}
 \subsection{Aside: On \(\Sigma\) and \(\Sigma\)*}
-\label{sec:orgb24314f}
+\label{sec:orgf8fba5d}
 \begin{itemize}
 \item \(\Sigma\)* is the universe of all strings over \(\Sigma\)
 \begin{itemize}
@@ -80,7 +80,7 @@ w & c & w \(\cdot\) c & step\\
 \end{tabular}
 \end{center}
 \subsection{Recursively Testing 101}
-\label{sec:org9c3944e}
+\label{sec:org19021be}
 \begin{itemize}
 \item Solve \(\delta\)*(q\textsubscript{1},101)
 \item \(\delta\)(\(\delta\)*(q\textsubscript{1},10),1)
@@ -88,11 +88,11 @@ w & c & w \(\cdot\) c & step\\
 \item \(\delta\)(\(\delta\)*(q\textsubscript{1},1),0)
 \end{itemize}
 \subsubsection{{\bfseries\sffamily TODO} Complete Recursion Sequence}
-\label{sec:orgc60ba48}
+\label{sec:orga7e8ac4}
 \section{01.19.21}
-\label{sec:org253d2fa}
+\label{sec:orgc5a8c8a}
 \subsection{Tuples \& DFAs}
-\label{sec:orgfdfdd74}
+\label{sec:org7f53ec8}
 \begin{itemize}
 \item Tuples are sequences which are always finite in length
 \item The deterministic finite automaton shown is a 5-tuple:
@@ -125,13 +125,13 @@ Step & State & Input & Transition\\
 \end{center}
 \end{itemize}
 \subsection{Domains \& Codomains}
-\label{sec:org05cc95b}
+\label{sec:orgb99538e}
 \begin{itemize}
 \item Domain: set of all possible function inputs
 \item Codomain: set of all possible outputs
 \end{itemize}
 \subsection{Strings}
-\label{sec:orgcd54778}
+\label{sec:org2ab68a3}
 \begin{itemize}
 \item In computer science, strings are character arrays
 \item In mathematics, strings are sequences of symbols
@@ -141,7 +141,7 @@ Step & State & Input & Transition\\
 \item If c \(\in\) \(\Sigma\), then \(\epsilon\) \(\cdot\) c = c \(\cdot\) \(\epsilon\) = c
 \end{itemize}
 \subsection{{\bfseries\sffamily TODO} Review Recursive Definitions}
-\label{sec:org206baae}
+\label{sec:org42170db}
 \begin{itemize}
 \item Base step: a step that can not be broken down any further, a fact that is always true regardless of the input
 \item Recursive step:
@@ -165,7 +165,7 @@ Step & State & Input & Transition\\
 \end{enumerate}
 \end{itemize}
 \subsection{Languages}
-\label{sec:org5e1f526}
+\label{sec:org0b2c6ff}
 \begin{itemize}
 \item Languages over \(\Sigma\) - a set of finite strings over \(\Sigma\)
 \item Langauges recognized by an automaton, M, L(M) is the language accepted by M
@@ -175,9 +175,9 @@ Step & State & Input & Transition\\
 \item \(\epsilon\) is not a symbol in any alphabet
 \end{itemize}
 \section{01.14.21}
-\label{sec:orgf767231}
+\label{sec:org57ec522}
 \subsection{Automaton (automata)}
-\label{sec:orgfd64045}
+\label{sec:org5fa65df}
 \begin{itemize}
 \item Self running machine requiring a continuous power source
 \begin{itemize}
@@ -186,9 +186,9 @@ Step & State & Input & Transition\\
 \item Course revolves around defining the mathematics powering machines
 \end{itemize}
 \subsection{The Mathematics of Automata}
-\label{sec:org17dfb27}
+\label{sec:orgf0ec9f2}
 \subsubsection{Mathematicians \& History}
-\label{sec:orgc7c7aaf}
+\label{sec:orgdc1c82d}
 \begin{itemize}
 \item Cantor defines sets as collections of objects
 \item Cantor also argues that infinites can be of different magnitudes - there are infinitely more real numbers than natural numbers
@@ -210,7 +210,7 @@ Step & State & Input & Transition\\
 \end{itemize}
 \end{itemize}
 \subsubsection{Sequential Logic}
-\label{sec:org192848c}
+\label{sec:org2c4e78e}
 \begin{itemize}
 \item Sentential Logic- based on boolean results
 \begin{itemize}
@@ -219,7 +219,7 @@ Step & State & Input & Transition\\
 \end{itemize}
 \end{itemize}
 \subsection{Necessary Review}
-\label{sec:org07b4d40}
+\label{sec:org8a5d43a}
 \begin{itemize}
 \item Textbook Ch. 0
 \item Logic Statements
@@ -227,7 +227,7 @@ Step & State & Input & Transition\\
 \item Functions
 \end{itemize}
 \subsection{Functions}
-\label{sec:orge7390d8}
+\label{sec:org4cc0602}
 \begin{itemize}
 \item Functions - something that maps objects from one set to another
 \item Given f: a \(\to\) b;
@@ -245,7 +245,7 @@ Step & State & Input & Transition\\
 \end{itemize}
 \end{itemize}
 \subsection{{\bfseries\sffamily TODO} Types of Functions - Definition \& Logical Statement}
-\label{sec:orge91d933}
+\label{sec:org5b6a207}
 \begin{itemize}
 \item Injective Functions
 \item Surjective Functions
@@ -253,7 +253,7 @@ Step & State & Input & Transition\\
 \item Proof by Contradiction (\textlnot{}\(\exists\))
 \end{itemize}
 \subsection{Finite Automaton (Finite State Machine)}
-\label{sec:orge67a219}
+\label{sec:org711a5e4}
 \begin{itemize}
 \item States are logical confirgurations
 \item States are generally based upon input

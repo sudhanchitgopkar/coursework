@@ -1,7 +1,25 @@
 #+TITLE: American Foreign Pol. Decision Making
 #+AUTHOR: Sudhan Chitgopkar
+* 01.12.21
+** Public Opinion & Decision-Making
+- domestic decision-making has significant foreign policy effects
+- domestic public opinion has an effect on foreign policy decisions
+  - public opinions can help shape the incentive structure that a decision-maker has when faced with a decision
+  - public opinion can either be an opportunity or a cosntraint
+- who we listen to and what they say can intrinsically change our incentive structure
+** Putnam Review
+- For any foreign policy issue, there is a chief of government (CoG)
+  - CoG has ultimate decision-making authority on the issue
+  - e.g, president on war, secretary for commerce on tariffs, etc.
+- CoG's job is to find a way to align their international goals with what's possible domestically
+  - This is the two-level game, domestic and international balances
+- "Win-Set" defines the set of acceptable outcomes that is affected by the policy
+  - "Win-Set" defined by war and peace is the entire US population
+  - "Win-Set" defined by shoe-lace imports is extremely small
+- Veto power must be considered
+- Assumes a rational actor analysis
+- While this applies largely to democratic states, the same general principles can also appply to authoritarian regimes
 * TODO Putnam
-
 * Fearon
 ** Introduction
 - Three reasons war may occur

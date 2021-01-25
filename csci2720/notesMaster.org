@@ -1,4 +1,23 @@
-* 01.21.20 (C++ Ch. 9)
+* 01.15.21 (MakeFile + File I/O)
+-
+* 01.25.21 (C++ Ch. 9)
+** Pass by Reference
+- When dealing with very large objects, don't pass by copy due to the large overhead of copying. Instead, pass by reference
+- When passing by reference, use const if you don't want to modify the data members
+** Destructors
+- Name of destructor is className~
+- Called implicitly when an object is destroyed
+- Takes no parameters, returns no value
+- No return type allowed in signature, not even void
+- Only one destructor allowed per class
+- Must be public
+- Destructors are called once a variable exits its scope
+- Static variables are destroyed after local variables, with global variables destroyed last
+- Objects are also destroyed in reverse order from their construction
+** Const Objects
+- const objects must use const methods only
+- non-const objects may use both non-const and const methods
+* 01.21.21 (C++ Ch. 9)
 ** Encapsulation
 - Header files should not contain source code, it should only include prototypes in order to ensure proper information-hiding
 - Source code should be placed in a different cpp file, which pulls from the prototypes in the header file
@@ -30,7 +49,7 @@ int main () {
   explicit Time t (x = 0, y = 0, z = 0);
 } //main
 #+END_SRC
-* 01.21.20 (C++ Ch. 3)
+* 01.21.21 (C++ Ch. 3)
 ** Objects and Object Sizes
 - An objects size will always be the sum of its data members. The size will not be affected by any methods that are called upon it.
 - Because of this, objects can quickly become very large in size.
@@ -65,7 +84,7 @@ explicit Account (std::string accountName) //explicit constructor
   //insert constructor code here
   }
 #+END_SRC
-* 01.19.20 (C++ Ch. 3)
+* 01.19.21 (C++ Ch. 3)
 A look at class creation
 #+BEGIN_SRC cpp
 #include <iostream>
@@ -98,7 +117,7 @@ int main () {
 
 - The purpose of const functions is to prevent the function from modifying the values of data members or objects.
 
-* 01.19.20 (C++ Ch. 2)
+* 01.19.21 (C++ Ch. 2)
 A look at some basic C++ code
 #+BEGIN_SRC cpp
 #include <iostream> //enables program to output data
