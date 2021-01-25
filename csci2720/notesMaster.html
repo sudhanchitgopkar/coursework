@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-01-21 Thu 12:21 -->
+<!-- 2021-01-25 Mon 12:18 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -222,42 +222,125 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org6145588">1. 01.21.20 (C++ Ch. 9)</a>
+<li><a href="#orgfd07d5e">1. 01.15.21 (File I/O)</a></li>
+<li><a href="#orgffae2bb">2. 01.25.21 (C++ Ch. 9)</a>
 <ul>
-<li><a href="#org0c16609">1.1. Encapsulation</a></li>
-<li><a href="#org716a7ef">1.2. Include Guards</a></li>
-<li><a href="#org9131266">1.3. Writing Classes</a></li>
-<li><a href="#orgf5164b5">1.4. Constructors &amp; Default Constructors</a></li>
+<li><a href="#org7ee5e15">2.1. Pass by Reference</a></li>
+<li><a href="#org0fc97ec">2.2. Destructors</a></li>
+<li><a href="#org6169274">2.3. Const Objects</a></li>
 </ul>
 </li>
-<li><a href="#orge8e802e">2. 01.21.20 (C++ Ch. 3)</a>
+<li><a href="#orgd4c5974">3. 01.21.21 (C++ Ch. 9)</a>
 <ul>
-<li><a href="#org59b2614">2.1. Objects and Object Sizes</a></li>
-<li><a href="#org4d8f9e6">2.2. UML Diagrams</a></li>
-<li><a href="#org518da8a">2.3. Constructors</a></li>
+<li><a href="#org7082cf1">3.1. Encapsulation</a></li>
+<li><a href="#orga9303a8">3.2. Include Guards</a></li>
+<li><a href="#org4553b3f">3.3. Writing Classes</a></li>
+<li><a href="#orge308aaa">3.4. Constructors &amp; Default Constructors</a></li>
 </ul>
 </li>
-<li><a href="#orgfc0c94d">3. 01.19.20 (C++ Ch. 3)</a></li>
-<li><a href="#orgcb69567">4. 01.19.20 (C++ Ch. 2)</a></li>
+<li><a href="#orgef23ffb">4. 01.21.21 (C++ Ch. 3)</a>
+<ul>
+<li><a href="#orgd53191a">4.1. Objects and Object Sizes</a></li>
+<li><a href="#org42b67b3">4.2. UML Diagrams</a></li>
+<li><a href="#org6562833">4.3. Constructors</a></li>
+</ul>
+</li>
+<li><a href="#orgb796467">5. 01.19.21 (C++ Ch. 3)</a></li>
+<li><a href="#orgb50d3aa">6. 01.19.21 (C++ Ch. 2)</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org6145588" class="outline-2">
-<h2 id="org6145588"><span class="section-number-2">1</span> 01.21.20 (C++ Ch. 9)</h2>
+<div id="outline-container-orgfd07d5e" class="outline-2">
+<h2 id="orgfd07d5e"><span class="section-number-2">1</span> 01.15.21 (File I/O)</h2>
 <div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li><p>
+File I/O ex.
+</p>
+<div class="org-src-container">
+<pre class="src src-cpp"><span style="color: #51afef; font-weight: bold;">#include</span> <span style="color: #99bb66;">&lt;fstream&gt;</span>
+
+<span style="color: #ECBE7B;">int</span> <span style="color: #c678dd;">main</span> () {
+  <span style="color: #525252;">//</span><span style="color: #525252;">opens file</span>
+  <span style="color: #ECBE7B;">ifstream</span> <span style="color: #dcaeea;">inClientFile</span>(<span style="color: #99bb66;">"clients.dat"</span>, <span style="color: #a9a1e1;">ios</span>::in);
+
+  <span style="color: #525252;">//</span><span style="color: #525252;">exits if file can't be opened</span>
+  <span style="color: #51afef;">if</span> (<span style="color: #51afef; font-weight: bold;">!</span>inClientFile) {
+    cerr &lt;&lt; <span style="color: #99bb66;">"File could not be opened"</span> &lt;&lt; endl;
+    exit(<span style="color: #dd8844; font-weight: bold;">1</span>);
+  } <span style="color: #525252;">//</span><span style="color: #525252;">if</span>
+
+  <span style="color: #525252;">//</span><span style="color: #525252;">var declarations</span>
+  <span style="color: #ECBE7B;">int</span> <span style="color: #dcaeea;">account</span>;
+  <span style="color: #ECBE7B;">string</span> <span style="color: #dcaeea;">name</span>;
+  <span style="color: #ECBE7B;">double</span> <span style="color: #dcaeea;">balance</span>;
+
+ <span style="color: #525252;">// </span><span style="color: #525252;">displays each record in the file</span>
+ <span style="color: #51afef;">while</span> (inClientFile &gt;&gt; account &gt;&gt; name &gt;&gt; balance) {
+   outputLine(account,name,balance);
+ } <span style="color: #525252;">//</span><span style="color: #525252;">while</span>
+
+}
+</pre>
+</div></li>
+</ul>
 </div>
-<div id="outline-container-org0c16609" class="outline-3">
-<h3 id="org0c16609"><span class="section-number-3">1.1</span> Encapsulation</h3>
-<div class="outline-text-3" id="text-1-1">
+</div>
+<div id="outline-container-orgffae2bb" class="outline-2">
+<h2 id="orgffae2bb"><span class="section-number-2">2</span> 01.25.21 (C++ Ch. 9)</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org7ee5e15" class="outline-3">
+<h3 id="org7ee5e15"><span class="section-number-3">2.1</span> Pass by Reference</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>When dealing with very large objects, don&rsquo;t pass by copy due to the large overhead of copying. Instead, pass by reference</li>
+<li>When passing by reference, use const if you don&rsquo;t want to modify the data members</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0fc97ec" class="outline-3">
+<h3 id="org0fc97ec"><span class="section-number-3">2.2</span> Destructors</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>Name of destructor is className~</li>
+<li>Called implicitly when an object is destroyed</li>
+<li>Takes no parameters, returns no value</li>
+<li>No return type allowed in signature, not even void</li>
+<li>Only one destructor allowed per class</li>
+<li>Must be public</li>
+<li>Destructors are called once a variable exits its scope</li>
+<li>Static variables are destroyed after local variables, with global variables destroyed last</li>
+<li>Objects are also destroyed in reverse order from their construction</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6169274" class="outline-3">
+<h3 id="org6169274"><span class="section-number-3">2.3</span> Const Objects</h3>
+<div class="outline-text-3" id="text-2-3">
+<ul class="org-ul">
+<li>const objects must use const methods only</li>
+<li>non-const objects may use both non-const and const methods</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd4c5974" class="outline-2">
+<h2 id="orgd4c5974"><span class="section-number-2">3</span> 01.21.21 (C++ Ch. 9)</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org7082cf1" class="outline-3">
+<h3 id="org7082cf1"><span class="section-number-3">3.1</span> Encapsulation</h3>
+<div class="outline-text-3" id="text-3-1">
 <ul class="org-ul">
 <li>Header files should not contain source code, it should only include prototypes in order to ensure proper information-hiding</li>
 <li>Source code should be placed in a different cpp file, which pulls from the prototypes in the header file</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org716a7ef" class="outline-3">
-<h3 id="org716a7ef"><span class="section-number-3">1.2</span> Include Guards</h3>
-<div class="outline-text-3" id="text-1-2">
+<div id="outline-container-orga9303a8" class="outline-3">
+<h3 id="orga9303a8"><span class="section-number-3">3.2</span> Include Guards</h3>
+<div class="outline-text-3" id="text-3-2">
 <ul class="org-ul">
 <li><p>
 Consider the following classes: Student, Course, and Main
@@ -286,18 +369,18 @@ Consider the following classes: Student, Course, and Main
 </ul>
 </div>
 </div>
-<div id="outline-container-org9131266" class="outline-3">
-<h3 id="org9131266"><span class="section-number-3">1.3</span> Writing Classes</h3>
-<div class="outline-text-3" id="text-1-3">
+<div id="outline-container-org4553b3f" class="outline-3">
+<h3 id="org4553b3f"><span class="section-number-3">3.3</span> Writing Classes</h3>
+<div class="outline-text-3" id="text-3-3">
 <ul class="org-ul">
 <li>Begin by including the necessary header file</li>
 <li>All methods and constructors must be preceded by the header file name and the scope resolution operator (::)</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgf5164b5" class="outline-3">
-<h3 id="orgf5164b5"><span class="section-number-3">1.4</span> Constructors &amp; Default Constructors</h3>
-<div class="outline-text-3" id="text-1-4">
+<div id="outline-container-orge308aaa" class="outline-3">
+<h3 id="orge308aaa"><span class="section-number-3">3.4</span> Constructors &amp; Default Constructors</h3>
+<div class="outline-text-3" id="text-3-4">
 <ul class="org-ul">
 <li>Constructors can call other methods and do data-checking</li>
 <li>Constructors can be called explicit with multiple parameters when the parameters are impossible to typecast, as follows:</li>
@@ -311,22 +394,22 @@ Consider the following classes: Student, Course, and Main
 </div>
 </div>
 </div>
-<div id="outline-container-orge8e802e" class="outline-2">
-<h2 id="orge8e802e"><span class="section-number-2">2</span> 01.21.20 (C++ Ch. 3)</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-orgef23ffb" class="outline-2">
+<h2 id="orgef23ffb"><span class="section-number-2">4</span> 01.21.21 (C++ Ch. 3)</h2>
+<div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-org59b2614" class="outline-3">
-<h3 id="org59b2614"><span class="section-number-3">2.1</span> Objects and Object Sizes</h3>
-<div class="outline-text-3" id="text-2-1">
+<div id="outline-container-orgd53191a" class="outline-3">
+<h3 id="orgd53191a"><span class="section-number-3">4.1</span> Objects and Object Sizes</h3>
+<div class="outline-text-3" id="text-4-1">
 <ul class="org-ul">
 <li>An objects size will always be the sum of its data members. The size will not be affected by any methods that are called upon it.</li>
 <li>Because of this, objects can quickly become very large in size.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org4d8f9e6" class="outline-3">
-<h3 id="org4d8f9e6"><span class="section-number-3">2.2</span> UML Diagrams</h3>
-<div class="outline-text-3" id="text-2-2">
+<div id="outline-container-org42b67b3" class="outline-3">
+<h3 id="org42b67b3"><span class="section-number-3">4.2</span> UML Diagrams</h3>
+<div class="outline-text-3" id="text-4-2">
 <ul class="org-ul">
 <li>Classes are listed as individual boxes
 <ul class="org-ul">
@@ -342,9 +425,9 @@ Consider the following classes: Student, Course, and Main
 </ul>
 </div>
 </div>
-<div id="outline-container-org518da8a" class="outline-3">
-<h3 id="org518da8a"><span class="section-number-3">2.3</span> Constructors</h3>
-<div class="outline-text-3" id="text-2-3">
+<div id="outline-container-org6562833" class="outline-3">
+<h3 id="org6562833"><span class="section-number-3">4.3</span> Constructors</h3>
+<div class="outline-text-3" id="text-4-3">
 <ul class="org-ul">
 <li>Explicit constructors can be used to prevent implicit typecasting, as seen below:</li>
 </ul>
@@ -376,9 +459,9 @@ Consider the following classes: Student, Course, and Main
 </div>
 </div>
 </div>
-<div id="outline-container-orgfc0c94d" class="outline-2">
-<h2 id="orgfc0c94d"><span class="section-number-2">3</span> 01.19.20 (C++ Ch. 3)</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-orgb796467" class="outline-2">
+<h2 id="orgb796467"><span class="section-number-2">5</span> 01.19.21 (C++ Ch. 3)</h2>
+<div class="outline-text-2" id="text-5">
 <p>
 A look at class creation
 </p>
@@ -418,9 +501,9 @@ A look at class creation
 </div>
 </div>
 
-<div id="outline-container-orgcb69567" class="outline-2">
-<h2 id="orgcb69567"><span class="section-number-2">4</span> 01.19.20 (C++ Ch. 2)</h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-orgb50d3aa" class="outline-2">
+<h2 id="orgb50d3aa"><span class="section-number-2">6</span> 01.19.21 (C++ Ch. 2)</h2>
+<div class="outline-text-2" id="text-6">
 <p>
 A look at some basic C++ code
 </p>
@@ -489,7 +572,7 @@ A look at a common mistake
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Sudhan Chitgopkar</p>
-<p class="date">Created: 2021-01-21 Thu 12:21</p>
+<p class="date">Created: 2021-01-25 Mon 12:18</p>
 </div>
 </body>
 </html>

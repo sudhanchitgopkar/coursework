@@ -4,23 +4,93 @@ Sudhan Chitgopkar
 Table of Contents
 _________________
 
-1. 01.21.20 (C++ Ch. 9)
+1. 01.15.21 (File I/O)
+2. 01.25.21 (C++ Ch. 9)
+.. 1. Pass by Reference
+.. 2. Destructors
+.. 3. Const Objects
+3. 01.21.21 (C++ Ch. 9)
 .. 1. Encapsulation
 .. 2. Include Guards
 .. 3. Writing Classes
 .. 4. Constructors & Default Constructors
-2. 01.21.20 (C++ Ch. 3)
+4. 01.21.21 (C++ Ch. 3)
 .. 1. Objects and Object Sizes
 .. 2. UML Diagrams
 .. 3. Constructors
-3. 01.19.20 (C++ Ch. 3)
-4. 01.19.20 (C++ Ch. 2)
+5. 01.19.21 (C++ Ch. 3)
+6. 01.19.21 (C++ Ch. 2)
 
 
-1 01.21.20 (C++ Ch. 9)
+1 01.15.21 (File I/O)
+=====================
+
+  - File I/O ex.
+    ,----
+    | #include <fstream>
+    | 
+    | int main () {
+    |   //opens file
+    |   ifstream inClientFile("clients.dat", ios::in);
+    | 
+    |   //exits if file can't be opened
+    |   if (!inClientFile) {
+    |     cerr << "File could not be opened" << endl;
+    |     exit(1);
+    |   } //if
+    | 
+    |   //var declarations
+    |   int account;
+    |   string name;
+    |   double balance;
+    | 
+    |  // displays each record in the file
+    |  while (inClientFile >> account >> name >> balance) {
+    |    outputLine(account,name,balance);
+    |  } //while
+    | 
+    | }
+    `----
+
+
+2 01.25.21 (C++ Ch. 9)
 ======================
 
-1.1 Encapsulation
+2.1 Pass by Reference
+~~~~~~~~~~~~~~~~~~~~~
+
+  - When dealing with very large objects, don't pass by copy due to the
+    large overhead of copying. Instead, pass by reference
+  - When passing by reference, use const if you don't want to modify the
+    data members
+
+
+2.2 Destructors
+~~~~~~~~~~~~~~~
+
+  - Name of destructor is className~
+  - Called implicitly when an object is destroyed
+  - Takes no parameters, returns no value
+  - No return type allowed in signature, not even void
+  - Only one destructor allowed per class
+  - Must be public
+  - Destructors are called once a variable exits its scope
+  - Static variables are destroyed after local variables, with global
+    variables destroyed last
+  - Objects are also destroyed in reverse order from their construction
+
+
+2.3 Const Objects
+~~~~~~~~~~~~~~~~~
+
+  - const objects must use const methods only
+  - non-const objects may use both non-const and const methods
+
+
+3 01.21.21 (C++ Ch. 9)
+======================
+
+3.1 Encapsulation
 ~~~~~~~~~~~~~~~~~
 
   - Header files should not contain source code, it should only include
@@ -29,7 +99,7 @@ _________________
     from the prototypes in the header file
 
 
-1.2 Include Guards
+3.2 Include Guards
 ~~~~~~~~~~~~~~~~~~
 
   - Consider the following classes: Student, Course, and Main
@@ -53,7 +123,7 @@ _________________
     multiple places
 
 
-1.3 Writing Classes
+3.3 Writing Classes
 ~~~~~~~~~~~~~~~~~~~
 
   - Begin by including the necessary header file
@@ -61,7 +131,7 @@ _________________
     name and the scope resolution operator (::)
 
 
-1.4 Constructors & Default Constructors
+3.4 Constructors & Default Constructors
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Constructors can call other methods and do data-checking
@@ -74,10 +144,10 @@ _________________
   `----
 
 
-2 01.21.20 (C++ Ch. 3)
+4 01.21.21 (C++ Ch. 3)
 ======================
 
-2.1 Objects and Object Sizes
+4.1 Objects and Object Sizes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - An objects size will always be the sum of its data members. The size
@@ -85,7 +155,7 @@ _________________
   - Because of this, objects can quickly become very large in size.
 
 
-2.2 UML Diagrams
+4.2 UML Diagrams
 ~~~~~~~~~~~~~~~~
 
   - Classes are listed as individual boxes
@@ -97,7 +167,7 @@ _________________
       - # = protected
 
 
-2.3 Constructors
+4.3 Constructors
 ~~~~~~~~~~~~~~~~
 
   - Explicit constructors can be used to prevent implicit typecasting,
@@ -125,7 +195,7 @@ _________________
   `----
 
 
-3 01.19.20 (C++ Ch. 3)
+5 01.19.21 (C++ Ch. 3)
 ======================
 
   A look at class creation
@@ -166,7 +236,7 @@ _________________
     modifying the values of data members or objects.
 
 
-4 01.19.20 (C++ Ch. 2)
+6 01.19.21 (C++ Ch. 2)
 ======================
 
   A look at some basic C++ code

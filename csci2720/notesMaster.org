@@ -1,5 +1,30 @@
-* 01.15.21 (MakeFile + File I/O)
--
+* 01.15.21 (File I/O)
+- File I/O ex.
+ #+BEGIN_SRC cpp
+#include <fstream>
+
+int main () {
+  //opens file
+  ifstream inClientFile("clients.dat", ios::in);
+
+  //exits if file can't be opened
+  if (!inClientFile) {
+    cerr << "File could not be opened" << endl;
+    exit(1);
+  } //if
+
+  //var declarations
+  int account;
+  string name;
+  double balance;
+
+ // displays each record in the file
+ while (inClientFile >> account >> name >> balance) {
+   outputLine(account,name,balance);
+ } //while
+
+}
+  #+END_SRC
 * 01.25.21 (C++ Ch. 9)
 ** Pass by Reference
 - When dealing with very large objects, don't pass by copy due to the large overhead of copying. Instead, pass by reference

@@ -1,4 +1,4 @@
-% Created 2021-01-21 Thu 12:21
+% Created 2021-01-25 Mon 12:17
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -26,16 +26,73 @@
  pdflang={English}}
 \begin{document}
 
-\tableofcontents \clearpage\section{01.21.20 (C++ Ch. 9)}
-\label{sec:org7c2c59f}
+\tableofcontents \clearpage\section{01.15.21 (File I/O)}
+\label{sec:orgbf7e181}
+\begin{itemize}
+\item File I/O ex.
+\begin{verbatim}
+#include <fstream>
+
+int main () {
+  //opens file
+  ifstream inClientFile("clients.dat", ios::in);
+
+  //exits if file can't be opened
+  if (!inClientFile) {
+    cerr << "File could not be opened" << endl;
+    exit(1);
+  } //if
+
+  //var declarations
+  int account;
+  string name;
+  double balance;
+
+ // displays each record in the file
+ while (inClientFile >> account >> name >> balance) {
+   outputLine(account,name,balance);
+ } //while
+
+}
+\end{verbatim}
+\end{itemize}
+\section{01.25.21 (C++ Ch. 9)}
+\label{sec:org69e17c1}
+\subsection{Pass by Reference}
+\label{sec:orgc38b68e}
+\begin{itemize}
+\item When dealing with very large objects, don't pass by copy due to the large overhead of copying. Instead, pass by reference
+\item When passing by reference, use const if you don't want to modify the data members
+\end{itemize}
+\subsection{Destructors}
+\label{sec:orge415567}
+\begin{itemize}
+\item Name of destructor is className\textasciitilde{}
+\item Called implicitly when an object is destroyed
+\item Takes no parameters, returns no value
+\item No return type allowed in signature, not even void
+\item Only one destructor allowed per class
+\item Must be public
+\item Destructors are called once a variable exits its scope
+\item Static variables are destroyed after local variables, with global variables destroyed last
+\item Objects are also destroyed in reverse order from their construction
+\end{itemize}
+\subsection{Const Objects}
+\label{sec:org166eb5c}
+\begin{itemize}
+\item const objects must use const methods only
+\item non-const objects may use both non-const and const methods
+\end{itemize}
+\section{01.21.21 (C++ Ch. 9)}
+\label{sec:org1a95a55}
 \subsection{Encapsulation}
-\label{sec:org2f33709}
+\label{sec:orgc8f110f}
 \begin{itemize}
 \item Header files should not contain source code, it should only include prototypes in order to ensure proper information-hiding
 \item Source code should be placed in a different cpp file, which pulls from the prototypes in the header file
 \end{itemize}
 \subsection{Include Guards}
-\label{sec:org4b9017d}
+\label{sec:org510a212}
 \begin{itemize}
 \item Consider the following classes: Student, Course, and Main
 \begin{itemize}
@@ -59,13 +116,13 @@
 \item The header guard should be put in header files that are used in multiple places
 \end{itemize}
 \subsection{Writing Classes}
-\label{sec:org0bc9c88}
+\label{sec:orgea565f2}
 \begin{itemize}
 \item Begin by including the necessary header file
 \item All methods and constructors must be preceded by the header file name and the scope resolution operator (::)
 \end{itemize}
 \subsection{Constructors \& Default Constructors}
-\label{sec:org89fa4d3}
+\label{sec:org32a7906}
 \begin{itemize}
 \item Constructors can call other methods and do data-checking
 \item Constructors can be called explicit with multiple parameters when the parameters are impossible to typecast, as follows:
@@ -75,16 +132,16 @@ int main () {
   explicit Time t (x = 0, y = 0, z = 0);
 } //main
 \end{verbatim}
-\section{01.21.20 (C++ Ch. 3)}
-\label{sec:orgaf2cfd5}
+\section{01.21.21 (C++ Ch. 3)}
+\label{sec:org0e46bb2}
 \subsection{Objects and Object Sizes}
-\label{sec:org3b3000d}
+\label{sec:org30ede00}
 \begin{itemize}
 \item An objects size will always be the sum of its data members. The size will not be affected by any methods that are called upon it.
 \item Because of this, objects can quickly become very large in size.
 \end{itemize}
 \subsection{UML Diagrams}
-\label{sec:orgf272556}
+\label{sec:org4ddf274}
 \begin{itemize}
 \item Classes are listed as individual boxes
 \begin{itemize}
@@ -99,7 +156,7 @@ int main () {
 \end{itemize}
 \end{itemize}
 \subsection{Constructors}
-\label{sec:org26d4733}
+\label{sec:orgf5c5587}
 \begin{itemize}
 \item Explicit constructors can be used to prevent implicit typecasting, as seen below:
 \end{itemize}
@@ -126,8 +183,8 @@ explicit Account (std::string accountName) //explicit constructor
   //insert constructor code here
   }
 \end{verbatim}
-\section{01.19.20 (C++ Ch. 3)}
-\label{sec:org6c27adb}
+\section{01.19.21 (C++ Ch. 3)}
+\label{sec:org79cddad}
 A look at class creation
 \begin{verbatim}
 #include <iostream>
@@ -162,8 +219,8 @@ int main () {
 \item The purpose of const functions is to prevent the function from modifying the values of data members or objects.
 \end{itemize}
 
-\section{01.19.20 (C++ Ch. 2)}
-\label{sec:org607754f}
+\section{01.19.21 (C++ Ch. 2)}
+\label{sec:org7c0ae27}
 A look at some basic C++ code
 \begin{verbatim}
 #include <iostream> //enables program to output data
