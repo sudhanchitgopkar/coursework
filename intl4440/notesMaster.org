@@ -1,5 +1,26 @@
 #+TITLE: Strategic Intelligence
 #+AUTHOR: Sudhan Chitgopkar
+* Johnson
+** Introduction
+- Intelligence is defined as a set of activities carried out by government agencies that operate largely in secret including collection and interpretation of information from a mixture of open and clandestine sources to arrive at a product useful to illuminate foreign policy deliberations
+- These agencies also engage in covert action and manipulate events abroad
+** The Intelligence Cycle
+- describes the flow of activities for collection and analysis of info
+- not generally considered a defined cycle, rather considered a complex matrix of interactions
+- 5 stages
+  - planning and direction
+  - collection
+  - processing
+  - production and analysis
+  - dissemination
+** Planning and Direction
+- intel managers and policy officials must decide what data should be gathered
+- determine what the most critical information to policy-making is
+- scope = breadth of intelligence tasks
+- paradoxically, more wealthy nations are more likely to have information failures
+- The more affluent and globally oriented a nation, the larger its agenda of intelligence objectives and its institutional apparatus for espionage, and the more
+  likely its chances for a large number of successes as a result of this saturated
+  world coverage. For the same reason, they are more likely to experience international failures as they have very large global objectives.
 * Turner
 ** US Intelligence
 - While US intelligence is not funadmentally unique, it has a series of norms that make it very distinctive
