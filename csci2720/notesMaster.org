@@ -1,3 +1,35 @@
+* 01.16.21
+** Abstract Data Types
+- Abstract Data Type (ADT): A data type whose properties are
+- Require a domain and an operation, implementation not relevant at this point
+- When implementation is considerd, an ADT becomes a data structure
+** Data from 3 Different Levels
+- Application (user) level - modeling real life data in a specific context (ex. Library of Congress)
+- Logical (ADT) level - considering abstract understanding of necessary requirements (ex. Domain: Collection of Books, Operations: Check-in, Check-out, etc.)
+- Implementation level - considering how to carry out operations upon the domain
+** Basic Types of ADT Operations
+- Constructor - creates a new instance of an ADT
+- Transformer - changes the state of one or more of the data values of an instance
+- Observer - allows us to observe the state of 1+ data value without changing them
+- Iterator - allows us to process all the components in a data structure sequentially
+** Composite Data Type
+- Composite data types are types which
+  - Store a collection of individual data components under one variable name
+  - Allow the individual data components to be accessed
+- Examples include arrays and classes
+** Accessing Functions
+- Accessing fucntions give the position of className[Index]
+- Address(Index) = BaseAddress + Index * SizeOfElement
+- Consider a base address of 6000 with a constant element size of 1 byte. Find the address of the 10th cell of this array.
+  - 6000 + (10 * 1) = 6010;
+** Order of Magnitude of a Function
+- Order of magnitude (Big-O notation) expresses computing time of a problem as the term in a function that increases the most rapodly relative to the size of the problem
+- Consider two algorithms, A and B. They are both used to solve the same class of problems.
+  - A has time complexity 5,000n
+  - B has time complexity 1.1^{n}
+- Here, A is more efficient because it is linear, rather than exponential - which is preferable for large n
+- Order of growth and time complexity are inverses (larger growth rate = slower time to execute)
+- All functions are monotonic (continue increasing indefinitely)
 * 01.15.21 (File I/O)
 - File I/O ex.
  #+BEGIN_SRC cpp

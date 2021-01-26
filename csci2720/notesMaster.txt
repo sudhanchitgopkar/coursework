@@ -4,25 +4,105 @@ Sudhan Chitgopkar
 Table of Contents
 _________________
 
-1. 01.15.21 (File I/O)
-2. 01.25.21 (C++ Ch. 9)
+1. 01.16.21
+.. 1. Abstract Data Types
+.. 2. Data from 3 Different Levels
+.. 3. Basic Types of ADT Operations
+.. 4. Composite Data Type
+.. 5. Accessing Functions
+.. 6. Order of Magnitude of a Function
+2. 01.15.21 (File I/O)
+3. 01.25.21 (C++ Ch. 9)
 .. 1. Pass by Reference
 .. 2. Destructors
 .. 3. Const Objects
-3. 01.21.21 (C++ Ch. 9)
+4. 01.21.21 (C++ Ch. 9)
 .. 1. Encapsulation
 .. 2. Include Guards
 .. 3. Writing Classes
 .. 4. Constructors & Default Constructors
-4. 01.21.21 (C++ Ch. 3)
+5. 01.21.21 (C++ Ch. 3)
 .. 1. Objects and Object Sizes
 .. 2. UML Diagrams
 .. 3. Constructors
-5. 01.19.21 (C++ Ch. 3)
-6. 01.19.21 (C++ Ch. 2)
+6. 01.19.21 (C++ Ch. 3)
+7. 01.19.21 (C++ Ch. 2)
 
 
-1 01.15.21 (File I/O)
+1 01.16.21
+==========
+
+1.1 Abstract Data Types
+~~~~~~~~~~~~~~~~~~~~~~~
+
+  - Abstract Data Type (ADT): A data type whose properties are
+  - Require a domain and an operation, implementation not relevant at
+    this point
+  - When implementation is considerd, an ADT becomes a data structure
+
+
+1.2 Data from 3 Different Levels
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  - Application (user) level - modeling real life data in a specific
+    context (ex. Library of Congress)
+  - Logical (ADT) level - considering abstract understanding of
+    necessary requirements (ex. Domain: Collection of Books, Operations:
+    Check-in, Check-out, etc.)
+  - Implementation level - considering how to carry out operations upon
+    the domain
+
+
+1.3 Basic Types of ADT Operations
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  - Constructor - creates a new instance of an ADT
+  - Transformer - changes the state of one or more of the data values of
+    an instance
+  - Observer - allows us to observe the state of 1+ data value without
+    changing them
+  - Iterator - allows us to process all the components in a data
+    structure sequentially
+
+
+1.4 Composite Data Type
+~~~~~~~~~~~~~~~~~~~~~~~
+
+  - Composite data types are types which
+    - Store a collection of individual data components under one
+      variable name
+    - Allow the individual data components to be accessed
+  - Examples include arrays and classes
+
+
+1.5 Accessing Functions
+~~~~~~~~~~~~~~~~~~~~~~~
+
+  - Accessing fucntions give the position of className[Index]
+  - Address(Index) = BaseAddress + Index * SizeOfElement
+  - Consider a base address of 6000 with a constant element size of 1
+    byte. Find the address of the 10th cell of this array.
+    - 6000 + (10 * 1) = 6010;
+
+
+1.6 Order of Magnitude of a Function
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  - Order of magnitude (Big-O notation) expresses computing time of a
+    problem as the term in a function that increases the most rapodly
+    relative to the size of the problem
+  - Consider two algorithms, A and B. They are both used to solve the
+    same class of problems.
+    - A has time complexity 5,000n
+    - B has time complexity 1.1^{n}
+  - Here, A is more efficient because it is linear, rather than
+    exponential - which is preferable for large n
+  - Order of growth and time complexity are inverses (larger growth rate
+    = slower time to execute)
+  - All functions are monotonic (continue increasing indefinitely)
+
+
+2 01.15.21 (File I/O)
 =====================
 
   - File I/O ex.
@@ -53,10 +133,10 @@ _________________
     `----
 
 
-2 01.25.21 (C++ Ch. 9)
+3 01.25.21 (C++ Ch. 9)
 ======================
 
-2.1 Pass by Reference
+3.1 Pass by Reference
 ~~~~~~~~~~~~~~~~~~~~~
 
   - When dealing with very large objects, don't pass by copy due to the
@@ -65,7 +145,7 @@ _________________
     data members
 
 
-2.2 Destructors
+3.2 Destructors
 ~~~~~~~~~~~~~~~
 
   - Name of destructor is className~
@@ -80,17 +160,17 @@ _________________
   - Objects are also destroyed in reverse order from their construction
 
 
-2.3 Const Objects
+3.3 Const Objects
 ~~~~~~~~~~~~~~~~~
 
   - const objects must use const methods only
   - non-const objects may use both non-const and const methods
 
 
-3 01.21.21 (C++ Ch. 9)
+4 01.21.21 (C++ Ch. 9)
 ======================
 
-3.1 Encapsulation
+4.1 Encapsulation
 ~~~~~~~~~~~~~~~~~
 
   - Header files should not contain source code, it should only include
@@ -99,7 +179,7 @@ _________________
     from the prototypes in the header file
 
 
-3.2 Include Guards
+4.2 Include Guards
 ~~~~~~~~~~~~~~~~~~
 
   - Consider the following classes: Student, Course, and Main
@@ -123,7 +203,7 @@ _________________
     multiple places
 
 
-3.3 Writing Classes
+4.3 Writing Classes
 ~~~~~~~~~~~~~~~~~~~
 
   - Begin by including the necessary header file
@@ -131,7 +211,7 @@ _________________
     name and the scope resolution operator (::)
 
 
-3.4 Constructors & Default Constructors
+4.4 Constructors & Default Constructors
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Constructors can call other methods and do data-checking
@@ -144,10 +224,10 @@ _________________
   `----
 
 
-4 01.21.21 (C++ Ch. 3)
+5 01.21.21 (C++ Ch. 3)
 ======================
 
-4.1 Objects and Object Sizes
+5.1 Objects and Object Sizes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - An objects size will always be the sum of its data members. The size
@@ -155,7 +235,7 @@ _________________
   - Because of this, objects can quickly become very large in size.
 
 
-4.2 UML Diagrams
+5.2 UML Diagrams
 ~~~~~~~~~~~~~~~~
 
   - Classes are listed as individual boxes
@@ -167,7 +247,7 @@ _________________
       - # = protected
 
 
-4.3 Constructors
+5.3 Constructors
 ~~~~~~~~~~~~~~~~
 
   - Explicit constructors can be used to prevent implicit typecasting,
@@ -195,7 +275,7 @@ _________________
   `----
 
 
-5 01.19.21 (C++ Ch. 3)
+6 01.19.21 (C++ Ch. 3)
 ======================
 
   A look at class creation
@@ -236,7 +316,7 @@ _________________
     modifying the values of data members or objects.
 
 
-6 01.19.21 (C++ Ch. 2)
+7 01.19.21 (C++ Ch. 2)
 ======================
 
   A look at some basic C++ code

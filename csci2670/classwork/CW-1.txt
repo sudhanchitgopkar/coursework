@@ -10,8 +10,8 @@
 1010
 01010
 101010
-3:
-title="Q3, CW-1";
+3: DFA Code 3:
+title="Q3, CW1";
 Q={q1,q2,q3,q4,q5};
 S={0,1};
 d:Q\*S->Q;
@@ -27,8 +27,8 @@ d(q5,0)=q4;
 d(q5,1)=q2;
 q0=q1;
 F={q5};
-4:
-title ＝ "Q4, CW-1";
+4: DFA Code 4:
+title ＝ "Q4, CW1";
 Q ＝ {q1,q2,q3};
 S ＝ {0,1};
 d:Q ⨉ S ⟶ Q;

@@ -1,4 +1,4 @@
-% Created 2021-01-25 Mon 12:17
+% Created 2021-01-26 Tue 12:22
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -26,8 +26,65 @@
  pdflang={English}}
 \begin{document}
 
-\tableofcontents \clearpage\section{01.15.21 (File I/O)}
-\label{sec:orgbf7e181}
+\tableofcontents \clearpage\section{01.16.21}
+\label{sec:orgc0fbaaa}
+\subsection{Abstract Data Types}
+\label{sec:org24a7c44}
+\begin{itemize}
+\item Abstract Data Type (ADT): A data type whose properties are
+\item Require a domain and an operation, implementation not relevant at this point
+\item When implementation is considerd, an ADT becomes a data structure
+\end{itemize}
+\subsection{Data from 3 Different Levels}
+\label{sec:orgfb3c7ca}
+\begin{itemize}
+\item Application (user) level - modeling real life data in a specific context (ex. Library of Congress)
+\item Logical (ADT) level - considering abstract understanding of necessary requirements (ex. Domain: Collection of Books, Operations: Check-in, Check-out, etc.)
+\item Implementation level - considering how to carry out operations upon the domain
+\end{itemize}
+\subsection{Basic Types of ADT Operations}
+\label{sec:org47b102c}
+\begin{itemize}
+\item Constructor - creates a new instance of an ADT
+\item Transformer - changes the state of one or more of the data values of an instance
+\item Observer - allows us to observe the state of 1+ data value without changing them
+\item Iterator - allows us to process all the components in a data structure sequentially
+\end{itemize}
+\subsection{Composite Data Type}
+\label{sec:orgbffa1a8}
+\begin{itemize}
+\item Composite data types are types which
+\begin{itemize}
+\item Store a collection of individual data components under one variable name
+\item Allow the individual data components to be accessed
+\end{itemize}
+\item Examples include arrays and classes
+\end{itemize}
+\subsection{Accessing Functions}
+\label{sec:org076b13b}
+\begin{itemize}
+\item Accessing fucntions give the position of className[Index]
+\item Address(Index) = BaseAddress + Index * SizeOfElement
+\item Consider a base address of 6000 with a constant element size of 1 byte. Find the address of the 10th cell of this array.
+\begin{itemize}
+\item 6000 + (10 * 1) = 6010;
+\end{itemize}
+\end{itemize}
+\subsection{Order of Magnitude of a Function}
+\label{sec:org37d85d0}
+\begin{itemize}
+\item Order of magnitude (Big-O notation) expresses computing time of a problem as the term in a function that increases the most rapodly relative to the size of the problem
+\item Consider two algorithms, A and B. They are both used to solve the same class of problems.
+\begin{itemize}
+\item A has time complexity 5,000n
+\item B has time complexity 1.1\textsuperscript{n}
+\end{itemize}
+\item Here, A is more efficient because it is linear, rather than exponential - which is preferable for large n
+\item Order of growth and time complexity are inverses (larger growth rate = slower time to execute)
+\item All functions are monotonic (continue increasing indefinitely)
+\end{itemize}
+\section{01.15.21 (File I/O)}
+\label{sec:orgc10b061}
 \begin{itemize}
 \item File I/O ex.
 \begin{verbatim}
@@ -57,15 +114,15 @@ int main () {
 \end{verbatim}
 \end{itemize}
 \section{01.25.21 (C++ Ch. 9)}
-\label{sec:org69e17c1}
+\label{sec:orgb3686a4}
 \subsection{Pass by Reference}
-\label{sec:orgc38b68e}
+\label{sec:orgb6f6464}
 \begin{itemize}
 \item When dealing with very large objects, don't pass by copy due to the large overhead of copying. Instead, pass by reference
 \item When passing by reference, use const if you don't want to modify the data members
 \end{itemize}
 \subsection{Destructors}
-\label{sec:orge415567}
+\label{sec:org0b7d6dc}
 \begin{itemize}
 \item Name of destructor is className\textasciitilde{}
 \item Called implicitly when an object is destroyed
@@ -78,21 +135,21 @@ int main () {
 \item Objects are also destroyed in reverse order from their construction
 \end{itemize}
 \subsection{Const Objects}
-\label{sec:org166eb5c}
+\label{sec:orgb9f7ca8}
 \begin{itemize}
 \item const objects must use const methods only
 \item non-const objects may use both non-const and const methods
 \end{itemize}
 \section{01.21.21 (C++ Ch. 9)}
-\label{sec:org1a95a55}
+\label{sec:org3a77aa7}
 \subsection{Encapsulation}
-\label{sec:orgc8f110f}
+\label{sec:org7b6fb37}
 \begin{itemize}
 \item Header files should not contain source code, it should only include prototypes in order to ensure proper information-hiding
 \item Source code should be placed in a different cpp file, which pulls from the prototypes in the header file
 \end{itemize}
 \subsection{Include Guards}
-\label{sec:org510a212}
+\label{sec:org4c29095}
 \begin{itemize}
 \item Consider the following classes: Student, Course, and Main
 \begin{itemize}
@@ -116,13 +173,13 @@ int main () {
 \item The header guard should be put in header files that are used in multiple places
 \end{itemize}
 \subsection{Writing Classes}
-\label{sec:orgea565f2}
+\label{sec:org39cabce}
 \begin{itemize}
 \item Begin by including the necessary header file
 \item All methods and constructors must be preceded by the header file name and the scope resolution operator (::)
 \end{itemize}
 \subsection{Constructors \& Default Constructors}
-\label{sec:org32a7906}
+\label{sec:orgc90df6e}
 \begin{itemize}
 \item Constructors can call other methods and do data-checking
 \item Constructors can be called explicit with multiple parameters when the parameters are impossible to typecast, as follows:
@@ -133,15 +190,15 @@ int main () {
 } //main
 \end{verbatim}
 \section{01.21.21 (C++ Ch. 3)}
-\label{sec:org0e46bb2}
+\label{sec:orgaabc095}
 \subsection{Objects and Object Sizes}
-\label{sec:org30ede00}
+\label{sec:org188aa9e}
 \begin{itemize}
 \item An objects size will always be the sum of its data members. The size will not be affected by any methods that are called upon it.
 \item Because of this, objects can quickly become very large in size.
 \end{itemize}
 \subsection{UML Diagrams}
-\label{sec:org4ddf274}
+\label{sec:org667ba26}
 \begin{itemize}
 \item Classes are listed as individual boxes
 \begin{itemize}
@@ -156,7 +213,7 @@ int main () {
 \end{itemize}
 \end{itemize}
 \subsection{Constructors}
-\label{sec:orgf5c5587}
+\label{sec:orga5b3f68}
 \begin{itemize}
 \item Explicit constructors can be used to prevent implicit typecasting, as seen below:
 \end{itemize}
@@ -184,7 +241,7 @@ explicit Account (std::string accountName) //explicit constructor
   }
 \end{verbatim}
 \section{01.19.21 (C++ Ch. 3)}
-\label{sec:org79cddad}
+\label{sec:org34daa1f}
 A look at class creation
 \begin{verbatim}
 #include <iostream>
@@ -220,7 +277,7 @@ int main () {
 \end{itemize}
 
 \section{01.19.21 (C++ Ch. 2)}
-\label{sec:org7c0ae27}
+\label{sec:orgef13908}
 A look at some basic C++ code
 \begin{verbatim}
 #include <iostream> //enables program to output data
