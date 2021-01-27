@@ -19,6 +19,12 @@ _________________
 .. 1. Public Opinion & Decision-Making
 .. 2. Putnam Review
 3. TODO Putnam
+.. 1. Domestic-International Entanglements
+.. 2. Two-level Games
+.. 3. Win-Sets
+.. 4. Win-Set Determinants
+.. 5. Uncertainty and Bargaining
+.. 6. Role of the Chief Negotiator
 4. Fearon
 .. 1. Introduction
 .. 2. The Puzzle
@@ -137,6 +143,90 @@ _________________
 
 3 TODO Putnam
 =============
+
+3.1 Domestic-International Entanglements
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  - Current literature lists domestic influences on foreign policy and
+    theorizes about links between the two
+  - Deutsch and Haas theorize about the impact of parties and interest
+    groups on spillover from domestic policy to international objectives
+  - Recent work has focised on structural factors such as state strength
+    causing an effect on foreign economic policy
+    - central decision-makers must be concerned with domestic and
+      international factors simultaneously
+    - theory does not properly explain differences in state foreign
+      policy occurring despite static state structures
+
+
+3.2 Two-level Games
+~~~~~~~~~~~~~~~~~~~
+
+  - Politics of international negotiations can often be considerd a
+    two-level game
+    - At the national level, domestic groups pressure governemnt,
+      politicians seek power through the the favor of those
+      organizations
+    - At the international leve, governments seek to minimize harms,
+      maximize ability to solve domestic pressures
+  - Creates a very complex, sometimes contradictory situation for actors
+    at both boards (decision-makers)
+
+
+3.3 Win-Sets
+~~~~~~~~~~~~
+
+  - Negotiation occurs at a 2-stage process:
+    - Level 1: bargaining between negotiators leading to tentative
+      agreement
+    - Level 2: Separate discussions within each group about ratification
+  - In reality, process is not always linear - generally happens
+    multiple times in multiple stages at multiple levels
+  - Larger win-sets make Level 1 agreement more likely
+  - The relative size of the respective level 2 win-sets will affect the
+    distribution of the joint gains from the international bargain (the
+    larger the win-set of actor 1, the more he can be pushed around by
+    other actors)
+
+
+3.4 Win-Set Determinants
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+  - Three factors critical to win-set size
+    - Level 2 preferences and coalitions
+    - Level 2 institutions
+    - Level 1 negotiation strategies
+
+
+3.5 Uncertainty and Bargaining
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  - Level 1 negotiators are often badly misinformed about elvel 2
+    politics, especially on the opposing side
+  - Uncertainty about win set size can be both good and bad in 2 level
+    negotiations
+  - Each bargainer has an incentive to understate his own win-sets
+  - Uncertainty about opponent's win set increases concern about risk of
+    involuntary defection by the other side
+
+
+3.6 Role of the Chief Negotiator
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  - Chief negotiator is the only formal link between level 1 and 2 of
+    negotiation
+  - Assumed that chief negotiator has no independent policy views, acts
+    merely as an honest broker on behalf of his constitutents
+  - Motives of the chief negotiator:
+    - enhancing level 2 game by having benefits outweigh harms as much
+      as possible
+    - shifting balance of power at level 2 in favor of his own person
+      domestic policies
+    - pursuing his own conception of national interest in the
+      international sense
+    - Also assumed that the chief negotiator has some sort of veto power
+      to outright reject anything that wholly contradicts his personal
+      beliefs
 
 
 4 Fearon
