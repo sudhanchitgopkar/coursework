@@ -1,5 +1,6 @@
 #+TITLE: Strategic Intelligence
 #+AUTHOR: Sudhan Chitgopkar
+#+EMAIL: sudhanchitgopkar@uga.edu
 * Intelligence Cycle
 - Decision-makers are expected to make the best-decision possible, and the intelligence cycle explains how intelligence is developed to give decision-makers the information they need
 - Components of the Intelligence Cycle
