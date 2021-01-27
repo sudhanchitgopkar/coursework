@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-01-21 Thu 13:58 -->
+<!-- 2021-01-26 Tue 14:02 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>&lrm;</title>
+<title>Theory of Computing</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Sudhan Chitgopkar" />
 <style type="text/css">
@@ -215,54 +215,217 @@
     /*]]>*///-->
 // @license-end
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content">
+<h1 class="title">Theory of Computing</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgee0a5c6">1. 01.21.21</a>
+<li><a href="#orgaf1c3ac">1. 01.26.21</a>
 <ul>
-<li><a href="#org801e272">1.1. Deterministic Finite Automata</a></li>
-<li><a href="#org2449523">1.2. Aside: On &Sigma; and &Sigma;*</a></li>
-<li><a href="#orge6d806f">1.3. Recursively Testing 101</a></li>
+<li><a href="#org8be8f23">1.1. Closure Introduction</a></li>
+<li><a href="#org1f5f00e">1.2. Closure Continued</a></li>
+<li><a href="#org9361061">1.3. Closure Properties of DFAs</a></li>
+<li><a href="#org2972351">1.4. Applying Closure Properties</a>
+<ul>
+<li><a href="#org2085557">1.4.1. Premise:</a></li>
+<li><a href="#orgc268244">1.4.2. Coding</a></li>
+<li><a href="#org0e7d816">1.4.3. Conclusion</a></li>
 </ul>
 </li>
-<li><a href="#orgdc1ed61">2. 01.19.21</a>
-<ul>
-<li><a href="#orgcea5cd1">2.1. Tuples &amp; DFAs</a></li>
-<li><a href="#orgb629075">2.2. Domains &amp; Codomains</a></li>
-<li><a href="#org8e8c834">2.3. Strings</a></li>
-<li><a href="#org40e2c42">2.4. <span class="todo TODO">TODO</span> Review Recursive Definitions</a></li>
-<li><a href="#org1aa7d03">2.5. Languages</a></li>
 </ul>
 </li>
-<li><a href="#orgf2c5aba">3. 01.14.21</a>
+<li><a href="#orgd3330a6">2. 01.21.21</a>
 <ul>
-<li><a href="#org73e23c8">3.1. Automaton (automata)</a></li>
-<li><a href="#org2aba66f">3.2. The Mathematics of Automata</a>
+<li><a href="#org0d765b9">2.1. Deterministic Finite Automata</a></li>
+<li><a href="#orgc145a91">2.2. Aside: On &Sigma; and &Sigma;*</a></li>
+<li><a href="#org86daebd">2.3. Recursively Testing 101</a>
 <ul>
-<li><a href="#org3de6d93">3.2.1. Mathematicians &amp; History</a></li>
-<li><a href="#org7a278ce">3.2.2. Sequential Logic</a></li>
+<li><a href="#org854c849">2.3.1. <span class="todo TODO">TODO</span> Complete Recursion Sequence</a></li>
 </ul>
 </li>
-<li><a href="#org5066d21">3.3. Necessary Review</a></li>
-<li><a href="#org9e1b40b">3.4. Functions</a></li>
-<li><a href="#org45c5af6">3.5. <span class="todo TODO">TODO</span> Types of Functions - Definition &amp; Logical Statement</a></li>
-<li><a href="#orgbb5c398">3.6. Finite Automaton (Finite State Machine)</a></li>
+</ul>
+</li>
+<li><a href="#org53b8370">3. 01.19.21</a>
+<ul>
+<li><a href="#org688a7e0">3.1. Tuples &amp; DFAs</a></li>
+<li><a href="#orga41a157">3.2. Domains &amp; Codomains</a></li>
+<li><a href="#org6bcc0f7">3.3. Strings</a></li>
+<li><a href="#org48921cd">3.4. <span class="todo TODO">TODO</span> Review Recursive Definitions</a></li>
+<li><a href="#org93a503f">3.5. Languages</a></li>
+</ul>
+</li>
+<li><a href="#org8f7bed7">4. 01.14.21</a>
+<ul>
+<li><a href="#org6629be0">4.1. Automaton (automata)</a></li>
+<li><a href="#orgd7f90b4">4.2. The Mathematics of Automata</a>
+<ul>
+<li><a href="#org0990cd2">4.2.1. Mathematicians &amp; History</a></li>
+<li><a href="#org8605bae">4.2.2. Sequential Logic</a></li>
+</ul>
+</li>
+<li><a href="#orgb5a70ca">4.3. Necessary Review</a></li>
+<li><a href="#org8356143">4.4. Functions</a></li>
+<li><a href="#org9adf7b6">4.5. <span class="todo TODO">TODO</span> Types of Functions - Definition &amp; Logical Statement</a></li>
+<li><a href="#orgf7df3a3">4.6. Finite Automaton (Finite State Machine)</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgee0a5c6" class="outline-2">
-<h2 id="orgee0a5c6"><span class="section-number-2">1</span> 01.21.21</h2>
+<div id="outline-container-orgaf1c3ac" class="outline-2">
+<h2 id="orgaf1c3ac"><span class="section-number-2">1</span> 01.26.21</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org801e272" class="outline-3">
-<h3 id="org801e272"><span class="section-number-3">1.1</span> Deterministic Finite Automata</h3>
+<div id="outline-container-org8be8f23" class="outline-3">
+<h3 id="org8be8f23"><span class="section-number-3">1.1</span> Closure Introduction</h3>
 <div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>The language recognized by a DFA, M, (L(M)) is the set of all string accepted by M</li>
+<li>Thus, M = (Q, &Sigma;, &delta;, q<sub>0</sub>,F)</li>
+<li>And &Sigma;* is the universe of all possible inputs to M</li>
+<li>&forall; strings w &isin; &Sigma;*, M either accepts or rejects w</li>
+<li>It follows that L(M) &sub; &Sigma;*</li>
+<li>And &not; L(M) = &Sigma;* - L(M)</li>
+<li>Therefore, M accepts every string in L(M) and rejects everything in &not; L(M)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1f5f00e" class="outline-3">
+<h3 id="org1f5f00e"><span class="section-number-3">1.2</span> Closure Continued</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>A set, A, is closed under a binary operation, OP, if &forall; x , y &isin; A [x OP y &isin; A]</li>
+<li>Ex. Natural Numbers (\(\mathbb{N}\))
+<ol class="org-ol">
+<li>\(\mathbb{N}\) is closed under +</li>
+<li>\(\mathbb{N}\) is closed under &times;</li>
+<li>\(\mathbb{N}\) is not closed under -</li>
+<li>\(\mathbb{N}\) is not closed under \</li>
+</ol></li>
+<li>The class of all languages that are recognized by DFAs is closed under &cup;</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9361061" class="outline-3">
+<h3 id="org9361061"><span class="section-number-3">1.3</span> Closure Properties of DFAs</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li>Union (&cup;)</li>
+<li>Intersection (&cap;)</li>
+<li>Complement (&not;)</li>
+<li>Reverse</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2972351" class="outline-3">
+<h3 id="org2972351"><span class="section-number-3">1.4</span> Applying Closure Properties</h3>
+<div class="outline-text-3" id="text-1-4">
+<ul class="org-ul">
+<li>If L(M<sub>1</sub>) &cup; L(M<sub>2</sub>) are DFAs, then &exist; DFA, M, with L(M) = L(M<sub>1</sub>) &cup; L(M<sub>2</sub>)</li>
+<li>The purpose of a state machine is to make a yes/no decision</li>
+</ul>
+</div>
+<div id="outline-container-org2085557" class="outline-4">
+<h4 id="org2085557"><span class="section-number-4">1.4.1</span> Premise:</h4>
+<div class="outline-text-4" id="text-1-4-1">
+<ul class="org-ul">
+<li>M<sub>1</sub> = {Q<sub>1</sub>,&Sigma;,&delta;<sub>1</sub>,q<sub>0<sub>1</sub></sub>,F<sub>1</sub>} and M<sub>2</sub> are DFAs</li>
+<li>M<sub>1</sub> accepts binary strings ending in 1</li>
+<li>M<sub>2</sub> accepts binary strings of odd length</li>
+<li>L(M) = L(M<sub>1</sub>) &cup; L(M<sub>2</sub>)
+<ul class="org-ul">
+<li>Accepts binary strings that either end in 1 OR have odd length (or both)</li>
+</ul></li>
+<li>M<sub>1</sub>: q<sub>1</sub>, q<sub>2</sub> distinguished between ending in 0 and 1</li>
+<li>M<sub>2</sub>: r<sub>1</sub>, r<sub>2</sub> distinguished between odd and even length</li>
+<li>Accordingly, M must be able to distinguish between:
+<ul class="org-ul">
+<li>even length ending in 1</li>
+<li>even length ending in 0</li>
+<li>odd length ending in 1</li>
+<li>odd length ending in 0</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc268244" class="outline-4">
+<h4 id="orgc268244"><span class="section-number-4">1.4.2</span> Coding</h4>
+<div class="outline-text-4" id="text-1-4-2">
+<ul class="org-ul">
+<li>Consider Q = Q<sub>1</sub> &sdot; Q<sub>2</sub> = {q<sub>1</sub>r<sub>1</sub>,q<sub>2</sub>r<sub>1</sub>,q<sub>1</sub>r<sub>2</sub>,q<sub>2</sub>r<sub>2</sub>}</li>
+<li>wherein
+<ul class="org-ul">
+<li>q<sub>1</sub>r<sub>1</sub> = even string ending in 0</li>
+<li>q<sub>1</sub>r<sub>2</sub> = odd string ending in 0</li>
+<li>q<sub>2</sub>r<sub>1</sub> = even string ending in 1</li>
+<li>q<sub>2</sub>r<sub>2</sub> = odd string ending in 1</li>
+</ul></li>
+<li>Ex. &delta;(q<sub>1</sub>r<sub>1</sub>,1) = q<sub>1</sub>r<sub>2</sub></li>
+<li>Applying this logic to a DFA, we know that
+<ul class="org-ul">
+<li>Q={q1r1,q1r2,q2r1,q2r2};</li>
+<li>S={0,1};</li>
+<li>d:Q \*sigma &rarr; Q;</li>
+<li>d(q1r1,0)=q1r2;</li>
+<li>d(q1r1,1)=q2r2;</li>
+<li>d(q1r2,0)=q1r1;</li>
+<li>d(q1r2,1)=q2r1;</li>
+<li>d(q2r1,0)=q1r2;</li>
+<li>d(q2r1,1)=q2r2;</li>
+<li>d(q2r2,0)=q1r1;</li>
+<li>d(q2r2,1)=q2r1;</li>
+<li>q0=q1r1;</li>
+<li>F={q1r2,q2r1,q2r2};</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0e7d816" class="outline-4">
+<h4 id="org0e7d816"><span class="section-number-4">1.4.3</span> Conclusion</h4>
+<div class="outline-text-4" id="text-1-4-3">
+<ul class="org-ul">
+<li>Construct M and show that L(M) = L(M<sub>1</sub>) &cup; L(M<sub>2</sub>).</li>
+<li>Q = Q<sub>1</sub> &sdot; Q<sub>2</sub></li>
+<li>let q<sub>i</sub> &isin; Q<sub>1</sub> and let r<sub>j</sub> &isin; Q<sub>2</sub>. and let c &isin; &Sigma;</li>
+<li>and q<sub>i</sub>r<sub>j</sub> &isin; Q</li>
+<li>thus, &delta;( q<sub>i</sub>r<sub>j</sub>,c) = &delta;<sub>1</sub>(q<sub>i</sub>,c)&delta;<sub>2</sub>(r<sub>j</sub>,c)</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd3330a6" class="outline-2">
+<h2 id="orgd3330a6"><span class="section-number-2">2</span> 01.21.21</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org0d765b9" class="outline-3">
+<h3 id="org0d765b9"><span class="section-number-3">2.1</span> Deterministic Finite Automata</h3>
+<div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>We know that &delta; = Q &times; &Sigma; &rarr; Q<sub>2</sub></li>
 <li>We want a function that takes a starting state and a string, then returns the state after the machine has read that string</li>
@@ -287,9 +450,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org2449523" class="outline-3">
-<h3 id="org2449523"><span class="section-number-3">1.2</span> Aside: On &Sigma; and &Sigma;*</h3>
-<div class="outline-text-3" id="text-1-2">
+<div id="outline-container-orgc145a91" class="outline-3">
+<h3 id="orgc145a91"><span class="section-number-3">2.2</span> Aside: On &Sigma; and &Sigma;*</h3>
+<div class="outline-text-3" id="text-2-2">
 <ul class="org-ul">
 <li>&Sigma;* is the universe of all strings over &Sigma;
 <ul class="org-ul">
@@ -357,27 +520,28 @@
 </table>
 </div>
 </div>
-<div id="outline-container-orge6d806f" class="outline-3">
-<h3 id="orge6d806f"><span class="section-number-3">1.3</span> Recursively Testing 101</h3>
-<div class="outline-text-3" id="text-1-3">
+<div id="outline-container-org86daebd" class="outline-3">
+<h3 id="org86daebd"><span class="section-number-3">2.3</span> Recursively Testing 101</h3>
+<div class="outline-text-3" id="text-2-3">
 <ul class="org-ul">
 <li>Solve &delta;*(q<sub>1</sub>,101)</li>
 <li>&delta;(&delta;*(q<sub>1</sub>,10),1)</li>
-<li>&delta;*(q<sub>1</sub>,10)
-<ul class="org-ul">
+<li>&delta;*(q<sub>1</sub>,10)</li>
 <li>&delta;(&delta;*(q<sub>1</sub>,1),0)</li>
-</ul></li>
 </ul>
 </div>
+<div id="outline-container-org854c849" class="outline-4">
+<h4 id="org854c849"><span class="section-number-4">2.3.1</span> <span class="todo TODO">TODO</span> Complete Recursion Sequence</h4>
 </div>
 </div>
-<div id="outline-container-orgdc1ed61" class="outline-2">
-<h2 id="orgdc1ed61"><span class="section-number-2">2</span> 01.19.21</h2>
-<div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgcea5cd1" class="outline-3">
-<h3 id="orgcea5cd1"><span class="section-number-3">2.1</span> Tuples &amp; DFAs</h3>
-<div class="outline-text-3" id="text-2-1">
+<div id="outline-container-org53b8370" class="outline-2">
+<h2 id="org53b8370"><span class="section-number-2">3</span> 01.19.21</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org688a7e0" class="outline-3">
+<h3 id="org688a7e0"><span class="section-number-3">3.1</span> Tuples &amp; DFAs</h3>
+<div class="outline-text-3" id="text-3-1">
 <ul class="org-ul">
 <li>Tuples are sequences which are always finite in length</li>
 <li>The deterministic finite automaton shown is a 5-tuple:
@@ -402,7 +566,8 @@ For this deterministic finite automaton,
 </ul>
 <p>
 Represented as a table,
-</p>
+</p></li>
+</ul>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -415,14 +580,15 @@ Represented as a table,
 
 <col  class="org-left" />
 </colgroup>
-<tbody>
+<thead>
 <tr>
-<td class="org-right">Step</td>
-<td class="org-left">State</td>
-<td class="org-right">Input</td>
-<td class="org-left">Transition</td>
+<th scope="col" class="org-right">Step</th>
+<th scope="col" class="org-left">State</th>
+<th scope="col" class="org-right">Input</th>
+<th scope="col" class="org-left">Transition</th>
 </tr>
-
+</thead>
+<tbody>
 <tr>
 <td class="org-right">1</td>
 <td class="org-left">Q<sub>1</sub></td>
@@ -451,22 +617,21 @@ Represented as a table,
 <td class="org-left">Q<sub>2</sub> &rarr; Q<sub>2</sub></td>
 </tr>
 </tbody>
-</table></li>
-</ul>
+</table>
 </div>
 </div>
-<div id="outline-container-orgb629075" class="outline-3">
-<h3 id="orgb629075"><span class="section-number-3">2.2</span> Domains &amp; Codomains</h3>
-<div class="outline-text-3" id="text-2-2">
+<div id="outline-container-orga41a157" class="outline-3">
+<h3 id="orga41a157"><span class="section-number-3">3.2</span> Domains &amp; Codomains</h3>
+<div class="outline-text-3" id="text-3-2">
 <ul class="org-ul">
 <li>Domain: set of all possible function inputs</li>
 <li>Codomain: set of all possible outputs</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org8e8c834" class="outline-3">
-<h3 id="org8e8c834"><span class="section-number-3">2.3</span> Strings</h3>
-<div class="outline-text-3" id="text-2-3">
+<div id="outline-container-org6bcc0f7" class="outline-3">
+<h3 id="org6bcc0f7"><span class="section-number-3">3.3</span> Strings</h3>
+<div class="outline-text-3" id="text-3-3">
 <ul class="org-ul">
 <li>In computer science, strings are character arrays</li>
 <li>In mathematics, strings are sequences of symbols</li>
@@ -477,9 +642,9 @@ Represented as a table,
 </ul>
 </div>
 </div>
-<div id="outline-container-org40e2c42" class="outline-3">
-<h3 id="org40e2c42"><span class="section-number-3">2.4</span> <span class="todo TODO">TODO</span> Review Recursive Definitions</h3>
-<div class="outline-text-3" id="text-2-4">
+<div id="outline-container-org48921cd" class="outline-3">
+<h3 id="org48921cd"><span class="section-number-3">3.4</span> <span class="todo TODO">TODO</span> Review Recursive Definitions</h3>
+<div class="outline-text-3" id="text-3-4">
 <ul class="org-ul">
 <li>Base step: a step that can not be broken down any further, a fact that is always true regardless of the input</li>
 <li>Recursive step:</li>
@@ -504,9 +669,9 @@ Represented as a table,
 </ul>
 </div>
 </div>
-<div id="outline-container-org1aa7d03" class="outline-3">
-<h3 id="org1aa7d03"><span class="section-number-3">2.5</span> Languages</h3>
-<div class="outline-text-3" id="text-2-5">
+<div id="outline-container-org93a503f" class="outline-3">
+<h3 id="org93a503f"><span class="section-number-3">3.5</span> Languages</h3>
+<div class="outline-text-3" id="text-3-5">
 <ul class="org-ul">
 <li>Languages over &Sigma; - a set of finite strings over &Sigma;</li>
 <li>Langauges recognized by an automaton, M, L(M) is the language accepted by M</li>
@@ -518,13 +683,13 @@ Represented as a table,
 </div>
 </div>
 </div>
-<div id="outline-container-orgf2c5aba" class="outline-2">
-<h2 id="orgf2c5aba"><span class="section-number-2">3</span> 01.14.21</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-org8f7bed7" class="outline-2">
+<h2 id="org8f7bed7"><span class="section-number-2">4</span> 01.14.21</h2>
+<div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-org73e23c8" class="outline-3">
-<h3 id="org73e23c8"><span class="section-number-3">3.1</span> Automaton (automata)</h3>
-<div class="outline-text-3" id="text-3-1">
+<div id="outline-container-org6629be0" class="outline-3">
+<h3 id="org6629be0"><span class="section-number-3">4.1</span> Automaton (automata)</h3>
+<div class="outline-text-3" id="text-4-1">
 <ul class="org-ul">
 <li>Self running machine requiring a continuous power source
 <ul class="org-ul">
@@ -534,13 +699,13 @@ Represented as a table,
 </ul>
 </div>
 </div>
-<div id="outline-container-org2aba66f" class="outline-3">
-<h3 id="org2aba66f"><span class="section-number-3">3.2</span> The Mathematics of Automata</h3>
-<div class="outline-text-3" id="text-3-2">
+<div id="outline-container-orgd7f90b4" class="outline-3">
+<h3 id="orgd7f90b4"><span class="section-number-3">4.2</span> The Mathematics of Automata</h3>
+<div class="outline-text-3" id="text-4-2">
 </div>
-<div id="outline-container-org3de6d93" class="outline-4">
-<h4 id="org3de6d93"><span class="section-number-4">3.2.1</span> Mathematicians &amp; History</h4>
-<div class="outline-text-4" id="text-3-2-1">
+<div id="outline-container-org0990cd2" class="outline-4">
+<h4 id="org0990cd2"><span class="section-number-4">4.2.1</span> Mathematicians &amp; History</h4>
+<div class="outline-text-4" id="text-4-2-1">
 <ul class="org-ul">
 <li>Cantor defines sets as collections of objects</li>
 <li>Cantor also argues that infinites can be of different magnitudes - there are infinitely more real numbers than natural numbers</li>
@@ -563,9 +728,9 @@ Represented as a table,
 </ul>
 </div>
 </div>
-<div id="outline-container-org7a278ce" class="outline-4">
-<h4 id="org7a278ce"><span class="section-number-4">3.2.2</span> Sequential Logic</h4>
-<div class="outline-text-4" id="text-3-2-2">
+<div id="outline-container-org8605bae" class="outline-4">
+<h4 id="org8605bae"><span class="section-number-4">4.2.2</span> Sequential Logic</h4>
+<div class="outline-text-4" id="text-4-2-2">
 <ul class="org-ul">
 <li>Sentential Logic- based on boolean results
 <ul class="org-ul">
@@ -576,9 +741,9 @@ Represented as a table,
 </div>
 </div>
 </div>
-<div id="outline-container-org5066d21" class="outline-3">
-<h3 id="org5066d21"><span class="section-number-3">3.3</span> Necessary Review</h3>
-<div class="outline-text-3" id="text-3-3">
+<div id="outline-container-orgb5a70ca" class="outline-3">
+<h3 id="orgb5a70ca"><span class="section-number-3">4.3</span> Necessary Review</h3>
+<div class="outline-text-3" id="text-4-3">
 <ul class="org-ul">
 <li>Textbook Ch. 0</li>
 <li>Logic Statements</li>
@@ -587,9 +752,9 @@ Represented as a table,
 </ul>
 </div>
 </div>
-<div id="outline-container-org9e1b40b" class="outline-3">
-<h3 id="org9e1b40b"><span class="section-number-3">3.4</span> Functions</h3>
-<div class="outline-text-3" id="text-3-4">
+<div id="outline-container-org8356143" class="outline-3">
+<h3 id="org8356143"><span class="section-number-3">4.4</span> Functions</h3>
+<div class="outline-text-3" id="text-4-4">
 <ul class="org-ul">
 <li>Functions - something that maps objects from one set to another</li>
 <li>Given f: a &rarr; b;
@@ -612,9 +777,9 @@ No one point in the domain can be mapped to two different points in the codomain
 </ul>
 </div>
 </div>
-<div id="outline-container-org45c5af6" class="outline-3">
-<h3 id="org45c5af6"><span class="section-number-3">3.5</span> <span class="todo TODO">TODO</span> Types of Functions - Definition &amp; Logical Statement</h3>
-<div class="outline-text-3" id="text-3-5">
+<div id="outline-container-org9adf7b6" class="outline-3">
+<h3 id="org9adf7b6"><span class="section-number-3">4.5</span> <span class="todo TODO">TODO</span> Types of Functions - Definition &amp; Logical Statement</h3>
+<div class="outline-text-3" id="text-4-5">
 <ul class="org-ul">
 <li>Injective Functions</li>
 <li>Surjective Functions</li>
@@ -623,9 +788,9 @@ No one point in the domain can be mapped to two different points in the codomain
 </ul>
 </div>
 </div>
-<div id="outline-container-orgbb5c398" class="outline-3">
-<h3 id="orgbb5c398"><span class="section-number-3">3.6</span> Finite Automaton (Finite State Machine)</h3>
-<div class="outline-text-3" id="text-3-6">
+<div id="outline-container-orgf7df3a3" class="outline-3">
+<h3 id="orgf7df3a3"><span class="section-number-3">4.6</span> Finite Automaton (Finite State Machine)</h3>
+<div class="outline-text-3" id="text-4-6">
 <ul class="org-ul">
 <li>States are logical confirgurations</li>
 <li>States are generally based upon input</li>
@@ -637,7 +802,7 @@ No one point in the domain can be mapped to two different points in the codomain
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Sudhan Chitgopkar</p>
-<p class="date">Created: 2021-01-21 Thu 13:58</p>
+<p class="date">Created: 2021-01-26 Tue 14:02</p>
 </div>
 </body>
 </html>

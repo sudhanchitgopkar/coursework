@@ -1,4 +1,4 @@
-% Created 2021-01-25 Mon 12:37
+% Created 2021-01-26 Tue 23:25
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -27,10 +27,108 @@
 \begin{document}
 
 \maketitle
-\tableofcontents \clearpage\section{01.21.21}
-\label{sec:org089f7ef}
+\tableofcontents \clearpage\section{01.26.21}
+\label{sec:org2d75934}
+\subsection{Closure Introduction}
+\label{sec:org4b60e7b}
+\begin{itemize}
+\item The language recognized by a DFA, M, (L(M)) is the set of all string accepted by M
+\item Thus, M = (Q, \(\Sigma\), \(\delta\), q\textsubscript{0},F)
+\item And \(\Sigma\)* is the universe of all possible inputs to M
+\item \(\forall\) strings w \(\in\) \(\Sigma\)*, M either accepts or rejects w
+\item It follows that L(M) \(\subset\) \(\Sigma\)*
+\item And \textlnot{} L(M) = \(\Sigma\)* - L(M)
+\item Therefore, M accepts every string in L(M) and rejects everything in \textlnot{} L(M)
+\end{itemize}
+\subsection{Closure Continued}
+\label{sec:org5dd97b3}
+\begin{itemize}
+\item A set, A, is closed under a binary operation, OP, if \(\forall\) x , y \(\in\) A [x OP y \(\in\) A]
+\item Ex. Natural Numbers (\(\mathbb{N}\))
+\begin{enumerate}
+\item \(\mathbb{N}\) is closed under +
+\item \(\mathbb{N}\) is closed under \texttimes{}
+\item \(\mathbb{N}\) is not closed under -
+\item \(\mathbb{N}\) is not closed under $\backslash$
+\end{enumerate}
+\item The class of all languages that are recognized by DFAs is closed under \(\cup\)
+\end{itemize}
+\subsection{Closure Properties of DFAs}
+\label{sec:orgdc8d77c}
+\begin{itemize}
+\item Union (\(\cup\))
+\item Intersection (\(\cap\))
+\item Complement (\textlnot{})
+\item Reverse
+\end{itemize}
+\subsection{Applying Closure Properties}
+\label{sec:org3d4ec0c}
+\begin{itemize}
+\item If L(M\textsubscript{1}) \(\cup\) L(M\textsubscript{2}) are DFAs, then \(\exists\) DFA, M, with L(M) = L(M\textsubscript{1}) \(\cup\) L(M\textsubscript{2})
+\item The purpose of a state machine is to make a yes/no decision
+\end{itemize}
+\subsubsection{Premise:}
+\label{sec:org971b34a}
+\begin{itemize}
+\item M\textsubscript{1} = \{Q\textsubscript{1},\(\Sigma\),\(\delta\)\textsubscript{1},q\textsubscript{0\textsubscript{1}},F\textsubscript{1}\} and M\textsubscript{2} are DFAs
+\item M\textsubscript{1} accepts binary strings ending in 1
+\item M\textsubscript{2} accepts binary strings of odd length
+\item L(M) = L(M\textsubscript{1}) \(\cup\) L(M\textsubscript{2})
+\begin{itemize}
+\item Accepts binary strings that either end in 1 OR have odd length (or both)
+\end{itemize}
+\item M\textsubscript{1}: q\textsubscript{1}, q\textsubscript{2} distinguished between ending in 0 and 1
+\item M\textsubscript{2}: r\textsubscript{1}, r\textsubscript{2} distinguished between odd and even length
+\item Accordingly, M must be able to distinguish between:
+\begin{itemize}
+\item even length ending in 1
+\item even length ending in 0
+\item odd length ending in 1
+\item odd length ending in 0
+\end{itemize}
+\end{itemize}
+\subsubsection{Coding}
+\label{sec:orgd7fade9}
+\begin{itemize}
+\item Consider Q = Q\textsubscript{1} \(\cdot\) Q\textsubscript{2} = \{q\textsubscript{1}r\textsubscript{1},q\textsubscript{2}r\textsubscript{1},q\textsubscript{1}r\textsubscript{2},q\textsubscript{2}r\textsubscript{2}\}
+\item wherein
+\begin{itemize}
+\item q\textsubscript{1}r\textsubscript{1} = even string ending in 0
+\item q\textsubscript{1}r\textsubscript{2} = odd string ending in 0
+\item q\textsubscript{2}r\textsubscript{1} = even string ending in 1
+\item q\textsubscript{2}r\textsubscript{2} = odd string ending in 1
+\end{itemize}
+\item Ex. \(\delta\)(q\textsubscript{1}r\textsubscript{1},1) = q\textsubscript{1}r\textsubscript{2}
+\item Applying this logic to a DFA, we know that
+\begin{itemize}
+\item Q=\{q1r1,q1r2,q2r1,q2r2\};
+\item S=\{0,1\};
+\item d:Q $\backslash$*sigma \(\to\) Q;
+\item d(q1r1,0)=q1r2;
+\item d(q1r1,1)=q2r2;
+\item d(q1r2,0)=q1r1;
+\item d(q1r2,1)=q2r1;
+\item d(q2r1,0)=q1r2;
+\item d(q2r1,1)=q2r2;
+\item d(q2r2,0)=q1r1;
+\item d(q2r2,1)=q2r1;
+\item q0=q1r1;
+\item F=\{q1r2,q2r1,q2r2\};
+\end{itemize}
+\end{itemize}
+\subsubsection{Conclusion}
+\label{sec:orgb02b556}
+\begin{itemize}
+\item Construct M and show that L(M) = L(M\textsubscript{1}) \(\cup\) L(M\textsubscript{2}).
+\item Q = Q\textsubscript{1} \(\cdot\) Q\textsubscript{2}
+\item let q\textsubscript{i} \(\in\) Q\textsubscript{1} and let r\textsubscript{j} \(\in\) Q\textsubscript{2}. and let c \(\in\) \(\Sigma\)
+\item and q\textsubscript{i}r\textsubscript{j} \(\in\) Q
+\item thus, \(\delta\)( q\textsubscript{i}r\textsubscript{j},c) = \(\delta\)\textsubscript{1}(q\textsubscript{i},c)\(\delta\)\textsubscript{2}(r\textsubscript{j},c)
+\end{itemize}
+\section{01.21.21}
+\label{sec:orgd45dfae}
 \subsection{Deterministic Finite Automata}
-\label{sec:org9c5254d}
+\label{sec:orgb14f225}
 \begin{itemize}
 \item We know that \(\delta\) = Q \texttimes{} \(\Sigma\) \(\to\) Q\textsubscript{2}
 \item We want a function that takes a starting state and a string, then returns the state after the machine has read that string
@@ -54,7 +152,7 @@
 \end{itemize}
 \end{itemize}
 \subsection{Aside: On \(\Sigma\) and \(\Sigma\)*}
-\label{sec:orgd0d6dd2}
+\label{sec:org40ccbe6}
 \begin{itemize}
 \item \(\Sigma\)* is the universe of all strings over \(\Sigma\)
 \begin{itemize}
@@ -81,7 +179,7 @@ w & c & w \(\cdot\) c & step\\
 \end{tabular}
 \end{center}
 \subsection{Recursively Testing 101}
-\label{sec:org8015d81}
+\label{sec:org4f57f31}
 \begin{itemize}
 \item Solve \(\delta\)*(q\textsubscript{1},101)
 \item \(\delta\)(\(\delta\)*(q\textsubscript{1},10),1)
@@ -89,11 +187,11 @@ w & c & w \(\cdot\) c & step\\
 \item \(\delta\)(\(\delta\)*(q\textsubscript{1},1),0)
 \end{itemize}
 \subsubsection{{\bfseries\sffamily TODO} Complete Recursion Sequence}
-\label{sec:org6dacc77}
+\label{sec:org5eb1c69}
 \section{01.19.21}
-\label{sec:orgf8e22f6}
+\label{sec:org20d90fe}
 \subsection{Tuples \& DFAs}
-\label{sec:org3e79e65}
+\label{sec:org30e611d}
 \begin{itemize}
 \item Tuples are sequences which are always finite in length
 \item The deterministic finite automaton shown is a 5-tuple:
@@ -127,13 +225,13 @@ Step & State & Input & Transition\\
 \end{tabular}
 \end{center}
 \subsection{Domains \& Codomains}
-\label{sec:org0b7a88a}
+\label{sec:org3ba62f4}
 \begin{itemize}
 \item Domain: set of all possible function inputs
 \item Codomain: set of all possible outputs
 \end{itemize}
 \subsection{Strings}
-\label{sec:orgbb211b0}
+\label{sec:orgacc8429}
 \begin{itemize}
 \item In computer science, strings are character arrays
 \item In mathematics, strings are sequences of symbols
@@ -143,7 +241,7 @@ Step & State & Input & Transition\\
 \item If c \(\in\) \(\Sigma\), then \(\epsilon\) \(\cdot\) c = c \(\cdot\) \(\epsilon\) = c
 \end{itemize}
 \subsection{{\bfseries\sffamily TODO} Review Recursive Definitions}
-\label{sec:org126ef5f}
+\label{sec:org46e5193}
 \begin{itemize}
 \item Base step: a step that can not be broken down any further, a fact that is always true regardless of the input
 \item Recursive step:
@@ -167,7 +265,7 @@ Step & State & Input & Transition\\
 \end{enumerate}
 \end{itemize}
 \subsection{Languages}
-\label{sec:org868539c}
+\label{sec:orgecef624}
 \begin{itemize}
 \item Languages over \(\Sigma\) - a set of finite strings over \(\Sigma\)
 \item Langauges recognized by an automaton, M, L(M) is the language accepted by M
@@ -177,9 +275,9 @@ Step & State & Input & Transition\\
 \item \(\epsilon\) is not a symbol in any alphabet
 \end{itemize}
 \section{01.14.21}
-\label{sec:orgd90752c}
+\label{sec:org5c48ec2}
 \subsection{Automaton (automata)}
-\label{sec:org1e3125b}
+\label{sec:org5369f78}
 \begin{itemize}
 \item Self running machine requiring a continuous power source
 \begin{itemize}
@@ -188,9 +286,9 @@ Step & State & Input & Transition\\
 \item Course revolves around defining the mathematics powering machines
 \end{itemize}
 \subsection{The Mathematics of Automata}
-\label{sec:org78e93a5}
+\label{sec:org8856566}
 \subsubsection{Mathematicians \& History}
-\label{sec:orga554f5a}
+\label{sec:orgd4b6d86}
 \begin{itemize}
 \item Cantor defines sets as collections of objects
 \item Cantor also argues that infinites can be of different magnitudes - there are infinitely more real numbers than natural numbers
@@ -212,7 +310,7 @@ Step & State & Input & Transition\\
 \end{itemize}
 \end{itemize}
 \subsubsection{Sequential Logic}
-\label{sec:orgfa23220}
+\label{sec:org4df77bc}
 \begin{itemize}
 \item Sentential Logic- based on boolean results
 \begin{itemize}
@@ -221,7 +319,7 @@ Step & State & Input & Transition\\
 \end{itemize}
 \end{itemize}
 \subsection{Necessary Review}
-\label{sec:orgf5ac559}
+\label{sec:org5e5f36b}
 \begin{itemize}
 \item Textbook Ch. 0
 \item Logic Statements
@@ -229,7 +327,7 @@ Step & State & Input & Transition\\
 \item Functions
 \end{itemize}
 \subsection{Functions}
-\label{sec:org933f9ca}
+\label{sec:org0cc12f0}
 \begin{itemize}
 \item Functions - something that maps objects from one set to another
 \item Given f: a \(\to\) b;
@@ -247,7 +345,7 @@ Step & State & Input & Transition\\
 \end{itemize}
 \end{itemize}
 \subsection{{\bfseries\sffamily TODO} Types of Functions - Definition \& Logical Statement}
-\label{sec:org7fd6063}
+\label{sec:org4e7de4f}
 \begin{itemize}
 \item Injective Functions
 \item Surjective Functions
@@ -255,7 +353,7 @@ Step & State & Input & Transition\\
 \item Proof by Contradiction (\textlnot{}\(\exists\))
 \end{itemize}
 \subsection{Finite Automaton (Finite State Machine)}
-\label{sec:org7ea3f04}
+\label{sec:org1c29c38}
 \begin{itemize}
 \item States are logical confirgurations
 \item States are generally based upon input
