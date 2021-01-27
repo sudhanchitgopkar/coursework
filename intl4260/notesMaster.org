@@ -1,6 +1,26 @@
+# Document Information
 #+TITLE: American Foreign Pol. Decision Making
 #+AUTHOR: Sudhan Chitgopkar
-* 01.12.21
+* 01.27.21
+** Norms & Nukes
+- Norms and taboos have been critical in nuclear policy
+- Norms and taboos have changed our definition of nuclear weapons as solely a means of deterrence to something that is more feasible in small-scale war (through more tactical nuclear weapons)
+** Norms & Taboos
+- Cognitive constructs designed to guide our behavior
+- Generally exist in the context of societal interaction and behavior
+*** Norms
+- Do's and Dont's
+  - prescribe some behavior and deter other behaviors
+- Context-specific
+  - e.g killing is generally considered something that is horrible to do, but is just
+- Large cultural variation in norms
+- Consequences for violation of norms can vary significantly
+*** Taboos
+- Dont's - never explain things you should do, only address things you shouldn't
+- Tend to be universal, with limited exception
+- Significantly more limited variation, easier to translate across cultures
+- There tend to be very severe consequences to taboo violations
+* 01.21.21
 ** Public Opinion & Decision-Making
 - domestic decision-making has significant foreign policy effects
 - domestic public opinion has an effect on foreign policy decisions

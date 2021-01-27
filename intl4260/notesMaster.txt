@@ -9,11 +9,16 @@
 Table of Contents
 _________________
 
-1. 01.12.21
+1. 01.27.21
+.. 1. Norms & Nukes
+.. 2. Norms & Taboos
+..... 1. Norms
+..... 2. Taboos
+2. 01.21.21
 .. 1. Public Opinion & Decision-Making
 .. 2. Putnam Review
-2. TODO Putnam
-3. Fearon
+3. TODO Putnam
+4. Fearon
 .. 1. Introduction
 .. 2. The Puzzle
 .. 3. Anarchy
@@ -23,16 +28,16 @@ _________________
 .. 7. War and Private information
 .. 8. War & Commitment Problems
 .. 9. Conclusion
-4. 01.22.21
+5. 01.22.21
 .. 1. Calculating Costs of War
 ..... 1. Constants
 ..... 2. Expected Value
 ..... 3. Miscalculation
-5. 01.20.21
+6. 01.20.21
 .. 1. Rational Decision-Making
 .. 2. Incentive Structures
-6. Expected Profit Khan Academy
-7. 01.15.21
+7. Expected Profit Khan Academy
+8. 01.15.21
 .. 1. Brain Stem
 .. 2. Middle Brain (Limbic System)
 .. 3. Brain Cortex
@@ -40,10 +45,52 @@ _________________
 .. 5. Rational Decision-Making
 
 
-1 01.12.21
+1 01.27.21
 ==========
 
-1.1 Public Opinion & Decision-Making
+1.1 Norms & Nukes
+~~~~~~~~~~~~~~~~~
+
+  - Norms and taboos have been critical in nuclear policy
+  - Norms and taboos have changed our definition of nuclear weapons as
+    solely a means of deterrence to something that is more feasible in
+    small-scale war (through more tactical nuclear weapons)
+
+
+1.2 Norms & Taboos
+~~~~~~~~~~~~~~~~~~
+
+  - Cognitive constructs designed to guide our behavior
+  - Generally exist in the context of societal interaction and behavior
+
+
+1.2.1 Norms
+-----------
+
+  - Do's and Dont's
+    - prescribe some behavior and deter other behaviors
+  - Context-specific
+    - e.g killing is generally considered something that is horrible to
+      do, but is just
+  - Large cultural variation in norms
+  - Consequences for violation of norms can vary significantly
+
+
+1.2.2 Taboos
+------------
+
+  - Dont's - never explain things you should do, only address things you
+    shouldn't
+  - Tend to be universal, with limited exception
+  - Significantly more limited variation, easier to translate across
+    cultures
+  - There tend to be very severe consequences to taboo violations
+
+
+2 01.21.21
+==========
+
+2.1 Public Opinion & Decision-Making
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - domestic decision-making has significant foreign policy effects
@@ -55,7 +102,7 @@ _________________
     incentive structure
 
 
-1.2 Putnam Review
+2.2 Putnam Review
 ~~~~~~~~~~~~~~~~~
 
   - For any foreign policy issue, there is a chief of government (CoG)
@@ -74,14 +121,14 @@ _________________
     principles can also appply to authoritarian regimes
 
 
-2 TODO Putnam
+3 TODO Putnam
 =============
 
 
-3 Fearon
+4 Fearon
 ========
 
-3.1 Introduction
+4.1 Introduction
 ~~~~~~~~~~~~~~~~
 
   - Three reasons war may occur
@@ -106,7 +153,7 @@ _________________
       to because of their beliefs on the issue
 
 
-3.2 The Puzzle
+4.2 The Puzzle
 ~~~~~~~~~~~~~~
 
   - People often see war as something nobody wants though wars can often
@@ -115,7 +162,7 @@ _________________
     costs of fighting still exist
 
 
-3.3 Anarchy
+4.3 Anarchy
 ~~~~~~~~~~~
 
   - War occurs because there is nothing to prevent it
@@ -125,7 +172,7 @@ _________________
     outside or preemptive war
 
 
-3.4 Preventive War
+4.4 Preventive War
 ~~~~~~~~~~~~~~~~~~
 
   - If a declining power suspects that it may be attacked in the future
@@ -135,7 +182,7 @@ _________________
     even for the rising power
 
 
-3.5 Positive Expected Utility
+4.5 Positive Expected Utility
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Argues that war is rational when both sides have a positive expected
@@ -145,7 +192,7 @@ _________________
     expected utility
 
 
-3.6 Utility and Rationality
+4.6 Utility and Rationality
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Positive expected utility alone is not enough to provide a
@@ -154,7 +201,7 @@ _________________
     of war
 
 
-3.7 War and Private information
+4.7 War and Private information
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - War is often the product of rational miscalculation
@@ -170,7 +217,7 @@ _________________
     constitute a rational explanation of war
 
 
-3.8 War & Commitment Problems
+4.8 War & Commitment Problems
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - With anarchy, states become suspicious of one another and build
@@ -189,7 +236,7 @@ _________________
     circumstances that give one party an incentive to renege are
 
 
-3.9 Conclusion
+4.9 Conclusion
 ~~~~~~~~~~~~~~
 
   - Because fighting is costly and risky, rational actors should prefer
@@ -202,13 +249,13 @@ _________________
     based on irrationality
 
 
-4 01.22.21
+5 01.22.21
 ==========
 
-4.1 Calculating Costs of War
+5.1 Calculating Costs of War
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-4.1.1 Constants
+5.1.1 Constants
 ---------------
 
   - Fight occurs over $100
@@ -216,7 +263,7 @@ _________________
   - P(Winning): 50%
 
 
-4.1.2 Expected Value
+5.1.2 Expected Value
 --------------------
 
   - (Gains Winning) + (Gains Fighting) - (Cost of War)
@@ -225,7 +272,7 @@ _________________
     of 31 <, it is not a rational deciison to go to war
 
 
-4.1.3 Miscalculation
+5.1.3 Miscalculation
 --------------------
 
   - When both sides overestimate the probability of winning, their
@@ -238,10 +285,10 @@ _________________
       impossible given the limited value of the thing being fought over
 
 
-5 01.20.21
+6 01.20.21
 ==========
 
-5.1 Rational Decision-Making
+6.1 Rational Decision-Making
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Rational decision-making defines how we make decisions
@@ -254,7 +301,7 @@ _________________
     - Same thing as "average payoff"
 
 
-5.2 Incentive Structures
+6.2 Incentive Structures
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Incentive structures are the expected values for each of the
@@ -263,7 +310,7 @@ _________________
     given that we are rational actors
 
 
-6 Expected Profit Khan Academy
+7 Expected Profit Khan Academy
 ==============================
 
   - Expected value can be calculated as the sum of all the outcome
@@ -273,14 +320,14 @@ _________________
     negative (losses)
 
 
-7 01.15.21
+8 01.15.21
 ==========
 
   - Brain has a complex set of structures that work together to do both
     really important, and fundamentally flawed actions
 
 
-7.1 Brain Stem
+8.1 Brain Stem
 ~~~~~~~~~~~~~~
 
   - The reptilian brain
@@ -288,7 +335,7 @@ _________________
   - Controls automatic actions, no effect on decision-making
 
 
-7.2 Middle Brain (Limbic System)
+8.2 Middle Brain (Limbic System)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Body's monitoring system to identify important elements of the
@@ -296,14 +343,14 @@ _________________
   - Discriminates things of importantance constantly and ambiently
 
 
-7.3 Brain Cortex
+8.3 Brain Cortex
 ~~~~~~~~~~~~~~~~
 
   - Controls higher-level thinking
   - Moral decision-making, learning, conscious awareness
 
 
-7.4 Hierarchy of the brain
+8.4 Hierarchy of the brain
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Information goes from the brain stem, to the limbic system, to the
@@ -321,7 +368,7 @@ _________________
     in-group/out-group bias
 
 
-7.5 Rational Decision-Making
+8.5 Rational Decision-Making
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   1. Pick a goal
