@@ -1,6 +1,18 @@
 #+TITLE: Theory of Computing
 #+AUTHOR: Sudhan Chitgopkar
-* 01.26.21
+#+STARTUP: latexpreview
+* 01.28.29
+** Nondeterministic Finite Automata
+*** DFA Review
+- DFA's are 5-tuples with
+  - \delta: Q \times \Sigma \to Q
+  - The number of transitions, \delta, is |Q||\Sigma|
+- There is no real decision-making here, an input is simply being used alongside a rule to find an output
+*** NFA's
+- NFAs are also a 5-tuple
+- \delta: Q \times \Sigma \to \powerset{p}(Q)
+- |\mathbb{P}(Q)| = 2^{|Q|}
+* 01.26.21 - 01.28.20
 ** Closure Introduction
 - The language recognized by a DFA, M, (L(M)) is the set of all string accepted by M
 - Thus, M = (Q, \Sigma, \delta, q_{0},F)
@@ -26,7 +38,7 @@
 - If L(M_{1}) \cup L(M_{2}) are DFAs, then \exists DFA, M, with L(M) = L(M_{1}) \cup L(M_{2})
 - The purpose of a state machine is to make a yes/no decision
 *** Premise:
-- M_{1} = {Q_{1},\Sigma,\delta_{1},q_{0_{1}},F_{1}} and M_{2} are DFAs
+- M_{1} = {Q_{1},\Sigma,\delta_{1},q_{0_{1}},F_{1}} and M_{2} = {Q_{2},\Sigma,\delta_{2},q_{0},F_{2}} are DFAs
 - M_{1} accepts binary strings ending in 1
 - M_{2} accepts binary strings of odd length
 - L(M) = L(M_{1}) \cup L(M_{2})
@@ -38,7 +50,7 @@
   - even length ending in 0
   - odd length ending in 1
   - odd length ending in 0
-*** Coding
+*** Coding M
 - Consider Q = Q_{1} \cdot Q_{2} = {q_{1}r_{1},q_{2}r_{1},q_{1}r_{2},q_{2}r_{2}}
 - wherein
   - q_{1}r_{1} = even string ending in 0
@@ -60,12 +72,30 @@
   - d(q2r2,1)=q2r1;
   - q0=q1r1;
   - F={q1r2,q2r1,q2r2};
-*** Conclusion
+*** Derivation
 - Construct M and show that L(M) = L(M_{1}) \cup L(M_{2}).
 - Q = Q_{1} \cdot Q_{2}
 - let q_{i} \in Q_{1} and let r_{j} \in Q_{2}. and let c \in \Sigma
 - and q_{i}r_{j} \in Q
 - thus, \delta( q_{i}r_{j},c) = \delta_{1}(q_{i},c)\delta_{2}(r_{j},c)
+- and q_{0} = q_{0}_{1},q_{0}_{2}
+- so that F={q_{i}r_{j}: q_{i} \in F_{1} \cup r_{j} \in F_{2}}
+*** Correctness
+- Show that M accepts exactly the strings that are accepted by M_{1} or M_{2}
+- If w \in \Sigma*. tjem w is accepted by M and w is accepted by either M_{1} or M{2}
+- To do this, we can organize \Sigma* into strings of length 0, length 1, length 2...
+- We solve with mathematical induction, which is how we prove recurrence relationships
+*** Mathematical Induction
+- Need base case and induction hypothesis
+- Induction hypothesis says something is true about k, where k is the length of strings
+- \delta* (q_{0},w) is the ending state of M on w where
+- \delta* (q_{0},w) = \delta*_{1}(q_{0}_{1},w)\delta*_{2}(q_{0}_{2},w)
+- Induction Hypothesis: If |w| = k, then \delta*(q_{0},w) \in F \iff \delta*_{1}(q_{0_{1}},w) \in F_{1} or \delta*_{2}(q_{0}_{2},w) \inf F_{2}
+- Let x \in \Sigma.
+- Then |w \cdot x| = k+1
+- And \delta*(q_0,wx) = \delta*_{1}(q_{0}_{1},wx)\delta*_{2}(q_{0}_{2},wx)
+- If \delta*_{1}(q_{0}_{1},wx) \in F_{1}, \delta*(q_0,wx) \in F
+- Similarly, if delta*_{2}(q_{0}_{2},wx), then \delta*(q_0,wx) \in F
 * 01.21.21
 ** Deterministic Finite Automata
 - We know that \delta = Q \times \Sigma \to Q_{2}
