@@ -4,7 +4,7 @@
    (TeX-add-to-alist 'LaTeX-provided-class-options
                      '(("article" "11pt")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
-                     '(("inputenc" "utf8") ("fontenc" "T1") ("ulem" "normalem")))
+                     '(("inputenc" "utf8") ("fontenc" "T1") ("ulem" "normalem") ("geometry" "margin=1in")))
    (add-to-list 'LaTeX-verbatim-environments-local "minted")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
@@ -30,30 +30,34 @@
     "textcomp"
     "amssymb"
     "capt-of"
-    "hyperref")
+    "hyperref"
+    "geometry")
    (LaTeX-add-labels
-    "sec:orgc0fbaaa"
-    "sec:org24a7c44"
-    "sec:orgfb3c7ca"
-    "sec:org47b102c"
-    "sec:orgbffa1a8"
-    "sec:org076b13b"
-    "sec:org37d85d0"
-    "sec:orgc10b061"
-    "sec:orgb3686a4"
-    "sec:orgb6f6464"
-    "sec:org0b7d6dc"
-    "sec:orgb9f7ca8"
-    "sec:org3a77aa7"
-    "sec:org7b6fb37"
-    "sec:org4c29095"
-    "sec:org39cabce"
-    "sec:orgc90df6e"
-    "sec:orgaabc095"
-    "sec:org188aa9e"
-    "sec:org667ba26"
-    "sec:orga5b3f68"
-    "sec:org34daa1f"
-    "sec:orgef13908"))
+    "sec:org2a06abb"
+    "sec:org11b6a1d"
+    "sec:orga2b5cb9"
+    "sec:orgc10b94b"
+    "sec:org7b7ab0b"
+    "sec:org53a0b0a"
+    "sec:orgfafa222"
+    "sec:orge183854"
+    "sec:org4f3d1ec"
+    "sec:org191efce"
+    "sec:orgac0bafc"
+    "sec:org99ff81d"
+    "sec:org2cf375f"
+    "sec:org195639c"
+    "sec:org261610a"
+    "sec:orga549bde"
+    "sec:org307a38a"
+    "sec:org421cdb1"
+    "sec:org9768abe"
+    "sec:org4d952ed"
+    "sec:orga032063"
+    "sec:orgfc1eb75"
+    "sec:org3f7baa1"
+    "sec:org2437e8b"
+    "sec:org57e0941"
+    "sec:org74f51e1"))
  :latex)
 

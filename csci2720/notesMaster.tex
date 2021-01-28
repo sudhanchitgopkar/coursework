@@ -1,4 +1,4 @@
-% Created 2021-01-26 Tue 12:22
+% Created 2021-01-28 Thu 12:17
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -14,6 +14,7 @@
 \usepackage{amssymb}
 \usepackage{capt-of}
 \usepackage{hyperref}
+\usepackage[margin=1in]{geometry}
 \author{Sudhan Chitgopkar}
 \date{\today}
 \title{}
@@ -26,24 +27,74 @@
  pdflang={English}}
 \begin{document}
 
-\tableofcontents \clearpage\section{01.16.21}
-\label{sec:orgc0fbaaa}
+\tableofcontents \clearpage\section{01.28.21 (Algorithm Analysis)}
+\label{sec:org2a06abb}
+\subsection{Experimental Analysis}
+\label{sec:org11b6a1d}
+\begin{itemize}
+\item Algorithms = step-by-step procedure for solving a problem in a finite amount of time
+\item Experimentation Steps:
+\begin{itemize}
+\item Write a program implementing the algorithm
+\item Run the program with inputs of varying size, composition
+\item Plot the results
+\end{itemize}
+\item Limitations of Experiments:
+\begin{itemize}
+\item Implementing the algorithm may be difficult
+\item Results may not indicate running time on other inputs
+\item Algorithm comparison is difficult
+\end{itemize}
+\item For this reason, theoretical results are preferred
+\end{itemize}
+\subsection{Theoretical Analysis}
+\label{sec:orga2b5cb9}
+\begin{itemize}
+\item Theoretical Analysis
+\begin{itemize}
+\item Use a high level description instead of an implementation
+\item Characterizes running time as a function of input size, n
+\item Takes into account all possible inputs
+\item Allows for algorithm comparison independent of hardware/software
+\end{itemize}
+\item Primitive Operations
+\begin{itemize}
+\item Count the amount of primitive/basic operations
+\item These operations are
+\begin{itemize}
+\item identifiable in pseudocode
+\item generally independent of programming language
+\item want to focus on large operations such as loops
+\end{itemize}
+\end{itemize}
+\item Asymptotic Complexity
+\begin{itemize}
+\item simply can be understood as Big-O
+\item Generally fives us an idea of how rapidly the space/time requirements grow as problem size increases
+\end{itemize}
+\item Rate of Growth
+\begin{itemize}
+\item Because lower order terms become relatively insignificant for large n, we consider the actual function and its highest order term to have the same rate of growth
+\end{itemize}
+\end{itemize}
+\section{01.26.21 (ADTs \& Big-O)}
+\label{sec:orgc10b94b}
 \subsection{Abstract Data Types}
-\label{sec:org24a7c44}
+\label{sec:org7b7ab0b}
 \begin{itemize}
 \item Abstract Data Type (ADT): A data type whose properties are
 \item Require a domain and an operation, implementation not relevant at this point
 \item When implementation is considerd, an ADT becomes a data structure
 \end{itemize}
 \subsection{Data from 3 Different Levels}
-\label{sec:orgfb3c7ca}
+\label{sec:org53a0b0a}
 \begin{itemize}
 \item Application (user) level - modeling real life data in a specific context (ex. Library of Congress)
 \item Logical (ADT) level - considering abstract understanding of necessary requirements (ex. Domain: Collection of Books, Operations: Check-in, Check-out, etc.)
 \item Implementation level - considering how to carry out operations upon the domain
 \end{itemize}
 \subsection{Basic Types of ADT Operations}
-\label{sec:org47b102c}
+\label{sec:orgfafa222}
 \begin{itemize}
 \item Constructor - creates a new instance of an ADT
 \item Transformer - changes the state of one or more of the data values of an instance
@@ -51,7 +102,7 @@
 \item Iterator - allows us to process all the components in a data structure sequentially
 \end{itemize}
 \subsection{Composite Data Type}
-\label{sec:orgbffa1a8}
+\label{sec:orge183854}
 \begin{itemize}
 \item Composite data types are types which
 \begin{itemize}
@@ -61,7 +112,7 @@
 \item Examples include arrays and classes
 \end{itemize}
 \subsection{Accessing Functions}
-\label{sec:org076b13b}
+\label{sec:org4f3d1ec}
 \begin{itemize}
 \item Accessing fucntions give the position of className[Index]
 \item Address(Index) = BaseAddress + Index * SizeOfElement
@@ -71,7 +122,7 @@
 \end{itemize}
 \end{itemize}
 \subsection{Order of Magnitude of a Function}
-\label{sec:org37d85d0}
+\label{sec:org191efce}
 \begin{itemize}
 \item Order of magnitude (Big-O notation) expresses computing time of a problem as the term in a function that increases the most rapodly relative to the size of the problem
 \item Consider two algorithms, A and B. They are both used to solve the same class of problems.
@@ -83,8 +134,8 @@
 \item Order of growth and time complexity are inverses (larger growth rate = slower time to execute)
 \item All functions are monotonic (continue increasing indefinitely)
 \end{itemize}
-\section{01.15.21 (File I/O)}
-\label{sec:orgc10b061}
+\section{01.25.21 (File I/O)}
+\label{sec:orgac0bafc}
 \begin{itemize}
 \item File I/O ex.
 \begin{verbatim}
@@ -114,15 +165,15 @@ int main () {
 \end{verbatim}
 \end{itemize}
 \section{01.25.21 (C++ Ch. 9)}
-\label{sec:orgb3686a4}
+\label{sec:org99ff81d}
 \subsection{Pass by Reference}
-\label{sec:orgb6f6464}
+\label{sec:org2cf375f}
 \begin{itemize}
 \item When dealing with very large objects, don't pass by copy due to the large overhead of copying. Instead, pass by reference
 \item When passing by reference, use const if you don't want to modify the data members
 \end{itemize}
 \subsection{Destructors}
-\label{sec:org0b7d6dc}
+\label{sec:org195639c}
 \begin{itemize}
 \item Name of destructor is className\textasciitilde{}
 \item Called implicitly when an object is destroyed
@@ -135,21 +186,21 @@ int main () {
 \item Objects are also destroyed in reverse order from their construction
 \end{itemize}
 \subsection{Const Objects}
-\label{sec:orgb9f7ca8}
+\label{sec:org261610a}
 \begin{itemize}
 \item const objects must use const methods only
 \item non-const objects may use both non-const and const methods
 \end{itemize}
 \section{01.21.21 (C++ Ch. 9)}
-\label{sec:org3a77aa7}
+\label{sec:orga549bde}
 \subsection{Encapsulation}
-\label{sec:org7b6fb37}
+\label{sec:org307a38a}
 \begin{itemize}
 \item Header files should not contain source code, it should only include prototypes in order to ensure proper information-hiding
 \item Source code should be placed in a different cpp file, which pulls from the prototypes in the header file
 \end{itemize}
 \subsection{Include Guards}
-\label{sec:org4c29095}
+\label{sec:org421cdb1}
 \begin{itemize}
 \item Consider the following classes: Student, Course, and Main
 \begin{itemize}
@@ -173,13 +224,13 @@ int main () {
 \item The header guard should be put in header files that are used in multiple places
 \end{itemize}
 \subsection{Writing Classes}
-\label{sec:org39cabce}
+\label{sec:org9768abe}
 \begin{itemize}
 \item Begin by including the necessary header file
 \item All methods and constructors must be preceded by the header file name and the scope resolution operator (::)
 \end{itemize}
 \subsection{Constructors \& Default Constructors}
-\label{sec:orgc90df6e}
+\label{sec:org4d952ed}
 \begin{itemize}
 \item Constructors can call other methods and do data-checking
 \item Constructors can be called explicit with multiple parameters when the parameters are impossible to typecast, as follows:
@@ -190,15 +241,15 @@ int main () {
 } //main
 \end{verbatim}
 \section{01.21.21 (C++ Ch. 3)}
-\label{sec:orgaabc095}
+\label{sec:orga032063}
 \subsection{Objects and Object Sizes}
-\label{sec:org188aa9e}
+\label{sec:orgfc1eb75}
 \begin{itemize}
 \item An objects size will always be the sum of its data members. The size will not be affected by any methods that are called upon it.
 \item Because of this, objects can quickly become very large in size.
 \end{itemize}
 \subsection{UML Diagrams}
-\label{sec:org667ba26}
+\label{sec:org3f7baa1}
 \begin{itemize}
 \item Classes are listed as individual boxes
 \begin{itemize}
@@ -213,7 +264,7 @@ int main () {
 \end{itemize}
 \end{itemize}
 \subsection{Constructors}
-\label{sec:orga5b3f68}
+\label{sec:org2437e8b}
 \begin{itemize}
 \item Explicit constructors can be used to prevent implicit typecasting, as seen below:
 \end{itemize}
@@ -241,7 +292,7 @@ explicit Account (std::string accountName) //explicit constructor
   }
 \end{verbatim}
 \section{01.19.21 (C++ Ch. 3)}
-\label{sec:org34daa1f}
+\label{sec:org57e0941}
 A look at class creation
 \begin{verbatim}
 #include <iostream>
@@ -277,7 +328,7 @@ int main () {
 \end{itemize}
 
 \section{01.19.21 (C++ Ch. 2)}
-\label{sec:orgef13908}
+\label{sec:org74f51e1}
 A look at some basic C++ code
 \begin{verbatim}
 #include <iostream> //enables program to output data

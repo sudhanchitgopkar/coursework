@@ -4,35 +4,81 @@ Sudhan Chitgopkar
 Table of Contents
 _________________
 
-1. 01.16.21
+1. 01.28.21 (Algorithm Analysis)
+.. 1. Experimental Analysis
+.. 2. Theoretical Analysis
+2. 01.26.21 (ADTs & Big-O)
 .. 1. Abstract Data Types
 .. 2. Data from 3 Different Levels
 .. 3. Basic Types of ADT Operations
 .. 4. Composite Data Type
 .. 5. Accessing Functions
 .. 6. Order of Magnitude of a Function
-2. 01.15.21 (File I/O)
-3. 01.25.21 (C++ Ch. 9)
+3. 01.25.21 (File I/O)
+4. 01.25.21 (C++ Ch. 9)
 .. 1. Pass by Reference
 .. 2. Destructors
 .. 3. Const Objects
-4. 01.21.21 (C++ Ch. 9)
+5. 01.21.21 (C++ Ch. 9)
 .. 1. Encapsulation
 .. 2. Include Guards
 .. 3. Writing Classes
 .. 4. Constructors & Default Constructors
-5. 01.21.21 (C++ Ch. 3)
+6. 01.21.21 (C++ Ch. 3)
 .. 1. Objects and Object Sizes
 .. 2. UML Diagrams
 .. 3. Constructors
-6. 01.19.21 (C++ Ch. 3)
-7. 01.19.21 (C++ Ch. 2)
+7. 01.19.21 (C++ Ch. 3)
+8. 01.19.21 (C++ Ch. 2)
 
 
-1 01.16.21
-==========
+1 01.28.21 (Algorithm Analysis)
+===============================
 
-1.1 Abstract Data Types
+1.1 Experimental Analysis
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  - Algorithms = step-by-step procedure for solving a problem in a
+    finite amount of time
+  - Experimentation Steps:
+    - Write a program implementing the algorithm
+    - Run the program with inputs of varying size, composition
+    - Plot the results
+  - Limitations of Experiments:
+    - Implementing the algorithm may be difficult
+    - Results may not indicate running time on other inputs
+    - Algorithm comparison is difficult
+  - For this reason, theoretical results are preferred
+
+
+1.2 Theoretical Analysis
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+  - Theoretical Analysis
+    - Use a high level description instead of an implementation
+    - Characterizes running time as a function of input size, n
+    - Takes into account all possible inputs
+    - Allows for algorithm comparison independent of hardware/software
+  - Primitive Operations
+    - Count the amount of primitive/basic operations
+    - These operations are
+      - identifiable in pseudocode
+      - generally independent of programming language
+      - want to focus on large operations such as loops
+  - Asymptotic Complexity
+    - simply can be understood as Big-O
+    - Generally fives us an idea of how rapidly the space/time
+      requirements grow as problem size increases
+  - Rate of Growth
+    - Because lower order terms become relatively insignificant for
+      large n, we consider the actual function and its highest order
+      term to have the same rate of growth
+
+
+2 01.26.21 (ADTs & Big-O)
+=========================
+
+2.1 Abstract Data Types
 ~~~~~~~~~~~~~~~~~~~~~~~
 
   - Abstract Data Type (ADT): A data type whose properties are
@@ -41,7 +87,7 @@ _________________
   - When implementation is considerd, an ADT becomes a data structure
 
 
-1.2 Data from 3 Different Levels
+2.2 Data from 3 Different Levels
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Application (user) level - modeling real life data in a specific
@@ -53,7 +99,7 @@ _________________
     the domain
 
 
-1.3 Basic Types of ADT Operations
+2.3 Basic Types of ADT Operations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Constructor - creates a new instance of an ADT
@@ -65,7 +111,7 @@ _________________
     structure sequentially
 
 
-1.4 Composite Data Type
+2.4 Composite Data Type
 ~~~~~~~~~~~~~~~~~~~~~~~
 
   - Composite data types are types which
@@ -75,7 +121,7 @@ _________________
   - Examples include arrays and classes
 
 
-1.5 Accessing Functions
+2.5 Accessing Functions
 ~~~~~~~~~~~~~~~~~~~~~~~
 
   - Accessing fucntions give the position of className[Index]
@@ -85,7 +131,7 @@ _________________
     - 6000 + (10 * 1) = 6010;
 
 
-1.6 Order of Magnitude of a Function
+2.6 Order of Magnitude of a Function
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Order of magnitude (Big-O notation) expresses computing time of a
@@ -102,7 +148,7 @@ _________________
   - All functions are monotonic (continue increasing indefinitely)
 
 
-2 01.15.21 (File I/O)
+3 01.25.21 (File I/O)
 =====================
 
   - File I/O ex.
@@ -133,10 +179,10 @@ _________________
     `----
 
 
-3 01.25.21 (C++ Ch. 9)
+4 01.25.21 (C++ Ch. 9)
 ======================
 
-3.1 Pass by Reference
+4.1 Pass by Reference
 ~~~~~~~~~~~~~~~~~~~~~
 
   - When dealing with very large objects, don't pass by copy due to the
@@ -145,7 +191,7 @@ _________________
     data members
 
 
-3.2 Destructors
+4.2 Destructors
 ~~~~~~~~~~~~~~~
 
   - Name of destructor is className~
@@ -160,17 +206,17 @@ _________________
   - Objects are also destroyed in reverse order from their construction
 
 
-3.3 Const Objects
+4.3 Const Objects
 ~~~~~~~~~~~~~~~~~
 
   - const objects must use const methods only
   - non-const objects may use both non-const and const methods
 
 
-4 01.21.21 (C++ Ch. 9)
+5 01.21.21 (C++ Ch. 9)
 ======================
 
-4.1 Encapsulation
+5.1 Encapsulation
 ~~~~~~~~~~~~~~~~~
 
   - Header files should not contain source code, it should only include
@@ -179,7 +225,7 @@ _________________
     from the prototypes in the header file
 
 
-4.2 Include Guards
+5.2 Include Guards
 ~~~~~~~~~~~~~~~~~~
 
   - Consider the following classes: Student, Course, and Main
@@ -203,7 +249,7 @@ _________________
     multiple places
 
 
-4.3 Writing Classes
+5.3 Writing Classes
 ~~~~~~~~~~~~~~~~~~~
 
   - Begin by including the necessary header file
@@ -211,7 +257,7 @@ _________________
     name and the scope resolution operator (::)
 
 
-4.4 Constructors & Default Constructors
+5.4 Constructors & Default Constructors
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Constructors can call other methods and do data-checking
@@ -224,10 +270,10 @@ _________________
   `----
 
 
-5 01.21.21 (C++ Ch. 3)
+6 01.21.21 (C++ Ch. 3)
 ======================
 
-5.1 Objects and Object Sizes
+6.1 Objects and Object Sizes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - An objects size will always be the sum of its data members. The size
@@ -235,7 +281,7 @@ _________________
   - Because of this, objects can quickly become very large in size.
 
 
-5.2 UML Diagrams
+6.2 UML Diagrams
 ~~~~~~~~~~~~~~~~
 
   - Classes are listed as individual boxes
@@ -247,7 +293,7 @@ _________________
       - # = protected
 
 
-5.3 Constructors
+6.3 Constructors
 ~~~~~~~~~~~~~~~~
 
   - Explicit constructors can be used to prevent implicit typecasting,
@@ -275,7 +321,7 @@ _________________
   `----
 
 
-6 01.19.21 (C++ Ch. 3)
+7 01.19.21 (C++ Ch. 3)
 ======================
 
   A look at class creation
@@ -316,7 +362,7 @@ _________________
     modifying the values of data members or objects.
 
 
-7 01.19.21 (C++ Ch. 2)
+8 01.19.21 (C++ Ch. 2)
 ======================
 
   A look at some basic C++ code

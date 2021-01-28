@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-01-26 Tue 12:22 -->
+<!-- 2021-01-28 Thu 12:17 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -222,51 +222,116 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgab7119d">1. 01.16.21</a>
+<li><a href="#org5618f5a">1. 01.28.21 (Algorithm Analysis)</a>
 <ul>
-<li><a href="#org25f290f">1.1. Abstract Data Types</a></li>
-<li><a href="#org99a15de">1.2. Data from 3 Different Levels</a></li>
-<li><a href="#orgc97f1e0">1.3. Basic Types of ADT Operations</a></li>
-<li><a href="#org2dbb0e1">1.4. Composite Data Type</a></li>
-<li><a href="#org10d89e1">1.5. Accessing Functions</a></li>
-<li><a href="#org0c62719">1.6. Order of Magnitude of a Function</a></li>
+<li><a href="#org987db16">1.1. Experimental Analysis</a></li>
+<li><a href="#org8b3d080">1.2. Theoretical Analysis</a></li>
 </ul>
 </li>
-<li><a href="#org9c36dde">2. 01.15.21 (File I/O)</a></li>
-<li><a href="#org14da26d">3. 01.25.21 (C++ Ch. 9)</a>
+<li><a href="#org6e069af">2. 01.26.21 (ADTs &amp; Big-O)</a>
 <ul>
-<li><a href="#orgf134dc8">3.1. Pass by Reference</a></li>
-<li><a href="#orgce0bc8a">3.2. Destructors</a></li>
-<li><a href="#org16cc860">3.3. Const Objects</a></li>
+<li><a href="#org369a019">2.1. Abstract Data Types</a></li>
+<li><a href="#orgcb8e49f">2.2. Data from 3 Different Levels</a></li>
+<li><a href="#org925d4fb">2.3. Basic Types of ADT Operations</a></li>
+<li><a href="#orgdcdb77e">2.4. Composite Data Type</a></li>
+<li><a href="#org7ddb510">2.5. Accessing Functions</a></li>
+<li><a href="#orgefc1494">2.6. Order of Magnitude of a Function</a></li>
 </ul>
 </li>
-<li><a href="#org31d65d9">4. 01.21.21 (C++ Ch. 9)</a>
+<li><a href="#orgf76204b">3. 01.25.21 (File I/O)</a></li>
+<li><a href="#orgd550aa7">4. 01.25.21 (C++ Ch. 9)</a>
 <ul>
-<li><a href="#org3599137">4.1. Encapsulation</a></li>
-<li><a href="#orgd9a5b62">4.2. Include Guards</a></li>
-<li><a href="#org001bbe2">4.3. Writing Classes</a></li>
-<li><a href="#org9edbf6a">4.4. Constructors &amp; Default Constructors</a></li>
+<li><a href="#orgfc7e7fd">4.1. Pass by Reference</a></li>
+<li><a href="#org7fccd89">4.2. Destructors</a></li>
+<li><a href="#org5abe836">4.3. Const Objects</a></li>
 </ul>
 </li>
-<li><a href="#org22c77fa">5. 01.21.21 (C++ Ch. 3)</a>
+<li><a href="#org4d0e345">5. 01.21.21 (C++ Ch. 9)</a>
 <ul>
-<li><a href="#orgfe00daf">5.1. Objects and Object Sizes</a></li>
-<li><a href="#org1e59479">5.2. UML Diagrams</a></li>
-<li><a href="#org1f4463d">5.3. Constructors</a></li>
+<li><a href="#org7e83565">5.1. Encapsulation</a></li>
+<li><a href="#org7a4a5eb">5.2. Include Guards</a></li>
+<li><a href="#org9705235">5.3. Writing Classes</a></li>
+<li><a href="#org3f974d8">5.4. Constructors &amp; Default Constructors</a></li>
 </ul>
 </li>
-<li><a href="#org49bf47c">6. 01.19.21 (C++ Ch. 3)</a></li>
-<li><a href="#orgfe5e3cb">7. 01.19.21 (C++ Ch. 2)</a></li>
+<li><a href="#org04dfd10">6. 01.21.21 (C++ Ch. 3)</a>
+<ul>
+<li><a href="#org30ebc5d">6.1. Objects and Object Sizes</a></li>
+<li><a href="#org38d636d">6.2. UML Diagrams</a></li>
+<li><a href="#orgafb416f">6.3. Constructors</a></li>
+</ul>
+</li>
+<li><a href="#orgfd28442">7. 01.19.21 (C++ Ch. 3)</a></li>
+<li><a href="#org436833b">8. 01.19.21 (C++ Ch. 2)</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgab7119d" class="outline-2">
-<h2 id="orgab7119d"><span class="section-number-2">1</span> 01.16.21</h2>
+<div id="outline-container-org5618f5a" class="outline-2">
+<h2 id="org5618f5a"><span class="section-number-2">1</span> 01.28.21 (Algorithm Analysis)</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org25f290f" class="outline-3">
-<h3 id="org25f290f"><span class="section-number-3">1.1</span> Abstract Data Types</h3>
+<div id="outline-container-org987db16" class="outline-3">
+<h3 id="org987db16"><span class="section-number-3">1.1</span> Experimental Analysis</h3>
 <div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>Algorithms = step-by-step procedure for solving a problem in a finite amount of time</li>
+<li>Experimentation Steps:
+<ul class="org-ul">
+<li>Write a program implementing the algorithm</li>
+<li>Run the program with inputs of varying size, composition</li>
+<li>Plot the results</li>
+</ul></li>
+<li>Limitations of Experiments:
+<ul class="org-ul">
+<li>Implementing the algorithm may be difficult</li>
+<li>Results may not indicate running time on other inputs</li>
+<li>Algorithm comparison is difficult</li>
+</ul></li>
+<li>For this reason, theoretical results are preferred</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8b3d080" class="outline-3">
+<h3 id="org8b3d080"><span class="section-number-3">1.2</span> Theoretical Analysis</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>Theoretical Analysis
+<ul class="org-ul">
+<li>Use a high level description instead of an implementation</li>
+<li>Characterizes running time as a function of input size, n</li>
+<li>Takes into account all possible inputs</li>
+<li>Allows for algorithm comparison independent of hardware/software</li>
+</ul></li>
+<li>Primitive Operations
+<ul class="org-ul">
+<li>Count the amount of primitive/basic operations</li>
+<li>These operations are
+<ul class="org-ul">
+<li>identifiable in pseudocode</li>
+<li>generally independent of programming language</li>
+<li>want to focus on large operations such as loops</li>
+</ul></li>
+</ul></li>
+<li>Asymptotic Complexity
+<ul class="org-ul">
+<li>simply can be understood as Big-O</li>
+<li>Generally fives us an idea of how rapidly the space/time requirements grow as problem size increases</li>
+</ul></li>
+<li>Rate of Growth
+<ul class="org-ul">
+<li>Because lower order terms become relatively insignificant for large n, we consider the actual function and its highest order term to have the same rate of growth</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org6e069af" class="outline-2">
+<h2 id="org6e069af"><span class="section-number-2">2</span> 01.26.21 (ADTs &amp; Big-O)</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org369a019" class="outline-3">
+<h3 id="org369a019"><span class="section-number-3">2.1</span> Abstract Data Types</h3>
+<div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>Abstract Data Type (ADT): A data type whose properties are</li>
 <li>Require a domain and an operation, implementation not relevant at this point</li>
@@ -274,9 +339,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org99a15de" class="outline-3">
-<h3 id="org99a15de"><span class="section-number-3">1.2</span> Data from 3 Different Levels</h3>
-<div class="outline-text-3" id="text-1-2">
+<div id="outline-container-orgcb8e49f" class="outline-3">
+<h3 id="orgcb8e49f"><span class="section-number-3">2.2</span> Data from 3 Different Levels</h3>
+<div class="outline-text-3" id="text-2-2">
 <ul class="org-ul">
 <li>Application (user) level - modeling real life data in a specific context (ex. Library of Congress)</li>
 <li>Logical (ADT) level - considering abstract understanding of necessary requirements (ex. Domain: Collection of Books, Operations: Check-in, Check-out, etc.)</li>
@@ -284,9 +349,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orgc97f1e0" class="outline-3">
-<h3 id="orgc97f1e0"><span class="section-number-3">1.3</span> Basic Types of ADT Operations</h3>
-<div class="outline-text-3" id="text-1-3">
+<div id="outline-container-org925d4fb" class="outline-3">
+<h3 id="org925d4fb"><span class="section-number-3">2.3</span> Basic Types of ADT Operations</h3>
+<div class="outline-text-3" id="text-2-3">
 <ul class="org-ul">
 <li>Constructor - creates a new instance of an ADT</li>
 <li>Transformer - changes the state of one or more of the data values of an instance</li>
@@ -295,9 +360,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org2dbb0e1" class="outline-3">
-<h3 id="org2dbb0e1"><span class="section-number-3">1.4</span> Composite Data Type</h3>
-<div class="outline-text-3" id="text-1-4">
+<div id="outline-container-orgdcdb77e" class="outline-3">
+<h3 id="orgdcdb77e"><span class="section-number-3">2.4</span> Composite Data Type</h3>
+<div class="outline-text-3" id="text-2-4">
 <ul class="org-ul">
 <li>Composite data types are types which
 <ul class="org-ul">
@@ -308,9 +373,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org10d89e1" class="outline-3">
-<h3 id="org10d89e1"><span class="section-number-3">1.5</span> Accessing Functions</h3>
-<div class="outline-text-3" id="text-1-5">
+<div id="outline-container-org7ddb510" class="outline-3">
+<h3 id="org7ddb510"><span class="section-number-3">2.5</span> Accessing Functions</h3>
+<div class="outline-text-3" id="text-2-5">
 <ul class="org-ul">
 <li>Accessing fucntions give the position of className[Index]</li>
 <li>Address(Index) = BaseAddress + Index * SizeOfElement</li>
@@ -321,9 +386,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org0c62719" class="outline-3">
-<h3 id="org0c62719"><span class="section-number-3">1.6</span> Order of Magnitude of a Function</h3>
-<div class="outline-text-3" id="text-1-6">
+<div id="outline-container-orgefc1494" class="outline-3">
+<h3 id="orgefc1494"><span class="section-number-3">2.6</span> Order of Magnitude of a Function</h3>
+<div class="outline-text-3" id="text-2-6">
 <ul class="org-ul">
 <li>Order of magnitude (Big-O notation) expresses computing time of a problem as the term in a function that increases the most rapodly relative to the size of the problem</li>
 <li>Consider two algorithms, A and B. They are both used to solve the same class of problems.
@@ -338,9 +403,9 @@
 </div>
 </div>
 </div>
-<div id="outline-container-org9c36dde" class="outline-2">
-<h2 id="org9c36dde"><span class="section-number-2">2</span> 01.15.21 (File I/O)</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-orgf76204b" class="outline-2">
+<h2 id="orgf76204b"><span class="section-number-2">3</span> 01.25.21 (File I/O)</h2>
+<div class="outline-text-2" id="text-3">
 <ul class="org-ul">
 <li><p>
 File I/O ex.
@@ -374,22 +439,22 @@ File I/O ex.
 </ul>
 </div>
 </div>
-<div id="outline-container-org14da26d" class="outline-2">
-<h2 id="org14da26d"><span class="section-number-2">3</span> 01.25.21 (C++ Ch. 9)</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-orgd550aa7" class="outline-2">
+<h2 id="orgd550aa7"><span class="section-number-2">4</span> 01.25.21 (C++ Ch. 9)</h2>
+<div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-orgf134dc8" class="outline-3">
-<h3 id="orgf134dc8"><span class="section-number-3">3.1</span> Pass by Reference</h3>
-<div class="outline-text-3" id="text-3-1">
+<div id="outline-container-orgfc7e7fd" class="outline-3">
+<h3 id="orgfc7e7fd"><span class="section-number-3">4.1</span> Pass by Reference</h3>
+<div class="outline-text-3" id="text-4-1">
 <ul class="org-ul">
 <li>When dealing with very large objects, don&rsquo;t pass by copy due to the large overhead of copying. Instead, pass by reference</li>
 <li>When passing by reference, use const if you don&rsquo;t want to modify the data members</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgce0bc8a" class="outline-3">
-<h3 id="orgce0bc8a"><span class="section-number-3">3.2</span> Destructors</h3>
-<div class="outline-text-3" id="text-3-2">
+<div id="outline-container-org7fccd89" class="outline-3">
+<h3 id="org7fccd89"><span class="section-number-3">4.2</span> Destructors</h3>
+<div class="outline-text-3" id="text-4-2">
 <ul class="org-ul">
 <li>Name of destructor is className~</li>
 <li>Called implicitly when an object is destroyed</li>
@@ -403,9 +468,9 @@ File I/O ex.
 </ul>
 </div>
 </div>
-<div id="outline-container-org16cc860" class="outline-3">
-<h3 id="org16cc860"><span class="section-number-3">3.3</span> Const Objects</h3>
-<div class="outline-text-3" id="text-3-3">
+<div id="outline-container-org5abe836" class="outline-3">
+<h3 id="org5abe836"><span class="section-number-3">4.3</span> Const Objects</h3>
+<div class="outline-text-3" id="text-4-3">
 <ul class="org-ul">
 <li>const objects must use const methods only</li>
 <li>non-const objects may use both non-const and const methods</li>
@@ -413,22 +478,22 @@ File I/O ex.
 </div>
 </div>
 </div>
-<div id="outline-container-org31d65d9" class="outline-2">
-<h2 id="org31d65d9"><span class="section-number-2">4</span> 01.21.21 (C++ Ch. 9)</h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-org4d0e345" class="outline-2">
+<h2 id="org4d0e345"><span class="section-number-2">5</span> 01.21.21 (C++ Ch. 9)</h2>
+<div class="outline-text-2" id="text-5">
 </div>
-<div id="outline-container-org3599137" class="outline-3">
-<h3 id="org3599137"><span class="section-number-3">4.1</span> Encapsulation</h3>
-<div class="outline-text-3" id="text-4-1">
+<div id="outline-container-org7e83565" class="outline-3">
+<h3 id="org7e83565"><span class="section-number-3">5.1</span> Encapsulation</h3>
+<div class="outline-text-3" id="text-5-1">
 <ul class="org-ul">
 <li>Header files should not contain source code, it should only include prototypes in order to ensure proper information-hiding</li>
 <li>Source code should be placed in a different cpp file, which pulls from the prototypes in the header file</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd9a5b62" class="outline-3">
-<h3 id="orgd9a5b62"><span class="section-number-3">4.2</span> Include Guards</h3>
-<div class="outline-text-3" id="text-4-2">
+<div id="outline-container-org7a4a5eb" class="outline-3">
+<h3 id="org7a4a5eb"><span class="section-number-3">5.2</span> Include Guards</h3>
+<div class="outline-text-3" id="text-5-2">
 <ul class="org-ul">
 <li><p>
 Consider the following classes: Student, Course, and Main
@@ -457,18 +522,18 @@ Consider the following classes: Student, Course, and Main
 </ul>
 </div>
 </div>
-<div id="outline-container-org001bbe2" class="outline-3">
-<h3 id="org001bbe2"><span class="section-number-3">4.3</span> Writing Classes</h3>
-<div class="outline-text-3" id="text-4-3">
+<div id="outline-container-org9705235" class="outline-3">
+<h3 id="org9705235"><span class="section-number-3">5.3</span> Writing Classes</h3>
+<div class="outline-text-3" id="text-5-3">
 <ul class="org-ul">
 <li>Begin by including the necessary header file</li>
 <li>All methods and constructors must be preceded by the header file name and the scope resolution operator (::)</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org9edbf6a" class="outline-3">
-<h3 id="org9edbf6a"><span class="section-number-3">4.4</span> Constructors &amp; Default Constructors</h3>
-<div class="outline-text-3" id="text-4-4">
+<div id="outline-container-org3f974d8" class="outline-3">
+<h3 id="org3f974d8"><span class="section-number-3">5.4</span> Constructors &amp; Default Constructors</h3>
+<div class="outline-text-3" id="text-5-4">
 <ul class="org-ul">
 <li>Constructors can call other methods and do data-checking</li>
 <li>Constructors can be called explicit with multiple parameters when the parameters are impossible to typecast, as follows:</li>
@@ -482,22 +547,22 @@ Consider the following classes: Student, Course, and Main
 </div>
 </div>
 </div>
-<div id="outline-container-org22c77fa" class="outline-2">
-<h2 id="org22c77fa"><span class="section-number-2">5</span> 01.21.21 (C++ Ch. 3)</h2>
-<div class="outline-text-2" id="text-5">
+<div id="outline-container-org04dfd10" class="outline-2">
+<h2 id="org04dfd10"><span class="section-number-2">6</span> 01.21.21 (C++ Ch. 3)</h2>
+<div class="outline-text-2" id="text-6">
 </div>
-<div id="outline-container-orgfe00daf" class="outline-3">
-<h3 id="orgfe00daf"><span class="section-number-3">5.1</span> Objects and Object Sizes</h3>
-<div class="outline-text-3" id="text-5-1">
+<div id="outline-container-org30ebc5d" class="outline-3">
+<h3 id="org30ebc5d"><span class="section-number-3">6.1</span> Objects and Object Sizes</h3>
+<div class="outline-text-3" id="text-6-1">
 <ul class="org-ul">
 <li>An objects size will always be the sum of its data members. The size will not be affected by any methods that are called upon it.</li>
 <li>Because of this, objects can quickly become very large in size.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org1e59479" class="outline-3">
-<h3 id="org1e59479"><span class="section-number-3">5.2</span> UML Diagrams</h3>
-<div class="outline-text-3" id="text-5-2">
+<div id="outline-container-org38d636d" class="outline-3">
+<h3 id="org38d636d"><span class="section-number-3">6.2</span> UML Diagrams</h3>
+<div class="outline-text-3" id="text-6-2">
 <ul class="org-ul">
 <li>Classes are listed as individual boxes
 <ul class="org-ul">
@@ -513,9 +578,9 @@ Consider the following classes: Student, Course, and Main
 </ul>
 </div>
 </div>
-<div id="outline-container-org1f4463d" class="outline-3">
-<h3 id="org1f4463d"><span class="section-number-3">5.3</span> Constructors</h3>
-<div class="outline-text-3" id="text-5-3">
+<div id="outline-container-orgafb416f" class="outline-3">
+<h3 id="orgafb416f"><span class="section-number-3">6.3</span> Constructors</h3>
+<div class="outline-text-3" id="text-6-3">
 <ul class="org-ul">
 <li>Explicit constructors can be used to prevent implicit typecasting, as seen below:</li>
 </ul>
@@ -547,9 +612,9 @@ Consider the following classes: Student, Course, and Main
 </div>
 </div>
 </div>
-<div id="outline-container-org49bf47c" class="outline-2">
-<h2 id="org49bf47c"><span class="section-number-2">6</span> 01.19.21 (C++ Ch. 3)</h2>
-<div class="outline-text-2" id="text-6">
+<div id="outline-container-orgfd28442" class="outline-2">
+<h2 id="orgfd28442"><span class="section-number-2">7</span> 01.19.21 (C++ Ch. 3)</h2>
+<div class="outline-text-2" id="text-7">
 <p>
 A look at class creation
 </p>
@@ -589,9 +654,9 @@ A look at class creation
 </div>
 </div>
 
-<div id="outline-container-orgfe5e3cb" class="outline-2">
-<h2 id="orgfe5e3cb"><span class="section-number-2">7</span> 01.19.21 (C++ Ch. 2)</h2>
-<div class="outline-text-2" id="text-7">
+<div id="outline-container-org436833b" class="outline-2">
+<h2 id="org436833b"><span class="section-number-2">8</span> 01.19.21 (C++ Ch. 2)</h2>
+<div class="outline-text-2" id="text-8">
 <p>
 A look at some basic C++ code
 </p>
@@ -660,7 +725,7 @@ A look at a common mistake
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Sudhan Chitgopkar</p>
-<p class="date">Created: 2021-01-26 Tue 12:22</p>
+<p class="date">Created: 2021-01-28 Thu 12:17</p>
 </div>
 </body>
 </html>

@@ -1,4 +1,33 @@
-* 01.16.21
+* 01.28.21 (Algorithm Analysis)
+** Experimental Analysis
+- Algorithms = step-by-step procedure for solving a problem in a finite amount of time
+- Experimentation Steps:
+  - Write a program implementing the algorithm
+  - Run the program with inputs of varying size, composition
+  - Plot the results
+- Limitations of Experiments:
+  - Implementing the algorithm may be difficult
+  - Results may not indicate running time on other inputs
+  - Algorithm comparison is difficult
+- For this reason, theoretical results are preferred
+** Theoretical Analysis
+- Theoretical Analysis
+  - Use a high level description instead of an implementation
+  - Characterizes running time as a function of input size, n
+  - Takes into account all possible inputs
+  - Allows for algorithm comparison independent of hardware/software
+- Primitive Operations
+  - Count the amount of primitive/basic operations
+  - These operations are
+    - identifiable in pseudocode
+    - generally independent of programming language
+    - want to focus on large operations such as loops
+- Asymptotic Complexity
+  - simply can be understood as Big-O
+  - Generally fives us an idea of how rapidly the space/time requirements grow as problem size increases
+- Rate of Growth
+  - Because lower order terms become relatively insignificant for large n, we consider the actual function and its highest order term to have the same rate of growth
+* 01.26.21 (ADTs & Big-O)
 ** Abstract Data Types
 - Abstract Data Type (ADT): A data type whose properties are
 - Require a domain and an operation, implementation not relevant at this point
@@ -30,7 +59,7 @@
 - Here, A is more efficient because it is linear, rather than exponential - which is preferable for large n
 - Order of growth and time complexity are inverses (larger growth rate = slower time to execute)
 - All functions are monotonic (continue increasing indefinitely)
-* 01.15.21 (File I/O)
+* 01.25.21 (File I/O)
 - File I/O ex.
  #+BEGIN_SRC cpp
 #include <fstream>
