@@ -2,6 +2,15 @@
 #+TITLE: American Foreign Pol. Decision Making
 #+AUTHOR: Sudhan Chitgopkar
 #+EMAIL: sudhanchitgopkar@uga.edu
+* 01.29.21
+** Sagan Review
+- If nuclear weapons were a norm,
+  - conventional weapons would be preferred to nuclear weapons
+  - this preference would not change even if the utility of nuclear weapons, when compared to conventional weapons, increased
+- Cricially, Sagan finds that although Americans prefer conventional weapons when presented a choice, a large proportion are willing to approve of a nuclear strike after the fact
+- The fraction of people that approved a nuclear strike grew with its effectiveness, indicating that perceptions towards nuclear use is based on nuclear utility
+- There is no significant domestic political constraint on nuclear weapon usage
+- Vast majority of people focused on utility to make their decision on nuclear weapons, with few focusing on moral factors
 * 01.27.21
 ** Norms & Nukes
 - Norms and taboos have been critical in nuclear policy
@@ -163,7 +172,7 @@
 ** Incentive Structures
 - Incentive structures are the expected values for each of the strategies considered
 - Incentive structures impose a certain course of action upon us, given that we are rational actors
-* Expected Profit Khan Academy
+* Expected Profit Khan
 - Expected value can be calculated as the sum of all the outcome probabilities multiplied by their corresponding profits.
 - Considering all outcome probabilities should yeild a total probability sum of 1 (100%), with profits being positive (gains) or negative (losses)
 * 01.15.21
