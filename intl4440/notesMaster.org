@@ -1,6 +1,9 @@
 #+TITLE: Strategic Intelligence
 #+AUTHOR: Sudhan Chitgopkar
 #+EMAIL: sudhanchitgopkar@uga.edu
+* Critiques of the Intelligence Cycle
+- Hulnick argues that while the intelligence model is basic, it is inherently flawed because it isn't accurate
+- Regarding analysis, Hulnick finds that there is a disconnect between field officers and analysts, which is caused by lack of communication, cooperation, or mishandling of information
 * Intelligence Cycle
 - Decision-makers are expected to make the best-decision possible, and the intelligence cycle explains how intelligence is developed to give decision-makers the information they need
 - Components of the Intelligence Cycle
@@ -120,7 +123,7 @@
 ** Final Steps
 - Intelligence is then an activity and a product conducted through confidential circumstances on behalf of states so that policy-makers can understand foreign developments, and that it includes clandestine operations performed to cause certain foreign effects
 - Difference between law enforcement and intelligence is secrecy
-* 01.20.20 (Intelligence Structure)
+* Intelligence Structure
 ** What is Intelligence
 - Process
 - Activity - the actual job conducted by an individual or organization to obtain intelligence

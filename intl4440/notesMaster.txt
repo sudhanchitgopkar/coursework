@@ -9,7 +9,8 @@
 Table of Contents
 _________________
 
-1. Intelligence Cycle
+1. Critiques of the Intelligence Cycle
+2. Intelligence Cycle
 .. 1. Planning and Direction
 .. 2. Collection
 .. 3. Processing
@@ -18,22 +19,22 @@ _________________
 .. 6. Critiques
 .. 7. Additional Steps
 .. 8. Additional Questions
-2. Johnson
+3. Johnson
 .. 1. Introduction
 .. 2. The Intelligence Cycle
 .. 3. Planning and Direction
 .. 4. Collection
-3. Turner
+4. Turner
 .. 1. US Intelligence
 .. 2. Constructivism
 .. 3. American Strategic Culture
 .. 4. Distinguishing Norms
 .. 5. Road to Failure
-4. Warner
+5. Warner
 .. 1. Intelligence Definitions
 .. 2. Definition Analysis
 .. 3. Final Steps
-5. 01.20.20 (Intelligence Structure)
+6. Intelligence Structure
 .. 1. What is Intelligence
 .. 2. Levels of Analysis
 .. 3. US Intelligence Community
@@ -43,7 +44,17 @@ _________________
 .. 4. Questions to Consider
 
 
-1 Intelligence Cycle
+1 Critiques of the Intelligence Cycle
+=====================================
+
+  - Hulnick argues that while the intelligence model is basic, it is
+    inherently flawed because it isn't accurate
+  - Regarding analysis, Hulnick finds that there is a disconnect between
+    field officers and analysts, which is caused by lack of
+    communication, cooperation, or mishandling of information
+
+
+2 Intelligence Cycle
 ====================
 
   - Decision-makers are expected to make the best-decision possible, and
@@ -57,7 +68,7 @@ _________________
     - Dissemination
 
 
-1.1 Planning and Direction
+2.1 Planning and Direction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Policy-makers request intelligence on a particular subject or target
@@ -73,7 +84,7 @@ _________________
       steps and deadlines are also set up here.
 
 
-1.2 Collection
+2.2 Collection
 ~~~~~~~~~~~~~~
 
   - Collection of raw information and intelligence
@@ -83,7 +94,7 @@ _________________
     technological, social media, etc.)
 
 
-1.3 Processing
+2.3 Processing
 ~~~~~~~~~~~~~~
 
   - Pre-analytical filtering
@@ -99,7 +110,7 @@ _________________
       that information
 
 
-1.4 Analysis
+2.4 Analysis
 ~~~~~~~~~~~~
 
   - Analysts are generally subject matter experts and are tasked with
@@ -107,14 +118,14 @@ _________________
   - Creation of written reports occurs here
 
 
-1.5 Dissemination
+2.5 Dissemination
 ~~~~~~~~~~~~~~~~~
 
   - Distribution of final information and reports, leading to decisions
     and more intelligence tasks
 
 
-1.6 Critiques
+2.6 Critiques
 ~~~~~~~~~~~~~
 
   - Cycle is over-simplified, doesn't account for specific types of
@@ -124,7 +135,7 @@ _________________
     others are done, states of the cycle are not discrete
 
 
-1.7 Additional Steps
+2.7 Additional Steps
 ~~~~~~~~~~~~~~~~~~~~
 
   - Some argue that consumption should be included in the cycle.
@@ -138,7 +149,7 @@ _________________
     operations
 
 
-1.8 Additional Questions
+2.8 Additional Questions
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Does the cycle's past affect its current use?
@@ -149,10 +160,10 @@ _________________
       - barebones basics?
 
 
-2 Johnson
+3 Johnson
 =========
 
-2.1 Introduction
+3.1 Introduction
 ~~~~~~~~~~~~~~~~
 
   - Intelligence is defined as a set of activities carried out by
@@ -164,7 +175,7 @@ _________________
     abroad
 
 
-2.2 The Intelligence Cycle
+3.2 The Intelligence Cycle
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - describes the flow of activities for collection and analysis of info
@@ -178,7 +189,7 @@ _________________
     - dissemination
 
 
-2.3 Planning and Direction
+3.3 Planning and Direction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - intel managers and policy officials must decide what data should be
@@ -197,14 +208,14 @@ _________________
     chances of relevant intelligence successes increases
 
 
-2.4 Collection
+3.4 Collection
 ~~~~~~~~~~~~~~
 
 
-3 Turner
+4 Turner
 ========
 
-3.1 US Intelligence
+4.1 US Intelligence
 ~~~~~~~~~~~~~~~~~~~
 
   - While US intelligence is not funadmentally unique, it has a series
@@ -215,7 +226,7 @@ _________________
     culture, creating the US intelligence identity
 
 
-3.2 Constructivism
+4.2 Constructivism
 ~~~~~~~~~~~~~~~~~~
 
   - Constructivists see intelligence as highly malleable, made up of
@@ -223,7 +234,7 @@ _________________
     and interests
 
 
-3.3 American Strategic Culture
+4.3 American Strategic Culture
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - While American culture and opinion is very varied, there are central
@@ -239,7 +250,7 @@ _________________
          constitutionalism
 
 
-3.4 Distinguishing Norms
+4.4 Distinguishing Norms
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Institutional Survival - all intelligence agencies are bureaucracies
@@ -280,7 +291,7 @@ _________________
     mantra within USIC and shows main principles of intelligence work
 
 
-3.5 Road to Failure
+4.5 Road to Failure
 ~~~~~~~~~~~~~~~~~~~
 
   - Norms of USIC indicate uncertainty about the role of intelligence in
@@ -296,13 +307,13 @@ _________________
     some cases.
 
 
-4 Warner
+5 Warner
 ========
 
   - No official definition for intelligence exists
 
 
-4.1 Intelligence Definitions
+5.1 Intelligence Definitions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - National Security Act of 1947 defines foreign intelligence as
@@ -326,7 +337,7 @@ _________________
     policymakers"
 
 
-4.2 Definition Analysis
+5.2 Definition Analysis
 ~~~~~~~~~~~~~~~~~~~~~~~
 
   - Most definitions stress information over organization
@@ -338,7 +349,7 @@ _________________
     critical aspect of intelligence
 
 
-4.3 Final Steps
+5.3 Final Steps
 ~~~~~~~~~~~~~~~
 
   - Intelligence is then an activity and a product conducted through
@@ -348,10 +359,10 @@ _________________
   - Difference between law enforcement and intelligence is secrecy
 
 
-5 01.20.20 (Intelligence Structure)
-===================================
+6 Intelligence Structure
+========================
 
-5.1 What is Intelligence
+6.1 What is Intelligence
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Process
@@ -372,7 +383,7 @@ _________________
     understand or influence foreign entities
 
 
-5.2 Levels of Analysis
+6.2 Levels of Analysis
 ~~~~~~~~~~~~~~~~~~~~~~
 
   - Strategic Intelligence - broad, policy-oriented approach to
@@ -384,10 +395,10 @@ _________________
     scenarios and day-to-day operations of intelligence
 
 
-5.3 US Intelligence Community
+6.3 US Intelligence Community
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-5.3.1 Independent
+6.3.1 Independent
 -----------------
 
   - Office of the Director of National Intelligence (ODNI) -
@@ -398,7 +409,7 @@ _________________
     agency that runs operations
 
 
-5.3.2 Departments of Agencies
+6.3.2 Departments of Agencies
 -----------------------------
 
   - Department of Energy Office of Intelligence and Counterintelligence
@@ -418,7 +429,7 @@ _________________
     waterways, cargo, and coasts safe
 
 
-5.3.3 Department of Defense
+6.3.3 Department of Defense
 ---------------------------
 
   - Defense Intelligence Agency (DIA) - DoD's version of the CIA,
@@ -442,7 +453,7 @@ _________________
     countermeasures, telecommunications
 
 
-5.4 Questions to Consider
+6.4 Questions to Consider
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Do you agree with the concise definition of intelligence?
