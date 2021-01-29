@@ -1,6 +1,7 @@
 # Document Information
 #+TITLE: American Foreign Pol. Decision Making
 #+AUTHOR: Sudhan Chitgopkar
+#+EMAIL: sudhanchitgopkar@uga.edu
 * 01.27.21
 ** Norms & Nukes
 - Norms and taboos have been critical in nuclear policy
@@ -44,7 +45,7 @@
 - Veto power must be considered
 - Assumes a rational actor analysis
 - While this applies largely to democratic states, the same general principles can also appply to authoritarian regimes
-* TODO Putnam
+* Putnam
 ** Domestic-International Entanglements
 - Current literature lists domestic influences on foreign policy and theorizes about links between the two
 - Deutsch and Haas theorize about the impact of parties and interest groups on spillover from domestic policy to international objectives

@@ -18,7 +18,7 @@ _________________
 2. 01.21.21
 .. 1. Public Opinion & Decision-Making
 .. 2. Putnam Review
-3. TODO Putnam
+3. Putnam
 .. 1. Domestic-International Entanglements
 .. 2. Two-level Games
 .. 3. Win-Sets
@@ -141,8 +141,8 @@ _________________
     principles can also appply to authoritarian regimes
 
 
-3 TODO Putnam
-=============
+3 Putnam
+========
 
 3.1 Domestic-International Entanglements
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
