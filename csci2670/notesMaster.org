@@ -1,6 +1,7 @@
 #+TITLE: Theory of Computing
 #+AUTHOR: Sudhan Chitgopkar
-#+STARTUP: latexpreview
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="rethink.css" />
+#+OPTIONS: toc:nil num:nil html-style:nil
 * 01.28.29
 ** Nondeterministic Finite Automata
 *** DFA Review

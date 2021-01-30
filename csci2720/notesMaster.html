@@ -3,196 +3,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-01-28 Thu 12:17 -->
+<!-- 2021-01-29 Fri 20:22 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>&lrm;</title>
+<title>Data Structures</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Sudhan Chitgopkar" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
-  .title  { text-align: center;
-             margin-bottom: .2em; }
-  .subtitle { text-align: center;
-              font-size: medium;
-              font-weight: bold;
-              margin-top:0; }
-  .todo   { font-family: monospace; color: red; }
-  .done   { font-family: monospace; color: green; }
-  .priority { font-family: monospace; color: orange; }
-  .tag    { background-color: #eee; font-family: monospace;
-            padding: 2px; font-size: 80%; font-weight: normal; }
-  .timestamp { color: #bebebe; }
-  .timestamp-kwd { color: #5f9ea0; }
-  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
-  .underline { text-decoration: underline; }
-  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
-  p.verse { margin-left: 3%; }
-  pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
-    padding: 8pt;
-    font-family: monospace;
-    overflow: auto;
-    margin: 1.2em;
-  }
-  pre.src {
-    position: relative;
-    overflow: auto;
-    padding-top: 1.2em;
-  }
-  pre.src:before {
-    display: none;
-    position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
-    padding: 3px;
-    border: 1px solid black;
-  }
-  pre.src:hover:before { display: inline;}
-  /* Languages per Org manual */
-  pre.src-asymptote:before { content: 'Asymptote'; }
-  pre.src-awk:before { content: 'Awk'; }
-  pre.src-C:before { content: 'C'; }
-  /* pre.src-C++ doesn't work in CSS */
-  pre.src-clojure:before { content: 'Clojure'; }
-  pre.src-css:before { content: 'CSS'; }
-  pre.src-D:before { content: 'D'; }
-  pre.src-ditaa:before { content: 'ditaa'; }
-  pre.src-dot:before { content: 'Graphviz'; }
-  pre.src-calc:before { content: 'Emacs Calc'; }
-  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-fortran:before { content: 'Fortran'; }
-  pre.src-gnuplot:before { content: 'gnuplot'; }
-  pre.src-haskell:before { content: 'Haskell'; }
-  pre.src-hledger:before { content: 'hledger'; }
-  pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'Javascript'; }
-  pre.src-latex:before { content: 'LaTeX'; }
-  pre.src-ledger:before { content: 'Ledger'; }
-  pre.src-lisp:before { content: 'Lisp'; }
-  pre.src-lilypond:before { content: 'Lilypond'; }
-  pre.src-lua:before { content: 'Lua'; }
-  pre.src-matlab:before { content: 'MATLAB'; }
-  pre.src-mscgen:before { content: 'Mscgen'; }
-  pre.src-ocaml:before { content: 'Objective Caml'; }
-  pre.src-octave:before { content: 'Octave'; }
-  pre.src-org:before { content: 'Org mode'; }
-  pre.src-oz:before { content: 'OZ'; }
-  pre.src-plantuml:before { content: 'Plantuml'; }
-  pre.src-processing:before { content: 'Processing.js'; }
-  pre.src-python:before { content: 'Python'; }
-  pre.src-R:before { content: 'R'; }
-  pre.src-ruby:before { content: 'Ruby'; }
-  pre.src-sass:before { content: 'Sass'; }
-  pre.src-scheme:before { content: 'Scheme'; }
-  pre.src-screen:before { content: 'Gnu Screen'; }
-  pre.src-sed:before { content: 'Sed'; }
-  pre.src-sh:before { content: 'shell'; }
-  pre.src-sql:before { content: 'SQL'; }
-  pre.src-sqlite:before { content: 'SQLite'; }
-  /* additional languages in org.el's org-babel-load-languages alist */
-  pre.src-forth:before { content: 'Forth'; }
-  pre.src-io:before { content: 'IO'; }
-  pre.src-J:before { content: 'J'; }
-  pre.src-makefile:before { content: 'Makefile'; }
-  pre.src-maxima:before { content: 'Maxima'; }
-  pre.src-perl:before { content: 'Perl'; }
-  pre.src-picolisp:before { content: 'Pico Lisp'; }
-  pre.src-scala:before { content: 'Scala'; }
-  pre.src-shell:before { content: 'Shell Script'; }
-  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
-  /* additional language identifiers per "defun org-babel-execute"
-       in ob-*.el */
-  pre.src-cpp:before  { content: 'C++'; }
-  pre.src-abc:before  { content: 'ABC'; }
-  pre.src-coq:before  { content: 'Coq'; }
-  pre.src-groovy:before  { content: 'Groovy'; }
-  /* additional language identifiers from org-babel-shell-names in
-     ob-shell.el: ob-shell is the only babel language using a lambda to put
-     the execution function name together. */
-  pre.src-bash:before  { content: 'bash'; }
-  pre.src-csh:before  { content: 'csh'; }
-  pre.src-ash:before  { content: 'ash'; }
-  pre.src-dash:before  { content: 'dash'; }
-  pre.src-ksh:before  { content: 'ksh'; }
-  pre.src-mksh:before  { content: 'mksh'; }
-  pre.src-posh:before  { content: 'posh'; }
-  /* Additional Emacs modes also supported by the LaTeX listings package */
-  pre.src-ada:before { content: 'Ada'; }
-  pre.src-asm:before { content: 'Assembler'; }
-  pre.src-caml:before { content: 'Caml'; }
-  pre.src-delphi:before { content: 'Delphi'; }
-  pre.src-html:before { content: 'HTML'; }
-  pre.src-idl:before { content: 'IDL'; }
-  pre.src-mercury:before { content: 'Mercury'; }
-  pre.src-metapost:before { content: 'MetaPost'; }
-  pre.src-modula-2:before { content: 'Modula-2'; }
-  pre.src-pascal:before { content: 'Pascal'; }
-  pre.src-ps:before { content: 'PostScript'; }
-  pre.src-prolog:before { content: 'Prolog'; }
-  pre.src-simula:before { content: 'Simula'; }
-  pre.src-tcl:before { content: 'tcl'; }
-  pre.src-tex:before { content: 'TeX'; }
-  pre.src-plain-tex:before { content: 'Plain TeX'; }
-  pre.src-verilog:before { content: 'Verilog'; }
-  pre.src-vhdl:before { content: 'VHDL'; }
-  pre.src-xml:before { content: 'XML'; }
-  pre.src-nxml:before { content: 'XML'; }
-  /* add a generic configuration mode; LaTeX export needs an additional
-     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
-  pre.src-conf:before { content: 'Configuration File'; }
-
-  table { border-collapse:collapse; }
-  caption.t-above { caption-side: top; }
-  caption.t-bottom { caption-side: bottom; }
-  td, th { vertical-align:top;  }
-  th.org-right  { text-align: center;  }
-  th.org-left   { text-align: center;   }
-  th.org-center { text-align: center; }
-  td.org-right  { text-align: right;  }
-  td.org-left   { text-align: left;   }
-  td.org-center { text-align: center; }
-  dt { font-weight: bold; }
-  .footpara { display: inline; }
-  .footdef  { margin-bottom: 1em; }
-  .figure { padding: 1em; }
-  .figure p { text-align: center; }
-  .equation-container {
-    display: table;
-    text-align: center;
-    width: 100%;
-  }
-  .equation {
-    vertical-align: middle;
-  }
-  .equation-label {
-    display: table-cell;
-    text-align: right;
-    vertical-align: middle;
-  }
-  .inlinetask {
-    padding: 10px;
-    border: 2px solid gray;
-    margin: 10px;
-    background: #ffffcc;
-  }
-  #org-div-home-and-up
-   { text-align: right; font-size: 70%; white-space: nowrap; }
-  textarea { overflow-x: auto; }
-  .linenr { font-size: smaller }
-  .code-highlighted { background-color: #ffff00; }
-  .org-info-js_info-navigation { border-style: none; }
-  #org-info-js_console-label
-    { font-size: 10px; font-weight: bold; white-space: nowrap; }
-  .org-info-js_search-highlight
-    { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
-</style>
+<link rel="stylesheet" type="text/css" href="rethink.css" />
 <script type="text/javascript">
 // @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
 <!--/*--><![CDATA[/*><!--*/
@@ -218,61 +35,14 @@
 </head>
 <body>
 <div id="content">
-<div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#org5618f5a">1. 01.28.21 (Algorithm Analysis)</a>
-<ul>
-<li><a href="#org987db16">1.1. Experimental Analysis</a></li>
-<li><a href="#org8b3d080">1.2. Theoretical Analysis</a></li>
-</ul>
-</li>
-<li><a href="#org6e069af">2. 01.26.21 (ADTs &amp; Big-O)</a>
-<ul>
-<li><a href="#org369a019">2.1. Abstract Data Types</a></li>
-<li><a href="#orgcb8e49f">2.2. Data from 3 Different Levels</a></li>
-<li><a href="#org925d4fb">2.3. Basic Types of ADT Operations</a></li>
-<li><a href="#orgdcdb77e">2.4. Composite Data Type</a></li>
-<li><a href="#org7ddb510">2.5. Accessing Functions</a></li>
-<li><a href="#orgefc1494">2.6. Order of Magnitude of a Function</a></li>
-</ul>
-</li>
-<li><a href="#orgf76204b">3. 01.25.21 (File I/O)</a></li>
-<li><a href="#orgd550aa7">4. 01.25.21 (C++ Ch. 9)</a>
-<ul>
-<li><a href="#orgfc7e7fd">4.1. Pass by Reference</a></li>
-<li><a href="#org7fccd89">4.2. Destructors</a></li>
-<li><a href="#org5abe836">4.3. Const Objects</a></li>
-</ul>
-</li>
-<li><a href="#org4d0e345">5. 01.21.21 (C++ Ch. 9)</a>
-<ul>
-<li><a href="#org7e83565">5.1. Encapsulation</a></li>
-<li><a href="#org7a4a5eb">5.2. Include Guards</a></li>
-<li><a href="#org9705235">5.3. Writing Classes</a></li>
-<li><a href="#org3f974d8">5.4. Constructors &amp; Default Constructors</a></li>
-</ul>
-</li>
-<li><a href="#org04dfd10">6. 01.21.21 (C++ Ch. 3)</a>
-<ul>
-<li><a href="#org30ebc5d">6.1. Objects and Object Sizes</a></li>
-<li><a href="#org38d636d">6.2. UML Diagrams</a></li>
-<li><a href="#orgafb416f">6.3. Constructors</a></li>
-</ul>
-</li>
-<li><a href="#orgfd28442">7. 01.19.21 (C++ Ch. 3)</a></li>
-<li><a href="#org436833b">8. 01.19.21 (C++ Ch. 2)</a></li>
-</ul>
+<h1 class="title">Data Structures</h1>
+<div id="outline-container-org1022b9d" class="outline-2">
+<h2 id="org1022b9d">01.28.21 (Algorithm Analysis)</h2>
+<div class="outline-text-2" id="text-org1022b9d">
 </div>
-</div>
-<div id="outline-container-org5618f5a" class="outline-2">
-<h2 id="org5618f5a"><span class="section-number-2">1</span> 01.28.21 (Algorithm Analysis)</h2>
-<div class="outline-text-2" id="text-1">
-</div>
-<div id="outline-container-org987db16" class="outline-3">
-<h3 id="org987db16"><span class="section-number-3">1.1</span> Experimental Analysis</h3>
-<div class="outline-text-3" id="text-1-1">
+<div id="outline-container-org39d73c8" class="outline-3">
+<h3 id="org39d73c8">Experimental Analysis</h3>
+<div class="outline-text-3" id="text-org39d73c8">
 <ul class="org-ul">
 <li>Algorithms = step-by-step procedure for solving a problem in a finite amount of time</li>
 <li>Experimentation Steps:
@@ -291,9 +61,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org8b3d080" class="outline-3">
-<h3 id="org8b3d080"><span class="section-number-3">1.2</span> Theoretical Analysis</h3>
-<div class="outline-text-3" id="text-1-2">
+<div id="outline-container-org9eba738" class="outline-3">
+<h3 id="org9eba738">Theoretical Analysis</h3>
+<div class="outline-text-3" id="text-org9eba738">
 <ul class="org-ul">
 <li>Theoretical Analysis
 <ul class="org-ul">
@@ -325,13 +95,13 @@
 </div>
 </div>
 </div>
-<div id="outline-container-org6e069af" class="outline-2">
-<h2 id="org6e069af"><span class="section-number-2">2</span> 01.26.21 (ADTs &amp; Big-O)</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-orgd32645e" class="outline-2">
+<h2 id="orgd32645e">01.26.21 (ADTs &amp; Big-O)</h2>
+<div class="outline-text-2" id="text-orgd32645e">
 </div>
-<div id="outline-container-org369a019" class="outline-3">
-<h3 id="org369a019"><span class="section-number-3">2.1</span> Abstract Data Types</h3>
-<div class="outline-text-3" id="text-2-1">
+<div id="outline-container-org3c7fbbc" class="outline-3">
+<h3 id="org3c7fbbc">Abstract Data Types</h3>
+<div class="outline-text-3" id="text-org3c7fbbc">
 <ul class="org-ul">
 <li>Abstract Data Type (ADT): A data type whose properties are</li>
 <li>Require a domain and an operation, implementation not relevant at this point</li>
@@ -339,9 +109,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orgcb8e49f" class="outline-3">
-<h3 id="orgcb8e49f"><span class="section-number-3">2.2</span> Data from 3 Different Levels</h3>
-<div class="outline-text-3" id="text-2-2">
+<div id="outline-container-orgc6feb55" class="outline-3">
+<h3 id="orgc6feb55">Data from 3 Different Levels</h3>
+<div class="outline-text-3" id="text-orgc6feb55">
 <ul class="org-ul">
 <li>Application (user) level - modeling real life data in a specific context (ex. Library of Congress)</li>
 <li>Logical (ADT) level - considering abstract understanding of necessary requirements (ex. Domain: Collection of Books, Operations: Check-in, Check-out, etc.)</li>
@@ -349,9 +119,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org925d4fb" class="outline-3">
-<h3 id="org925d4fb"><span class="section-number-3">2.3</span> Basic Types of ADT Operations</h3>
-<div class="outline-text-3" id="text-2-3">
+<div id="outline-container-orgee05fb4" class="outline-3">
+<h3 id="orgee05fb4">Basic Types of ADT Operations</h3>
+<div class="outline-text-3" id="text-orgee05fb4">
 <ul class="org-ul">
 <li>Constructor - creates a new instance of an ADT</li>
 <li>Transformer - changes the state of one or more of the data values of an instance</li>
@@ -360,9 +130,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orgdcdb77e" class="outline-3">
-<h3 id="orgdcdb77e"><span class="section-number-3">2.4</span> Composite Data Type</h3>
-<div class="outline-text-3" id="text-2-4">
+<div id="outline-container-orgeed8a7d" class="outline-3">
+<h3 id="orgeed8a7d">Composite Data Type</h3>
+<div class="outline-text-3" id="text-orgeed8a7d">
 <ul class="org-ul">
 <li>Composite data types are types which
 <ul class="org-ul">
@@ -373,9 +143,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org7ddb510" class="outline-3">
-<h3 id="org7ddb510"><span class="section-number-3">2.5</span> Accessing Functions</h3>
-<div class="outline-text-3" id="text-2-5">
+<div id="outline-container-org584b24b" class="outline-3">
+<h3 id="org584b24b">Accessing Functions</h3>
+<div class="outline-text-3" id="text-org584b24b">
 <ul class="org-ul">
 <li>Accessing fucntions give the position of className[Index]</li>
 <li>Address(Index) = BaseAddress + Index * SizeOfElement</li>
@@ -386,9 +156,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orgefc1494" class="outline-3">
-<h3 id="orgefc1494"><span class="section-number-3">2.6</span> Order of Magnitude of a Function</h3>
-<div class="outline-text-3" id="text-2-6">
+<div id="outline-container-orgf98135e" class="outline-3">
+<h3 id="orgf98135e">Order of Magnitude of a Function</h3>
+<div class="outline-text-3" id="text-orgf98135e">
 <ul class="org-ul">
 <li>Order of magnitude (Big-O notation) expresses computing time of a problem as the term in a function that increases the most rapodly relative to the size of the problem</li>
 <li>Consider two algorithms, A and B. They are both used to solve the same class of problems.
@@ -403,9 +173,9 @@
 </div>
 </div>
 </div>
-<div id="outline-container-orgf76204b" class="outline-2">
-<h2 id="orgf76204b"><span class="section-number-2">3</span> 01.25.21 (File I/O)</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-org40256eb" class="outline-2">
+<h2 id="org40256eb">01.25.21 (File I/O)</h2>
+<div class="outline-text-2" id="text-org40256eb">
 <ul class="org-ul">
 <li><p>
 File I/O ex.
@@ -439,22 +209,22 @@ File I/O ex.
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd550aa7" class="outline-2">
-<h2 id="orgd550aa7"><span class="section-number-2">4</span> 01.25.21 (C++ Ch. 9)</h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-org0c21fff" class="outline-2">
+<h2 id="org0c21fff">01.25.21 (C++ Ch. 9)</h2>
+<div class="outline-text-2" id="text-org0c21fff">
 </div>
-<div id="outline-container-orgfc7e7fd" class="outline-3">
-<h3 id="orgfc7e7fd"><span class="section-number-3">4.1</span> Pass by Reference</h3>
-<div class="outline-text-3" id="text-4-1">
+<div id="outline-container-org5167922" class="outline-3">
+<h3 id="org5167922">Pass by Reference</h3>
+<div class="outline-text-3" id="text-org5167922">
 <ul class="org-ul">
 <li>When dealing with very large objects, don&rsquo;t pass by copy due to the large overhead of copying. Instead, pass by reference</li>
 <li>When passing by reference, use const if you don&rsquo;t want to modify the data members</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org7fccd89" class="outline-3">
-<h3 id="org7fccd89"><span class="section-number-3">4.2</span> Destructors</h3>
-<div class="outline-text-3" id="text-4-2">
+<div id="outline-container-orge92e890" class="outline-3">
+<h3 id="orge92e890">Destructors</h3>
+<div class="outline-text-3" id="text-orge92e890">
 <ul class="org-ul">
 <li>Name of destructor is className~</li>
 <li>Called implicitly when an object is destroyed</li>
@@ -468,9 +238,9 @@ File I/O ex.
 </ul>
 </div>
 </div>
-<div id="outline-container-org5abe836" class="outline-3">
-<h3 id="org5abe836"><span class="section-number-3">4.3</span> Const Objects</h3>
-<div class="outline-text-3" id="text-4-3">
+<div id="outline-container-orgc03c8cb" class="outline-3">
+<h3 id="orgc03c8cb">Const Objects</h3>
+<div class="outline-text-3" id="text-orgc03c8cb">
 <ul class="org-ul">
 <li>const objects must use const methods only</li>
 <li>non-const objects may use both non-const and const methods</li>
@@ -478,22 +248,22 @@ File I/O ex.
 </div>
 </div>
 </div>
-<div id="outline-container-org4d0e345" class="outline-2">
-<h2 id="org4d0e345"><span class="section-number-2">5</span> 01.21.21 (C++ Ch. 9)</h2>
-<div class="outline-text-2" id="text-5">
+<div id="outline-container-orgf3f78f1" class="outline-2">
+<h2 id="orgf3f78f1">01.21.21 (C++ Ch. 9)</h2>
+<div class="outline-text-2" id="text-orgf3f78f1">
 </div>
-<div id="outline-container-org7e83565" class="outline-3">
-<h3 id="org7e83565"><span class="section-number-3">5.1</span> Encapsulation</h3>
-<div class="outline-text-3" id="text-5-1">
+<div id="outline-container-orga682411" class="outline-3">
+<h3 id="orga682411">Encapsulation</h3>
+<div class="outline-text-3" id="text-orga682411">
 <ul class="org-ul">
 <li>Header files should not contain source code, it should only include prototypes in order to ensure proper information-hiding</li>
 <li>Source code should be placed in a different cpp file, which pulls from the prototypes in the header file</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org7a4a5eb" class="outline-3">
-<h3 id="org7a4a5eb"><span class="section-number-3">5.2</span> Include Guards</h3>
-<div class="outline-text-3" id="text-5-2">
+<div id="outline-container-org2e58ec5" class="outline-3">
+<h3 id="org2e58ec5">Include Guards</h3>
+<div class="outline-text-3" id="text-org2e58ec5">
 <ul class="org-ul">
 <li><p>
 Consider the following classes: Student, Course, and Main
@@ -522,18 +292,18 @@ Consider the following classes: Student, Course, and Main
 </ul>
 </div>
 </div>
-<div id="outline-container-org9705235" class="outline-3">
-<h3 id="org9705235"><span class="section-number-3">5.3</span> Writing Classes</h3>
-<div class="outline-text-3" id="text-5-3">
+<div id="outline-container-org2ac7c5b" class="outline-3">
+<h3 id="org2ac7c5b">Writing Classes</h3>
+<div class="outline-text-3" id="text-org2ac7c5b">
 <ul class="org-ul">
 <li>Begin by including the necessary header file</li>
 <li>All methods and constructors must be preceded by the header file name and the scope resolution operator (::)</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org3f974d8" class="outline-3">
-<h3 id="org3f974d8"><span class="section-number-3">5.4</span> Constructors &amp; Default Constructors</h3>
-<div class="outline-text-3" id="text-5-4">
+<div id="outline-container-org44f0327" class="outline-3">
+<h3 id="org44f0327">Constructors &amp; Default Constructors</h3>
+<div class="outline-text-3" id="text-org44f0327">
 <ul class="org-ul">
 <li>Constructors can call other methods and do data-checking</li>
 <li>Constructors can be called explicit with multiple parameters when the parameters are impossible to typecast, as follows:</li>
@@ -547,22 +317,22 @@ Consider the following classes: Student, Course, and Main
 </div>
 </div>
 </div>
-<div id="outline-container-org04dfd10" class="outline-2">
-<h2 id="org04dfd10"><span class="section-number-2">6</span> 01.21.21 (C++ Ch. 3)</h2>
-<div class="outline-text-2" id="text-6">
+<div id="outline-container-org7c88a94" class="outline-2">
+<h2 id="org7c88a94">01.21.21 (C++ Ch. 3)</h2>
+<div class="outline-text-2" id="text-org7c88a94">
 </div>
-<div id="outline-container-org30ebc5d" class="outline-3">
-<h3 id="org30ebc5d"><span class="section-number-3">6.1</span> Objects and Object Sizes</h3>
-<div class="outline-text-3" id="text-6-1">
+<div id="outline-container-org91c37c7" class="outline-3">
+<h3 id="org91c37c7">Objects and Object Sizes</h3>
+<div class="outline-text-3" id="text-org91c37c7">
 <ul class="org-ul">
 <li>An objects size will always be the sum of its data members. The size will not be affected by any methods that are called upon it.</li>
 <li>Because of this, objects can quickly become very large in size.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org38d636d" class="outline-3">
-<h3 id="org38d636d"><span class="section-number-3">6.2</span> UML Diagrams</h3>
-<div class="outline-text-3" id="text-6-2">
+<div id="outline-container-org88bc94a" class="outline-3">
+<h3 id="org88bc94a">UML Diagrams</h3>
+<div class="outline-text-3" id="text-org88bc94a">
 <ul class="org-ul">
 <li>Classes are listed as individual boxes
 <ul class="org-ul">
@@ -578,9 +348,9 @@ Consider the following classes: Student, Course, and Main
 </ul>
 </div>
 </div>
-<div id="outline-container-orgafb416f" class="outline-3">
-<h3 id="orgafb416f"><span class="section-number-3">6.3</span> Constructors</h3>
-<div class="outline-text-3" id="text-6-3">
+<div id="outline-container-org100ebf1" class="outline-3">
+<h3 id="org100ebf1">Constructors</h3>
+<div class="outline-text-3" id="text-org100ebf1">
 <ul class="org-ul">
 <li>Explicit constructors can be used to prevent implicit typecasting, as seen below:</li>
 </ul>
@@ -612,9 +382,9 @@ Consider the following classes: Student, Course, and Main
 </div>
 </div>
 </div>
-<div id="outline-container-orgfd28442" class="outline-2">
-<h2 id="orgfd28442"><span class="section-number-2">7</span> 01.19.21 (C++ Ch. 3)</h2>
-<div class="outline-text-2" id="text-7">
+<div id="outline-container-org5296df3" class="outline-2">
+<h2 id="org5296df3">01.19.21 (C++ Ch. 3)</h2>
+<div class="outline-text-2" id="text-org5296df3">
 <p>
 A look at class creation
 </p>
@@ -654,9 +424,9 @@ A look at class creation
 </div>
 </div>
 
-<div id="outline-container-org436833b" class="outline-2">
-<h2 id="org436833b"><span class="section-number-2">8</span> 01.19.21 (C++ Ch. 2)</h2>
-<div class="outline-text-2" id="text-8">
+<div id="outline-container-org3d7862f" class="outline-2">
+<h2 id="org3d7862f">01.19.21 (C++ Ch. 2)</h2>
+<div class="outline-text-2" id="text-org3d7862f">
 <p>
 A look at some basic C++ code
 </p>
@@ -725,7 +495,7 @@ A look at a common mistake
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Sudhan Chitgopkar</p>
-<p class="date">Created: 2021-01-28 Thu 12:17</p>
+<p class="date">Created: 2021-01-29 Fri 20:22</p>
 </div>
 </body>
 </html>
