@@ -3,6 +3,13 @@
 #+EMAIL: sudhanchitgopkar@uga.edu
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="rethink.css" />
 #+OPTIONS: toc:nil num:nil html-style:nil
+* 02.01.21 (Recursion)
+** Recursion Trees
+- To convert recurrences into a tree,
+  - each node represents the cost incurred at various levels of recursion
+  - Sum up the costs of all levels
+- Complexity of a recursive function is determined by the amount of recursive calls
+- To solve a recurrence relationship, we find a closed form for it or use a master method
 * 01.28.21 (Algorithm Analysis)
 ** Experimental Analysis
 - Algorithms = step-by-step procedure for solving a problem in a finite amount of time

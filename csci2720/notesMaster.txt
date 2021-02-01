@@ -1,42 +1,32 @@
-Sudhan Chitgopkar
+                          ___________________
+
+                            DATA STRUCTURES
+
+                           Sudhan Chitgopkar
+                          ___________________
 
 
-Table of Contents
-_________________
+02.01.21 (Recursion)
+====================
 
-1. 01.28.21 (Algorithm Analysis)
-.. 1. Experimental Analysis
-.. 2. Theoretical Analysis
-2. 01.26.21 (ADTs & Big-O)
-.. 1. Abstract Data Types
-.. 2. Data from 3 Different Levels
-.. 3. Basic Types of ADT Operations
-.. 4. Composite Data Type
-.. 5. Accessing Functions
-.. 6. Order of Magnitude of a Function
-3. 01.25.21 (File I/O)
-4. 01.25.21 (C++ Ch. 9)
-.. 1. Pass by Reference
-.. 2. Destructors
-.. 3. Const Objects
-5. 01.21.21 (C++ Ch. 9)
-.. 1. Encapsulation
-.. 2. Include Guards
-.. 3. Writing Classes
-.. 4. Constructors & Default Constructors
-6. 01.21.21 (C++ Ch. 3)
-.. 1. Objects and Object Sizes
-.. 2. UML Diagrams
-.. 3. Constructors
-7. 01.19.21 (C++ Ch. 3)
-8. 01.19.21 (C++ Ch. 2)
+Recursion Trees
+~~~~~~~~~~~~~~~
+
+  - To convert recurrences into a tree,
+    - each node represents the cost incurred at various levels of
+      recursion
+    - Sum up the costs of all levels
+  - Complexity of a recursive function is determined by the amount of
+    recursive calls
+  - To solve a recurrence relationship, we find a closed form for it or
+    use a master method
 
 
-1 01.28.21 (Algorithm Analysis)
-===============================
+01.28.21 (Algorithm Analysis)
+=============================
 
-1.1 Experimental Analysis
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Experimental Analysis
+~~~~~~~~~~~~~~~~~~~~~
 
   - Algorithms = step-by-step procedure for solving a problem in a
     finite amount of time
@@ -51,8 +41,8 @@ _________________
   - For this reason, theoretical results are preferred
 
 
-1.2 Theoretical Analysis
-~~~~~~~~~~~~~~~~~~~~~~~~
+Theoretical Analysis
+~~~~~~~~~~~~~~~~~~~~
 
   - Theoretical Analysis
     - Use a high level description instead of an implementation
@@ -75,11 +65,11 @@ _________________
       term to have the same rate of growth
 
 
-2 01.26.21 (ADTs & Big-O)
-=========================
+01.26.21 (ADTs & Big-O)
+=======================
 
-2.1 Abstract Data Types
-~~~~~~~~~~~~~~~~~~~~~~~
+Abstract Data Types
+~~~~~~~~~~~~~~~~~~~
 
   - Abstract Data Type (ADT): A data type whose properties are
   - Require a domain and an operation, implementation not relevant at
@@ -87,8 +77,8 @@ _________________
   - When implementation is considerd, an ADT becomes a data structure
 
 
-2.2 Data from 3 Different Levels
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Data from 3 Different Levels
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Application (user) level - modeling real life data in a specific
     context (ex. Library of Congress)
@@ -99,8 +89,8 @@ _________________
     the domain
 
 
-2.3 Basic Types of ADT Operations
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Basic Types of ADT Operations
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Constructor - creates a new instance of an ADT
   - Transformer - changes the state of one or more of the data values of
@@ -111,8 +101,8 @@ _________________
     structure sequentially
 
 
-2.4 Composite Data Type
-~~~~~~~~~~~~~~~~~~~~~~~
+Composite Data Type
+~~~~~~~~~~~~~~~~~~~
 
   - Composite data types are types which
     - Store a collection of individual data components under one
@@ -121,8 +111,8 @@ _________________
   - Examples include arrays and classes
 
 
-2.5 Accessing Functions
-~~~~~~~~~~~~~~~~~~~~~~~
+Accessing Functions
+~~~~~~~~~~~~~~~~~~~
 
   - Accessing fucntions give the position of className[Index]
   - Address(Index) = BaseAddress + Index * SizeOfElement
@@ -131,8 +121,8 @@ _________________
     - 6000 + (10 * 1) = 6010;
 
 
-2.6 Order of Magnitude of a Function
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Order of Magnitude of a Function
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Order of magnitude (Big-O notation) expresses computing time of a
     problem as the term in a function that increases the most rapodly
@@ -148,8 +138,8 @@ _________________
   - All functions are monotonic (continue increasing indefinitely)
 
 
-3 01.25.21 (File I/O)
-=====================
+01.25.21 (File I/O)
+===================
 
   - File I/O ex.
     ,----
@@ -179,11 +169,11 @@ _________________
     `----
 
 
-4 01.25.21 (C++ Ch. 9)
-======================
+01.25.21 (C++ Ch. 9)
+====================
 
-4.1 Pass by Reference
-~~~~~~~~~~~~~~~~~~~~~
+Pass by Reference
+~~~~~~~~~~~~~~~~~
 
   - When dealing with very large objects, don't pass by copy due to the
     large overhead of copying. Instead, pass by reference
@@ -191,8 +181,8 @@ _________________
     data members
 
 
-4.2 Destructors
-~~~~~~~~~~~~~~~
+Destructors
+~~~~~~~~~~~
 
   - Name of destructor is className~
   - Called implicitly when an object is destroyed
@@ -206,18 +196,18 @@ _________________
   - Objects are also destroyed in reverse order from their construction
 
 
-4.3 Const Objects
-~~~~~~~~~~~~~~~~~
+Const Objects
+~~~~~~~~~~~~~
 
   - const objects must use const methods only
   - non-const objects may use both non-const and const methods
 
 
-5 01.21.21 (C++ Ch. 9)
-======================
+01.21.21 (C++ Ch. 9)
+====================
 
-5.1 Encapsulation
-~~~~~~~~~~~~~~~~~
+Encapsulation
+~~~~~~~~~~~~~
 
   - Header files should not contain source code, it should only include
     prototypes in order to ensure proper information-hiding
@@ -225,8 +215,8 @@ _________________
     from the prototypes in the header file
 
 
-5.2 Include Guards
-~~~~~~~~~~~~~~~~~~
+Include Guards
+~~~~~~~~~~~~~~
 
   - Consider the following classes: Student, Course, and Main
     - Student uses Course
@@ -249,16 +239,16 @@ _________________
     multiple places
 
 
-5.3 Writing Classes
-~~~~~~~~~~~~~~~~~~~
+Writing Classes
+~~~~~~~~~~~~~~~
 
   - Begin by including the necessary header file
   - All methods and constructors must be preceded by the header file
     name and the scope resolution operator (::)
 
 
-5.4 Constructors & Default Constructors
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Constructors & Default Constructors
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Constructors can call other methods and do data-checking
   - Constructors can be called explicit with multiple parameters when
@@ -270,19 +260,19 @@ _________________
   `----
 
 
-6 01.21.21 (C++ Ch. 3)
-======================
+01.21.21 (C++ Ch. 3)
+====================
 
-6.1 Objects and Object Sizes
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Objects and Object Sizes
+~~~~~~~~~~~~~~~~~~~~~~~~
 
   - An objects size will always be the sum of its data members. The size
     will not be affected by any methods that are called upon it.
   - Because of this, objects can quickly become very large in size.
 
 
-6.2 UML Diagrams
-~~~~~~~~~~~~~~~~
+UML Diagrams
+~~~~~~~~~~~~
 
   - Classes are listed as individual boxes
     - top box = class name
@@ -293,8 +283,8 @@ _________________
       - # = protected
 
 
-6.3 Constructors
-~~~~~~~~~~~~~~~~
+Constructors
+~~~~~~~~~~~~
 
   - Explicit constructors can be used to prevent implicit typecasting,
     as seen below:
@@ -321,8 +311,8 @@ _________________
   `----
 
 
-7 01.19.21 (C++ Ch. 3)
-======================
+01.19.21 (C++ Ch. 3)
+====================
 
   A look at class creation
   ,----
@@ -362,8 +352,8 @@ _________________
     modifying the values of data members or objects.
 
 
-8 01.19.21 (C++ Ch. 2)
-======================
+01.19.21 (C++ Ch. 2)
+====================
 
   A look at some basic C++ code
   ,----

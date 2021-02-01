@@ -1,4 +1,4 @@
-% Created 2021-01-28 Thu 12:17
+% Created 2021-02-01 Mon 12:15
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -17,20 +17,34 @@
 \usepackage[margin=1in]{geometry}
 \author{Sudhan Chitgopkar}
 \date{\today}
-\title{}
+\title{Data Structures}
 \hypersetup{
  pdfauthor={Sudhan Chitgopkar},
- pdftitle={},
+ pdftitle={Data Structures},
  pdfkeywords={},
  pdfsubject={},
  pdfcreator={Emacs 27.1 (Org mode 9.5)}, 
  pdflang={English}}
 \begin{document}
 
-\tableofcontents \clearpage\section{01.28.21 (Algorithm Analysis)}
-\label{sec:org2a06abb}
-\subsection{Experimental Analysis}
-\label{sec:org11b6a1d}
+\maketitle
+\section*{02.01.21 (Recursion)}
+\label{sec:orgf5d0979}
+\subsection*{Recursion Trees}
+\label{sec:org87a10ef}
+\begin{itemize}
+\item To convert recurrences into a tree,
+\begin{itemize}
+\item each node represents the cost incurred at various levels of recursion
+\item Sum up the costs of all levels
+\end{itemize}
+\item Complexity of a recursive function is determined by the amount of recursive calls
+\item To solve a recurrence relationship, we find a closed form for it or use a master method
+\end{itemize}
+\section*{01.28.21 (Algorithm Analysis)}
+\label{sec:orga033551}
+\subsection*{Experimental Analysis}
+\label{sec:orgacfb8fe}
 \begin{itemize}
 \item Algorithms = step-by-step procedure for solving a problem in a finite amount of time
 \item Experimentation Steps:
@@ -47,8 +61,8 @@
 \end{itemize}
 \item For this reason, theoretical results are preferred
 \end{itemize}
-\subsection{Theoretical Analysis}
-\label{sec:orga2b5cb9}
+\subsection*{Theoretical Analysis}
+\label{sec:org5a4e8c4}
 \begin{itemize}
 \item Theoretical Analysis
 \begin{itemize}
@@ -77,32 +91,32 @@
 \item Because lower order terms become relatively insignificant for large n, we consider the actual function and its highest order term to have the same rate of growth
 \end{itemize}
 \end{itemize}
-\section{01.26.21 (ADTs \& Big-O)}
-\label{sec:orgc10b94b}
-\subsection{Abstract Data Types}
-\label{sec:org7b7ab0b}
+\section*{01.26.21 (ADTs \& Big-O)}
+\label{sec:orgc08fdd4}
+\subsection*{Abstract Data Types}
+\label{sec:orge96fe02}
 \begin{itemize}
 \item Abstract Data Type (ADT): A data type whose properties are
 \item Require a domain and an operation, implementation not relevant at this point
 \item When implementation is considerd, an ADT becomes a data structure
 \end{itemize}
-\subsection{Data from 3 Different Levels}
-\label{sec:org53a0b0a}
+\subsection*{Data from 3 Different Levels}
+\label{sec:org5168e9c}
 \begin{itemize}
 \item Application (user) level - modeling real life data in a specific context (ex. Library of Congress)
 \item Logical (ADT) level - considering abstract understanding of necessary requirements (ex. Domain: Collection of Books, Operations: Check-in, Check-out, etc.)
 \item Implementation level - considering how to carry out operations upon the domain
 \end{itemize}
-\subsection{Basic Types of ADT Operations}
-\label{sec:orgfafa222}
+\subsection*{Basic Types of ADT Operations}
+\label{sec:orgd02f39c}
 \begin{itemize}
 \item Constructor - creates a new instance of an ADT
 \item Transformer - changes the state of one or more of the data values of an instance
 \item Observer - allows us to observe the state of 1+ data value without changing them
 \item Iterator - allows us to process all the components in a data structure sequentially
 \end{itemize}
-\subsection{Composite Data Type}
-\label{sec:orge183854}
+\subsection*{Composite Data Type}
+\label{sec:orgefd81f6}
 \begin{itemize}
 \item Composite data types are types which
 \begin{itemize}
@@ -111,8 +125,8 @@
 \end{itemize}
 \item Examples include arrays and classes
 \end{itemize}
-\subsection{Accessing Functions}
-\label{sec:org4f3d1ec}
+\subsection*{Accessing Functions}
+\label{sec:orgf770ee9}
 \begin{itemize}
 \item Accessing fucntions give the position of className[Index]
 \item Address(Index) = BaseAddress + Index * SizeOfElement
@@ -121,8 +135,8 @@
 \item 6000 + (10 * 1) = 6010;
 \end{itemize}
 \end{itemize}
-\subsection{Order of Magnitude of a Function}
-\label{sec:org191efce}
+\subsection*{Order of Magnitude of a Function}
+\label{sec:org561775b}
 \begin{itemize}
 \item Order of magnitude (Big-O notation) expresses computing time of a problem as the term in a function that increases the most rapodly relative to the size of the problem
 \item Consider two algorithms, A and B. They are both used to solve the same class of problems.
@@ -134,8 +148,8 @@
 \item Order of growth and time complexity are inverses (larger growth rate = slower time to execute)
 \item All functions are monotonic (continue increasing indefinitely)
 \end{itemize}
-\section{01.25.21 (File I/O)}
-\label{sec:orgac0bafc}
+\section*{01.25.21 (File I/O)}
+\label{sec:org7ffa628}
 \begin{itemize}
 \item File I/O ex.
 \begin{verbatim}
@@ -164,16 +178,16 @@ int main () {
 }
 \end{verbatim}
 \end{itemize}
-\section{01.25.21 (C++ Ch. 9)}
-\label{sec:org99ff81d}
-\subsection{Pass by Reference}
-\label{sec:org2cf375f}
+\section*{01.25.21 (C++ Ch. 9)}
+\label{sec:org9017dde}
+\subsection*{Pass by Reference}
+\label{sec:orgaa77e67}
 \begin{itemize}
 \item When dealing with very large objects, don't pass by copy due to the large overhead of copying. Instead, pass by reference
 \item When passing by reference, use const if you don't want to modify the data members
 \end{itemize}
-\subsection{Destructors}
-\label{sec:org195639c}
+\subsection*{Destructors}
+\label{sec:orga913081}
 \begin{itemize}
 \item Name of destructor is className\textasciitilde{}
 \item Called implicitly when an object is destroyed
@@ -185,22 +199,22 @@ int main () {
 \item Static variables are destroyed after local variables, with global variables destroyed last
 \item Objects are also destroyed in reverse order from their construction
 \end{itemize}
-\subsection{Const Objects}
-\label{sec:org261610a}
+\subsection*{Const Objects}
+\label{sec:orge8e544d}
 \begin{itemize}
 \item const objects must use const methods only
 \item non-const objects may use both non-const and const methods
 \end{itemize}
-\section{01.21.21 (C++ Ch. 9)}
-\label{sec:orga549bde}
-\subsection{Encapsulation}
-\label{sec:org307a38a}
+\section*{01.21.21 (C++ Ch. 9)}
+\label{sec:org84c94b6}
+\subsection*{Encapsulation}
+\label{sec:org382a783}
 \begin{itemize}
 \item Header files should not contain source code, it should only include prototypes in order to ensure proper information-hiding
 \item Source code should be placed in a different cpp file, which pulls from the prototypes in the header file
 \end{itemize}
-\subsection{Include Guards}
-\label{sec:org421cdb1}
+\subsection*{Include Guards}
+\label{sec:org4f545e8}
 \begin{itemize}
 \item Consider the following classes: Student, Course, and Main
 \begin{itemize}
@@ -223,14 +237,14 @@ int main () {
 \item Include guards ensure that a prototype is not defined twice
 \item The header guard should be put in header files that are used in multiple places
 \end{itemize}
-\subsection{Writing Classes}
-\label{sec:org9768abe}
+\subsection*{Writing Classes}
+\label{sec:orgde0dedd}
 \begin{itemize}
 \item Begin by including the necessary header file
 \item All methods and constructors must be preceded by the header file name and the scope resolution operator (::)
 \end{itemize}
-\subsection{Constructors \& Default Constructors}
-\label{sec:org4d952ed}
+\subsection*{Constructors \& Default Constructors}
+\label{sec:orgeb3cb13}
 \begin{itemize}
 \item Constructors can call other methods and do data-checking
 \item Constructors can be called explicit with multiple parameters when the parameters are impossible to typecast, as follows:
@@ -240,16 +254,16 @@ int main () {
   explicit Time t (x = 0, y = 0, z = 0);
 } //main
 \end{verbatim}
-\section{01.21.21 (C++ Ch. 3)}
-\label{sec:orga032063}
-\subsection{Objects and Object Sizes}
-\label{sec:orgfc1eb75}
+\section*{01.21.21 (C++ Ch. 3)}
+\label{sec:org9b7f8f5}
+\subsection*{Objects and Object Sizes}
+\label{sec:orgba395d1}
 \begin{itemize}
 \item An objects size will always be the sum of its data members. The size will not be affected by any methods that are called upon it.
 \item Because of this, objects can quickly become very large in size.
 \end{itemize}
-\subsection{UML Diagrams}
-\label{sec:org3f7baa1}
+\subsection*{UML Diagrams}
+\label{sec:org75cf084}
 \begin{itemize}
 \item Classes are listed as individual boxes
 \begin{itemize}
@@ -263,8 +277,8 @@ int main () {
 \end{itemize}
 \end{itemize}
 \end{itemize}
-\subsection{Constructors}
-\label{sec:org2437e8b}
+\subsection*{Constructors}
+\label{sec:orgc9f4481}
 \begin{itemize}
 \item Explicit constructors can be used to prevent implicit typecasting, as seen below:
 \end{itemize}
@@ -291,8 +305,8 @@ explicit Account (std::string accountName) //explicit constructor
   //insert constructor code here
   }
 \end{verbatim}
-\section{01.19.21 (C++ Ch. 3)}
-\label{sec:org57e0941}
+\section*{01.19.21 (C++ Ch. 3)}
+\label{sec:orgfeeed94}
 A look at class creation
 \begin{verbatim}
 #include <iostream>
@@ -327,8 +341,8 @@ int main () {
 \item The purpose of const functions is to prevent the function from modifying the values of data members or objects.
 \end{itemize}
 
-\section{01.19.21 (C++ Ch. 2)}
-\label{sec:org74f51e1}
+\section*{01.19.21 (C++ Ch. 2)}
+\label{sec:org5c8ef97}
 A look at some basic C++ code
 \begin{verbatim}
 #include <iostream> //enables program to output data
