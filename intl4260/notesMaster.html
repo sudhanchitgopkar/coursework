@@ -3,196 +3,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-01-29 Fri 11:13 -->
+<!-- 2021-02-01 Mon 11:11 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>American Foreign Pol. Decision Making</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Sudhan Chitgopkar" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
-  .title  { text-align: center;
-             margin-bottom: .2em; }
-  .subtitle { text-align: center;
-              font-size: medium;
-              font-weight: bold;
-              margin-top:0; }
-  .todo   { font-family: monospace; color: red; }
-  .done   { font-family: monospace; color: green; }
-  .priority { font-family: monospace; color: orange; }
-  .tag    { background-color: #eee; font-family: monospace;
-            padding: 2px; font-size: 80%; font-weight: normal; }
-  .timestamp { color: #bebebe; }
-  .timestamp-kwd { color: #5f9ea0; }
-  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
-  .underline { text-decoration: underline; }
-  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
-  p.verse { margin-left: 3%; }
-  pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
-    padding: 8pt;
-    font-family: monospace;
-    overflow: auto;
-    margin: 1.2em;
-  }
-  pre.src {
-    position: relative;
-    overflow: auto;
-    padding-top: 1.2em;
-  }
-  pre.src:before {
-    display: none;
-    position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
-    padding: 3px;
-    border: 1px solid black;
-  }
-  pre.src:hover:before { display: inline;}
-  /* Languages per Org manual */
-  pre.src-asymptote:before { content: 'Asymptote'; }
-  pre.src-awk:before { content: 'Awk'; }
-  pre.src-C:before { content: 'C'; }
-  /* pre.src-C++ doesn't work in CSS */
-  pre.src-clojure:before { content: 'Clojure'; }
-  pre.src-css:before { content: 'CSS'; }
-  pre.src-D:before { content: 'D'; }
-  pre.src-ditaa:before { content: 'ditaa'; }
-  pre.src-dot:before { content: 'Graphviz'; }
-  pre.src-calc:before { content: 'Emacs Calc'; }
-  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-fortran:before { content: 'Fortran'; }
-  pre.src-gnuplot:before { content: 'gnuplot'; }
-  pre.src-haskell:before { content: 'Haskell'; }
-  pre.src-hledger:before { content: 'hledger'; }
-  pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'Javascript'; }
-  pre.src-latex:before { content: 'LaTeX'; }
-  pre.src-ledger:before { content: 'Ledger'; }
-  pre.src-lisp:before { content: 'Lisp'; }
-  pre.src-lilypond:before { content: 'Lilypond'; }
-  pre.src-lua:before { content: 'Lua'; }
-  pre.src-matlab:before { content: 'MATLAB'; }
-  pre.src-mscgen:before { content: 'Mscgen'; }
-  pre.src-ocaml:before { content: 'Objective Caml'; }
-  pre.src-octave:before { content: 'Octave'; }
-  pre.src-org:before { content: 'Org mode'; }
-  pre.src-oz:before { content: 'OZ'; }
-  pre.src-plantuml:before { content: 'Plantuml'; }
-  pre.src-processing:before { content: 'Processing.js'; }
-  pre.src-python:before { content: 'Python'; }
-  pre.src-R:before { content: 'R'; }
-  pre.src-ruby:before { content: 'Ruby'; }
-  pre.src-sass:before { content: 'Sass'; }
-  pre.src-scheme:before { content: 'Scheme'; }
-  pre.src-screen:before { content: 'Gnu Screen'; }
-  pre.src-sed:before { content: 'Sed'; }
-  pre.src-sh:before { content: 'shell'; }
-  pre.src-sql:before { content: 'SQL'; }
-  pre.src-sqlite:before { content: 'SQLite'; }
-  /* additional languages in org.el's org-babel-load-languages alist */
-  pre.src-forth:before { content: 'Forth'; }
-  pre.src-io:before { content: 'IO'; }
-  pre.src-J:before { content: 'J'; }
-  pre.src-makefile:before { content: 'Makefile'; }
-  pre.src-maxima:before { content: 'Maxima'; }
-  pre.src-perl:before { content: 'Perl'; }
-  pre.src-picolisp:before { content: 'Pico Lisp'; }
-  pre.src-scala:before { content: 'Scala'; }
-  pre.src-shell:before { content: 'Shell Script'; }
-  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
-  /* additional language identifiers per "defun org-babel-execute"
-       in ob-*.el */
-  pre.src-cpp:before  { content: 'C++'; }
-  pre.src-abc:before  { content: 'ABC'; }
-  pre.src-coq:before  { content: 'Coq'; }
-  pre.src-groovy:before  { content: 'Groovy'; }
-  /* additional language identifiers from org-babel-shell-names in
-     ob-shell.el: ob-shell is the only babel language using a lambda to put
-     the execution function name together. */
-  pre.src-bash:before  { content: 'bash'; }
-  pre.src-csh:before  { content: 'csh'; }
-  pre.src-ash:before  { content: 'ash'; }
-  pre.src-dash:before  { content: 'dash'; }
-  pre.src-ksh:before  { content: 'ksh'; }
-  pre.src-mksh:before  { content: 'mksh'; }
-  pre.src-posh:before  { content: 'posh'; }
-  /* Additional Emacs modes also supported by the LaTeX listings package */
-  pre.src-ada:before { content: 'Ada'; }
-  pre.src-asm:before { content: 'Assembler'; }
-  pre.src-caml:before { content: 'Caml'; }
-  pre.src-delphi:before { content: 'Delphi'; }
-  pre.src-html:before { content: 'HTML'; }
-  pre.src-idl:before { content: 'IDL'; }
-  pre.src-mercury:before { content: 'Mercury'; }
-  pre.src-metapost:before { content: 'MetaPost'; }
-  pre.src-modula-2:before { content: 'Modula-2'; }
-  pre.src-pascal:before { content: 'Pascal'; }
-  pre.src-ps:before { content: 'PostScript'; }
-  pre.src-prolog:before { content: 'Prolog'; }
-  pre.src-simula:before { content: 'Simula'; }
-  pre.src-tcl:before { content: 'tcl'; }
-  pre.src-tex:before { content: 'TeX'; }
-  pre.src-plain-tex:before { content: 'Plain TeX'; }
-  pre.src-verilog:before { content: 'Verilog'; }
-  pre.src-vhdl:before { content: 'VHDL'; }
-  pre.src-xml:before { content: 'XML'; }
-  pre.src-nxml:before { content: 'XML'; }
-  /* add a generic configuration mode; LaTeX export needs an additional
-     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
-  pre.src-conf:before { content: 'Configuration File'; }
-
-  table { border-collapse:collapse; }
-  caption.t-above { caption-side: top; }
-  caption.t-bottom { caption-side: bottom; }
-  td, th { vertical-align:top;  }
-  th.org-right  { text-align: center;  }
-  th.org-left   { text-align: center;   }
-  th.org-center { text-align: center; }
-  td.org-right  { text-align: right;  }
-  td.org-left   { text-align: left;   }
-  td.org-center { text-align: center; }
-  dt { font-weight: bold; }
-  .footpara { display: inline; }
-  .footdef  { margin-bottom: 1em; }
-  .figure { padding: 1em; }
-  .figure p { text-align: center; }
-  .equation-container {
-    display: table;
-    text-align: center;
-    width: 100%;
-  }
-  .equation {
-    vertical-align: middle;
-  }
-  .equation-label {
-    display: table-cell;
-    text-align: right;
-    vertical-align: middle;
-  }
-  .inlinetask {
-    padding: 10px;
-    border: 2px solid gray;
-    margin: 10px;
-    background: #ffffcc;
-  }
-  #org-div-home-and-up
-   { text-align: right; font-size: 70%; white-space: nowrap; }
-  textarea { overflow-x: auto; }
-  .linenr { font-size: smaller }
-  .code-highlighted { background-color: #ffff00; }
-  .org-info-js_info-navigation { border-style: none; }
-  #org-info-js_console-label
-    { font-size: 10px; font-weight: bold; white-space: nowrap; }
-  .org-info-js_search-highlight
-    { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
-</style>
+<link rel="stylesheet" type="text/css" href="rethink.css" />
 <script type="text/javascript">
 // @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
 <!--/*--><![CDATA[/*><!--*/
@@ -219,93 +36,39 @@
 <body>
 <div id="content">
 <h1 class="title">American Foreign Pol. Decision Making</h1>
-<div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#org2900e3a">1. 01.29.21</a>
-<ul>
-<li><a href="#org6f96cdb">1.1. Sagan Review</a></li>
-</ul>
-</li>
-<li><a href="#org893076f">2. 01.27.21</a>
-<ul>
-<li><a href="#org47595a4">2.1. Norms &amp; Nukes</a></li>
-<li><a href="#org23e12ac">2.2. Norms &amp; Taboos</a>
-<ul>
-<li><a href="#org4d9e9ee">2.2.1. Norms</a></li>
-<li><a href="#org3ab465c">2.2.2. Taboos</a></li>
-</ul>
-</li>
-<li><a href="#org1388de4">2.3. Norms, Taboos, and Decision-Making</a></li>
-</ul>
-</li>
-<li><a href="#orgc11bf30">3. 01.21.21</a>
-<ul>
-<li><a href="#orge8de1d5">3.1. Public Opinion &amp; Decision-Making</a></li>
-<li><a href="#org52d7744">3.2. Putnam Review</a></li>
-</ul>
-</li>
-<li><a href="#orgfc50d86">4. Putnam</a>
-<ul>
-<li><a href="#org6c39408">4.1. Domestic-International Entanglements</a></li>
-<li><a href="#org48be718">4.2. Two-level Games</a></li>
-<li><a href="#org02c2388">4.3. Win-Sets</a></li>
-<li><a href="#org254e0fa">4.4. Win-Set Determinants</a></li>
-<li><a href="#orga0971ec">4.5. Uncertainty and Bargaining</a></li>
-<li><a href="#org4934dd2">4.6. Role of the Chief Negotiator</a></li>
-</ul>
-</li>
-<li><a href="#org8bd03be">5. Fearon</a>
-<ul>
-<li><a href="#orge5778c8">5.1. Introduction</a></li>
-<li><a href="#org44662f0">5.2. The Puzzle</a></li>
-<li><a href="#org61474f1">5.3. Anarchy</a></li>
-<li><a href="#org159cca8">5.4. Preventive War</a></li>
-<li><a href="#org34f7344">5.5. Positive Expected Utility</a></li>
-<li><a href="#orgd08d154">5.6. Utility and Rationality</a></li>
-<li><a href="#org73f0b25">5.7. War and Private information</a></li>
-<li><a href="#org4518a62">5.8. War &amp; Commitment Problems</a></li>
-<li><a href="#org1aae140">5.9. Conclusion</a></li>
-</ul>
-</li>
-<li><a href="#org60f80e2">6. 01.22.21</a>
-<ul>
-<li><a href="#org85e01c3">6.1. Calculating Costs of War</a>
-<ul>
-<li><a href="#orge02a32d">6.1.1. Constants</a></li>
-<li><a href="#orgca6eb24">6.1.2. Expected Value</a></li>
-<li><a href="#orgbb6c9ed">6.1.3. Miscalculation</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#orgd0af42a">7. 01.20.21</a>
-<ul>
-<li><a href="#org965c753">7.1. Rational Decision-Making</a></li>
-<li><a href="#org701c2d8">7.2. Incentive Structures</a></li>
-</ul>
-</li>
-<li><a href="#org0877013">8. Expected Profit Khan</a></li>
-<li><a href="#org8a1bd10">9. 01.15.21</a>
-<ul>
-<li><a href="#org461a6d2">9.1. Brain Stem</a></li>
-<li><a href="#org209b0c8">9.2. Middle Brain (Limbic System)</a></li>
-<li><a href="#orgc8014ed">9.3. Brain Cortex</a></li>
-<li><a href="#orgd2a243f">9.4. Hierarchy of the brain</a></li>
-<li><a href="#org0751ebe">9.5. Rational Decision-Making</a></li>
-</ul>
-</li>
+<div id="outline-container-org76311db" class="outline-2">
+<h2 id="org76311db">02.01.21</h2>
+<div class="outline-text-2" id="text-org76311db">
+</div>
+<div id="outline-container-org6c6e5dd" class="outline-3">
+<h3 id="org6c6e5dd">Loss Aversion</h3>
+<div class="outline-text-3" id="text-org6c6e5dd">
+<ul class="org-ul">
+<li>Consider a simple dilemma, wherein an actor chooses whether to play a game.
+<ul class="org-ul">
+<li>A fair coin is flipped</li>
+<li>If the coin is heads, the actor recieves $125</li>
+<li>If the coin is tails, the actor loses $125</li>
+</ul></li>
+<li>This dilemma has an EV of (0.5 * 125) + (0.5 * -125) = 0</li>
+<li>Despite an EV of 0, the vast majority of people would not play this game</li>
+<li>This is a result of loss aversion, people cognitively weigh losses and harms more than they would weigh wins and benefits</li>
+<li>When compared to gains, equivalent losses hurt more</li>
+<li>Pain and loss aversion is a more intense feeling than gain seeking</li>
+<li>This pehnomenon is consistent across regions and cultures</li>
+<li>To take advantage of this, framing each decision as loss aversion (loss framing) instead of gain seeking makes it more likely to be accepted</li>
+<li>Under time pressure, individuals will be more resolved to avoid losses</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org2900e3a" class="outline-2">
-<h2 id="org2900e3a"><span class="section-number-2">1</span> 01.29.21</h2>
-<div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org6f96cdb" class="outline-3">
-<h3 id="org6f96cdb"><span class="section-number-3">1.1</span> Sagan Review</h3>
-<div class="outline-text-3" id="text-1-1">
+<div id="outline-container-org75e04e5" class="outline-2">
+<h2 id="org75e04e5">01.29.21</h2>
+<div class="outline-text-2" id="text-org75e04e5">
+</div>
+<div id="outline-container-org2e1d3a0" class="outline-3">
+<h3 id="org2e1d3a0">Sagan Review</h3>
+<div class="outline-text-3" id="text-org2e1d3a0">
 <ul class="org-ul">
 <li>If nuclear weapons were a norm,
 <ul class="org-ul">
@@ -320,30 +83,30 @@
 </div>
 </div>
 </div>
-<div id="outline-container-org893076f" class="outline-2">
-<h2 id="org893076f"><span class="section-number-2">2</span> 01.27.21</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-org52dde5d" class="outline-2">
+<h2 id="org52dde5d">01.27.21</h2>
+<div class="outline-text-2" id="text-org52dde5d">
 </div>
-<div id="outline-container-org47595a4" class="outline-3">
-<h3 id="org47595a4"><span class="section-number-3">2.1</span> Norms &amp; Nukes</h3>
-<div class="outline-text-3" id="text-2-1">
+<div id="outline-container-orgce1999b" class="outline-3">
+<h3 id="orgce1999b">Norms &amp; Nukes</h3>
+<div class="outline-text-3" id="text-orgce1999b">
 <ul class="org-ul">
 <li>Norms and taboos have been critical in nuclear policy</li>
 <li>Norms and taboos have changed our definition of nuclear weapons as solely a means of deterrence to something that is more feasible in small-scale war (through more tactical nuclear weapons)</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org23e12ac" class="outline-3">
-<h3 id="org23e12ac"><span class="section-number-3">2.2</span> Norms &amp; Taboos</h3>
-<div class="outline-text-3" id="text-2-2">
+<div id="outline-container-orgca427c8" class="outline-3">
+<h3 id="orgca427c8">Norms &amp; Taboos</h3>
+<div class="outline-text-3" id="text-orgca427c8">
 <ul class="org-ul">
 <li>Cognitive constructs designed to guide our behavior</li>
 <li>Generally exist in the context of societal interaction and behavior</li>
 </ul>
 </div>
-<div id="outline-container-org4d9e9ee" class="outline-4">
-<h4 id="org4d9e9ee"><span class="section-number-4">2.2.1</span> Norms</h4>
-<div class="outline-text-4" id="text-2-2-1">
+<div id="outline-container-org04fef9c" class="outline-4">
+<h4 id="org04fef9c">Norms</h4>
+<div class="outline-text-4" id="text-org04fef9c">
 <ul class="org-ul">
 <li>Do&rsquo;s and Dont&rsquo;s
 <ul class="org-ul">
@@ -358,9 +121,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org3ab465c" class="outline-4">
-<h4 id="org3ab465c"><span class="section-number-4">2.2.2</span> Taboos</h4>
-<div class="outline-text-4" id="text-2-2-2">
+<div id="outline-container-orgcc1cd8e" class="outline-4">
+<h4 id="orgcc1cd8e">Taboos</h4>
+<div class="outline-text-4" id="text-orgcc1cd8e">
 <ul class="org-ul">
 <li>Dont&rsquo;s - never explain things you should do, only address things you shouldn&rsquo;t</li>
 <li>Tend to be universal, with limited exception</li>
@@ -370,9 +133,9 @@
 </div>
 </div>
 </div>
-<div id="outline-container-org1388de4" class="outline-3">
-<h3 id="org1388de4"><span class="section-number-3">2.3</span> Norms, Taboos, and Decision-Making</h3>
-<div class="outline-text-3" id="text-2-3">
+<div id="outline-container-orge27a2c1" class="outline-3">
+<h3 id="orge27a2c1">Norms, Taboos, and Decision-Making</h3>
+<div class="outline-text-3" id="text-orge27a2c1">
 <ul class="org-ul">
 <li>Generally, norms and taboos take certain strategies off the table and constrain the incentive structure</li>
 <li>Taboos and Norms also change our win-sets because of norms and taboos that exist in their own societies</li>
@@ -382,13 +145,13 @@
 </div>
 </div>
 </div>
-<div id="outline-container-orgc11bf30" class="outline-2">
-<h2 id="orgc11bf30"><span class="section-number-2">3</span> 01.21.21</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-orgb1325ad" class="outline-2">
+<h2 id="orgb1325ad">01.21.21</h2>
+<div class="outline-text-2" id="text-orgb1325ad">
 </div>
-<div id="outline-container-orge8de1d5" class="outline-3">
-<h3 id="orge8de1d5"><span class="section-number-3">3.1</span> Public Opinion &amp; Decision-Making</h3>
-<div class="outline-text-3" id="text-3-1">
+<div id="outline-container-orgeb51a32" class="outline-3">
+<h3 id="orgeb51a32">Public Opinion &amp; Decision-Making</h3>
+<div class="outline-text-3" id="text-orgeb51a32">
 <ul class="org-ul">
 <li>domestic decision-making has significant foreign policy effects</li>
 <li>domestic public opinion has an effect on foreign policy decisions
@@ -400,9 +163,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org52d7744" class="outline-3">
-<h3 id="org52d7744"><span class="section-number-3">3.2</span> Putnam Review</h3>
-<div class="outline-text-3" id="text-3-2">
+<div id="outline-container-org2e17f06" class="outline-3">
+<h3 id="org2e17f06">Putnam Review</h3>
+<div class="outline-text-3" id="text-org2e17f06">
 <ul class="org-ul">
 <li>For any foreign policy issue, there is a chief of government (CoG)
 <ul class="org-ul">
@@ -425,13 +188,13 @@
 </div>
 </div>
 </div>
-<div id="outline-container-orgfc50d86" class="outline-2">
-<h2 id="orgfc50d86"><span class="section-number-2">4</span> Putnam</h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-org68f5c60" class="outline-2">
+<h2 id="org68f5c60">Putnam</h2>
+<div class="outline-text-2" id="text-org68f5c60">
 </div>
-<div id="outline-container-org6c39408" class="outline-3">
-<h3 id="org6c39408"><span class="section-number-3">4.1</span> Domestic-International Entanglements</h3>
-<div class="outline-text-3" id="text-4-1">
+<div id="outline-container-org4599a43" class="outline-3">
+<h3 id="org4599a43">Domestic-International Entanglements</h3>
+<div class="outline-text-3" id="text-org4599a43">
 <ul class="org-ul">
 <li>Current literature lists domestic influences on foreign policy and theorizes about links between the two</li>
 <li>Deutsch and Haas theorize about the impact of parties and interest groups on spillover from domestic policy to international objectives</li>
@@ -443,9 +206,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org48be718" class="outline-3">
-<h3 id="org48be718"><span class="section-number-3">4.2</span> Two-level Games</h3>
-<div class="outline-text-3" id="text-4-2">
+<div id="outline-container-org9bc128c" class="outline-3">
+<h3 id="org9bc128c">Two-level Games</h3>
+<div class="outline-text-3" id="text-org9bc128c">
 <ul class="org-ul">
 <li>Politics of international negotiations can often be considerd a two-level game
 <ul class="org-ul">
@@ -456,9 +219,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org02c2388" class="outline-3">
-<h3 id="org02c2388"><span class="section-number-3">4.3</span> Win-Sets</h3>
-<div class="outline-text-3" id="text-4-3">
+<div id="outline-container-org8ea8d5f" class="outline-3">
+<h3 id="org8ea8d5f">Win-Sets</h3>
+<div class="outline-text-3" id="text-org8ea8d5f">
 <ul class="org-ul">
 <li>Negotiation occurs at a 2-stage process:
 <ul class="org-ul">
@@ -471,9 +234,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org254e0fa" class="outline-3">
-<h3 id="org254e0fa"><span class="section-number-3">4.4</span> Win-Set Determinants</h3>
-<div class="outline-text-3" id="text-4-4">
+<div id="outline-container-org75ff29a" class="outline-3">
+<h3 id="org75ff29a">Win-Set Determinants</h3>
+<div class="outline-text-3" id="text-org75ff29a">
 <ul class="org-ul">
 <li>Three factors critical to win-set size
 <ul class="org-ul">
@@ -484,9 +247,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orga0971ec" class="outline-3">
-<h3 id="orga0971ec"><span class="section-number-3">4.5</span> Uncertainty and Bargaining</h3>
-<div class="outline-text-3" id="text-4-5">
+<div id="outline-container-org6c385d2" class="outline-3">
+<h3 id="org6c385d2">Uncertainty and Bargaining</h3>
+<div class="outline-text-3" id="text-org6c385d2">
 <ul class="org-ul">
 <li>Level 1 negotiators are often badly misinformed about elvel 2 politics, especially on the opposing side</li>
 <li>Uncertainty about win set size can be both good and bad in 2 level negotiations</li>
@@ -495,9 +258,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org4934dd2" class="outline-3">
-<h3 id="org4934dd2"><span class="section-number-3">4.6</span> Role of the Chief Negotiator</h3>
-<div class="outline-text-3" id="text-4-6">
+<div id="outline-container-orgfd34499" class="outline-3">
+<h3 id="orgfd34499">Role of the Chief Negotiator</h3>
+<div class="outline-text-3" id="text-orgfd34499">
 <ul class="org-ul">
 <li>Chief negotiator is the only formal link between level 1 and 2 of negotiation</li>
 <li>Assumed that chief negotiator has no independent policy views, acts merely as an honest broker on behalf of his constitutents</li>
@@ -517,13 +280,13 @@ Motives of the chief negotiator:
 </div>
 </div>
 
-<div id="outline-container-org8bd03be" class="outline-2">
-<h2 id="org8bd03be"><span class="section-number-2">5</span> Fearon</h2>
-<div class="outline-text-2" id="text-5">
+<div id="outline-container-org6ec3d91" class="outline-2">
+<h2 id="org6ec3d91">Fearon</h2>
+<div class="outline-text-2" id="text-org6ec3d91">
 </div>
-<div id="outline-container-orge5778c8" class="outline-3">
-<h3 id="orge5778c8"><span class="section-number-3">5.1</span> Introduction</h3>
-<div class="outline-text-3" id="text-5-1">
+<div id="outline-container-orgca8b887" class="outline-3">
+<h3 id="orgca8b887">Introduction</h3>
+<div class="outline-text-3" id="text-orgca8b887">
 <ul class="org-ul">
 <li>Three reasons war may occur
 <ul class="org-ul">
@@ -549,18 +312,18 @@ Motives of the chief negotiator:
 </ul>
 </div>
 </div>
-<div id="outline-container-org44662f0" class="outline-3">
-<h3 id="org44662f0"><span class="section-number-3">5.2</span> The Puzzle</h3>
-<div class="outline-text-3" id="text-5-2">
+<div id="outline-container-orgbbf66f2" class="outline-3">
+<h3 id="orgbbf66f2">The Puzzle</h3>
+<div class="outline-text-3" id="text-orgbbf66f2">
 <ul class="org-ul">
 <li>People often see war as something nobody wants though wars can often simply be costly but worthwhile gambles</li>
 <li>Wars are always ex post inefficient because no matter how small, the costs of fighting still exist</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org61474f1" class="outline-3">
-<h3 id="org61474f1"><span class="section-number-3">5.3</span> Anarchy</h3>
-<div class="outline-text-3" id="text-5-3">
+<div id="outline-container-org77c95c0" class="outline-3">
+<h3 id="org77c95c0">Anarchy</h3>
+<div class="outline-text-3" id="text-org77c95c0">
 <ul class="org-ul">
 <li>War occurs because there is nothing to prevent it</li>
 <li>Does not explain why wars still occur due to their inefficiency, therefore does not explain war completely</li>
@@ -568,9 +331,9 @@ Motives of the chief negotiator:
 </ul>
 </div>
 </div>
-<div id="outline-container-org159cca8" class="outline-3">
-<h3 id="org159cca8"><span class="section-number-3">5.4</span> Preventive War</h3>
-<div class="outline-text-3" id="text-5-4">
+<div id="outline-container-orgffa5a05" class="outline-3">
+<h3 id="orgffa5a05">Preventive War</h3>
+<div class="outline-text-3" id="text-orgffa5a05">
 <ul class="org-ul">
 <li>If a declining power suspects that it may be attacked in the future by a rising power, it will find a preventive war rational</li>
 <li>Theory does not consider diplomacy and timeframe</li>
@@ -578,27 +341,27 @@ Motives of the chief negotiator:
 </ul>
 </div>
 </div>
-<div id="outline-container-org34f7344" class="outline-3">
-<h3 id="org34f7344"><span class="section-number-3">5.5</span> Positive Expected Utility</h3>
-<div class="outline-text-3" id="text-5-5">
+<div id="outline-container-orgd832c26" class="outline-3">
+<h3 id="orgd832c26">Positive Expected Utility</h3>
+<div class="outline-text-3" id="text-orgd832c26">
 <ul class="org-ul">
 <li>Argues that war is rational when both sides have a positive expected utility from it</li>
 <li>While often presented, this argument doesn&rsquo;t explain specific condition in which both parties fighting a war have positive expected utility</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd08d154" class="outline-3">
-<h3 id="orgd08d154"><span class="section-number-3">5.6</span> Utility and Rationality</h3>
-<div class="outline-text-3" id="text-5-6">
+<div id="outline-container-org52ddbf7" class="outline-3">
+<h3 id="org52ddbf7">Utility and Rationality</h3>
+<div class="outline-text-3" id="text-org52ddbf7">
 <ul class="org-ul">
 <li>Positive expected utility alone is not enough to provide a rationalist explanatino for war</li>
 <li>Indivisibility of factors of war can also be a rational explanation of war</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org73f0b25" class="outline-3">
-<h3 id="org73f0b25"><span class="section-number-3">5.7</span> War and Private information</h3>
-<div class="outline-text-3" id="text-5-7">
+<div id="outline-container-org5ef4622" class="outline-3">
+<h3 id="org5ef4622">War and Private information</h3>
+<div class="outline-text-3" id="text-org5ef4622">
 <ul class="org-ul">
 <li>War is often the product of rational miscalculation</li>
 <li>Leaders overestimate their chance of military victory</li>
@@ -612,9 +375,9 @@ Motives of the chief negotiator:
 </ul>
 </div>
 </div>
-<div id="outline-container-org4518a62" class="outline-3">
-<h3 id="org4518a62"><span class="section-number-3">5.8</span> War &amp; Commitment Problems</h3>
-<div class="outline-text-3" id="text-5-8">
+<div id="outline-container-orgbf3081c" class="outline-3">
+<h3 id="orgbf3081c">War &amp; Commitment Problems</h3>
+<div class="outline-text-3" id="text-orgbf3081c">
 <ul class="org-ul">
 <li>With anarchy, states become suspicious of one another and build weapons and engage in attacks</li>
 <li>Anarchy matters when it seems as if a states preferences and opportunities for action imply that one or both sides in a dispute have incentives to renege on peaceful bargains which would be mutually preferable to war</li>
@@ -626,9 +389,9 @@ Motives of the chief negotiator:
 </ul>
 </div>
 </div>
-<div id="outline-container-org1aae140" class="outline-3">
-<h3 id="org1aae140"><span class="section-number-3">5.9</span> Conclusion</h3>
-<div class="outline-text-3" id="text-5-9">
+<div id="outline-container-org4f91874" class="outline-3">
+<h3 id="org4f91874">Conclusion</h3>
+<div class="outline-text-3" id="text-org4f91874">
 <ul class="org-ul">
 <li>Because fighting is costly and risky, rational actors should prefer negotiations to war</li>
 <li>Rational actors may be unable to agree on these negotiations because
@@ -641,17 +404,17 @@ Motives of the chief negotiator:
 </div>
 </div>
 </div>
-<div id="outline-container-org60f80e2" class="outline-2">
-<h2 id="org60f80e2"><span class="section-number-2">6</span> 01.22.21</h2>
-<div class="outline-text-2" id="text-6">
+<div id="outline-container-org47a7b82" class="outline-2">
+<h2 id="org47a7b82">01.22.21</h2>
+<div class="outline-text-2" id="text-org47a7b82">
 </div>
-<div id="outline-container-org85e01c3" class="outline-3">
-<h3 id="org85e01c3"><span class="section-number-3">6.1</span> Calculating Costs of War</h3>
-<div class="outline-text-3" id="text-6-1">
+<div id="outline-container-org656c28a" class="outline-3">
+<h3 id="org656c28a">Calculating Costs of War</h3>
+<div class="outline-text-3" id="text-org656c28a">
 </div>
-<div id="outline-container-orge02a32d" class="outline-4">
-<h4 id="orge02a32d"><span class="section-number-4">6.1.1</span> Constants</h4>
-<div class="outline-text-4" id="text-6-1-1">
+<div id="outline-container-org14b131f" class="outline-4">
+<h4 id="org14b131f">Constants</h4>
+<div class="outline-text-4" id="text-org14b131f">
 <ul class="org-ul">
 <li>Fight occurs over $100</li>
 <li>Cost of war: $20</li>
@@ -659,9 +422,9 @@ Motives of the chief negotiator:
 </ul>
 </div>
 </div>
-<div id="outline-container-orgca6eb24" class="outline-4">
-<h4 id="orgca6eb24"><span class="section-number-4">6.1.2</span> Expected Value</h4>
-<div class="outline-text-4" id="text-6-1-2">
+<div id="outline-container-orgba1d880" class="outline-4">
+<h4 id="orgba1d880">Expected Value</h4>
+<div class="outline-text-4" id="text-orgba1d880">
 <ul class="org-ul">
 <li>(Gains Winning) + (Gains Fighting) - (Cost of War)</li>
 <li>(0.5 &times; 100) + (0) - (1 &times; 20) = 50 - 20 = $30</li>
@@ -669,9 +432,9 @@ Motives of the chief negotiator:
 </ul>
 </div>
 </div>
-<div id="outline-container-orgbb6c9ed" class="outline-4">
-<h4 id="orgbb6c9ed"><span class="section-number-4">6.1.3</span> Miscalculation</h4>
-<div class="outline-text-4" id="text-6-1-3">
+<div id="outline-container-orgb7c7e8c" class="outline-4">
+<h4 id="orgb7c7e8c">Miscalculation</h4>
+<div class="outline-text-4" id="text-orgb7c7e8c">
 <ul class="org-ul">
 <li>When both sides overestimate the probability of winning, their expected value goes up, thereby making their minimum threshold for negotiation too high for the other side.</li>
 <li>Consider miscalculation wherein both sides believe they have an 80% probability of winning:
@@ -684,13 +447,13 @@ Motives of the chief negotiator:
 </div>
 </div>
 </div>
-<div id="outline-container-orgd0af42a" class="outline-2">
-<h2 id="orgd0af42a"><span class="section-number-2">7</span> 01.20.21</h2>
-<div class="outline-text-2" id="text-7">
+<div id="outline-container-orgf0cf018" class="outline-2">
+<h2 id="orgf0cf018">01.20.21</h2>
+<div class="outline-text-2" id="text-orgf0cf018">
 </div>
-<div id="outline-container-org965c753" class="outline-3">
-<h3 id="org965c753"><span class="section-number-3">7.1</span> Rational Decision-Making</h3>
-<div class="outline-text-3" id="text-7-1">
+<div id="outline-container-orgdf5ee29" class="outline-3">
+<h3 id="orgdf5ee29">Rational Decision-Making</h3>
+<div class="outline-text-3" id="text-orgdf5ee29">
 <ul class="org-ul">
 <li>Rational decision-making defines how we make decisions</li>
 <li>A person&rsquo;s or institutions goal is not relevant, the process of pursuing that goal is the factor driving decision-making</li>
@@ -703,9 +466,9 @@ Motives of the chief negotiator:
 </ul>
 </div>
 </div>
-<div id="outline-container-org701c2d8" class="outline-3">
-<h3 id="org701c2d8"><span class="section-number-3">7.2</span> Incentive Structures</h3>
-<div class="outline-text-3" id="text-7-2">
+<div id="outline-container-org1dc7400" class="outline-3">
+<h3 id="org1dc7400">Incentive Structures</h3>
+<div class="outline-text-3" id="text-org1dc7400">
 <ul class="org-ul">
 <li>Incentive structures are the expected values for each of the strategies considered</li>
 <li>Incentive structures impose a certain course of action upon us, given that we are rational actors</li>
@@ -713,25 +476,25 @@ Motives of the chief negotiator:
 </div>
 </div>
 </div>
-<div id="outline-container-org0877013" class="outline-2">
-<h2 id="org0877013"><span class="section-number-2">8</span> Expected Profit Khan</h2>
-<div class="outline-text-2" id="text-8">
+<div id="outline-container-org6192d3b" class="outline-2">
+<h2 id="org6192d3b">Expected Profit Khan</h2>
+<div class="outline-text-2" id="text-org6192d3b">
 <ul class="org-ul">
 <li>Expected value can be calculated as the sum of all the outcome probabilities multiplied by their corresponding profits.</li>
 <li>Considering all outcome probabilities should yeild a total probability sum of 1 (100%), with profits being positive (gains) or negative (losses)</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org8a1bd10" class="outline-2">
-<h2 id="org8a1bd10"><span class="section-number-2">9</span> 01.15.21</h2>
-<div class="outline-text-2" id="text-9">
+<div id="outline-container-org15550c3" class="outline-2">
+<h2 id="org15550c3">01.15.21</h2>
+<div class="outline-text-2" id="text-org15550c3">
 <ul class="org-ul">
 <li>Brain has a complex set of structures that work together to do both really important, and fundamentally flawed actions</li>
 </ul>
 </div>
-<div id="outline-container-org461a6d2" class="outline-3">
-<h3 id="org461a6d2"><span class="section-number-3">9.1</span> Brain Stem</h3>
-<div class="outline-text-3" id="text-9-1">
+<div id="outline-container-orgacc1aec" class="outline-3">
+<h3 id="orgacc1aec">Brain Stem</h3>
+<div class="outline-text-3" id="text-orgacc1aec">
 <ul class="org-ul">
 <li>The reptilian brain</li>
 <li>Really just an extensino of the spinal cord</li>
@@ -739,27 +502,27 @@ Motives of the chief negotiator:
 </ul>
 </div>
 </div>
-<div id="outline-container-org209b0c8" class="outline-3">
-<h3 id="org209b0c8"><span class="section-number-3">9.2</span> Middle Brain (Limbic System)</h3>
-<div class="outline-text-3" id="text-9-2">
+<div id="outline-container-orgdd25ee2" class="outline-3">
+<h3 id="orgdd25ee2">Middle Brain (Limbic System)</h3>
+<div class="outline-text-3" id="text-orgdd25ee2">
 <ul class="org-ul">
 <li>Body&rsquo;s monitoring system to identify important elements of the environment</li>
 <li>Discriminates things of importantance constantly and ambiently</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgc8014ed" class="outline-3">
-<h3 id="orgc8014ed"><span class="section-number-3">9.3</span> Brain Cortex</h3>
-<div class="outline-text-3" id="text-9-3">
+<div id="outline-container-org9fd589d" class="outline-3">
+<h3 id="org9fd589d">Brain Cortex</h3>
+<div class="outline-text-3" id="text-org9fd589d">
 <ul class="org-ul">
 <li>Controls higher-level thinking</li>
 <li>Moral decision-making, learning, conscious awareness</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd2a243f" class="outline-3">
-<h3 id="orgd2a243f"><span class="section-number-3">9.4</span> Hierarchy of the brain</h3>
-<div class="outline-text-3" id="text-9-4">
+<div id="outline-container-orgb09cdba" class="outline-3">
+<h3 id="orgb09cdba">Hierarchy of the brain</h3>
+<div class="outline-text-3" id="text-orgb09cdba">
 <ul class="org-ul">
 <li>Information goes from the brain stem, to the limbic system, to the brain cortex</li>
 <li>Critically, the limbic system was never designed to collect all the information around you - that incomplete information is used for decision-making</li>
@@ -769,9 +532,9 @@ Motives of the chief negotiator:
 </ul>
 </div>
 </div>
-<div id="outline-container-org0751ebe" class="outline-3">
-<h3 id="org0751ebe"><span class="section-number-3">9.5</span> Rational Decision-Making</h3>
-<div class="outline-text-3" id="text-9-5">
+<div id="outline-container-orge139c9a" class="outline-3">
+<h3 id="orge139c9a">Rational Decision-Making</h3>
+<div class="outline-text-3" id="text-orge139c9a">
 <ol class="org-ol">
 <li>Pick a goal</li>
 <li>Evaluate all strategies
@@ -788,7 +551,7 @@ Motives of the chief negotiator:
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Sudhan Chitgopkar</p>
-<p class="date">Created: 2021-01-29 Fri 11:13</p>
+<p class="date">Created: 2021-02-01 Mon 11:11</p>
 </div>
 </body>
 </html>

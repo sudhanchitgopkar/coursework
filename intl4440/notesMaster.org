@@ -3,6 +3,7 @@
 #+EMAIL: sudhanchitgopkar@uga.edu
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="rethink.css" />
 #+OPTIONS: toc:nil num:nil html-style:nil
+
 * Critiques of the Intelligence Cycle
 - Hulnick argues that while the intelligence model is basic, it is inherently flawed because it isn't accurate
 - Regarding analysis, Hulnick finds that there is a disconnect between field officers and analysts, which is caused by lack of communication, cooperation, or mishandling of information

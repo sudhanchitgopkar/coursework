@@ -6,59 +6,37 @@
                 _______________________________________
 
 
-Table of Contents
-_________________
+02.01.21
+========
 
-1. 01.29.21
-.. 1. Sagan Review
-2. 01.27.21
-.. 1. Norms & Nukes
-.. 2. Norms & Taboos
-..... 1. Norms
-..... 2. Taboos
-.. 3. Norms, Taboos, and Decision-Making
-3. 01.21.21
-.. 1. Public Opinion & Decision-Making
-.. 2. Putnam Review
-4. Putnam
-.. 1. Domestic-International Entanglements
-.. 2. Two-level Games
-.. 3. Win-Sets
-.. 4. Win-Set Determinants
-.. 5. Uncertainty and Bargaining
-.. 6. Role of the Chief Negotiator
-5. Fearon
-.. 1. Introduction
-.. 2. The Puzzle
-.. 3. Anarchy
-.. 4. Preventive War
-.. 5. Positive Expected Utility
-.. 6. Utility and Rationality
-.. 7. War and Private information
-.. 8. War & Commitment Problems
-.. 9. Conclusion
-6. 01.22.21
-.. 1. Calculating Costs of War
-..... 1. Constants
-..... 2. Expected Value
-..... 3. Miscalculation
-7. 01.20.21
-.. 1. Rational Decision-Making
-.. 2. Incentive Structures
-8. Expected Profit Khan
-9. 01.15.21
-.. 1. Brain Stem
-.. 2. Middle Brain (Limbic System)
-.. 3. Brain Cortex
-.. 4. Hierarchy of the brain
-.. 5. Rational Decision-Making
+Loss Aversion
+~~~~~~~~~~~~~
+
+  - Consider a simple dilemma, wherein an actor chooses whether to play
+    a game.
+    - A fair coin is flipped
+    - If the coin is heads, the actor recieves $125
+    - If the coin is tails, the actor loses $125
+  - This dilemma has an EV of (0.5 * 125) + (0.5 * -125) = 0
+  - Despite an EV of 0, the vast majority of people would not play this
+    game
+  - This is a result of loss aversion, people cognitively weigh losses
+    and harms more than they would weigh wins and benefits
+  - When compared to gains, equivalent losses hurt more
+  - Pain and loss aversion is a more intense feeling than gain seeking
+  - This pehnomenon is consistent across regions and cultures
+  - To take advantage of this, framing each decision as loss aversion
+    (loss framing) instead of gain seeking makes it more likely to be
+    accepted
+  - Under time pressure, individuals will be more resolved to avoid
+    losses
 
 
-1 01.29.21
-==========
+01.29.21
+========
 
-1.1 Sagan Review
-~~~~~~~~~~~~~~~~
+Sagan Review
+~~~~~~~~~~~~
 
   - If nuclear weapons were a norm,
     - conventional weapons would be preferred to nuclear weapons
@@ -76,11 +54,11 @@ _________________
     nuclear weapons, with few focusing on moral factors
 
 
-2 01.27.21
-==========
+01.27.21
+========
 
-2.1 Norms & Nukes
-~~~~~~~~~~~~~~~~~
+Norms & Nukes
+~~~~~~~~~~~~~
 
   - Norms and taboos have been critical in nuclear policy
   - Norms and taboos have changed our definition of nuclear weapons as
@@ -88,15 +66,15 @@ _________________
     small-scale war (through more tactical nuclear weapons)
 
 
-2.2 Norms & Taboos
-~~~~~~~~~~~~~~~~~~
+Norms & Taboos
+~~~~~~~~~~~~~~
 
   - Cognitive constructs designed to guide our behavior
   - Generally exist in the context of societal interaction and behavior
 
 
-2.2.1 Norms
------------
+Norms
+-----
 
   - Do's and Dont's
     - prescribe some behavior and deter other behaviors
@@ -107,8 +85,8 @@ _________________
   - Consequences for violation of norms can vary significantly
 
 
-2.2.2 Taboos
-------------
+Taboos
+------
 
   - Dont's - never explain things you should do, only address things you
     shouldn't
@@ -118,8 +96,8 @@ _________________
   - There tend to be very severe consequences to taboo violations
 
 
-2.3 Norms, Taboos, and Decision-Making
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Norms, Taboos, and Decision-Making
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Generally, norms and taboos take certain strategies off the table
     and constrain the incentive structure
@@ -131,11 +109,11 @@ _________________
   - To erode a norm, infuse it with consequentialist logic
 
 
-3 01.21.21
-==========
+01.21.21
+========
 
-3.1 Public Opinion & Decision-Making
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Public Opinion & Decision-Making
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - domestic decision-making has significant foreign policy effects
   - domestic public opinion has an effect on foreign policy decisions
@@ -146,8 +124,8 @@ _________________
     incentive structure
 
 
-3.2 Putnam Review
-~~~~~~~~~~~~~~~~~
+Putnam Review
+~~~~~~~~~~~~~
 
   - For any foreign policy issue, there is a chief of government (CoG)
     - CoG has ultimate decision-making authority on the issue
@@ -165,11 +143,11 @@ _________________
     principles can also appply to authoritarian regimes
 
 
-4 Putnam
-========
+Putnam
+======
 
-4.1 Domestic-International Entanglements
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Domestic-International Entanglements
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Current literature lists domestic influences on foreign policy and
     theorizes about links between the two
@@ -183,8 +161,8 @@ _________________
       policy occurring despite static state structures
 
 
-4.2 Two-level Games
-~~~~~~~~~~~~~~~~~~~
+Two-level Games
+~~~~~~~~~~~~~~~
 
   - Politics of international negotiations can often be considerd a
     two-level game
@@ -197,8 +175,8 @@ _________________
     at both boards (decision-makers)
 
 
-4.3 Win-Sets
-~~~~~~~~~~~~
+Win-Sets
+~~~~~~~~
 
   - Negotiation occurs at a 2-stage process:
     - Level 1: bargaining between negotiators leading to tentative
@@ -213,8 +191,8 @@ _________________
     other actors)
 
 
-4.4 Win-Set Determinants
-~~~~~~~~~~~~~~~~~~~~~~~~
+Win-Set Determinants
+~~~~~~~~~~~~~~~~~~~~
 
   - Three factors critical to win-set size
     - Level 2 preferences and coalitions
@@ -222,8 +200,8 @@ _________________
     - Level 1 negotiation strategies
 
 
-4.5 Uncertainty and Bargaining
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Uncertainty and Bargaining
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Level 1 negotiators are often badly misinformed about elvel 2
     politics, especially on the opposing side
@@ -234,8 +212,8 @@ _________________
     involuntary defection by the other side
 
 
-4.6 Role of the Chief Negotiator
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Role of the Chief Negotiator
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Chief negotiator is the only formal link between level 1 and 2 of
     negotiation
@@ -253,11 +231,11 @@ _________________
       beliefs
 
 
-5 Fearon
-========
+Fearon
+======
 
-5.1 Introduction
-~~~~~~~~~~~~~~~~
+Introduction
+~~~~~~~~~~~~
 
   - Three reasons war may occur
     - People are sometimes irrational and don't consider the costs of
@@ -281,8 +259,8 @@ _________________
       to because of their beliefs on the issue
 
 
-5.2 The Puzzle
-~~~~~~~~~~~~~~
+The Puzzle
+~~~~~~~~~~
 
   - People often see war as something nobody wants though wars can often
     simply be costly but worthwhile gambles
@@ -290,8 +268,8 @@ _________________
     costs of fighting still exist
 
 
-5.3 Anarchy
-~~~~~~~~~~~
+Anarchy
+~~~~~~~
 
   - War occurs because there is nothing to prevent it
   - Does not explain why wars still occur due to their inefficiency,
@@ -300,8 +278,8 @@ _________________
     outside or preemptive war
 
 
-5.4 Preventive War
-~~~~~~~~~~~~~~~~~~
+Preventive War
+~~~~~~~~~~~~~~
 
   - If a declining power suspects that it may be attacked in the future
     by a rising power, it will find a preventive war rational
@@ -310,8 +288,8 @@ _________________
     even for the rising power
 
 
-5.5 Positive Expected Utility
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Positive Expected Utility
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Argues that war is rational when both sides have a positive expected
     utility from it
@@ -320,8 +298,8 @@ _________________
     expected utility
 
 
-5.6 Utility and Rationality
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Utility and Rationality
+~~~~~~~~~~~~~~~~~~~~~~~
 
   - Positive expected utility alone is not enough to provide a
     rationalist explanatino for war
@@ -329,8 +307,8 @@ _________________
     of war
 
 
-5.7 War and Private information
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+War and Private information
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - War is often the product of rational miscalculation
   - Leaders overestimate their chance of military victory
@@ -345,8 +323,8 @@ _________________
     constitute a rational explanation of war
 
 
-5.8 War & Commitment Problems
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+War & Commitment Problems
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - With anarchy, states become suspicious of one another and build
     weapons and engage in attacks
@@ -364,8 +342,8 @@ _________________
     circumstances that give one party an incentive to renege are
 
 
-5.9 Conclusion
-~~~~~~~~~~~~~~
+Conclusion
+~~~~~~~~~~
 
   - Because fighting is costly and risky, rational actors should prefer
     negotiations to war
@@ -377,22 +355,22 @@ _________________
     based on irrationality
 
 
-6 01.22.21
-==========
+01.22.21
+========
 
-6.1 Calculating Costs of War
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Calculating Costs of War
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-6.1.1 Constants
----------------
+Constants
+---------
 
   - Fight occurs over $100
   - Cost of war: $20
   - P(Winning): 50%
 
 
-6.1.2 Expected Value
---------------------
+Expected Value
+--------------
 
   - (Gains Winning) + (Gains Fighting) - (Cost of War)
   - (0.5 * 100) + (0) - (1 * 20) = 50 - 20 = $30
@@ -400,8 +378,8 @@ _________________
     of 31 <, it is not a rational deciison to go to war
 
 
-6.1.3 Miscalculation
---------------------
+Miscalculation
+--------------
 
   - When both sides overestimate the probability of winning, their
     expected value goes up, thereby making their minimum threshold for
@@ -413,11 +391,11 @@ _________________
       impossible given the limited value of the thing being fought over
 
 
-7 01.20.21
-==========
+01.20.21
+========
 
-7.1 Rational Decision-Making
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Rational Decision-Making
+~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Rational decision-making defines how we make decisions
   - A person's or institutions goal is not relevant, the process of
@@ -429,8 +407,8 @@ _________________
     - Same thing as "average payoff"
 
 
-7.2 Incentive Structures
-~~~~~~~~~~~~~~~~~~~~~~~~
+Incentive Structures
+~~~~~~~~~~~~~~~~~~~~
 
   - Incentive structures are the expected values for each of the
     strategies considered
@@ -438,8 +416,8 @@ _________________
     given that we are rational actors
 
 
-8 Expected Profit Khan
-======================
+Expected Profit Khan
+====================
 
   - Expected value can be calculated as the sum of all the outcome
     probabilities multiplied by their corresponding profits.
@@ -448,38 +426,38 @@ _________________
     negative (losses)
 
 
-9 01.15.21
-==========
+01.15.21
+========
 
   - Brain has a complex set of structures that work together to do both
     really important, and fundamentally flawed actions
 
 
-9.1 Brain Stem
-~~~~~~~~~~~~~~
+Brain Stem
+~~~~~~~~~~
 
   - The reptilian brain
   - Really just an extensino of the spinal cord
   - Controls automatic actions, no effect on decision-making
 
 
-9.2 Middle Brain (Limbic System)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Middle Brain (Limbic System)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Body's monitoring system to identify important elements of the
     environment
   - Discriminates things of importantance constantly and ambiently
 
 
-9.3 Brain Cortex
-~~~~~~~~~~~~~~~~
+Brain Cortex
+~~~~~~~~~~~~
 
   - Controls higher-level thinking
   - Moral decision-making, learning, conscious awareness
 
 
-9.4 Hierarchy of the brain
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Hierarchy of the brain
+~~~~~~~~~~~~~~~~~~~~~~
 
   - Information goes from the brain stem, to the limbic system, to the
     brain cortex
@@ -496,8 +474,8 @@ _________________
     in-group/out-group bias
 
 
-9.5 Rational Decision-Making
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Rational Decision-Making
+~~~~~~~~~~~~~~~~~~~~~~~~
 
   1. Pick a goal
   2. Evaluate all strategies

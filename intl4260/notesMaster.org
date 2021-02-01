@@ -2,6 +2,23 @@
 #+TITLE: American Foreign Pol. Decision Making
 #+AUTHOR: Sudhan Chitgopkar
 #+EMAIL: sudhanchitgopkar@uga.edu
+# Web Export Config
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="rethink.css" />
+#+OPTIONS: toc:nil num:nil html-style:nil
+* 02.01.21
+** Loss Aversion
+- Consider a simple dilemma, wherein an actor chooses whether to play a game.
+  - A fair coin is flipped
+  - If the coin is heads, the actor recieves $125
+  - If the coin is tails, the actor loses $125
+- This dilemma has an EV of (0.5 * 125) + (0.5 * -125) = 0
+- Despite an EV of 0, the vast majority of people would not play this game
+- This is a result of loss aversion, people cognitively weigh losses and harms more than they would weigh wins and benefits
+- When compared to gains, equivalent losses hurt more
+- Pain and loss aversion is a more intense feeling than gain seeking
+- This pehnomenon is consistent across regions and cultures
+- To take advantage of this, framing each decision as loss aversion (loss framing) instead of gain seeking makes it more likely to be accepted
+- Under time pressure, individuals will be more resolved to avoid losses
 * 01.29.21
 ** Sagan Review
 - If nuclear weapons were a norm,
