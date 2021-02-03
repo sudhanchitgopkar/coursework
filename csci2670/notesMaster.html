@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-01-29 Fri 20:21 -->
+<!-- 2021-02-03 Wed 10:32 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Theory of Computing</title>
@@ -58,17 +58,100 @@
 <body>
 <div id="content">
 <h1 class="title">Theory of Computing</h1>
-<div id="outline-container-org418762b" class="outline-2">
-<h2 id="org418762b">01.28.29</h2>
-<div class="outline-text-2" id="text-org418762b">
+<div id="outline-container-org8681927" class="outline-2">
+<h2 id="org8681927">02.02.21</h2>
+<div class="outline-text-2" id="text-org8681927">
 </div>
-<div id="outline-container-orgd8ac3df" class="outline-3">
-<h3 id="orgd8ac3df">Nondeterministic Finite Automata</h3>
-<div class="outline-text-3" id="text-orgd8ac3df">
+<div id="outline-container-orga0955c5" class="outline-3">
+<h3 id="orga0955c5">Reviewing &delta;</h3>
+<div class="outline-text-3" id="text-orga0955c5">
 </div>
-<div id="outline-container-org9a31990" class="outline-4">
-<h4 id="org9a31990">DFA Review</h4>
-<div class="outline-text-4" id="text-org9a31990">
+<div id="outline-container-org2e0c9dc" class="outline-4">
+<h4 id="org2e0c9dc">DFAs</h4>
+<div class="outline-text-4" id="text-org2e0c9dc">
+<ul class="org-ul">
+<li>&delta;: Q &times; &Sigma; &rarr; Q</li>
+<li>input: (state, symbol)</li>
+<li>output: state</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb2b5895" class="outline-4">
+<h4 id="orgb2b5895">NFAs</h4>
+<div class="outline-text-4" id="text-orgb2b5895">
+<ul class="org-ul">
+<li>Not allowing &epsilon; transitions
+<ul class="org-ul">
+<li>&delta;: Q &times; &Sigma; &rarr; \powerset(Q)</li>
+<li>input: (state, symbol)</li>
+<li>output: set of states</li>
+</ul></li>
+<li>If an automaton is nondeterministic, then the codomain of &delta; is a power set</li>
+<li>Allowing &epsilon; transitions,
+<ul class="org-ul">
+<li>&delta;: Q &times; (\Simga &cup; {&epsilon;}) &rarr; \powerset(Q)</li>
+<li>input: (state, symbol or &epsilon;)</li>
+<li>output: set of states</li>
+</ul></li>
+<li>Note that &epsilon; is not a symbol and cannot belong to &Sigma;
+<ul class="org-ul">
+<li>This is because symbols have a length of 1 and &epsilon;, by definition, has a length of 0</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb114bb4" class="outline-3">
+<h3 id="orgb114bb4">NFA</h3>
+<div class="outline-text-3" id="text-orgb114bb4">
+<ul class="org-ul">
+<li>General 5-tuple including
+<ol class="org-ol">
+<li>Q: set of states</li>
+<li>&Sigma; - input alphabet</li>
+<li>&delta;: Q &times; (&Sigma; &cup; {&epsilon;}) &rarr; \powerstate(Q)</li>
+<li>q<sub>0</sub> &isin; Q - starting state</li>
+<li>F &sub; Q - set of final states</li>
+</ol></li>
+<li>There may exist some inputs for which it is possible that the NFA accepts the sequence if one path is taken and rejects the sequence if another path is taken</li>
+<li>The NFA does not have the ability to look ahead at possible states</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5f8feb0" class="outline-3">
+<h3 id="org5f8feb0">Computation</h3>
+<div class="outline-text-3" id="text-org5f8feb0">
+<ul class="org-ul">
+<li>The NFA runs all possible branches on a given string simultaneously and independently</li>
+<li>A string, w, is rejected by an NFA, N, if every branch of the nondeterminism tree for N on w rejects
+<ul class="org-ul">
+<li>&not; &exist; a branch that accepts</li>
+</ul></li>
+<li>A string, w, is accepted by an NFA, N, if &exist; a branch on the nondeterminism tree for which N on w accepts</li>
+<li>Theorem: Any language recognized by an NFA can be recognized by a DFA
+<ul class="org-ul">
+<li>Let N be an NFA.</li>
+<li>Then &exist; a DFA, M, with L(M) = L(N)</li>
+<li>The language recognized by a machine, M, (L(M)) is the set of exactly all strings accepted by M (no rejected strings allowed)
+<ul class="org-ul">
+<li>&not; L(M) = set of all strings rejected by M</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org1893daf" class="outline-2">
+<h2 id="org1893daf">01.28.21</h2>
+<div class="outline-text-2" id="text-org1893daf">
+</div>
+<div id="outline-container-org9837f3d" class="outline-3">
+<h3 id="org9837f3d">Nondeterministic Finite Automata</h3>
+<div class="outline-text-3" id="text-org9837f3d">
+</div>
+<div id="outline-container-orgc753918" class="outline-4">
+<h4 id="orgc753918">DFA Review</h4>
+<div class="outline-text-4" id="text-orgc753918">
 <ul class="org-ul">
 <li>DFA&rsquo;s are 5-tuples with
 <ul class="org-ul">
@@ -79,25 +162,25 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org54ee736" class="outline-4">
-<h4 id="org54ee736">NFA&rsquo;s</h4>
-<div class="outline-text-4" id="text-org54ee736">
+<div id="outline-container-org5149c14" class="outline-4">
+<h4 id="org5149c14">NFA&rsquo;s</h4>
+<div class="outline-text-4" id="text-org5149c14">
 <ul class="org-ul">
 <li>NFAs are also a 5-tuple</li>
-<li>&delta;: Q &times; &Sigma; &rarr; \powerset{p}(Q)</li>
+<li>&delta;: Q &times; &Sigma; &rarr; \mathbb{P}(Q)</li>
 <li>|\mathbb{P}(Q)| = 2<sup>|Q|</sup></li>
 </ul>
 </div>
 </div>
 </div>
 </div>
-<div id="outline-container-org6e04d88" class="outline-2">
-<h2 id="org6e04d88">01.26.21 - 01.28.20</h2>
-<div class="outline-text-2" id="text-org6e04d88">
+<div id="outline-container-org2633b39" class="outline-2">
+<h2 id="org2633b39">01.26.21 - 01.28.20</h2>
+<div class="outline-text-2" id="text-org2633b39">
 </div>
-<div id="outline-container-org368352e" class="outline-3">
-<h3 id="org368352e">Closure Introduction</h3>
-<div class="outline-text-3" id="text-org368352e">
+<div id="outline-container-org7de0582" class="outline-3">
+<h3 id="org7de0582">Closure Introduction</h3>
+<div class="outline-text-3" id="text-org7de0582">
 <ul class="org-ul">
 <li>The language recognized by a DFA, M, (L(M)) is the set of all string accepted by M</li>
 <li>Thus, M = (Q, &Sigma;, &delta;, q<sub>0</sub>,F)</li>
@@ -109,9 +192,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org8272c45" class="outline-3">
-<h3 id="org8272c45">Closure Continued</h3>
-<div class="outline-text-3" id="text-org8272c45">
+<div id="outline-container-orgdb723b1" class="outline-3">
+<h3 id="orgdb723b1">Closure Continued</h3>
+<div class="outline-text-3" id="text-orgdb723b1">
 <ul class="org-ul">
 <li>A set, A, is closed under a binary operation, OP, if &forall; x , y &isin; A [x OP y &isin; A]</li>
 <li>Ex. Natural Numbers (\(\mathbb{N}\))
@@ -125,9 +208,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orgaebae8b" class="outline-3">
-<h3 id="orgaebae8b">Closure Properties of DFAs</h3>
-<div class="outline-text-3" id="text-orgaebae8b">
+<div id="outline-container-org93134b3" class="outline-3">
+<h3 id="org93134b3">Closure Properties of DFAs</h3>
+<div class="outline-text-3" id="text-org93134b3">
 <ul class="org-ul">
 <li>Union (&cup;)</li>
 <li>Intersection (&cap;)</li>
@@ -136,17 +219,17 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb5d3669" class="outline-3">
-<h3 id="orgb5d3669">Applying Closure Properties</h3>
-<div class="outline-text-3" id="text-orgb5d3669">
+<div id="outline-container-orgfe5ecd7" class="outline-3">
+<h3 id="orgfe5ecd7">Applying Closure Properties</h3>
+<div class="outline-text-3" id="text-orgfe5ecd7">
 <ul class="org-ul">
 <li>If L(M<sub>1</sub>) &cup; L(M<sub>2</sub>) are DFAs, then &exist; DFA, M, with L(M) = L(M<sub>1</sub>) &cup; L(M<sub>2</sub>)</li>
 <li>The purpose of a state machine is to make a yes/no decision</li>
 </ul>
 </div>
-<div id="outline-container-org0763ef9" class="outline-4">
-<h4 id="org0763ef9">Premise:</h4>
-<div class="outline-text-4" id="text-org0763ef9">
+<div id="outline-container-org9cc336c" class="outline-4">
+<h4 id="org9cc336c">Premise:</h4>
+<div class="outline-text-4" id="text-org9cc336c">
 <ul class="org-ul">
 <li>M<sub>1</sub> = {Q<sub>1</sub>,&Sigma;,&delta;<sub>1</sub>,q<sub>0<sub>1</sub></sub>,F<sub>1</sub>} and M<sub>2</sub> = {Q<sub>2</sub>,&Sigma;,&delta;<sub>2</sub>,q<sub>0</sub>,F<sub>2</sub>} are DFAs</li>
 <li>M<sub>1</sub> accepts binary strings ending in 1</li>
@@ -167,9 +250,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orgc8aa78a" class="outline-4">
-<h4 id="orgc8aa78a">Coding M</h4>
-<div class="outline-text-4" id="text-orgc8aa78a">
+<div id="outline-container-org551fd6d" class="outline-4">
+<h4 id="org551fd6d">Coding M</h4>
+<div class="outline-text-4" id="text-org551fd6d">
 <ul class="org-ul">
 <li>Consider Q = Q<sub>1</sub> &sdot; Q<sub>2</sub> = {q<sub>1</sub>r<sub>1</sub>,q<sub>2</sub>r<sub>1</sub>,q<sub>1</sub>r<sub>2</sub>,q<sub>2</sub>r<sub>2</sub>}</li>
 <li>wherein
@@ -199,9 +282,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org2cc7ec0" class="outline-4">
-<h4 id="org2cc7ec0">Derivation</h4>
-<div class="outline-text-4" id="text-org2cc7ec0">
+<div id="outline-container-orgd6c3045" class="outline-4">
+<h4 id="orgd6c3045">Derivation</h4>
+<div class="outline-text-4" id="text-orgd6c3045">
 <ul class="org-ul">
 <li>Construct M and show that L(M) = L(M<sub>1</sub>) &cup; L(M<sub>2</sub>).</li>
 <li>Q = Q<sub>1</sub> &sdot; Q<sub>2</sub></li>
@@ -213,9 +296,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orgc44ecca" class="outline-4">
-<h4 id="orgc44ecca">Correctness</h4>
-<div class="outline-text-4" id="text-orgc44ecca">
+<div id="outline-container-orga90b370" class="outline-4">
+<h4 id="orga90b370">Correctness</h4>
+<div class="outline-text-4" id="text-orga90b370">
 <ul class="org-ul">
 <li>Show that M accepts exactly the strings that are accepted by M<sub>1</sub> or M<sub>2</sub></li>
 <li>If w &isin; &Sigma;*. tjem w is accepted by M and w is accepted by either M<sub>1</sub> or M{2}</li>
@@ -224,9 +307,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orgc57ad79" class="outline-4">
-<h4 id="orgc57ad79">Mathematical Induction</h4>
-<div class="outline-text-4" id="text-orgc57ad79">
+<div id="outline-container-org6b3852e" class="outline-4">
+<h4 id="org6b3852e">Mathematical Induction</h4>
+<div class="outline-text-4" id="text-org6b3852e">
 <ul class="org-ul">
 <li>Need base case and induction hypothesis</li>
 <li>Induction hypothesis says something is true about k, where k is the length of strings</li>
@@ -243,13 +326,13 @@
 </div>
 </div>
 </div>
-<div id="outline-container-org6eb3f7a" class="outline-2">
-<h2 id="org6eb3f7a">01.21.21</h2>
-<div class="outline-text-2" id="text-org6eb3f7a">
+<div id="outline-container-org72ee9ae" class="outline-2">
+<h2 id="org72ee9ae">01.21.21</h2>
+<div class="outline-text-2" id="text-org72ee9ae">
 </div>
-<div id="outline-container-orgd2027fd" class="outline-3">
-<h3 id="orgd2027fd">Deterministic Finite Automata</h3>
-<div class="outline-text-3" id="text-orgd2027fd">
+<div id="outline-container-org0146f5c" class="outline-3">
+<h3 id="org0146f5c">Deterministic Finite Automata</h3>
+<div class="outline-text-3" id="text-org0146f5c">
 <ul class="org-ul">
 <li>We know that &delta; = Q &times; &Sigma; &rarr; Q<sub>2</sub></li>
 <li>We want a function that takes a starting state and a string, then returns the state after the machine has read that string</li>
@@ -274,9 +357,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org02cefdf" class="outline-3">
-<h3 id="org02cefdf">Aside: On &Sigma; and &Sigma;*</h3>
-<div class="outline-text-3" id="text-org02cefdf">
+<div id="outline-container-org248d269" class="outline-3">
+<h3 id="org248d269">Aside: On &Sigma; and &Sigma;*</h3>
+<div class="outline-text-3" id="text-org248d269">
 <ul class="org-ul">
 <li>&Sigma;* is the universe of all strings over &Sigma;
 <ul class="org-ul">
@@ -344,9 +427,9 @@
 </table>
 </div>
 </div>
-<div id="outline-container-org6306092" class="outline-3">
-<h3 id="org6306092">Recursively Testing 101</h3>
-<div class="outline-text-3" id="text-org6306092">
+<div id="outline-container-orgd4f1a7e" class="outline-3">
+<h3 id="orgd4f1a7e">Recursively Testing 101</h3>
+<div class="outline-text-3" id="text-orgd4f1a7e">
 <ul class="org-ul">
 <li>Solve &delta;*(q<sub>1</sub>,101)</li>
 <li>&delta;(&delta;*(q<sub>1</sub>,10),1)</li>
@@ -354,18 +437,18 @@
 <li>&delta;(&delta;*(q<sub>1</sub>,1),0)</li>
 </ul>
 </div>
-<div id="outline-container-org70cbf3b" class="outline-4">
-<h4 id="org70cbf3b"><span class="todo TODO">TODO</span> Complete Recursion Sequence</h4>
+<div id="outline-container-org0f69e5e" class="outline-4">
+<h4 id="org0f69e5e"><span class="todo TODO">TODO</span> Complete Recursion Sequence</h4>
 </div>
 </div>
 </div>
-<div id="outline-container-orgf3cffb5" class="outline-2">
-<h2 id="orgf3cffb5">01.19.21</h2>
-<div class="outline-text-2" id="text-orgf3cffb5">
+<div id="outline-container-orge06a0be" class="outline-2">
+<h2 id="orge06a0be">01.19.21</h2>
+<div class="outline-text-2" id="text-orge06a0be">
 </div>
-<div id="outline-container-org08e5c6e" class="outline-3">
-<h3 id="org08e5c6e">Tuples &amp; DFAs</h3>
-<div class="outline-text-3" id="text-org08e5c6e">
+<div id="outline-container-org24f1ed2" class="outline-3">
+<h3 id="org24f1ed2">Tuples &amp; DFAs</h3>
+<div class="outline-text-3" id="text-org24f1ed2">
 <ul class="org-ul">
 <li>Tuples are sequences which are always finite in length</li>
 <li>The deterministic finite automaton shown is a 5-tuple:
@@ -444,18 +527,18 @@ Represented as a table,
 </table>
 </div>
 </div>
-<div id="outline-container-org460a6ca" class="outline-3">
-<h3 id="org460a6ca">Domains &amp; Codomains</h3>
-<div class="outline-text-3" id="text-org460a6ca">
+<div id="outline-container-org339a81c" class="outline-3">
+<h3 id="org339a81c">Domains &amp; Codomains</h3>
+<div class="outline-text-3" id="text-org339a81c">
 <ul class="org-ul">
 <li>Domain: set of all possible function inputs</li>
 <li>Codomain: set of all possible outputs</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgf426339" class="outline-3">
-<h3 id="orgf426339">Strings</h3>
-<div class="outline-text-3" id="text-orgf426339">
+<div id="outline-container-org3f9e5dc" class="outline-3">
+<h3 id="org3f9e5dc">Strings</h3>
+<div class="outline-text-3" id="text-org3f9e5dc">
 <ul class="org-ul">
 <li>In computer science, strings are character arrays</li>
 <li>In mathematics, strings are sequences of symbols</li>
@@ -466,9 +549,9 @@ Represented as a table,
 </ul>
 </div>
 </div>
-<div id="outline-container-org7ce8847" class="outline-3">
-<h3 id="org7ce8847"><span class="todo TODO">TODO</span> Review Recursive Definitions</h3>
-<div class="outline-text-3" id="text-org7ce8847">
+<div id="outline-container-org7dcda8a" class="outline-3">
+<h3 id="org7dcda8a"><span class="todo TODO">TODO</span> Review Recursive Definitions</h3>
+<div class="outline-text-3" id="text-org7dcda8a">
 <ul class="org-ul">
 <li>Base step: a step that can not be broken down any further, a fact that is always true regardless of the input</li>
 <li>Recursive step:</li>
@@ -493,9 +576,9 @@ Represented as a table,
 </ul>
 </div>
 </div>
-<div id="outline-container-org0a63e19" class="outline-3">
-<h3 id="org0a63e19">Languages</h3>
-<div class="outline-text-3" id="text-org0a63e19">
+<div id="outline-container-org1f4c793" class="outline-3">
+<h3 id="org1f4c793">Languages</h3>
+<div class="outline-text-3" id="text-org1f4c793">
 <ul class="org-ul">
 <li>Languages over &Sigma; - a set of finite strings over &Sigma;</li>
 <li>Langauges recognized by an automaton, M, L(M) is the language accepted by M</li>
@@ -507,13 +590,13 @@ Represented as a table,
 </div>
 </div>
 </div>
-<div id="outline-container-orgb9e34d3" class="outline-2">
-<h2 id="orgb9e34d3">01.14.21</h2>
-<div class="outline-text-2" id="text-orgb9e34d3">
+<div id="outline-container-org065645b" class="outline-2">
+<h2 id="org065645b">01.14.21</h2>
+<div class="outline-text-2" id="text-org065645b">
 </div>
-<div id="outline-container-orgbbc1b59" class="outline-3">
-<h3 id="orgbbc1b59">Automaton (automata)</h3>
-<div class="outline-text-3" id="text-orgbbc1b59">
+<div id="outline-container-org07d2595" class="outline-3">
+<h3 id="org07d2595">Automaton (automata)</h3>
+<div class="outline-text-3" id="text-org07d2595">
 <ul class="org-ul">
 <li>Self running machine requiring a continuous power source
 <ul class="org-ul">
@@ -523,13 +606,13 @@ Represented as a table,
 </ul>
 </div>
 </div>
-<div id="outline-container-org039d872" class="outline-3">
-<h3 id="org039d872">The Mathematics of Automata</h3>
-<div class="outline-text-3" id="text-org039d872">
+<div id="outline-container-org847d62d" class="outline-3">
+<h3 id="org847d62d">The Mathematics of Automata</h3>
+<div class="outline-text-3" id="text-org847d62d">
 </div>
-<div id="outline-container-orgf1d216b" class="outline-4">
-<h4 id="orgf1d216b">Mathematicians &amp; History</h4>
-<div class="outline-text-4" id="text-orgf1d216b">
+<div id="outline-container-org62673da" class="outline-4">
+<h4 id="org62673da">Mathematicians &amp; History</h4>
+<div class="outline-text-4" id="text-org62673da">
 <ul class="org-ul">
 <li>Cantor defines sets as collections of objects</li>
 <li>Cantor also argues that infinites can be of different magnitudes - there are infinitely more real numbers than natural numbers</li>
@@ -552,9 +635,9 @@ Represented as a table,
 </ul>
 </div>
 </div>
-<div id="outline-container-org94144e5" class="outline-4">
-<h4 id="org94144e5">Sequential Logic</h4>
-<div class="outline-text-4" id="text-org94144e5">
+<div id="outline-container-org2fe15cc" class="outline-4">
+<h4 id="org2fe15cc">Sequential Logic</h4>
+<div class="outline-text-4" id="text-org2fe15cc">
 <ul class="org-ul">
 <li>Sentential Logic- based on boolean results
 <ul class="org-ul">
@@ -565,9 +648,9 @@ Represented as a table,
 </div>
 </div>
 </div>
-<div id="outline-container-orgc2f7980" class="outline-3">
-<h3 id="orgc2f7980">Necessary Review</h3>
-<div class="outline-text-3" id="text-orgc2f7980">
+<div id="outline-container-orgfac883d" class="outline-3">
+<h3 id="orgfac883d">Necessary Review</h3>
+<div class="outline-text-3" id="text-orgfac883d">
 <ul class="org-ul">
 <li>Textbook Ch. 0</li>
 <li>Logic Statements</li>
@@ -576,9 +659,9 @@ Represented as a table,
 </ul>
 </div>
 </div>
-<div id="outline-container-org320f027" class="outline-3">
-<h3 id="org320f027">Functions</h3>
-<div class="outline-text-3" id="text-org320f027">
+<div id="outline-container-org55ca498" class="outline-3">
+<h3 id="org55ca498">Functions</h3>
+<div class="outline-text-3" id="text-org55ca498">
 <ul class="org-ul">
 <li>Functions - something that maps objects from one set to another</li>
 <li>Given f: a &rarr; b;
@@ -601,9 +684,9 @@ No one point in the domain can be mapped to two different points in the codomain
 </ul>
 </div>
 </div>
-<div id="outline-container-org38b5958" class="outline-3">
-<h3 id="org38b5958"><span class="todo TODO">TODO</span> Types of Functions - Definition &amp; Logical Statement</h3>
-<div class="outline-text-3" id="text-org38b5958">
+<div id="outline-container-orgc8e0d8c" class="outline-3">
+<h3 id="orgc8e0d8c"><span class="todo TODO">TODO</span> Types of Functions - Definition &amp; Logical Statement</h3>
+<div class="outline-text-3" id="text-orgc8e0d8c">
 <ul class="org-ul">
 <li>Injective Functions</li>
 <li>Surjective Functions</li>
@@ -612,9 +695,9 @@ No one point in the domain can be mapped to two different points in the codomain
 </ul>
 </div>
 </div>
-<div id="outline-container-org1626ab1" class="outline-3">
-<h3 id="org1626ab1">Finite Automaton (Finite State Machine)</h3>
-<div class="outline-text-3" id="text-org1626ab1">
+<div id="outline-container-orga208bb1" class="outline-3">
+<h3 id="orga208bb1">Finite Automaton (Finite State Machine)</h3>
+<div class="outline-text-3" id="text-orga208bb1">
 <ul class="org-ul">
 <li>States are logical confirgurations</li>
 <li>States are generally based upon input</li>
@@ -626,7 +709,7 @@ No one point in the domain can be mapped to two different points in the codomain
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Sudhan Chitgopkar</p>
-<p class="date">Created: 2021-01-29 Fri 20:21</p>
+<p class="date">Created: 2021-02-03 Wed 10:32</p>
 </div>
 </body>
 </html>

@@ -6,6 +6,7 @@
 ** Concession Aversion
 - Because of loss aversion, anything given up in a negotiation has an inflated value.
 - Because this is true for both sides of a negotiation, there is a permanent hurdle to achieving a negotiated settlement
+- Also known as the endowment effect
 * 02.01.21
 ** Loss Aversion
 - Consider a simple dilemma, wherein an actor chooses whether to play a game.

@@ -6,53 +6,80 @@
                          _____________________
 
 
-Table of Contents
-_________________
+02.02.21
+========
 
-1. 01.28.29
-.. 1. Nondeterministic Finite Automata
-..... 1. DFA Review
-..... 2. NFA's
-2. 01.26.21 - 01.28.20
-.. 1. Closure Introduction
-.. 2. Closure Continued
-.. 3. Closure Properties of DFAs
-.. 4. Applying Closure Properties
-..... 1. Premise:
-..... 2. Coding M
-..... 3. Derivation
-..... 4. Correctness
-..... 5. Mathematical Induction
-3. 01.21.21
-.. 1. Deterministic Finite Automata
-.. 2. Aside: On Sigma and Sigma*
-.. 3. Recursively Testing 101
-..... 1. TODO Complete Recursion Sequence
-4. 01.19.21
-.. 1. Tuples & DFAs
-.. 2. Domains & Codomains
-.. 3. Strings
-.. 4. TODO Review Recursive Definitions
-.. 5. Languages
-5. 01.14.21
-.. 1. Automaton (automata)
-.. 2. The Mathematics of Automata
-..... 1. Mathematicians & History
-..... 2. Sequential Logic
-.. 3. Necessary Review
-.. 4. Functions
-.. 5. TODO Types of Functions - Definition & Logical Statement
-.. 6. Finite Automaton (Finite State Machine)
+Reviewing delta
+~~~~~~~~~~~~~~~
+
+DFAs
+----
+
+  - delta: Q * Sigma -> Q
+  - input: (state, symbol)
+  - output: state
 
 
-1 01.28.29
-==========
+NFAs
+----
 
-1.1 Nondeterministic Finite Automata
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  - Not allowing epsilon transitions
+    - delta: Q * Sigma -> \powerset(Q)
+    - input: (state, symbol)
+    - output: set of states
+  - If an automaton is nondeterministic, then the codomain of delta is a
+    power set
+  - Allowing epsilon transitions,
+    - delta: Q * (\Simga [union] {epsilon}) -> \powerset(Q)
+    - input: (state, symbol or epsilon)
+    - output: set of states
+  - Note that epsilon is not a symbol and cannot belong to Sigma
+    - This is because symbols have a length of 1 and epsilon, by
+      definition, has a length of 0
 
-1.1.1 DFA Review
-----------------
+
+NFA
+~~~
+
+  - General 5-tuple including
+    1. Q: set of states
+    2. Sigma - input alphabet
+    3. delta: Q * (Sigma [union] {epsilon}) -> \powerstate(Q)
+    4. q_{0} [element of] Q - starting state
+    5. F [subset of] Q - set of final states
+  - There may exist some inputs for which it is possible that the NFA
+    accepts the sequence if one path is taken and rejects the sequence
+    if another path is taken
+  - The NFA does not have the ability to look ahead at possible states
+
+
+Computation
+~~~~~~~~~~~
+
+  - The NFA runs all possible branches on a given string simultaneously
+    and independently
+  - A string, w, is rejected by an NFA, N, if every branch of the
+    nondeterminism tree for N on w rejects
+    - [angled dash] [there exists] a branch that accepts
+  - A string, w, is accepted by an NFA, N, if [there exists] a branch on
+    the nondeterminism tree for which N on w accepts
+  - Theorem: Any language recognized by an NFA can be recognized by a
+    DFA
+    - Let N be an NFA.
+    - Then [there exists] a DFA, M, with L(M) = L(N)
+    - The language recognized by a machine, M, (L(M)) is the set of
+      exactly all strings accepted by M (no rejected strings allowed)
+      - [angled dash] L(M) = set of all strings rejected by M
+
+
+01.28.21
+========
+
+Nondeterministic Finite Automata
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+DFA Review
+----------
 
   - DFA's are 5-tuples with
     - delta: Q * Sigma -> Q
@@ -61,19 +88,19 @@ _________________
     alongside a rule to find an output
 
 
-1.1.2 NFA's
------------
+NFA's
+-----
 
   - NFAs are also a 5-tuple
-  - delta: Q * Sigma -> \powerset{p}(Q)
+  - delta: Q * Sigma -> \mathbb{P}(Q)
   - |\mathbb{P}(Q)| = 2^{|Q|}
 
 
-2 01.26.21 - 01.28.20
-=====================
+01.26.21 - 01.28.20
+===================
 
-2.1 Closure Introduction
-~~~~~~~~~~~~~~~~~~~~~~~~
+Closure Introduction
+~~~~~~~~~~~~~~~~~~~~
 
   - The language recognized by a DFA, M, (L(M)) is the set of all string
     accepted by M
@@ -87,8 +114,8 @@ _________________
     [angled dash] L(M)
 
 
-2.2 Closure Continued
-~~~~~~~~~~~~~~~~~~~~~
+Closure Continued
+~~~~~~~~~~~~~~~~~
 
   - A set, A, is closed under a binary operation, OP, if [for all] x , y
     [element of] A [x OP y [element of] A]
@@ -101,8 +128,8 @@ _________________
     under [union]
 
 
-2.3 Closure Properties of DFAs
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Closure Properties of DFAs
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Union ([union])
   - Intersection ([intersection])
@@ -110,16 +137,16 @@ _________________
   - Reverse
 
 
-2.4 Applying Closure Properties
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Applying Closure Properties
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - If L(M_{1}) [union] L(M_{2}) are DFAs, then [there exists] DFA, M,
     with L(M) = L(M_{1}) [union] L(M_{2})
   - The purpose of a state machine is to make a yes/no decision
 
 
-2.4.1 Premise:
---------------
+Premise:
+--------
 
   - M_{1} = {Q_{1},Sigma,delta_{1},q_{0_{1}},F_{1}} and M_{2} =
     {Q_{2},Sigma,delta_{2},q_{0},F_{2}} are DFAs
@@ -137,8 +164,8 @@ _________________
     - odd length ending in 0
 
 
-2.4.2 Coding M
---------------
+Coding M
+--------
 
   - Consider Q = Q_{1} [dot] Q_{2} =
     {q_{1}r_{1},q_{2}r_{1},q_{1}r_{2},q_{2}r_{2}}
@@ -164,8 +191,8 @@ _________________
     - F={q1r2,q2r1,q2r2};
 
 
-2.4.3 Derivation
-----------------
+Derivation
+----------
 
   - Construct M and show that L(M) = L(M_{1}) [union] L(M_{2}).
   - Q = Q_{1} [dot] Q_{2}
@@ -178,8 +205,8 @@ _________________
     [element of] F_{2}}
 
 
-2.4.4 Correctness
------------------
+Correctness
+-----------
 
   - Show that M accepts exactly the strings that are accepted by M_{1}
     or M_{2}
@@ -191,8 +218,8 @@ _________________
     recurrence relationships
 
 
-2.4.5 Mathematical Induction
-----------------------------
+Mathematical Induction
+----------------------
 
   - Need base case and induction hypothesis
   - Induction hypothesis says something is true about k, where k is the
@@ -212,11 +239,11 @@ _________________
     of] F
 
 
-3 01.21.21
-==========
+01.21.21
+========
 
-3.1 Deterministic Finite Automata
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Deterministic Finite Automata
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - We know that delta = Q * Sigma -> Q_{2}
   - We want a function that takes a starting state and a string, then
@@ -234,8 +261,8 @@ _________________
       - then delta*(q, w [dot] c) = delta(delta*(q_{i},w),c)
 
 
-3.2 Aside: On Sigma and Sigma*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Aside: On Sigma and Sigma*
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Sigma* is the universe of all strings over Sigma
     - Sigma = {0,1}
@@ -254,8 +281,8 @@ _________________
    10       1        101  recursive 
 
 
-3.3 Recursively Testing 101
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Recursively Testing 101
+~~~~~~~~~~~~~~~~~~~~~~~
 
   - Solve delta*(q_{1},101)
   - delta(delta*(q_{1},10),1)
@@ -263,15 +290,15 @@ _________________
   - delta(delta*(q_{1},1),0)
 
 
-3.3.1 TODO Complete Recursion Sequence
---------------------------------------
+TODO Complete Recursion Sequence
+--------------------------------
 
 
-4 01.19.21
-==========
+01.19.21
+========
 
-4.1 Tuples & DFAs
-~~~~~~~~~~~~~~~~~
+Tuples & DFAs
+~~~~~~~~~~~~~
 
   - Tuples are sequences which are always finite in length
   - The deterministic finite automaton shown is a 5-tuple:
@@ -294,15 +321,15 @@ _________________
       4  Q_{2}      1  Q_{2} -> Q_{2} 
 
 
-4.2 Domains & Codomains
-~~~~~~~~~~~~~~~~~~~~~~~
+Domains & Codomains
+~~~~~~~~~~~~~~~~~~~
 
   - Domain: set of all possible function inputs
   - Codomain: set of all possible outputs
 
 
-4.3 Strings
-~~~~~~~~~~~
+Strings
+~~~~~~~
 
   - In computer science, strings are character arrays
   - In mathematics, strings are sequences of symbols
@@ -314,8 +341,8 @@ _________________
   - If c [element of] Sigma, then epsilon [dot] c = c [dot] epsilon = c
 
 
-4.4 TODO Review Recursive Definitions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TODO Review Recursive Definitions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Base step: a step that can not be broken down any further, a fact
     that is always true regardless of the input
@@ -334,8 +361,8 @@ _________________
     6) 0 + 1 + 1 + 1 + 1 = 4
 
 
-4.5 Languages
-~~~~~~~~~~~~~
+Languages
+~~~~~~~~~
 
   - Languages over Sigma - a set of finite strings over Sigma
   - Langauges recognized by an automaton, M, L(M) is the language
@@ -346,11 +373,11 @@ _________________
   - epsilon is not a symbol in any alphabet
 
 
-5 01.14.21
-==========
+01.14.21
+========
 
-5.1 Automaton (automata)
-~~~~~~~~~~~~~~~~~~~~~~~~
+Automaton (automata)
+~~~~~~~~~~~~~~~~~~~~
 
   - Self running machine requiring a continuous power source
     - Historically used power sources include water, steam, and
@@ -358,11 +385,11 @@ _________________
   - Course revolves around defining the mathematics powering machines
 
 
-5.2 The Mathematics of Automata
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The Mathematics of Automata
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-5.2.1 Mathematicians & History
-------------------------------
+Mathematicians & History
+------------------------
 
   - Cantor defines sets as collections of objects
   - Cantor also argues that infinites can be of different magnitudes -
@@ -387,16 +414,16 @@ _________________
     - What does it mean for a machine to be more powerfule than another?
 
 
-5.2.2 Sequential Logic
-----------------------
+Sequential Logic
+----------------
 
   - Sentential Logic- based on boolean results
     - Predicated on AND, OR, NOT
     - XOR, XAND, etc. can be derived using the above
 
 
-5.3 Necessary Review
-~~~~~~~~~~~~~~~~~~~~
+Necessary Review
+~~~~~~~~~~~~~~~~
 
   - Textbook Ch. 0
   - Logic Statements
@@ -404,8 +431,8 @@ _________________
   - Functions
 
 
-5.4 Functions
-~~~~~~~~~~~~~
+Functions
+~~~~~~~~~
 
   - Functions - something that maps objects from one set to another
   - Given f: a -> b;
@@ -421,8 +448,8 @@ _________________
        [logical and] f(x)=y_{2} -> y_{1} = y_{2}]
 
 
-5.5 TODO Types of Functions - Definition & Logical Statement
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TODO Types of Functions - Definition & Logical Statement
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Injective Functions
   - Surjective Functions
@@ -430,8 +457,8 @@ _________________
   - Proof by Contradiction ([angled dash][there exists])
 
 
-5.6 Finite Automaton (Finite State Machine)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finite Automaton (Finite State Machine)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - States are logical confirgurations
   - States are generally based upon input

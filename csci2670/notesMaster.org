@@ -1,8 +1,45 @@
-#+TITLE: Theory of Computing
+#+Title: Theory of Computing
 #+AUTHOR: Sudhan Chitgopkar
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="rethink.css" />
 #+OPTIONS: toc:nil num:nil html-style:nil
-* 01.28.29
+* 02.02.21
+** Reviewing \delta
+*** DFAs
+- \delta: Q \times \Sigma \to Q
+- input: (state, symbol)
+- output: state
+*** NFAs
+- Not allowing \epsilon transitions
+  - \delta: Q \times \Sigma \to \powerset(Q)
+  - input: (state, symbol)
+  - output: set of states
+- If an automaton is nondeterministic, then the codomain of \delta is a power set
+- Allowing \epsilon transitions,
+  - \delta: Q \times (\Simga \cup {\epsilon}) \to \powerset(Q)
+  - input: (state, symbol or \epsilon)
+  - output: set of states
+- Note that \epsilon is not a symbol and cannot belong to \Sigma
+  - This is because symbols have a length of 1 and \epsilon, by definition, has a length of 0
+** NFA
+- General 5-tuple including
+  1. Q: set of states
+  2. \Sigma - input alphabet
+  3. \delta: Q \times (\Sigma \cup {\epsilon}) \to \powerstate(Q)
+  4. q_{0} \in Q - starting state
+  5. F \subset Q - set of final states
+- There may exist some inputs for which it is possible that the NFA accepts the sequence if one path is taken and rejects the sequence if another path is taken
+- The NFA does not have the ability to look ahead at possible states
+** Computation
+- The NFA runs all possible branches on a given string simultaneously and independently
+- A string, w, is rejected by an NFA, N, if every branch of the nondeterminism tree for N on w rejects
+  - \not \exists a branch that accepts
+- A string, w, is accepted by an NFA, N, if \exists a branch on the nondeterminism tree for which N on w accepts
+- Theorem: Any language recognized by an NFA can be recognized by a DFA
+  - Let N be an NFA.
+  - Then \exists a DFA, M, with L(M) = L(N)
+  - The language recognized by a machine, M, (L(M)) is the set of exactly all strings accepted by M (no rejected strings allowed)
+    - \not L(M) = set of all strings rejected by M
+* 01.28.21
 ** Nondeterministic Finite Automata
 *** DFA Review
 - DFA's are 5-tuples with
@@ -11,7 +48,7 @@
 - There is no real decision-making here, an input is simply being used alongside a rule to find an output
 *** NFA's
 - NFAs are also a 5-tuple
-- \delta: Q \times \Sigma \to \powerset{p}(Q)
+- \delta: Q \times \Sigma \to \mathbb{P}(Q)
 - |\mathbb{P}(Q)| = 2^{|Q|}
 * 01.26.21 - 01.28.20
 ** Closure Introduction
