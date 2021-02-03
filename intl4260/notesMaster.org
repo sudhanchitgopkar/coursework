@@ -1,10 +1,11 @@
 # Document Information
-#+TITLE: American Foreign Pol. Decision Making
+#+TITLE: Foreign Pol. Decision Making
 #+AUTHOR: Sudhan Chitgopkar
 #+EMAIL: sudhanchitgopkar@uga.edu
-# Web Export Config
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="rethink.css" />
-#+OPTIONS: toc:nil num:nil html-style:nil
+* 02.03.21
+** Concession Aversion
+- Because of loss aversion, anything given up in a negotiation has an inflated value.
+- Because this is true for both sides of a negotiation, there is a permanent hurdle to achieving a negotiated settlement
 * 02.01.21
 ** Loss Aversion
 - Consider a simple dilemma, wherein an actor chooses whether to play a game.
@@ -217,3 +218,8 @@
    - Analyze benefits
 3. Select strategy with best cost/benefit ratio
 - Bias often occurs at stage 2 because of filtration of information through the limbic system
+
+* Notes Config
+# Web Export Config
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="rethink.css" />
+#+OPTIONS: toc:nil num:nil html-style:nil
