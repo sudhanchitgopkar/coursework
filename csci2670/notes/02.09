@@ -1,0 +1,119 @@
+__ NFA (no \e) -> DFA
+\d_{ne}: Q \* \S -> \P(Q)
+\:
+\d_D: Q_D \* \S -> Q_D
+
+@{idea} The codomain is the set of all possible output values
+Let n = |Q|
+Then |\P(Q)| = 2^n
+
+Each output value of \d_D is a state
+Each state represents a configuration of the logic of the machine
+
+We want to preserve the logic of \d_{ne} by giving \d_D a codomain with 2^n values
+The codomain of \d_D is Q_D so Q_D has 2^n states
+
+@{?} What are these states?
+@{?} What is the logic of these states
+
+\+ table
+{
+subset of Q#state in Q_D
+{q_1}#q_1
+{q_2}#q_2
+{q_3}#q_3
+{q_1}#q_1
+{q_1q_2}#q_1q_2
+{q_1q_3}#q_1q_3
+{q_2q_3}#q_2q_3
+{q_1q_2_q_3}#q_1q_2q_3
+\0#0
+
+
+
+
+
+}
+
+Consider the following NFA:
+\+ fa
+{
+Q={q1,q2,q3};
+S={0,1};
+d:Q\*S->\powerset{Q};
+d(q1,1)={q1,q2};
+d(q2,0)={q1,q3};
+d(q3,0)={q2};
+q0=q1;
+F={q3};
+
+
+
+
+
+}
+
+Turning this to a DFA,
+\+ fa
+{
+Q={q1,q2,q3,q1q2,q1q3,q2q3,q1q2q3,0};
+S={0,1};
+d:Q\*S->Q;
+d(q1,0)=0;
+d(q1,1)=q1q2;
+d(q2,0)=q1q3;
+d(q2,1)=0;
+d(q3,0)=q2;
+d(q3,1)=0;
+d(q1q2,0)=q1q3;
+d(q1q2,1)=q1q2;
+d(q1q3,0)=q2;
+d(q1q3,1)=q1q2;
+d(q2q3,0)=q1q2q3;
+d(q2q3,1)=0;
+d(q1q2q3,0)=q1q2q3;
+d(q1q2q3,1)=q1q2;
+d(0,0)=0;
+d(0,1)=0;
+q0=q1;
+F={q3,q1q3,q2q3,q1q2q3};
+
+
+
+
+
+}
+
+let R\subsetQ and let c \in \S
+\d_D(R,c) = \u {q \in R} \d_{ne}{q,c}
+F_D = {R\in\P(Q):R contains a final state in F_{ne}}
+In general, the starting state and all outputs from \d_{ne} are necessary
+__ Regular Languages
+The class of languages recognized by NFAs is the same class as the class of languages recognized by DFAs
+
+@{idea} a regular language is a language that can be constructed from a finite number of applications of any of the regular operations
+
+___ Regular operations
+1. union
+2. concatenation
+3. Kleene closure
+
+Consider concatenation:
+- Let L_1 and L_2 be sets.
+- Then L_1 \@ L_= {x\.y:x\inL_1 and y \in L_2}
+@{idea} this looks like L_1\*L_2
+
+Consider the Kleene closure:
+- Let L be a language
+- @{idea}The Kleene closure of of L (L*) is the set of all finite concatenations of elements in L.
+- Consider an L={1,10}
+- L*={\e,1,10,1\.10,10\.1,1\.1,10\.10,...}
+We can find the recursive definition for this
+- Let L be a language
+- Base: \e \in L*
+- Recursive: Let w \in L* and let x \in L
+\tab Then w \. x \in L*
+w = \e. x = 1. wx = 1
+w ＝ \e x ＝ 10. wx ＝ 10
+w ＝ 1 x ＝ 1. wx ＝ 11
+\S* is the Kleene closure of \S
