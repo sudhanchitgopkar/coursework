@@ -3,6 +3,22 @@
 #+EMAIL: sudhanchitgopkar@uga.edu
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="rethink.css" />
 #+OPTIONS: toc:nil num:nil html-style:nil
+* 02.08.21
+** List ADT
+- List consists of a domain and a set of operations
+- Domain is composed of homogeneous elements
+- Elements should be able to be compared (comparison operation must be defined)
+- All elements except for the first and last elements have a predecessor and successor
+- Sorted lists are always implied to be sorted in ascending order
+- List operations
+  - Constructor
+  - Transformer: (changes state)
+    - MakeEmpty, InsertItem,DeleteItem
+  - Observer: (obsesrve state)
+    - IsFull, LengthIs, Min, Max, Average
+  - Iterator: GetNextItem (note that a ResetList is generally called before GetNextItem)
+** Generic Data Type
+- A generic data type is a type for which the operations are defined but the types of the items being manipulated are not defined
 * 02.01.21 (Recursion)
 ** Recursion Trees
 - To convert recurrences into a tree,
