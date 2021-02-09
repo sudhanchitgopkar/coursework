@@ -6,8 +6,8 @@
                           ___________________
 
 
-02.08.21
-========
+02.08.21 - 02.09.21
+===================
 
 List ADT
 ~~~~~~~~
@@ -34,6 +34,42 @@ Generic Data Type
 
   - A generic data type is a type for which the operations are defined
     but the types of the items being manipulated are not defined
+
+
+Efficient Operations in Unsorted Lists
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  - When dealing with unsorted, array-based lists of a data-type,
+    - insert operations should always be done at the end of the list
+      through insert(length)
+      - this is because inserting at the beginning requires us to push
+        all items to the right one unit which is O(n), not O(1)
+    - delete operations should (1) find the element, (2) delete the
+      element, and (3) move the last term to the index of the deleted
+      term
+      - this allows us to prevent moving through the array and
+        refactoring it post-deletion
+    - Operation Complexity:
+      - Search: O(n)
+      - Insert: O(1)
+      - Delete: O(n)
+
+
+Efficient Operations in Sorted Lists
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  - GetItem, PutItem, and DeleteItem implementations change
+  - For GetItem, we no longer need to conduct a linear search with O(n)
+    time. Instead, we can use a binary search with O(log n) time.
+  - When using a linked-list, it is not possible to run a binary search
+    due to the lack of indices in linked lists. Here, we will use a
+    modified linear search instead that terminates after reaching the
+    item or an itwm with a value greater than it.
+  - PutItem requires us to find the first index with a value greater
+    than the item to be inserted. All elements including and after that
+    index are shifted to the right. Finally, the necessary item is
+    inserted at its proper location. This is O(n) because the search is
+    O(n), the shift is O(n), and they are not nested loops
 
 
 02.01.21 (Recursion)
