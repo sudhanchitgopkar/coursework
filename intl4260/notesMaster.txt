@@ -6,6 +6,19 @@
                      ______________________________
 
 
+02.05.21
+========
+
+Loss Aversion & Policy
+~~~~~~~~~~~~~~~~~~~~~~
+
+  - Argues that policies are either loss averting or gain seeking
+    - Berejikian argues against this
+    - Any policy can be reframed to be either loss avoiding or gain
+      seeking
+  - Public is more favorable towards policies that are loss avoiding
+
+
 02.03.21
 ========
 

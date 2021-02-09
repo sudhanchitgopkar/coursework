@@ -2,6 +2,18 @@
 #+TITLE: Foreign Pol. Decision Making
 #+AUTHOR: Sudhan Chitgopkar
 #+EMAIL: sudhanchitgopkar@uga.edu
+* 02.08.21
+- When we frame outcomes in terms of gains, we tend to be risk-averse, even when the gambles are objectively better
+- When we frame outcomes in terms of losses, we tend to be risk-acceptant in order to avoid larger losses, even when the gambles are objectively worse for us
+- This can often be seen in stock market crashes and stock behavior, wherein people sell during a stock downturn when the rational decision is to hold on to the stock
+  - This can further be seen with (1) Carter and the Iranian Hostage Crisis, (2) The 2016 election of Trump, the 2020 election of Biden
+- To remove yourself from a frame (regardless of whether it is risk-averse or risk-acceptant), it is critical to consider both benefits and losses
+* 02.05.21
+** Loss Aversion & Policy
+- Argues that policies are either loss averting or gain seeking
+  - Berejikian argues against this
+  - Any policy can be reframed to be either loss avoiding or gain seeking
+- Public is more favorable towards policies that are loss avoiding
 * 02.03.21
 ** Concession Aversion
 - Because of loss aversion, anything given up in a negotiation has an inflated value.
