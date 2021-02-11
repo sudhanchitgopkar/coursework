@@ -3,7 +3,63 @@
 #+EMAIL: sudhanchitgopkar@uga.edu
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="rethink.css" />
 #+OPTIONS: toc:nil num:nil html-style:nil
-
+* Intelligence Collection
+- HumInt = Human intelligence
+  - One of the oldest methods of collecting intelligence
+  - Includes overt and clandestine activities
+  - Can include diplomats, officials, hearings, etc.
+  - Can provide key insights that technical collection can not
+  - Can also provide documentary information
+  - Most cost-effective
+  - Three levels:
+    - Target-Specific: Closely managed, deep access, best ROI
+    - Research-enabled: Lead-generated, environmental-monitoring with generalized searching with minimal investment and trying to focus collection
+    - Opportunistic: Others come to you with specific information, low-hanging fruit
+- SigInt = Signals Intelligence
+  - Includes ComInt (communications), ElInt (Electronic Signals) FisInt (Foreign Instumentation Signals), TelInt (Telemetry)
+  - ComInt is general broadcasting, ElInt is understanding non-explicit communications (radar), FisInt looks at different command and tool signals to estimate power/type of opponents tools
+- ImInt = Imagery Intelligence and analysis of imagery that comes from film, infrared, digital information
+  - ImInt provides geolocation, activity detection, facility analysis, area mapping
+  - Disadvantages: Image quality generally degraded by darkness, weather, enemies that know ImInt is being used against them can fake information, requires tech-focused analysts
+- MasInt = Measurements and Signatures Intelligence
+  - Types of Intelligence
+    - Radar (RadInt)
+    - Acoustic (AcoustInt)
+    - Nuclear (NucInt)
+    - Radio-Frequency/Electromagnetic Pulse (RF/EmpInt)
+    - Electro-Optical (Electro-OpInt)
+    - Laser (LasInt)
+    - Materials (MatInt)
+    - Chemical and Biological (CBInt)
+  - Uses a cohesive picture of different measurements and signatures to gain intelligence
+  - Done primarily by the DIA
+- GeoInt = Geospatial Imagery Information
+  - Focuses on depicting physical characteristics of geographical areas
+- TechInt = Technical Intelligence
+  - Focuses on weapons systems
+  - Critical to covert operations
+- OSInt = Open Source Intelligence
+  - Use of materials available to the public
+  - Generally use public databases
+  - Problematic because journals often focus on theoreticals
+  - Journalism may be used to decept adversaries
+** Other Intelligence Tyoes
+- Medical (MedInt) - looks at Medical status of a person or group
+- Financial (FinInt) - Looks at fnancial transactions of an individual or group
+- Cyber/Digital Network - Looks at exploitation potential for communication systems, computer threat intelligence
+- Protected Personal (ProtInt) - Exploitation of covert personal information and data
+- Social Media (SocmInt) - collective tools that allow for the analysis of social media at a more macro level and social media trends
+** Collection Management
+- Intelligence Collection Plans (ICP)
+  - Requirement
+  - Assets, Resources, Deterrents
+  - Priorities
+  - Taskings
+  - Evaluation
+- NATO Collection Guidelines
+  - Discipline Selection
+  - Alternative Disciplines
+  - Support Resource Management
 * Critiques of the Intelligence Cycle
 - Hulnick argues that while the intelligence model is basic, it is inherently flawed because it isn't accurate
 - Regarding analysis, Hulnick finds that there is a disconnect between field officers and analysts, which is caused by lack of communication, cooperation, or mishandling of information
