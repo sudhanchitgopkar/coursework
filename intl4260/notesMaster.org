@@ -2,12 +2,27 @@
 #+TITLE: Foreign Pol. Decision Making
 #+AUTHOR: Sudhan Chitgopkar
 #+EMAIL: sudhanchitgopkar@uga.edu
+* 02.10.21
+** Prospect Theory (cont.)
+- It is critical for our leaders to be aware of:
+  - How they frame issues as they make decisions
+  - How they frame issues when they talk to us
+  - The frame our adversaries use when we are in conflict with them
+- Loss-framing is a critical part of negative campaigining
+- Democratic institutions create multiple frames, which is not necessarily the case in non-democratic regimes
+- In non-democratic regimes, leaders and the public may settle into a frame (generally loss framing), which leads them to make riskier decisions
+- One significant benefit of democratic systems is that they are less likely to settle into a particular frame, which may be bad
 * 02.08.21
+** Prospect Theory
 - When we frame outcomes in terms of gains, we tend to be risk-averse, even when the gambles are objectively better
 - When we frame outcomes in terms of losses, we tend to be risk-acceptant in order to avoid larger losses, even when the gambles are objectively worse for us
 - This can often be seen in stock market crashes and stock behavior, wherein people sell during a stock downturn when the rational decision is to hold on to the stock
   - This can further be seen with (1) Carter and the Iranian Hostage Crisis, (2) The 2016 election of Trump, the 2020 election of Biden
 - To remove yourself from a frame (regardless of whether it is risk-averse or risk-acceptant), it is critical to consider both benefits and losses
+- Risk aversion and prospect theory is applicable in multiple scenarios:
+  - Leaders, themselves, have risk-aversive tendencies and follow prospect theories in their decision-making
+  - The public can constrain the win-set of the leaders through their risk-aversive tendencies and tendency to follow prospect theory
+  - Leaders can change the public's perspective on a topic through framing it in a different way and playing on prospect theory and loss aversion
 * 02.05.21
 ** Loss Aversion & Policy
 - Argues that policies are either loss averting or gain seeking
