@@ -6,8 +6,123 @@
                         ________________________
 
 
-Intelligence Collection
-=======================
+Table of Contents
+_________________
+
+1. Intelligence Processing
+.. 1. Processing
+.. 2. Evaluation
+..... 1. Reliability
+..... 2. Validity
+.. 3. Collation
+2. Intelligence Collection
+.. 1. Other Intelligence Tyoes
+.. 2. Collection Management
+3. Critiques of the Intelligence Cycle
+4. Intelligence Cycle
+.. 1. Planning and Direction
+.. 2. Collection
+.. 3. Processing
+.. 4. Analysis
+.. 5. Dissemination
+.. 6. Critiques
+.. 7. Additional Steps
+.. 8. Additional Questions
+5. Johnson
+.. 1. Introduction
+.. 2. The Intelligence Cycle
+.. 3. Planning and Direction
+.. 4. Collection
+6. Turner
+.. 1. US Intelligence
+.. 2. Constructivism
+.. 3. American Strategic Culture
+.. 4. Distinguishing Norms
+.. 5. Road to Failure
+7. Warner
+.. 1. Intelligence Definitions
+.. 2. Definition Analysis
+.. 3. Final Steps
+8. Intelligence Structure
+.. 1. What is Intelligence
+.. 2. Levels of Analysis
+.. 3. US Intelligence Community
+..... 1. Independent
+..... 2. Departments of Agencies
+..... 3. Department of Defense
+.. 4. Questions to Consider
+
+
+1 Intelligence Processing
+=========================
+
+  - Consists of Evaluation and Collation
+
+
+1.1 Processing
+~~~~~~~~~~~~~~
+
+  - Takes raw information and converts it into readable information for
+    analysts to use
+  - Accomplished through information management techniques
+
+
+1.2 Evaluation
+~~~~~~~~~~~~~~
+
+  - May occur during either the collection or processing phase
+  - Focuses on source reliability + Data valididty
+
+
+1.2.1 Reliability
+-----------------
+
+  - Generally can be evaluated on an A-F scale
+  - Based on previous reporting from the source
+  - F does not mean that it is bad information, it just comes from a
+    source with no reporting history
+
+
+1.2.2 Validity
+--------------
+
+  - Based on a 1-6 scale
+  - Confirmed -> Probably true -> Possibly true -> Doubtfully true ->
+    Improbable -> Cannot be judged
+
+
+1.3 Collation
+~~~~~~~~~~~~~
+
+  - Grouping together of related items which facilitates further
+    processing
+  - Three types: (1) Automated, computer-driven data systems, (2) Manual
+    visual formats, (3) Micrographic visual formats
+  - Computer-Driven Data
+    - Recording extracted information in various formats
+    - Includes digitized formats of hard data
+    - Machine learning techniques
+      - Supervised machine learning
+        - Support Vector Systems
+        - Naive Bayes
+        - Random Forest
+      - Unsupervised
+        - Neural Networks
+        - Clustering
+        - Latent Variable Models
+  - Manual systems
+    - Cards
+    - Files
+    - Index Lists, etc
+  - Micrographic formats
+    - Microfiche
+    - Microfilm
+  - Manual and micrographic formats are beneficial due to their
+    accessibility, resource and time and intel dependent
+
+
+2 Intelligence Collection
+=========================
 
   - HumInt = Human intelligence
     - One of the oldest methods of collecting intelligence
@@ -62,8 +177,8 @@ Intelligence Collection
     - Journalism may be used to decept adversaries
 
 
-Other Intelligence Tyoes
-~~~~~~~~~~~~~~~~~~~~~~~~
+2.1 Other Intelligence Tyoes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Medical (MedInt) - looks at Medical status of a person or group
   - Financial (FinInt) - Looks at fnancial transactions of an individual
@@ -77,8 +192,8 @@ Other Intelligence Tyoes
     trends
 
 
-Collection Management
-~~~~~~~~~~~~~~~~~~~~~
+2.2 Collection Management
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Intelligence Collection Plans (ICP)
     - Requirement
@@ -92,8 +207,8 @@ Collection Management
     - Support Resource Management
 
 
-Critiques of the Intelligence Cycle
-===================================
+3 Critiques of the Intelligence Cycle
+=====================================
 
   - Hulnick argues that while the intelligence model is basic, it is
     inherently flawed because it isn't accurate
@@ -102,8 +217,8 @@ Critiques of the Intelligence Cycle
     communication, cooperation, or mishandling of information
 
 
-Intelligence Cycle
-==================
+4 Intelligence Cycle
+====================
 
   - Decision-makers are expected to make the best-decision possible, and
     the intelligence cycle explains how intelligence is developed to
@@ -116,8 +231,8 @@ Intelligence Cycle
     - Dissemination
 
 
-Planning and Direction
-~~~~~~~~~~~~~~~~~~~~~~
+4.1 Planning and Direction
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Policy-makers request intelligence on a particular subject or target
   - 3 subcategories
@@ -132,8 +247,8 @@ Planning and Direction
       steps and deadlines are also set up here.
 
 
-Collection
-~~~~~~~~~~
+4.2 Collection
+~~~~~~~~~~~~~~
 
   - Collection of raw information and intelligence
   - Draws on a variety of different types of information collection
@@ -142,8 +257,8 @@ Collection
     technological, social media, etc.)
 
 
-Processing
-~~~~~~~~~~
+4.3 Processing
+~~~~~~~~~~~~~~
 
   - Pre-analytical filtering
   - Collation refers to steps taken to turning raw data into something
@@ -158,23 +273,23 @@ Processing
       that information
 
 
-Analysis
-~~~~~~~~
+4.4 Analysis
+~~~~~~~~~~~~
 
   - Analysts are generally subject matter experts and are tasked with
     creating a cohesive story with all of the information
   - Creation of written reports occurs here
 
 
-Dissemination
-~~~~~~~~~~~~~
+4.5 Dissemination
+~~~~~~~~~~~~~~~~~
 
   - Distribution of final information and reports, leading to decisions
     and more intelligence tasks
 
 
-Critiques
-~~~~~~~~~
+4.6 Critiques
+~~~~~~~~~~~~~
 
   - Cycle is over-simplified, doesn't account for specific types of
     intelligence collection or specifics of what policy-makers may want
@@ -183,8 +298,8 @@ Critiques
     others are done, states of the cycle are not discrete
 
 
-Additional Steps
-~~~~~~~~~~~~~~~~
+4.7 Additional Steps
+~~~~~~~~~~~~~~~~~~~~
 
   - Some argue that consumption should be included in the cycle.
     Disemmination is not the end of the cycle, the way in which
@@ -197,8 +312,8 @@ Additional Steps
     operations
 
 
-Additional Questions
-~~~~~~~~~~~~~~~~~~~~
+4.8 Additional Questions
+~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Does the cycle's past affect its current use?
   - Should the cycle be refined?
@@ -208,11 +323,11 @@ Additional Questions
       - barebones basics?
 
 
-Johnson
-=======
+5 Johnson
+=========
 
-Introduction
-~~~~~~~~~~~~
+5.1 Introduction
+~~~~~~~~~~~~~~~~
 
   - Intelligence is defined as a set of activities carried out by
     government agencies that operate largely in secret including
@@ -223,8 +338,8 @@ Introduction
     abroad
 
 
-The Intelligence Cycle
-~~~~~~~~~~~~~~~~~~~~~~
+5.2 The Intelligence Cycle
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - describes the flow of activities for collection and analysis of info
   - not generally considered a defined cycle, rather considered a
@@ -237,8 +352,8 @@ The Intelligence Cycle
     - dissemination
 
 
-Planning and Direction
-~~~~~~~~~~~~~~~~~~~~~~
+5.3 Planning and Direction
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - intel managers and policy officials must decide what data should be
     gathered
@@ -256,15 +371,15 @@ Planning and Direction
     chances of relevant intelligence successes increases
 
 
-Collection
-~~~~~~~~~~
+5.4 Collection
+~~~~~~~~~~~~~~
 
 
-Turner
-======
+6 Turner
+========
 
-US Intelligence
-~~~~~~~~~~~~~~~
+6.1 US Intelligence
+~~~~~~~~~~~~~~~~~~~
 
   - While US intelligence is not funadmentally unique, it has a series
     of norms that make it very distinctive
@@ -274,16 +389,16 @@ US Intelligence
     culture, creating the US intelligence identity
 
 
-Constructivism
-~~~~~~~~~~~~~~
+6.2 Constructivism
+~~~~~~~~~~~~~~~~~~
 
   - Constructivists see intelligence as highly malleable, made up of
     historical processes, accepted behavior, and contemporary beliefs
     and interests
 
 
-American Strategic Culture
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+6.3 American Strategic Culture
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - While American culture and opinion is very varied, there are central
     themes defining strategic intelligence
@@ -298,8 +413,8 @@ American Strategic Culture
          constitutionalism
 
 
-Distinguishing Norms
-~~~~~~~~~~~~~~~~~~~~
+6.4 Distinguishing Norms
+~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Institutional Survival - all intelligence agencies are bureaucracies
     trying to maximize resources and funding in the political
@@ -339,8 +454,8 @@ Distinguishing Norms
     mantra within USIC and shows main principles of intelligence work
 
 
-Road to Failure
-~~~~~~~~~~~~~~~
+6.5 Road to Failure
+~~~~~~~~~~~~~~~~~~~
 
   - Norms of USIC indicate uncertainty about the role of intelligence in
     government and society
@@ -355,14 +470,14 @@ Road to Failure
     some cases.
 
 
-Warner
-======
+7 Warner
+========
 
   - No official definition for intelligence exists
 
 
-Intelligence Definitions
-~~~~~~~~~~~~~~~~~~~~~~~~
+7.1 Intelligence Definitions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - National Security Act of 1947 defines foreign intelligence as
     "information relating to the capabilities, intentions, or activities
@@ -385,8 +500,8 @@ Intelligence Definitions
     policymakers"
 
 
-Definition Analysis
-~~~~~~~~~~~~~~~~~~~
+7.2 Definition Analysis
+~~~~~~~~~~~~~~~~~~~~~~~
 
   - Most definitions stress information over organization
   - Defining intelligence simply as information is generally to broad
@@ -397,8 +512,8 @@ Definition Analysis
     critical aspect of intelligence
 
 
-Final Steps
-~~~~~~~~~~~
+7.3 Final Steps
+~~~~~~~~~~~~~~~
 
   - Intelligence is then an activity and a product conducted through
     confidential circumstances on behalf of states so that policy-makers
@@ -407,11 +522,11 @@ Final Steps
   - Difference between law enforcement and intelligence is secrecy
 
 
-Intelligence Structure
-======================
+8 Intelligence Structure
+========================
 
-What is Intelligence
-~~~~~~~~~~~~~~~~~~~~
+8.1 What is Intelligence
+~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Process
   - Activity - the actual job conducted by an individual or organization
@@ -431,8 +546,8 @@ What is Intelligence
     understand or influence foreign entities
 
 
-Levels of Analysis
-~~~~~~~~~~~~~~~~~~
+8.2 Levels of Analysis
+~~~~~~~~~~~~~~~~~~~~~~
 
   - Strategic Intelligence - broad, policy-oriented approach to
     intelligence. Understands the effects of intelligence and
@@ -443,11 +558,11 @@ Levels of Analysis
     scenarios and day-to-day operations of intelligence
 
 
-US Intelligence Community
-~~~~~~~~~~~~~~~~~~~~~~~~~
+8.3 US Intelligence Community
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Independent
------------
+8.3.1 Independent
+-----------------
 
   - Office of the Director of National Intelligence (ODNI) -
     intermediary oversight agency consolidating all of the intelligence
@@ -457,8 +572,8 @@ Independent
     agency that runs operations
 
 
-Departments of Agencies
------------------------
+8.3.2 Departments of Agencies
+-----------------------------
 
   - Department of Energy Office of Intelligence and Counterintelligence
     (DOE-OIC) - leading experts in nuclear weapons, energy
@@ -477,8 +592,8 @@ Departments of Agencies
     waterways, cargo, and coasts safe
 
 
-Department of Defense
----------------------
+8.3.3 Department of Defense
+---------------------------
 
   - Defense Intelligence Agency (DIA) - DoD's version of the CIA,
     focused on troop movements, troop aquisitions
@@ -501,8 +616,8 @@ Department of Defense
     countermeasures, telecommunications
 
 
-Questions to Consider
-~~~~~~~~~~~~~~~~~~~~~
+8.4 Questions to Consider
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Do you agree with the concise definition of intelligence?
   - Which level of analysis would you most focus on?

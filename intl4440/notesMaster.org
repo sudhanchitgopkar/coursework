@@ -2,7 +2,44 @@
 #+AUTHOR: Sudhan Chitgopkar
 #+EMAIL: sudhanchitgopkar@uga.edu
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="rethink.css" />
-#+OPTIONS: toc:nil num:nil html-style:nil
+* Intelligence Processing
+- Consists of Evaluation and Collation
+** Processing
+- Takes raw information and converts it into readable information for analysts to use
+- Accomplished through information management techniques
+** Evaluation
+- May occur during either the collection or processing phase
+- Focuses on source reliability + Data valididty
+*** Reliability
+- Generally can be evaluated on an A-F scale
+- Based on previous reporting from the source
+- F does not mean that it is bad information, it just comes from a source with no reporting history
+*** Validity
+- Based on a 1-6 scale
+- Confirmed -> Probably true -> Possibly true -> Doubtfully true -> Improbable -> Cannot be judged
+** Collation
+- Grouping together of related items which facilitates further processing
+- Three types: (1) Automated, computer-driven data systems, (2) Manual visual formats, (3) Micrographic visual formats
+- Computer-Driven Data
+  - Recording extracted information in various formats
+  - Includes digitized formats of hard data
+  - Machine learning techniques
+    - Supervised machine learning
+      - Support Vector Systems
+      - Naive Bayes
+      - Random Forest
+    - Unsupervised
+      - Neural Networks
+      - Clustering
+      - Latent Variable Models
+- Manual systems
+  - Cards
+  - Files
+  - Index Lists, etc
+- Micrographic formats
+  - Microfiche
+  - Microfilm
+- Manual and micrographic formats are beneficial due to their accessibility, resource and time and intel dependent
 * Intelligence Collection
 - HumInt = Human intelligence
   - One of the oldest methods of collecting intelligence

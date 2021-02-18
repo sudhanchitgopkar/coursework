@@ -3,12 +3,196 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-02-10 Wed 23:25 -->
+<!-- 2021-02-18 Thu 18:56 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Strategic Intelligence</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Sudhan Chitgopkar" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
 <link rel="stylesheet" type="text/css" href="rethink.css" />
 <script type="text/javascript">
 // @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
@@ -36,9 +220,171 @@
 <body>
 <div id="content">
 <h1 class="title">Strategic Intelligence</h1>
-<div id="outline-container-orge2da1d2" class="outline-2">
-<h2 id="orge2da1d2">Intelligence Collection</h2>
-<div class="outline-text-2" id="text-orge2da1d2">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orga8ffaee">1. Intelligence Processing</a>
+<ul>
+<li><a href="#org09db244">1.1. Processing</a></li>
+<li><a href="#org291c578">1.2. Evaluation</a>
+<ul>
+<li><a href="#orgda83858">1.2.1. Reliability</a></li>
+<li><a href="#org4800a64">1.2.2. Validity</a></li>
+</ul>
+</li>
+<li><a href="#org4f54d5f">1.3. Collation</a></li>
+</ul>
+</li>
+<li><a href="#org46d41ae">2. Intelligence Collection</a>
+<ul>
+<li><a href="#orgb24e59b">2.1. Other Intelligence Tyoes</a></li>
+<li><a href="#orgc3bc398">2.2. Collection Management</a></li>
+</ul>
+</li>
+<li><a href="#org1b6dff0">3. Critiques of the Intelligence Cycle</a></li>
+<li><a href="#org526afd0">4. Intelligence Cycle</a>
+<ul>
+<li><a href="#orgf1cbea7">4.1. Planning and Direction</a></li>
+<li><a href="#orgbdb8cc9">4.2. Collection</a></li>
+<li><a href="#orgd558873">4.3. Processing</a></li>
+<li><a href="#orgf1eb9b4">4.4. Analysis</a></li>
+<li><a href="#orga61b151">4.5. Dissemination</a></li>
+<li><a href="#org4b0610e">4.6. Critiques</a></li>
+<li><a href="#orgd9d6779">4.7. Additional Steps</a></li>
+<li><a href="#org202a357">4.8. Additional Questions</a></li>
+</ul>
+</li>
+<li><a href="#org375141e">5. Johnson</a>
+<ul>
+<li><a href="#org119385c">5.1. Introduction</a></li>
+<li><a href="#org9754e02">5.2. The Intelligence Cycle</a></li>
+<li><a href="#orgfcec3ae">5.3. Planning and Direction</a></li>
+<li><a href="#orge36815c">5.4. Collection</a></li>
+</ul>
+</li>
+<li><a href="#org19487a9">6. Turner</a>
+<ul>
+<li><a href="#org9621784">6.1. US Intelligence</a></li>
+<li><a href="#orgeb768b3">6.2. Constructivism</a></li>
+<li><a href="#org8875f1b">6.3. American Strategic Culture</a></li>
+<li><a href="#org5f0e233">6.4. Distinguishing Norms</a></li>
+<li><a href="#orge3cfd3c">6.5. Road to Failure</a></li>
+</ul>
+</li>
+<li><a href="#org67951ea">7. Warner</a>
+<ul>
+<li><a href="#org633bc6c">7.1. Intelligence Definitions</a></li>
+<li><a href="#org8d72b8a">7.2. Definition Analysis</a></li>
+<li><a href="#org55c7b54">7.3. Final Steps</a></li>
+</ul>
+</li>
+<li><a href="#org69d01e4">8. Intelligence Structure</a>
+<ul>
+<li><a href="#orga3ead5d">8.1. What is Intelligence</a></li>
+<li><a href="#org51f4914">8.2. Levels of Analysis</a></li>
+<li><a href="#orgb791a77">8.3. US Intelligence Community</a>
+<ul>
+<li><a href="#org378ce5c">8.3.1. Independent</a></li>
+<li><a href="#orgcf81c7b">8.3.2. Departments of Agencies</a></li>
+<li><a href="#org6fc939f">8.3.3. Department of Defense</a></li>
+</ul>
+</li>
+<li><a href="#org1b4f088">8.4. Questions to Consider</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga8ffaee" class="outline-2">
+<h2 id="orga8ffaee"><span class="section-number-2">1</span> Intelligence Processing</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>Consists of Evaluation and Collation</li>
+</ul>
+</div>
+<div id="outline-container-org09db244" class="outline-3">
+<h3 id="org09db244"><span class="section-number-3">1.1</span> Processing</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>Takes raw information and converts it into readable information for analysts to use</li>
+<li>Accomplished through information management techniques</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org291c578" class="outline-3">
+<h3 id="org291c578"><span class="section-number-3">1.2</span> Evaluation</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>May occur during either the collection or processing phase</li>
+<li>Focuses on source reliability + Data valididty</li>
+</ul>
+</div>
+<div id="outline-container-orgda83858" class="outline-4">
+<h4 id="orgda83858"><span class="section-number-4">1.2.1</span> Reliability</h4>
+<div class="outline-text-4" id="text-1-2-1">
+<ul class="org-ul">
+<li>Generally can be evaluated on an A-F scale</li>
+<li>Based on previous reporting from the source</li>
+<li>F does not mean that it is bad information, it just comes from a source with no reporting history</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4800a64" class="outline-4">
+<h4 id="org4800a64"><span class="section-number-4">1.2.2</span> Validity</h4>
+<div class="outline-text-4" id="text-1-2-2">
+<ul class="org-ul">
+<li>Based on a 1-6 scale</li>
+<li>Confirmed -&gt; Probably true -&gt; Possibly true -&gt; Doubtfully true -&gt; Improbable -&gt; Cannot be judged</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org4f54d5f" class="outline-3">
+<h3 id="org4f54d5f"><span class="section-number-3">1.3</span> Collation</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li>Grouping together of related items which facilitates further processing</li>
+<li>Three types: (1) Automated, computer-driven data systems, (2) Manual visual formats, (3) Micrographic visual formats</li>
+<li>Computer-Driven Data
+<ul class="org-ul">
+<li>Recording extracted information in various formats</li>
+<li>Includes digitized formats of hard data</li>
+<li>Machine learning techniques
+<ul class="org-ul">
+<li>Supervised machine learning
+<ul class="org-ul">
+<li>Support Vector Systems</li>
+<li>Naive Bayes</li>
+<li>Random Forest</li>
+</ul></li>
+<li>Unsupervised
+<ul class="org-ul">
+<li>Neural Networks</li>
+<li>Clustering</li>
+<li>Latent Variable Models</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>Manual systems
+<ul class="org-ul">
+<li>Cards</li>
+<li>Files</li>
+<li>Index Lists, etc</li>
+</ul></li>
+<li>Micrographic formats
+<ul class="org-ul">
+<li>Microfiche</li>
+<li>Microfilm</li>
+</ul></li>
+<li>Manual and micrographic formats are beneficial due to their accessibility, resource and time and intel dependent</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org46d41ae" class="outline-2">
+<h2 id="org46d41ae"><span class="section-number-2">2</span> Intelligence Collection</h2>
+<div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li>HumInt = Human intelligence
 <ul class="org-ul">
@@ -99,9 +445,9 @@
 </ul></li>
 </ul>
 </div>
-<div id="outline-container-org48996f2" class="outline-3">
-<h3 id="org48996f2">Other Intelligence Tyoes</h3>
-<div class="outline-text-3" id="text-org48996f2">
+<div id="outline-container-orgb24e59b" class="outline-3">
+<h3 id="orgb24e59b"><span class="section-number-3">2.1</span> Other Intelligence Tyoes</h3>
+<div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>Medical (MedInt) - looks at Medical status of a person or group</li>
 <li>Financial (FinInt) - Looks at fnancial transactions of an individual or group</li>
@@ -111,9 +457,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org5757ef3" class="outline-3">
-<h3 id="org5757ef3">Collection Management</h3>
-<div class="outline-text-3" id="text-org5757ef3">
+<div id="outline-container-orgc3bc398" class="outline-3">
+<h3 id="orgc3bc398"><span class="section-number-3">2.2</span> Collection Management</h3>
+<div class="outline-text-3" id="text-2-2">
 <ul class="org-ul">
 <li>Intelligence Collection Plans (ICP)
 <ul class="org-ul">
@@ -133,18 +479,18 @@
 </div>
 </div>
 </div>
-<div id="outline-container-orgb003439" class="outline-2">
-<h2 id="orgb003439">Critiques of the Intelligence Cycle</h2>
-<div class="outline-text-2" id="text-orgb003439">
+<div id="outline-container-org1b6dff0" class="outline-2">
+<h2 id="org1b6dff0"><span class="section-number-2">3</span> Critiques of the Intelligence Cycle</h2>
+<div class="outline-text-2" id="text-3">
 <ul class="org-ul">
 <li>Hulnick argues that while the intelligence model is basic, it is inherently flawed because it isn&rsquo;t accurate</li>
 <li>Regarding analysis, Hulnick finds that there is a disconnect between field officers and analysts, which is caused by lack of communication, cooperation, or mishandling of information</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgac2b848" class="outline-2">
-<h2 id="orgac2b848">Intelligence Cycle</h2>
-<div class="outline-text-2" id="text-orgac2b848">
+<div id="outline-container-org526afd0" class="outline-2">
+<h2 id="org526afd0"><span class="section-number-2">4</span> Intelligence Cycle</h2>
+<div class="outline-text-2" id="text-4">
 <ul class="org-ul">
 <li>Decision-makers are expected to make the best-decision possible, and the intelligence cycle explains how intelligence is developed to give decision-makers the information they need</li>
 <li>Components of the Intelligence Cycle
@@ -157,9 +503,9 @@
 </ul></li>
 </ul>
 </div>
-<div id="outline-container-org5d047c4" class="outline-3">
-<h3 id="org5d047c4">Planning and Direction</h3>
-<div class="outline-text-3" id="text-org5d047c4">
+<div id="outline-container-orgf1cbea7" class="outline-3">
+<h3 id="orgf1cbea7"><span class="section-number-3">4.1</span> Planning and Direction</h3>
+<div class="outline-text-3" id="text-4-1">
 <ul class="org-ul">
 <li>Policy-makers request intelligence on a particular subject or target</li>
 <li>3 subcategories
@@ -171,9 +517,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd02ef4d" class="outline-3">
-<h3 id="orgd02ef4d">Collection</h3>
-<div class="outline-text-3" id="text-orgd02ef4d">
+<div id="outline-container-orgbdb8cc9" class="outline-3">
+<h3 id="orgbdb8cc9"><span class="section-number-3">4.2</span> Collection</h3>
+<div class="outline-text-3" id="text-4-2">
 <ul class="org-ul">
 <li>Collection of raw information and intelligence</li>
 <li>Draws on a variety of different types of information collection methods</li>
@@ -181,9 +527,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org53fd5c5" class="outline-3">
-<h3 id="org53fd5c5">Processing</h3>
-<div class="outline-text-3" id="text-org53fd5c5">
+<div id="outline-container-orgd558873" class="outline-3">
+<h3 id="orgd558873"><span class="section-number-3">4.3</span> Processing</h3>
+<div class="outline-text-3" id="text-4-3">
 <ul class="org-ul">
 <li>Pre-analytical filtering</li>
 <li>Collation refers to steps taken to turning raw data into something that may be analyzed, can also refer to proper organization. Transforming data into a readable state</li>
@@ -196,35 +542,35 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org1daed3d" class="outline-3">
-<h3 id="org1daed3d">Analysis</h3>
-<div class="outline-text-3" id="text-org1daed3d">
+<div id="outline-container-orgf1eb9b4" class="outline-3">
+<h3 id="orgf1eb9b4"><span class="section-number-3">4.4</span> Analysis</h3>
+<div class="outline-text-3" id="text-4-4">
 <ul class="org-ul">
 <li>Analysts are generally subject matter experts and are tasked with creating a cohesive story with all of the information</li>
 <li>Creation of written reports occurs here</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org7afde8b" class="outline-3">
-<h3 id="org7afde8b">Dissemination</h3>
-<div class="outline-text-3" id="text-org7afde8b">
+<div id="outline-container-orga61b151" class="outline-3">
+<h3 id="orga61b151"><span class="section-number-3">4.5</span> Dissemination</h3>
+<div class="outline-text-3" id="text-4-5">
 <ul class="org-ul">
 <li>Distribution of final information and reports, leading to decisions and more intelligence tasks</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org1ff0a99" class="outline-3">
-<h3 id="org1ff0a99">Critiques</h3>
-<div class="outline-text-3" id="text-org1ff0a99">
+<div id="outline-container-org4b0610e" class="outline-3">
+<h3 id="org4b0610e"><span class="section-number-3">4.6</span> Critiques</h3>
+<div class="outline-text-3" id="text-4-6">
 <ul class="org-ul">
 <li>Cycle is over-simplified, doesn&rsquo;t account for specific types of intelligence collection or specifics of what policy-makers may want</li>
 <li>Overly linear, process is much more complex and this is a simplistic representation. Furthermore, some stages can be started before others are done, states of the cycle are not discrete</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd6ece79" class="outline-3">
-<h3 id="orgd6ece79">Additional Steps</h3>
-<div class="outline-text-3" id="text-orgd6ece79">
+<div id="outline-container-orgd9d6779" class="outline-3">
+<h3 id="orgd9d6779"><span class="section-number-3">4.7</span> Additional Steps</h3>
+<div class="outline-text-3" id="text-4-7">
 <ul class="org-ul">
 <li>Some argue that consumption should be included in the cycle. Disemmination is not the end of the cycle, the way in which information is consumed should be considered because of the effects that has on decision-making</li>
 <li>Feedback may also be important to consider because of a continuous loop of feedback during and after the process is beind completed</li>
@@ -232,9 +578,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org3121fe1" class="outline-3">
-<h3 id="org3121fe1">Additional Questions</h3>
-<div class="outline-text-3" id="text-org3121fe1">
+<div id="outline-container-org202a357" class="outline-3">
+<h3 id="org202a357"><span class="section-number-3">4.8</span> Additional Questions</h3>
+<div class="outline-text-3" id="text-4-8">
 <ul class="org-ul">
 <li>Does the cycle&rsquo;s past affect its current use?</li>
 <li>Should the cycle be refined?
@@ -250,22 +596,22 @@
 </div>
 </div>
 </div>
-<div id="outline-container-orgc114792" class="outline-2">
-<h2 id="orgc114792">Johnson</h2>
-<div class="outline-text-2" id="text-orgc114792">
+<div id="outline-container-org375141e" class="outline-2">
+<h2 id="org375141e"><span class="section-number-2">5</span> Johnson</h2>
+<div class="outline-text-2" id="text-5">
 </div>
-<div id="outline-container-org9836f23" class="outline-3">
-<h3 id="org9836f23">Introduction</h3>
-<div class="outline-text-3" id="text-org9836f23">
+<div id="outline-container-org119385c" class="outline-3">
+<h3 id="org119385c"><span class="section-number-3">5.1</span> Introduction</h3>
+<div class="outline-text-3" id="text-5-1">
 <ul class="org-ul">
 <li>Intelligence is defined as a set of activities carried out by government agencies that operate largely in secret including collection and interpretation of information from a mixture of open and clandestine sources to arrive at a product useful to illuminate foreign policy deliberations</li>
 <li>These agencies also engage in covert action and manipulate events abroad</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org7e450d0" class="outline-3">
-<h3 id="org7e450d0">The Intelligence Cycle</h3>
-<div class="outline-text-3" id="text-org7e450d0">
+<div id="outline-container-org9754e02" class="outline-3">
+<h3 id="org9754e02"><span class="section-number-3">5.2</span> The Intelligence Cycle</h3>
+<div class="outline-text-3" id="text-5-2">
 <ul class="org-ul">
 <li>describes the flow of activities for collection and analysis of info</li>
 <li>not generally considered a defined cycle, rather considered a complex matrix of interactions</li>
@@ -280,9 +626,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org7339737" class="outline-3">
-<h3 id="org7339737">Planning and Direction</h3>
-<div class="outline-text-3" id="text-org7339737">
+<div id="outline-container-orgfcec3ae" class="outline-3">
+<h3 id="orgfcec3ae"><span class="section-number-3">5.3</span> Planning and Direction</h3>
+<div class="outline-text-3" id="text-5-3">
 <ul class="org-ul">
 <li>intel managers and policy officials must decide what data should be gathered</li>
 <li>determine what the most critical information to policy-making is</li>
@@ -295,17 +641,17 @@ world coverage. For the same reason, they are more likely to experience internat
 </ul>
 </div>
 </div>
-<div id="outline-container-org7f36c3d" class="outline-3">
-<h3 id="org7f36c3d">Collection</h3>
+<div id="outline-container-orge36815c" class="outline-3">
+<h3 id="orge36815c"><span class="section-number-3">5.4</span> Collection</h3>
 </div>
 </div>
-<div id="outline-container-orgc82f84b" class="outline-2">
-<h2 id="orgc82f84b">Turner</h2>
-<div class="outline-text-2" id="text-orgc82f84b">
+<div id="outline-container-org19487a9" class="outline-2">
+<h2 id="org19487a9"><span class="section-number-2">6</span> Turner</h2>
+<div class="outline-text-2" id="text-6">
 </div>
-<div id="outline-container-orga22adb4" class="outline-3">
-<h3 id="orga22adb4">US Intelligence</h3>
-<div class="outline-text-3" id="text-orga22adb4">
+<div id="outline-container-org9621784" class="outline-3">
+<h3 id="org9621784"><span class="section-number-3">6.1</span> US Intelligence</h3>
+<div class="outline-text-3" id="text-6-1">
 <ul class="org-ul">
 <li>While US intelligence is not funadmentally unique, it has a series of norms that make it very distinctive</li>
 <li>Realism has been the dominant theory explaining intelligence gathering and behavior</li>
@@ -313,17 +659,17 @@ world coverage. For the same reason, they are more likely to experience internat
 </ul>
 </div>
 </div>
-<div id="outline-container-orgad60ee4" class="outline-3">
-<h3 id="orgad60ee4">Constructivism</h3>
-<div class="outline-text-3" id="text-orgad60ee4">
+<div id="outline-container-orgeb768b3" class="outline-3">
+<h3 id="orgeb768b3"><span class="section-number-3">6.2</span> Constructivism</h3>
+<div class="outline-text-3" id="text-6-2">
 <ul class="org-ul">
 <li>Constructivists see intelligence as highly malleable, made up of historical processes, accepted behavior, and contemporary beliefs and interests</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgdc8a85e" class="outline-3">
-<h3 id="orgdc8a85e">American Strategic Culture</h3>
-<div class="outline-text-3" id="text-orgdc8a85e">
+<div id="outline-container-org8875f1b" class="outline-3">
+<h3 id="org8875f1b"><span class="section-number-3">6.3</span> American Strategic Culture</h3>
+<div class="outline-text-3" id="text-6-3">
 <ul class="org-ul">
 <li>While American culture and opinion is very varied, there are central themes defining strategic intelligence</li>
 <li>3 influences shape americans view of national security
@@ -344,9 +690,9 @@ world coverage. For the same reason, they are more likely to experience internat
 </ul>
 </div>
 </div>
-<div id="outline-container-orgffef848" class="outline-3">
-<h3 id="orgffef848">Distinguishing Norms</h3>
-<div class="outline-text-3" id="text-orgffef848">
+<div id="outline-container-org5f0e233" class="outline-3">
+<h3 id="org5f0e233"><span class="section-number-3">6.4</span> Distinguishing Norms</h3>
+<div class="outline-text-3" id="text-6-4">
 <ul class="org-ul">
 <li>Institutional Survival - all intelligence agencies are bureaucracies trying to maximize resources and funding in the political marketplace</li>
 <li>Secrecy - conflicts with American belief in the transparency of government, is foundational to the USIC, has lef to abuse and problems</li>
@@ -364,9 +710,9 @@ world coverage. For the same reason, they are more likely to experience internat
 </ul>
 </div>
 </div>
-<div id="outline-container-org57dd987" class="outline-3">
-<h3 id="org57dd987">Road to Failure</h3>
-<div class="outline-text-3" id="text-org57dd987">
+<div id="outline-container-orge3cfd3c" class="outline-3">
+<h3 id="orge3cfd3c"><span class="section-number-3">6.5</span> Road to Failure</h3>
+<div class="outline-text-3" id="text-6-5">
 <ul class="org-ul">
 <li>Norms of USIC indicate uncertainty about the role of intelligence in government and society</li>
 <li>US Intelligence is the product of political compromise and checks and balances, with certain positive qualities giving intelligence workers the tools necessary to do their job</li>
@@ -376,16 +722,16 @@ world coverage. For the same reason, they are more likely to experience internat
 </div>
 </div>
 </div>
-<div id="outline-container-org915d26f" class="outline-2">
-<h2 id="org915d26f">Warner</h2>
-<div class="outline-text-2" id="text-org915d26f">
+<div id="outline-container-org67951ea" class="outline-2">
+<h2 id="org67951ea"><span class="section-number-2">7</span> Warner</h2>
+<div class="outline-text-2" id="text-7">
 <ul class="org-ul">
 <li>No official definition for intelligence exists</li>
 </ul>
 </div>
-<div id="outline-container-org5ba83e5" class="outline-3">
-<h3 id="org5ba83e5">Intelligence Definitions</h3>
-<div class="outline-text-3" id="text-org5ba83e5">
+<div id="outline-container-org633bc6c" class="outline-3">
+<h3 id="org633bc6c"><span class="section-number-3">7.1</span> Intelligence Definitions</h3>
+<div class="outline-text-3" id="text-7-1">
 <ul class="org-ul">
 <li>National Security Act of 1947 defines foreign intelligence as &ldquo;information relating to the capabilities, intentions, or activities of foreign governments or elements thereof.&rdquo;</li>
 <li>Hoover Commission 1955 define that &ldquo;intelligence deals with all the things which should be jnown in advance of initiating a course of action&rdquo;</li>
@@ -395,9 +741,9 @@ world coverage. For the same reason, they are more likely to experience internat
 </ul>
 </div>
 </div>
-<div id="outline-container-orga14f2d1" class="outline-3">
-<h3 id="orga14f2d1">Definition Analysis</h3>
-<div class="outline-text-3" id="text-orga14f2d1">
+<div id="outline-container-org8d72b8a" class="outline-3">
+<h3 id="org8d72b8a"><span class="section-number-3">7.2</span> Definition Analysis</h3>
+<div class="outline-text-3" id="text-7-2">
 <ul class="org-ul">
 <li>Most definitions stress information over organization</li>
 <li>Defining intelligence simply as information is generally to broad for intelligence professionals to carry out their jobs</li>
@@ -407,9 +753,9 @@ world coverage. For the same reason, they are more likely to experience internat
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb287fb3" class="outline-3">
-<h3 id="orgb287fb3">Final Steps</h3>
-<div class="outline-text-3" id="text-orgb287fb3">
+<div id="outline-container-org55c7b54" class="outline-3">
+<h3 id="org55c7b54"><span class="section-number-3">7.3</span> Final Steps</h3>
+<div class="outline-text-3" id="text-7-3">
 <ul class="org-ul">
 <li>Intelligence is then an activity and a product conducted through confidential circumstances on behalf of states so that policy-makers can understand foreign developments, and that it includes clandestine operations performed to cause certain foreign effects</li>
 <li>Difference between law enforcement and intelligence is secrecy</li>
@@ -417,13 +763,13 @@ world coverage. For the same reason, they are more likely to experience internat
 </div>
 </div>
 </div>
-<div id="outline-container-org02a6454" class="outline-2">
-<h2 id="org02a6454">Intelligence Structure</h2>
-<div class="outline-text-2" id="text-org02a6454">
+<div id="outline-container-org69d01e4" class="outline-2">
+<h2 id="org69d01e4"><span class="section-number-2">8</span> Intelligence Structure</h2>
+<div class="outline-text-2" id="text-8">
 </div>
-<div id="outline-container-orgc3008f6" class="outline-3">
-<h3 id="orgc3008f6">What is Intelligence</h3>
-<div class="outline-text-3" id="text-orgc3008f6">
+<div id="outline-container-orga3ead5d" class="outline-3">
+<h3 id="orga3ead5d"><span class="section-number-3">8.1</span> What is Intelligence</h3>
+<div class="outline-text-3" id="text-8-1">
 <ul class="org-ul">
 <li>Process</li>
 <li>Activity - the actual job conducted by an individual or organization to obtain intelligence</li>
@@ -440,9 +786,9 @@ world coverage. For the same reason, they are more likely to experience internat
 </ul>
 </div>
 </div>
-<div id="outline-container-org441cb1b" class="outline-3">
-<h3 id="org441cb1b">Levels of Analysis</h3>
-<div class="outline-text-3" id="text-org441cb1b">
+<div id="outline-container-org51f4914" class="outline-3">
+<h3 id="org51f4914"><span class="section-number-3">8.2</span> Levels of Analysis</h3>
+<div class="outline-text-3" id="text-8-2">
 <ul class="org-ul">
 <li>Strategic Intelligence - broad, policy-oriented approach to intelligence. Understands the effects of intelligence and international factors on the world</li>
 <li>Operational Intelligence - group-focused intelligence, understanding interplay between groups of people or institutions</li>
@@ -450,22 +796,22 @@ world coverage. For the same reason, they are more likely to experience internat
 </ul>
 </div>
 </div>
-<div id="outline-container-org9d8ed64" class="outline-3">
-<h3 id="org9d8ed64">US Intelligence Community</h3>
-<div class="outline-text-3" id="text-org9d8ed64">
+<div id="outline-container-orgb791a77" class="outline-3">
+<h3 id="orgb791a77"><span class="section-number-3">8.3</span> US Intelligence Community</h3>
+<div class="outline-text-3" id="text-8-3">
 </div>
-<div id="outline-container-org35049fb" class="outline-4">
-<h4 id="org35049fb">Independent</h4>
-<div class="outline-text-4" id="text-org35049fb">
+<div id="outline-container-org378ce5c" class="outline-4">
+<h4 id="org378ce5c"><span class="section-number-4">8.3.1</span> Independent</h4>
+<div class="outline-text-4" id="text-8-3-1">
 <ul class="org-ul">
 <li>Office of the Director of National Intelligence (ODNI) - intermediary oversight agency consolidating all of the intelligence and pushing it to policy-makers</li>
 <li>Central Intelligence Agency (CIA) - Leading expert in clandestine operations for the US, uses their own paramilitary. Only independent agency that runs operations</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgc9f0965" class="outline-4">
-<h4 id="orgc9f0965">Departments of Agencies</h4>
-<div class="outline-text-4" id="text-orgc9f0965">
+<div id="outline-container-orgcf81c7b" class="outline-4">
+<h4 id="orgcf81c7b"><span class="section-number-4">8.3.2</span> Departments of Agencies</h4>
+<div class="outline-text-4" id="text-8-3-2">
 <ul class="org-ul">
 <li>Department of Energy Office of Intelligence and Counterintelligence (DOE-OIC) - leading experts in nuclear weapons, energy infrastructure, and security maintenance</li>
 <li>Department of Homeland Security&rsquo;s Office of Intelligence and Analysis - Domestic security focus</li>
@@ -477,9 +823,9 @@ world coverage. For the same reason, they are more likely to experience internat
 </ul>
 </div>
 </div>
-<div id="outline-container-orga7c5746" class="outline-4">
-<h4 id="orga7c5746">Department of Defense</h4>
-<div class="outline-text-4" id="text-orga7c5746">
+<div id="outline-container-org6fc939f" class="outline-4">
+<h4 id="org6fc939f"><span class="section-number-4">8.3.3</span> Department of Defense</h4>
+<div class="outline-text-4" id="text-8-3-3">
 <ul class="org-ul">
 <li>Defense Intelligence Agency (DIA) - DoD&rsquo;s version of the CIA, focused on troop movements, troop aquisitions</li>
 <li>National Security Agency/Central Security Service (NSA/CSS) - leading experts in signal communications and telecommunications</li>
@@ -494,9 +840,9 @@ world coverage. For the same reason, they are more likely to experience internat
 </div>
 </div>
 
-<div id="outline-container-org3d2b009" class="outline-3">
-<h3 id="org3d2b009">Questions to Consider</h3>
-<div class="outline-text-3" id="text-org3d2b009">
+<div id="outline-container-org1b4f088" class="outline-3">
+<h3 id="org1b4f088"><span class="section-number-3">8.4</span> Questions to Consider</h3>
+<div class="outline-text-3" id="text-8-4">
 <ul class="org-ul">
 <li>Do you agree with the concise definition of intelligence?</li>
 <li>Which level of analysis would you most focus on?</li>
@@ -508,7 +854,7 @@ world coverage. For the same reason, they are more likely to experience internat
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Sudhan Chitgopkar</p>
-<p class="date">Created: 2021-02-10 Wed 23:25</p>
+<p class="date">Created: 2021-02-18 Thu 18:56</p>
 </div>
 </body>
 </html>
