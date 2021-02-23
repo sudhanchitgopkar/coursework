@@ -3,6 +3,32 @@
 #+EMAIL: sudhanchitgopkar@uga.edu
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="rethink.css" />
 #+OPTIONS: toc:nil num:nil html-style:nil
+* 02.22.21 (Sorted Linked Lists)
+** Searching
+- We can use a modified linear search rather than a full linear search
+- The search can terminate after any value greater than the element sought becuase the list is sorted
+- If asked whether a binary search is possible on a sorted linked list, just answer no even though a binary search is possible (inefficiently) with sorted linked lists
+** Insertion
+- Begin with two pointers, one for search and one trailing
+- Compare item to insert with items already in the list, looking for insertion location
+- There also exist special cases for inserting in the first node
+* 02.22.21 (Unsorted Linked Lists)
+** Unsorted Linked Lists
+- MakeEmpty is the same as the destructor
+  - Involves going through each node and deleting it
+- Insertion occurs at the beginning of the linked list instead of at the end to allow for O(1) time, as opposed to the O(n) time
+- Search operations require a sequential search as the data is unsorted
+- Delete operations require two pointers
+  - Need to begin with a search operation for the node to delete
+  - Use one pointer to search, one trailing pointer
+  - Delete node pointed to by search when found, connect trailing pointer to node following search pointer
+  - Special case occurs when the first node is deleted
+- Complexity of Operations
+  - Search: O(n)
+  - Insert: O(1)
+  - Delete: O(n)
+    - Searching is O(n)
+    - Deleting is O(1)
 * 02.08.21 - 02.09.21
 ** List ADT
 - List consists of a domain and a set of operations
