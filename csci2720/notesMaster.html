@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-02-23 Tue 12:16 -->
+<!-- 2021-02-23 Tue 12:19 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Data Structures</title>
@@ -36,16 +36,16 @@
 <body>
 <div id="content">
 <h1 class="title">Data Structures</h1>
-<div id="outline-container-org0534612" class="outline-2">
-<h2 id="org0534612">02.23.21 (Stacks &amp; Queues)</h2>
-<div class="outline-text-2" id="text-org0534612">
+<div id="outline-container-org246eb7c" class="outline-2">
+<h2 id="org246eb7c">02.23.21 (Stacks &amp; Queues)</h2>
+<div class="outline-text-2" id="text-org246eb7c">
 <ul class="org-ul">
 <li>Stacks operate in LIFO (Last in, First out)</li>
 </ul>
 </div>
-<div id="outline-container-orgd1029c9" class="outline-3">
-<h3 id="orgd1029c9">Standard Operations</h3>
-<div class="outline-text-3" id="text-orgd1029c9">
+<div id="outline-container-org8476b6d" class="outline-3">
+<h3 id="org8476b6d">Standard Operations</h3>
+<div class="outline-text-3" id="text-org8476b6d">
 <ul class="org-ul">
 <li>MakeEmpty</li>
 <li>IsEmpty</li>
@@ -56,29 +56,30 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org16e4df1" class="outline-3">
-<h3 id="org16e4df1">Array-Based Stack</h3>
-<div class="outline-text-3" id="text-org16e4df1">
+<div id="outline-container-orgbf3c1c9" class="outline-3">
+<h3 id="orgbf3c1c9">Array-Based Stack</h3>
+<div class="outline-text-3" id="text-orgbf3c1c9">
 <ul class="org-ul">
 <li>Constructor initializes top = -1
 <ul class="org-ul">
 <li>This is because push increments top first, leaving an index empty if top is set to 0</li>
 </ul></li>
-<li>Top increments top by 1 and adds an item to the top index]</li>
-<li>Pop decrements the top value by 1</li>
+<li>Push O(1) increments top by 1 and adds an item to the top index]</li>
+<li>Pop O(1) decrements the top value by 1</li>
+<li>Top O(1) return the value within the top index of the array</li>
 <li>IsEmpty checks if top = -1</li>
 <li>IsFull checks if top = MAX<sub>ITEMS</sub></li>
 </ul>
 </div>
 </div>
 </div>
-<div id="outline-container-org0bbca93" class="outline-2">
-<h2 id="org0bbca93">02.22.21 (Sorted Linked Lists)</h2>
-<div class="outline-text-2" id="text-org0bbca93">
+<div id="outline-container-org2cda671" class="outline-2">
+<h2 id="org2cda671">02.22.21 (Sorted Linked Lists)</h2>
+<div class="outline-text-2" id="text-org2cda671">
 </div>
-<div id="outline-container-org7c162ae" class="outline-3">
-<h3 id="org7c162ae">Searching</h3>
-<div class="outline-text-3" id="text-org7c162ae">
+<div id="outline-container-org0922fea" class="outline-3">
+<h3 id="org0922fea">Searching</h3>
+<div class="outline-text-3" id="text-org0922fea">
 <ul class="org-ul">
 <li>We can use a modified linear search rather than a full linear search</li>
 <li>The search can terminate after any value greater than the element sought becuase the list is sorted</li>
@@ -86,9 +87,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orgdc5c95b" class="outline-3">
-<h3 id="orgdc5c95b">Insertion</h3>
-<div class="outline-text-3" id="text-orgdc5c95b">
+<div id="outline-container-org7e4de35" class="outline-3">
+<h3 id="org7e4de35">Insertion</h3>
+<div class="outline-text-3" id="text-org7e4de35">
 <ul class="org-ul">
 <li>Begin with two pointers, one for search and one trailing</li>
 <li>Compare item to insert with items already in the list, looking for insertion location</li>
@@ -101,13 +102,13 @@
 </div>
 </div>
 </div>
-<div id="outline-container-org6cab059" class="outline-2">
-<h2 id="org6cab059">02.22.21 (Unsorted Linked Lists)</h2>
-<div class="outline-text-2" id="text-org6cab059">
+<div id="outline-container-org9fbe922" class="outline-2">
+<h2 id="org9fbe922">02.22.21 (Unsorted Linked Lists)</h2>
+<div class="outline-text-2" id="text-org9fbe922">
 </div>
-<div id="outline-container-org4f3db65" class="outline-3">
-<h3 id="org4f3db65">Unsorted Linked Lists</h3>
-<div class="outline-text-3" id="text-org4f3db65">
+<div id="outline-container-org4e34fc8" class="outline-3">
+<h3 id="org4e34fc8">Unsorted Linked Lists</h3>
+<div class="outline-text-3" id="text-org4e34fc8">
 <ul class="org-ul">
 <li>MakeEmpty is the same as the destructor
 <ul class="org-ul">
@@ -136,13 +137,13 @@
 </div>
 </div>
 </div>
-<div id="outline-container-org030244f" class="outline-2">
-<h2 id="org030244f">02.08.21 - 02.09.21</h2>
-<div class="outline-text-2" id="text-org030244f">
+<div id="outline-container-org1107e73" class="outline-2">
+<h2 id="org1107e73">02.08.21 - 02.09.21</h2>
+<div class="outline-text-2" id="text-org1107e73">
 </div>
-<div id="outline-container-orgb7ef566" class="outline-3">
-<h3 id="orgb7ef566">List ADT</h3>
-<div class="outline-text-3" id="text-orgb7ef566">
+<div id="outline-container-orgb717eec" class="outline-3">
+<h3 id="orgb717eec">List ADT</h3>
+<div class="outline-text-3" id="text-orgb717eec">
 <ul class="org-ul">
 <li>List consists of a domain and a set of operations</li>
 <li>Domain is composed of homogeneous elements</li>
@@ -165,17 +166,17 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orgf78a7d4" class="outline-3">
-<h3 id="orgf78a7d4">Generic Data Type</h3>
-<div class="outline-text-3" id="text-orgf78a7d4">
+<div id="outline-container-orgbb96b9b" class="outline-3">
+<h3 id="orgbb96b9b">Generic Data Type</h3>
+<div class="outline-text-3" id="text-orgbb96b9b">
 <ul class="org-ul">
 <li>A generic data type is a type for which the operations are defined but the types of the items being manipulated are not defined</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgaa9221d" class="outline-3">
-<h3 id="orgaa9221d">Efficient Operations in Unsorted Lists</h3>
-<div class="outline-text-3" id="text-orgaa9221d">
+<div id="outline-container-orgce02eb9" class="outline-3">
+<h3 id="orgce02eb9">Efficient Operations in Unsorted Lists</h3>
+<div class="outline-text-3" id="text-orgce02eb9">
 <ul class="org-ul">
 <li><p>
 When dealing with unsorted, array-based lists of a data-type,
@@ -201,9 +202,9 @@ When dealing with unsorted, array-based lists of a data-type,
 </ul>
 </div>
 </div>
-<div id="outline-container-orgfdff20e" class="outline-3">
-<h3 id="orgfdff20e">Efficient Operations in Sorted Lists</h3>
-<div class="outline-text-3" id="text-orgfdff20e">
+<div id="outline-container-org372b9c8" class="outline-3">
+<h3 id="org372b9c8">Efficient Operations in Sorted Lists</h3>
+<div class="outline-text-3" id="text-org372b9c8">
 <ul class="org-ul">
 <li>GetItem, PutItem, and DeleteItem implementations change</li>
 <li>For GetItem, we no longer need to conduct a linear search with O(n) time. Instead, we can use a binary search with O(log n) time.</li>
@@ -213,13 +214,13 @@ When dealing with unsorted, array-based lists of a data-type,
 </div>
 </div>
 </div>
-<div id="outline-container-org54acc9c" class="outline-2">
-<h2 id="org54acc9c">02.01.21 (Recursion)</h2>
-<div class="outline-text-2" id="text-org54acc9c">
+<div id="outline-container-orgf0e2d13" class="outline-2">
+<h2 id="orgf0e2d13">02.01.21 (Recursion)</h2>
+<div class="outline-text-2" id="text-orgf0e2d13">
 </div>
-<div id="outline-container-orga9f87b2" class="outline-3">
-<h3 id="orga9f87b2">Recursion Trees</h3>
-<div class="outline-text-3" id="text-orga9f87b2">
+<div id="outline-container-orgde5a641" class="outline-3">
+<h3 id="orgde5a641">Recursion Trees</h3>
+<div class="outline-text-3" id="text-orgde5a641">
 <ul class="org-ul">
 <li>To convert recurrences into a tree,
 <ul class="org-ul">
@@ -232,13 +233,13 @@ When dealing with unsorted, array-based lists of a data-type,
 </div>
 </div>
 </div>
-<div id="outline-container-orgc824af3" class="outline-2">
-<h2 id="orgc824af3">01.28.21 (Algorithm Analysis)</h2>
-<div class="outline-text-2" id="text-orgc824af3">
+<div id="outline-container-org470e2c4" class="outline-2">
+<h2 id="org470e2c4">01.28.21 (Algorithm Analysis)</h2>
+<div class="outline-text-2" id="text-org470e2c4">
 </div>
-<div id="outline-container-org8ee100e" class="outline-3">
-<h3 id="org8ee100e">Experimental Analysis</h3>
-<div class="outline-text-3" id="text-org8ee100e">
+<div id="outline-container-orgdf8afca" class="outline-3">
+<h3 id="orgdf8afca">Experimental Analysis</h3>
+<div class="outline-text-3" id="text-orgdf8afca">
 <ul class="org-ul">
 <li>Algorithms = step-by-step procedure for solving a problem in a finite amount of time</li>
 <li>Experimentation Steps:
@@ -257,9 +258,9 @@ When dealing with unsorted, array-based lists of a data-type,
 </ul>
 </div>
 </div>
-<div id="outline-container-org2c41fd9" class="outline-3">
-<h3 id="org2c41fd9">Theoretical Analysis</h3>
-<div class="outline-text-3" id="text-org2c41fd9">
+<div id="outline-container-orge3e3b50" class="outline-3">
+<h3 id="orge3e3b50">Theoretical Analysis</h3>
+<div class="outline-text-3" id="text-orge3e3b50">
 <ul class="org-ul">
 <li>Theoretical Analysis
 <ul class="org-ul">
@@ -291,13 +292,13 @@ When dealing with unsorted, array-based lists of a data-type,
 </div>
 </div>
 </div>
-<div id="outline-container-org99670ca" class="outline-2">
-<h2 id="org99670ca">01.26.21 (ADTs &amp; Big-O)</h2>
-<div class="outline-text-2" id="text-org99670ca">
+<div id="outline-container-orga26cf59" class="outline-2">
+<h2 id="orga26cf59">01.26.21 (ADTs &amp; Big-O)</h2>
+<div class="outline-text-2" id="text-orga26cf59">
 </div>
-<div id="outline-container-org38cbb44" class="outline-3">
-<h3 id="org38cbb44">Abstract Data Types</h3>
-<div class="outline-text-3" id="text-org38cbb44">
+<div id="outline-container-org8fe30e0" class="outline-3">
+<h3 id="org8fe30e0">Abstract Data Types</h3>
+<div class="outline-text-3" id="text-org8fe30e0">
 <ul class="org-ul">
 <li>Abstract Data Type (ADT): A data type whose properties are</li>
 <li>Require a domain and an operation, implementation not relevant at this point</li>
@@ -305,9 +306,9 @@ When dealing with unsorted, array-based lists of a data-type,
 </ul>
 </div>
 </div>
-<div id="outline-container-org8aa713a" class="outline-3">
-<h3 id="org8aa713a">Data from 3 Different Levels</h3>
-<div class="outline-text-3" id="text-org8aa713a">
+<div id="outline-container-org5ec08d0" class="outline-3">
+<h3 id="org5ec08d0">Data from 3 Different Levels</h3>
+<div class="outline-text-3" id="text-org5ec08d0">
 <ul class="org-ul">
 <li>Application (user) level - modeling real life data in a specific context (ex. Library of Congress)</li>
 <li>Logical (ADT) level - considering abstract understanding of necessary requirements (ex. Domain: Collection of Books, Operations: Check-in, Check-out, etc.)</li>
@@ -315,9 +316,9 @@ When dealing with unsorted, array-based lists of a data-type,
 </ul>
 </div>
 </div>
-<div id="outline-container-org04993fe" class="outline-3">
-<h3 id="org04993fe">Basic Types of ADT Operations</h3>
-<div class="outline-text-3" id="text-org04993fe">
+<div id="outline-container-org30f2639" class="outline-3">
+<h3 id="org30f2639">Basic Types of ADT Operations</h3>
+<div class="outline-text-3" id="text-org30f2639">
 <ul class="org-ul">
 <li>Constructor - creates a new instance of an ADT</li>
 <li>Transformer - changes the state of one or more of the data values of an instance</li>
@@ -326,9 +327,9 @@ When dealing with unsorted, array-based lists of a data-type,
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb94dd46" class="outline-3">
-<h3 id="orgb94dd46">Composite Data Type</h3>
-<div class="outline-text-3" id="text-orgb94dd46">
+<div id="outline-container-org2e20e5d" class="outline-3">
+<h3 id="org2e20e5d">Composite Data Type</h3>
+<div class="outline-text-3" id="text-org2e20e5d">
 <ul class="org-ul">
 <li>Composite data types are types which
 <ul class="org-ul">
@@ -339,9 +340,9 @@ When dealing with unsorted, array-based lists of a data-type,
 </ul>
 </div>
 </div>
-<div id="outline-container-org87506f8" class="outline-3">
-<h3 id="org87506f8">Accessing Functions</h3>
-<div class="outline-text-3" id="text-org87506f8">
+<div id="outline-container-org5b46cfa" class="outline-3">
+<h3 id="org5b46cfa">Accessing Functions</h3>
+<div class="outline-text-3" id="text-org5b46cfa">
 <ul class="org-ul">
 <li>Accessing fucntions give the position of className[Index]</li>
 <li>Address(Index) = BaseAddress + Index * SizeOfElement</li>
@@ -352,9 +353,9 @@ When dealing with unsorted, array-based lists of a data-type,
 </ul>
 </div>
 </div>
-<div id="outline-container-org3074743" class="outline-3">
-<h3 id="org3074743">Order of Magnitude of a Function</h3>
-<div class="outline-text-3" id="text-org3074743">
+<div id="outline-container-org4063dc8" class="outline-3">
+<h3 id="org4063dc8">Order of Magnitude of a Function</h3>
+<div class="outline-text-3" id="text-org4063dc8">
 <ul class="org-ul">
 <li>Order of magnitude (Big-O notation) expresses computing time of a problem as the term in a function that increases the most rapodly relative to the size of the problem</li>
 <li>Consider two algorithms, A and B. They are both used to solve the same class of problems.
@@ -369,9 +370,9 @@ When dealing with unsorted, array-based lists of a data-type,
 </div>
 </div>
 </div>
-<div id="outline-container-org73d3236" class="outline-2">
-<h2 id="org73d3236">01.25.21 (File I/O)</h2>
-<div class="outline-text-2" id="text-org73d3236">
+<div id="outline-container-orgeda2209" class="outline-2">
+<h2 id="orgeda2209">01.25.21 (File I/O)</h2>
+<div class="outline-text-2" id="text-orgeda2209">
 <ul class="org-ul">
 <li><p>
 File I/O ex.
@@ -405,22 +406,22 @@ File I/O ex.
 </ul>
 </div>
 </div>
-<div id="outline-container-org6ec33e4" class="outline-2">
-<h2 id="org6ec33e4">01.25.21 (C++ Ch. 9)</h2>
-<div class="outline-text-2" id="text-org6ec33e4">
+<div id="outline-container-org1fab6ea" class="outline-2">
+<h2 id="org1fab6ea">01.25.21 (C++ Ch. 9)</h2>
+<div class="outline-text-2" id="text-org1fab6ea">
 </div>
-<div id="outline-container-orged7f915" class="outline-3">
-<h3 id="orged7f915">Pass by Reference</h3>
-<div class="outline-text-3" id="text-orged7f915">
+<div id="outline-container-orgca81dcb" class="outline-3">
+<h3 id="orgca81dcb">Pass by Reference</h3>
+<div class="outline-text-3" id="text-orgca81dcb">
 <ul class="org-ul">
 <li>When dealing with very large objects, don&rsquo;t pass by copy due to the large overhead of copying. Instead, pass by reference</li>
 <li>When passing by reference, use const if you don&rsquo;t want to modify the data members</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org2a3ffca" class="outline-3">
-<h3 id="org2a3ffca">Destructors</h3>
-<div class="outline-text-3" id="text-org2a3ffca">
+<div id="outline-container-org6bc4117" class="outline-3">
+<h3 id="org6bc4117">Destructors</h3>
+<div class="outline-text-3" id="text-org6bc4117">
 <ul class="org-ul">
 <li>Name of destructor is className~</li>
 <li>Called implicitly when an object is destroyed</li>
@@ -434,9 +435,9 @@ File I/O ex.
 </ul>
 </div>
 </div>
-<div id="outline-container-org42c5fec" class="outline-3">
-<h3 id="org42c5fec">Const Objects</h3>
-<div class="outline-text-3" id="text-org42c5fec">
+<div id="outline-container-org2159a65" class="outline-3">
+<h3 id="org2159a65">Const Objects</h3>
+<div class="outline-text-3" id="text-org2159a65">
 <ul class="org-ul">
 <li>const objects must use const methods only</li>
 <li>non-const objects may use both non-const and const methods</li>
@@ -444,22 +445,22 @@ File I/O ex.
 </div>
 </div>
 </div>
-<div id="outline-container-org8dd918c" class="outline-2">
-<h2 id="org8dd918c">01.21.21 (C++ Ch. 9)</h2>
-<div class="outline-text-2" id="text-org8dd918c">
+<div id="outline-container-orgf48a49f" class="outline-2">
+<h2 id="orgf48a49f">01.21.21 (C++ Ch. 9)</h2>
+<div class="outline-text-2" id="text-orgf48a49f">
 </div>
-<div id="outline-container-org099e971" class="outline-3">
-<h3 id="org099e971">Encapsulation</h3>
-<div class="outline-text-3" id="text-org099e971">
+<div id="outline-container-org01cec1b" class="outline-3">
+<h3 id="org01cec1b">Encapsulation</h3>
+<div class="outline-text-3" id="text-org01cec1b">
 <ul class="org-ul">
 <li>Header files should not contain source code, it should only include prototypes in order to ensure proper information-hiding</li>
 <li>Source code should be placed in a different cpp file, which pulls from the prototypes in the header file</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd8f9ec7" class="outline-3">
-<h3 id="orgd8f9ec7">Include Guards</h3>
-<div class="outline-text-3" id="text-orgd8f9ec7">
+<div id="outline-container-org23b1d3c" class="outline-3">
+<h3 id="org23b1d3c">Include Guards</h3>
+<div class="outline-text-3" id="text-org23b1d3c">
 <ul class="org-ul">
 <li><p>
 Consider the following classes: Student, Course, and Main
@@ -488,18 +489,18 @@ Consider the following classes: Student, Course, and Main
 </ul>
 </div>
 </div>
-<div id="outline-container-org438ab6a" class="outline-3">
-<h3 id="org438ab6a">Writing Classes</h3>
-<div class="outline-text-3" id="text-org438ab6a">
+<div id="outline-container-org035eaa5" class="outline-3">
+<h3 id="org035eaa5">Writing Classes</h3>
+<div class="outline-text-3" id="text-org035eaa5">
 <ul class="org-ul">
 <li>Begin by including the necessary header file</li>
 <li>All methods and constructors must be preceded by the header file name and the scope resolution operator (::)</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org6f22733" class="outline-3">
-<h3 id="org6f22733">Constructors &amp; Default Constructors</h3>
-<div class="outline-text-3" id="text-org6f22733">
+<div id="outline-container-org1c7d5f0" class="outline-3">
+<h3 id="org1c7d5f0">Constructors &amp; Default Constructors</h3>
+<div class="outline-text-3" id="text-org1c7d5f0">
 <ul class="org-ul">
 <li>Constructors can call other methods and do data-checking</li>
 <li>Constructors can be called explicit with multiple parameters when the parameters are impossible to typecast, as follows:</li>
@@ -513,22 +514,22 @@ Consider the following classes: Student, Course, and Main
 </div>
 </div>
 </div>
-<div id="outline-container-orgfbcb15c" class="outline-2">
-<h2 id="orgfbcb15c">01.21.21 (C++ Ch. 3)</h2>
-<div class="outline-text-2" id="text-orgfbcb15c">
+<div id="outline-container-orgc7bb924" class="outline-2">
+<h2 id="orgc7bb924">01.21.21 (C++ Ch. 3)</h2>
+<div class="outline-text-2" id="text-orgc7bb924">
 </div>
-<div id="outline-container-orge77ba69" class="outline-3">
-<h3 id="orge77ba69">Objects and Object Sizes</h3>
-<div class="outline-text-3" id="text-orge77ba69">
+<div id="outline-container-org0444cb3" class="outline-3">
+<h3 id="org0444cb3">Objects and Object Sizes</h3>
+<div class="outline-text-3" id="text-org0444cb3">
 <ul class="org-ul">
 <li>An objects size will always be the sum of its data members. The size will not be affected by any methods that are called upon it.</li>
 <li>Because of this, objects can quickly become very large in size.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org717596f" class="outline-3">
-<h3 id="org717596f">UML Diagrams</h3>
-<div class="outline-text-3" id="text-org717596f">
+<div id="outline-container-org94103c1" class="outline-3">
+<h3 id="org94103c1">UML Diagrams</h3>
+<div class="outline-text-3" id="text-org94103c1">
 <ul class="org-ul">
 <li>Classes are listed as individual boxes
 <ul class="org-ul">
@@ -544,9 +545,9 @@ Consider the following classes: Student, Course, and Main
 </ul>
 </div>
 </div>
-<div id="outline-container-org7845d36" class="outline-3">
-<h3 id="org7845d36">Constructors</h3>
-<div class="outline-text-3" id="text-org7845d36">
+<div id="outline-container-orgdb394da" class="outline-3">
+<h3 id="orgdb394da">Constructors</h3>
+<div class="outline-text-3" id="text-orgdb394da">
 <ul class="org-ul">
 <li>Explicit constructors can be used to prevent implicit typecasting, as seen below:</li>
 </ul>
@@ -578,9 +579,9 @@ Consider the following classes: Student, Course, and Main
 </div>
 </div>
 </div>
-<div id="outline-container-org98241fe" class="outline-2">
-<h2 id="org98241fe">01.19.21 (C++ Ch. 3)</h2>
-<div class="outline-text-2" id="text-org98241fe">
+<div id="outline-container-org94b195a" class="outline-2">
+<h2 id="org94b195a">01.19.21 (C++ Ch. 3)</h2>
+<div class="outline-text-2" id="text-org94b195a">
 <p>
 A look at class creation
 </p>
@@ -620,9 +621,9 @@ A look at class creation
 </div>
 </div>
 
-<div id="outline-container-orgee7c3e5" class="outline-2">
-<h2 id="orgee7c3e5">01.19.21 (C++ Ch. 2)</h2>
-<div class="outline-text-2" id="text-orgee7c3e5">
+<div id="outline-container-org46cab50" class="outline-2">
+<h2 id="org46cab50">01.19.21 (C++ Ch. 2)</h2>
+<div class="outline-text-2" id="text-org46cab50">
 <p>
 A look at some basic C++ code
 </p>
@@ -691,7 +692,7 @@ A look at a common mistake
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Sudhan Chitgopkar</p>
-<p class="date">Created: 2021-02-23 Tue 12:16</p>
+<p class="date">Created: 2021-02-23 Tue 12:19</p>
 </div>
 </body>
 </html>

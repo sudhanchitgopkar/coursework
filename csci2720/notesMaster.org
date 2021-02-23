@@ -15,8 +15,9 @@
 ** Array-Based Stack
 - Constructor initializes top = -1
   - This is because push increments top first, leaving an index empty if top is set to 0
-- Top increments top by 1 and adds an item to the top index]
-- Pop decrements the top value by 1
+- Push O(1) increments top by 1 and adds an item to the top index]
+- Pop O(1) decrements the top value by 1
+- Top O(1) return the value within the top index of the array
 - IsEmpty checks if top = -1
 - IsFull checks if top = MAX_ITEMS
 * 02.22.21 (Sorted Linked Lists)
