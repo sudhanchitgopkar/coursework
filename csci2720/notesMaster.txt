@@ -6,6 +6,36 @@
                           ___________________
 
 
+02.23.21 (Stacks & Queues)
+==========================
+
+  - Stacks operate in LIFO (Last in, First out)
+
+
+Standard Operations
+~~~~~~~~~~~~~~~~~~~
+
+  - MakeEmpty
+  - IsEmpty
+  - IsFull
+  - Push (Itemtype newItem) - Adds an item to the top of a stack, throws
+    an exception if the stack is full
+  - Pop - Removes an item from the top of the stack
+  - ItemType Top - Returns a copy of the item at the top of the stack
+
+
+Array-Based Stack
+~~~~~~~~~~~~~~~~~
+
+  - Constructor initializes top = -1
+    - This is because push increments top first, leaving an index empty
+      if top is set to 0
+  - Top increments top by 1 and adds an item to the top index]
+  - Pop decrements the top value by 1
+  - IsEmpty checks if top = -1
+  - IsFull checks if top = MAX_ITEMS
+
+
 02.22.21 (Sorted Linked Lists)
 ==============================
 
@@ -27,6 +57,8 @@ Insertion
   - Compare item to insert with items already in the list, looking for
     insertion location
   - There also exist special cases for inserting in the first node
+    - Case 1: Adding a node to the beginning of the list
+    - Case 2: Inserting a node to an empty list
 
 
 02.22.21 (Unsorted Linked Lists)
