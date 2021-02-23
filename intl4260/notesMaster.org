@@ -2,6 +2,19 @@
 #+TITLE: Foreign Pol. Decision Making
 #+AUTHOR: Sudhan Chitgopkar
 #+EMAIL: sudhanchitgopkar@uga.edu
+* 02.22.21
+** Analogical Reasoning
+- Analogies are, importantly, different than metaphors. Metaphors are simple terms used to describe something. Analogies, on the other hand, define an entire context. Allow for comparison between the unfamiliar and the familiar.
+- Analogies map a familiar story to an unfamiliar situation. Elements of the story that sounds similar to the unfamiliar situation allows the *entire* story to be mapped to the afore unfamiliar situation.
+- Analogies such as this fill in lots of elements regarding incentive structures and leads to a decision. Different analogies may change the incentive structure and accordingly lead to a different decision.
+- Analogies explain the stakes, the context, moral guidance (norms and taboos), and possible policy prescriptions
+  - Accordingly constrain the win-set
+  - Could be considered like Standard Operating Procedures (An analogy of WWII might incentivize a leader to mobilize the entire country and take the situation very seriously)
+- Often, debate will occur regarding the analogy that best fits the situation. Once an analogy is set, behavior can often be understood in the context of that analogy
+- Analogies among experts tend to be narrower, but for analogies to work, they don't have to be close to the actual situation (Iran Nuclear Deal = toddler eating vegatables)
+- If you want to select an analogy for a situation, you want the analogy to be as close as possible to that situation. Despite this, we tend to rely on analogies more when the problem is more novel.
+  - Analogies tend to take ahold with situations when those situations are new and unfamiliar with few other overlaps
+- World leaders (Obama especially) use many analogies in order to shape public opinion
 * 02.15.21
 ** Fairness & Fairness Frames
 - Fairnesss and fairness frames, while stable, are rarely rational
