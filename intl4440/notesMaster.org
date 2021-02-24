@@ -2,6 +2,105 @@
 #+AUTHOR: Sudhan Chitgopkar
 #+EMAIL: sudhanchitgopkar@uga.edu
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="rethink.css" />
+* Intelligence Analysis
+- Analysts have the most direct contact with the consumer
+- Purpose of analysis:
+  - Information on difficult questions
+  - Select most significant items
+  - Tailor to consumers needs
+- Principles of analystic writing
+  1. Determine the cintext and put conclusions first
+  2. Know the customer's need
+  3. Organize logically
+  4. Understand formats
+  5. Use precise language
+  6. Economize your words
+  7. Strive for clarity of thought
+  8. Use active voice
+  9. Self-edit your writing
+- Structure papers through AIM:
+  - A: Audience (who is the audience?)
+  - I: Intelligence Question/Issues (what is the key question or concern? Is it actionable or answerable in more than one way?)
+  - M: Message (what's the bottom line?)
+  - S: Storyline (can the message be presented in a simple, cohesive manner?)
+- Tackling Analytical Arguments:
+  - Ground yourself
+  - Assertion/Claim (Your main idea)
+  - Evidence (Supporting the idea through warrants)
+  - Relevance (link the claim and the evidence)
+  - Acknowledge (the counterargument or other views)
+  - Refine (restatement of the claim)
+- Inverted Pyramid Method
+  - Data-driven organization:
+    - Research question
+    - Lit review
+    - Data and hypotheses
+    - Testing
+    - Finding
+    - Conclusion
+  - Message-Driven Organization (used in intelligence)
+    - Title & lead
+    - Key judgements
+    - Analysis
+    - Appendices
+** Going Wrong in Analysis
+***  Heuristics
+- Cognitive shortcuts, mental simplifications
+- Anchoring effect (beginning from an incorrect starting position amd nuilding off it)
+- Associative Memory (predicting future events off rare events)
+- Availibility Heuristic (judging an event based on an analogy that first comes to mind)
+- Desire for Coherence and Uncertainty Reduction (Believing that coincidences or random events are actually patterns)
+- Groupthink (choosing the option that the majority of thr group agrees with to avoid in-group conflict)
+- Mental Shotgun (Lacking percision in the analsis or analytical thought)
+- Premature Closure (making an early decision without considering the entirety f the data or completing the analysis)
+- Satisficing (selecting the first answer that seems satisfying or appropriate)
+*** Cognitive Biases
+- mental errors caused by a simplification in thought
+- Confirmation Bias (considering only the data that seems to agree with your conclusion)
+- Evidence Acceptance Bias (Accepting data as true unless it was outright rejected)
+- Hindsight Bias (Believing that key items in the past were obvious to see at the time)
+- Mirror Imaging (incorrectly believing that others would act in the same way that we would, given the same information)
+- Vividness Bias (focusing on one vivid scenario instead of other potential scenarios or pieces of evidence)
+*** Intuitive Traps
+- Assuming inevitability of an event
+- Assuming a single solution to an event
+- Confusing causality and correlation
+- Expecting marginal change (not expecting radical change)
+- Favoring firsthand information
+- Ignoring the effect of the absence of information
+- Ignoring initial base rate probabilities
+- Ignoring inconsistent evidence
+- Judging by emotion
+- Lacking sufficient bins or categories for the topic
+- Misstating probabilities, generally with subjective probabilities
+- Overestimating probabilities
+- Overinterpreting small samples
+- Overrating behavioral factors (fundamental attribution error)
+- Presuming patterns
+- Projecting past experiences
+- Rejecting evidence
+- Relying on first impressions
+*** Logical Fallacies
+- Tautology
+- Inadequate sampling (Small sample size)
+- Hasty generalization
+- False analogy
+- False dichotomy  (reducing a situation down to two groups or choices)
+- Non-sequitur
+- Post Hoc, ergo Propter Hoc (After this, therefore because of this)
+- Slippery Slope
+- Red Herring (Distracting from the problem)
+- Ad Hominem
+- Ad Populum (focuses on public opinion, not facts)
+- Appeal to authority
+*** Analytical Traps
+- Familiarity (Reacting to sources and information you are already familiar with)
+- Out of date information or concepts
+- Satisficing
+- Oversimplification
+- Mismatched data and interpretations
+- Not consulting colleagues with broader perspectives
+- Vagueness
 * Intelligence Processing
 - Consists of Evaluation and Collation
 ** Processing
