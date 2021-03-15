@@ -2,6 +2,35 @@
 #+TITLE: Foreign Pol. Decision Making
 #+AUTHOR: Sudhan Chitgopkar
 #+EMAIL: sudhanchitgopkar@uga.edu
+* 03.15.21
+** Gender and Foreign Policy
+- Integration of women into the economy and greater gender balance correlates with less conflict within countries. This seems to be correlation, not causation.
+- Explaining theories:
+  - As women gain more positions of power, the state will become more conflict averse or more passive because women may be biologically less prone to violent conflict
+    - This does not consider the history of the state. Regardless of their gender, people will still be affected by the empirical decisions their state has made when considering future decisions
+  - As diversity increases, there will be more dicsussion regarding what constitutes a national security threat and the necessary actions needed to stop such threats.
+- Consider comparing the same state over time with respect to gender balance. Removes a significant amount of confounding variables with cross-country comparison.
+  - Same finding holds: as gender balance increases, a state will be less prone to conflict
+  - Critically, women must be politically relevant for the above finding to hold. States that have good gender balance with little political relevance placed on women seem to operate as states that have little gender balance.
+- Along with decreased conflict behavior, defense spending also decreases when gender balance increases (maintaining political relevance for women)
+* 03.03.21
+** Threats & Fear (cont.)
+- Removing the feeling of fear can be construed to solving the problem
+- This can be applied to foreign policy - consider hawkish policies that focus on direct action/military force vs diplomatic strategies which are time-consuming and slow-acting
+- Feeling fearful or threatened causes people to prefer direct, fast-acting policies even when such policies may not be the most beneficial
+- When policies are decided upon, it is unlikely that they will be seriously reconsiderd/changed
+** Experiment Review
+- In general, audiovisual news contains much more emotional content than print news. This study accordingly considers this in the context of terrorism.
+- People that watch TV news will recieve more emotional news and will accordingly support more hawkish policies than people that read the news.
+- People's preferences for policy are driven by the emotional content of the news or information they consume, not the actual facts
+- Our information about foreign policy is taken from media sources with a high emotional context, which creates an incentive structure for our political leaders.
+  - Specifically, political leaders will provide us with more policy that is designed to assuage our concerns. Terminally, this leads to more hawkish policy options and support for militarization.
+  - This *should not* be equated to solving the problem.
+* 03.01.21
+** Fear & Threats
+- Cortex handles core evaluation
+- Cortex consistently recieves fear and threat information, responds to threats constantly
+- Because fear or threats stimulate emotionally focused decision-making instead of rational decision-making
 * 02.24.21
 ** Analogies (cont.)
 - Decision-makers often use analogies to make decisions, but these analogies are often biased towards their personal experiences
