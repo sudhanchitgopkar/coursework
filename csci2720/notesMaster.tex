@@ -1,4 +1,4 @@
-% Created 2021-02-23 Tue 12:19
+% Created 2021-03-15 Mon 11:00
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -29,12 +29,12 @@
 
 \maketitle
 \section*{02.23.21 (Stacks \& Queues)}
-\label{sec:org1ac953b}
+\label{sec:org1df0a7f}
 \begin{itemize}
 \item Stacks operate in LIFO (Last in, First out)
 \end{itemize}
 \subsection*{Standard Operations}
-\label{sec:org5f97ede}
+\label{sec:org6bf2eff}
 \begin{itemize}
 \item MakeEmpty
 \item IsEmpty
@@ -44,7 +44,7 @@
 \item ItemType Top - Returns a copy of the item at the top of the stack
 \end{itemize}
 \subsection*{Array-Based Stack}
-\label{sec:org008b8a4}
+\label{sec:orgfaaa9f5}
 \begin{itemize}
 \item Constructor initializes top = -1
 \begin{itemize}
@@ -57,16 +57,16 @@
 \item IsFull checks if top = MAX\textsubscript{ITEMS}
 \end{itemize}
 \section*{02.22.21 (Sorted Linked Lists)}
-\label{sec:orgc926a76}
+\label{sec:org086c083}
 \subsection*{Searching}
-\label{sec:orgd639ff5}
+\label{sec:org30088cf}
 \begin{itemize}
 \item We can use a modified linear search rather than a full linear search
 \item The search can terminate after any value greater than the element sought becuase the list is sorted
 \item If asked whether a binary search is possible on a sorted linked list, just answer no even though a binary search is possible (inefficiently) with sorted linked lists
 \end{itemize}
 \subsection*{Insertion}
-\label{sec:org90c3fa2}
+\label{sec:org4b18470}
 \begin{itemize}
 \item Begin with two pointers, one for search and one trailing
 \item Compare item to insert with items already in the list, looking for insertion location
@@ -77,9 +77,9 @@
 \end{itemize}
 \end{itemize}
 \section*{02.22.21 (Unsorted Linked Lists)}
-\label{sec:orgeebffc5}
+\label{sec:org9b29d71}
 \subsection*{Unsorted Linked Lists}
-\label{sec:org723829d}
+\label{sec:orgf3efd52}
 \begin{itemize}
 \item MakeEmpty is the same as the destructor
 \begin{itemize}
@@ -106,9 +106,9 @@
 \end{itemize}
 \end{itemize}
 \section*{02.08.21 - 02.09.21}
-\label{sec:orgc488cd1}
+\label{sec:orgb7d8ea8}
 \subsection*{List ADT}
-\label{sec:org438179e}
+\label{sec:orgf72edc7}
 \begin{itemize}
 \item List consists of a domain and a set of operations
 \item Domain is composed of homogeneous elements
@@ -130,12 +130,12 @@
 \end{itemize}
 \end{itemize}
 \subsection*{Generic Data Type}
-\label{sec:org1ba6f45}
+\label{sec:org309d2c7}
 \begin{itemize}
 \item A generic data type is a type for which the operations are defined but the types of the items being manipulated are not defined
 \end{itemize}
 \subsection*{Efficient Operations in Unsorted Lists}
-\label{sec:org656bc25}
+\label{sec:orgafda13f}
 \begin{itemize}
 \item When dealing with unsorted, array-based lists of a data-type,
 \begin{itemize}
@@ -158,7 +158,7 @@
 \end{itemize}
 \end{itemize}
 \subsection*{Efficient Operations in Sorted Lists}
-\label{sec:org9b0357f}
+\label{sec:orga925335}
 \begin{itemize}
 \item GetItem, PutItem, and DeleteItem implementations change
 \item For GetItem, we no longer need to conduct a linear search with O(n) time. Instead, we can use a binary search with O(log n) time.
@@ -166,9 +166,9 @@
 \item PutItem requires us to find the first index with a value greater than the item to be inserted. All elements including and after that index are shifted to the right. Finally, the necessary item is inserted at its proper location. This is O(n) because the search is O(n), the shift is O(n), and they are not nested loops
 \end{itemize}
 \section*{02.01.21 (Recursion)}
-\label{sec:orged1a921}
+\label{sec:org62bfdda}
 \subsection*{Recursion Trees}
-\label{sec:orgb08f435}
+\label{sec:orgef2010b}
 \begin{itemize}
 \item To convert recurrences into a tree,
 \begin{itemize}
@@ -179,9 +179,9 @@
 \item To solve a recurrence relationship, we find a closed form for it or use a master method
 \end{itemize}
 \section*{01.28.21 (Algorithm Analysis)}
-\label{sec:org13b1972}
+\label{sec:orgd180be4}
 \subsection*{Experimental Analysis}
-\label{sec:org4684a05}
+\label{sec:org6662b0b}
 \begin{itemize}
 \item Algorithms = step-by-step procedure for solving a problem in a finite amount of time
 \item Experimentation Steps:
@@ -199,7 +199,7 @@
 \item For this reason, theoretical results are preferred
 \end{itemize}
 \subsection*{Theoretical Analysis}
-\label{sec:org57331a7}
+\label{sec:org16c23d2}
 \begin{itemize}
 \item Theoretical Analysis
 \begin{itemize}
@@ -229,23 +229,23 @@
 \end{itemize}
 \end{itemize}
 \section*{01.26.21 (ADTs \& Big-O)}
-\label{sec:orgb1e75e2}
+\label{sec:org185d280}
 \subsection*{Abstract Data Types}
-\label{sec:org941b046}
+\label{sec:org1a8bda5}
 \begin{itemize}
 \item Abstract Data Type (ADT): A data type whose properties are
 \item Require a domain and an operation, implementation not relevant at this point
 \item When implementation is considerd, an ADT becomes a data structure
 \end{itemize}
 \subsection*{Data from 3 Different Levels}
-\label{sec:org73a13dc}
+\label{sec:org39b5af6}
 \begin{itemize}
 \item Application (user) level - modeling real life data in a specific context (ex. Library of Congress)
 \item Logical (ADT) level - considering abstract understanding of necessary requirements (ex. Domain: Collection of Books, Operations: Check-in, Check-out, etc.)
 \item Implementation level - considering how to carry out operations upon the domain
 \end{itemize}
 \subsection*{Basic Types of ADT Operations}
-\label{sec:org6de3de6}
+\label{sec:orgd7b9007}
 \begin{itemize}
 \item Constructor - creates a new instance of an ADT
 \item Transformer - changes the state of one or more of the data values of an instance
@@ -253,7 +253,7 @@
 \item Iterator - allows us to process all the components in a data structure sequentially
 \end{itemize}
 \subsection*{Composite Data Type}
-\label{sec:org1836bf6}
+\label{sec:org22af480}
 \begin{itemize}
 \item Composite data types are types which
 \begin{itemize}
@@ -263,7 +263,7 @@
 \item Examples include arrays and classes
 \end{itemize}
 \subsection*{Accessing Functions}
-\label{sec:orga218537}
+\label{sec:orgd07ef36}
 \begin{itemize}
 \item Accessing fucntions give the position of className[Index]
 \item Address(Index) = BaseAddress + Index * SizeOfElement
@@ -273,7 +273,7 @@
 \end{itemize}
 \end{itemize}
 \subsection*{Order of Magnitude of a Function}
-\label{sec:org70d986a}
+\label{sec:org98350f5}
 \begin{itemize}
 \item Order of magnitude (Big-O notation) expresses computing time of a problem as the term in a function that increases the most rapodly relative to the size of the problem
 \item Consider two algorithms, A and B. They are both used to solve the same class of problems.
@@ -286,7 +286,7 @@
 \item All functions are monotonic (continue increasing indefinitely)
 \end{itemize}
 \section*{01.25.21 (File I/O)}
-\label{sec:orgaada3d6}
+\label{sec:org7369eec}
 \begin{itemize}
 \item File I/O ex.
 \begin{verbatim}
@@ -316,15 +316,15 @@ int main () {
 \end{verbatim}
 \end{itemize}
 \section*{01.25.21 (C++ Ch. 9)}
-\label{sec:orgb66f79f}
+\label{sec:orge56d780}
 \subsection*{Pass by Reference}
-\label{sec:org6931380}
+\label{sec:org4baa1bb}
 \begin{itemize}
 \item When dealing with very large objects, don't pass by copy due to the large overhead of copying. Instead, pass by reference
 \item When passing by reference, use const if you don't want to modify the data members
 \end{itemize}
 \subsection*{Destructors}
-\label{sec:orgdae92c6}
+\label{sec:orgfd6caa0}
 \begin{itemize}
 \item Name of destructor is className\textasciitilde{}
 \item Called implicitly when an object is destroyed
@@ -337,21 +337,21 @@ int main () {
 \item Objects are also destroyed in reverse order from their construction
 \end{itemize}
 \subsection*{Const Objects}
-\label{sec:orgd6ba204}
+\label{sec:orge25445f}
 \begin{itemize}
 \item const objects must use const methods only
 \item non-const objects may use both non-const and const methods
 \end{itemize}
 \section*{01.21.21 (C++ Ch. 9)}
-\label{sec:org493bfd2}
+\label{sec:orgaa72ece}
 \subsection*{Encapsulation}
-\label{sec:orgc103b2e}
+\label{sec:org1a526a1}
 \begin{itemize}
 \item Header files should not contain source code, it should only include prototypes in order to ensure proper information-hiding
 \item Source code should be placed in a different cpp file, which pulls from the prototypes in the header file
 \end{itemize}
 \subsection*{Include Guards}
-\label{sec:org585d202}
+\label{sec:org49b6c53}
 \begin{itemize}
 \item Consider the following classes: Student, Course, and Main
 \begin{itemize}
@@ -375,13 +375,13 @@ int main () {
 \item The header guard should be put in header files that are used in multiple places
 \end{itemize}
 \subsection*{Writing Classes}
-\label{sec:org6a6a0cc}
+\label{sec:orge26d7c4}
 \begin{itemize}
 \item Begin by including the necessary header file
 \item All methods and constructors must be preceded by the header file name and the scope resolution operator (::)
 \end{itemize}
 \subsection*{Constructors \& Default Constructors}
-\label{sec:orgd4ecb31}
+\label{sec:org4f8bc64}
 \begin{itemize}
 \item Constructors can call other methods and do data-checking
 \item Constructors can be called explicit with multiple parameters when the parameters are impossible to typecast, as follows:
@@ -392,15 +392,15 @@ int main () {
 } //main
 \end{verbatim}
 \section*{01.21.21 (C++ Ch. 3)}
-\label{sec:org39f389c}
+\label{sec:org4236f2a}
 \subsection*{Objects and Object Sizes}
-\label{sec:orge63136d}
+\label{sec:org347dcf4}
 \begin{itemize}
 \item An objects size will always be the sum of its data members. The size will not be affected by any methods that are called upon it.
 \item Because of this, objects can quickly become very large in size.
 \end{itemize}
 \subsection*{UML Diagrams}
-\label{sec:orgac4b874}
+\label{sec:orgd3eb870}
 \begin{itemize}
 \item Classes are listed as individual boxes
 \begin{itemize}
@@ -415,7 +415,7 @@ int main () {
 \end{itemize}
 \end{itemize}
 \subsection*{Constructors}
-\label{sec:org30ae888}
+\label{sec:orga1cabbb}
 \begin{itemize}
 \item Explicit constructors can be used to prevent implicit typecasting, as seen below:
 \end{itemize}
@@ -443,7 +443,7 @@ explicit Account (std::string accountName) //explicit constructor
   }
 \end{verbatim}
 \section*{01.19.21 (C++ Ch. 3)}
-\label{sec:org6e1959c}
+\label{sec:org41bd02a}
 A look at class creation
 \begin{verbatim}
 #include <iostream>
@@ -479,7 +479,7 @@ int main () {
 \end{itemize}
 
 \section*{01.19.21 (C++ Ch. 2)}
-\label{sec:orgaad27b8}
+\label{sec:orgc7834ed}
 A look at some basic C++ code
 \begin{verbatim}
 #include <iostream> //enables program to output data
