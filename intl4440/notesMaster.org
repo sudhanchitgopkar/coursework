@@ -9,7 +9,7 @@
   - Select most significant items
   - Tailor to consumers needs
 - Principles of analystic writing
-  1. Determine the cintext and put conclusions first
+  1. Determine the context and put conclusions first
   2. Know the customer's need
   3. Organize logically
   4. Understand formats
@@ -44,7 +44,7 @@
     - Analysis
     - Appendices
 ** Going Wrong in Analysis
-***  Heuristics
+*** Heuristics
 - Cognitive shortcuts, mental simplifications
 - Anchoring effect (beginning from an incorrect starting position amd nuilding off it)
 - Associative Memory (predicting future events off rare events)
@@ -212,7 +212,7 @@
 - 3 subcategories
   - Task Definiton - primary jumping off point
   - Analysis and formulation - consider all possible facets of the task, potential sources and challenges, and formulating the best plan. Very creative and challenging process. Critical to consider the specifics of the question and understand specifically what is requested from the customer/decision-maker
-  -  Core planning - allocation of finances, employees, and resources before the actual intelligence process can go underway. Specific steps and deadlines are also set up here.
+  - Core planning - allocation of finances, employees, and resources before the actual intelligence process can go underway. Specific steps and deadlines are also set up here.
 ** Collection
 - Collection of raw information and intelligence
 - Draws on a variety of different types of information collection methods

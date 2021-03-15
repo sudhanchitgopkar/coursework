@@ -69,7 +69,7 @@ _________________
     - Select most significant items
     - Tailor to consumers needs
   - Principles of analystic writing
-    1. Determine the cintext and put conclusions first
+    1. Determine the context and put conclusions first
     2. Know the customer's need
     3. Organize logically
     4. Understand formats
