@@ -1,4 +1,4 @@
-% Created 2021-02-09 Tue 15:19
+% Created 2021-03-02 Tue 11:48
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -29,21 +29,21 @@
 
 \maketitle
 \section*{02.04.21}
-\label{sec:org148c746}
+\label{sec:org7c0fcd5}
 \subsection*{See 02.04 Grafstate file}
-\label{sec:org8b55dab}
+\label{sec:org0b07b95}
 \section*{02.02.21}
-\label{sec:orgc3b6292}
+\label{sec:orgdf74e23}
 l** Reviewing \(\delta\)
 \subsubsection*{DFAs}
-\label{sec:org052de37}
+\label{sec:orga2e44a2}
 \begin{itemize}
 \item \(\delta\): Q \texttimes{} \(\Sigma\) \(\to\) Q
 \item input: (state, symbol)
 \item output: state
 \end{itemize}
 \subsubsection*{NFAs}
-\label{sec:org81d4451}
+\label{sec:org84ee2bb}
 \begin{itemize}
 \item Not allowing \(\epsilon\) transitions
 \begin{itemize}
@@ -64,7 +64,7 @@ l** Reviewing \(\delta\)
 \end{itemize}
 \end{itemize}
 \subsection*{NFA}
-\label{sec:org9752a34}
+\label{sec:org9cbfcc6}
 \begin{itemize}
 \item General 5-tuple including
 \begin{enumerate}
@@ -78,7 +78,7 @@ l** Reviewing \(\delta\)
 \item The NFA does not have the ability to look ahead at possible states
 \end{itemize}
 \subsection*{Computation}
-\label{sec:org257dafb}
+\label{sec:org748d8b4}
 \begin{itemize}
 \item The NFA runs all possible branches on a given string simultaneously and independently
 \item A string, w, is rejected by an NFA, N, if every branch of the nondeterminism tree for N on w rejects
@@ -97,11 +97,11 @@ l** Reviewing \(\delta\)
 \end{itemize}
 \end{itemize}
 \section*{01.28.21}
-\label{sec:orgfa229aa}
+\label{sec:org6db5c79}
 \subsection*{Nondeterministic Finite Automata}
-\label{sec:org99d08fa}
+\label{sec:org9d06716}
 \subsubsection*{DFA Review}
-\label{sec:org7db9b36}
+\label{sec:orgd81ea17}
 \begin{itemize}
 \item DFA's are 5-tuples with
 \begin{itemize}
@@ -111,16 +111,16 @@ l** Reviewing \(\delta\)
 \item There is no real decision-making here, an input is simply being used alongside a rule to find an output
 \end{itemize}
 \subsubsection*{NFA's}
-\label{sec:org78d31cd}
+\label{sec:org5c0773c}
 \begin{itemize}
 \item NFAs are also a 5-tuple
 \item \(\delta\): Q \texttimes{} \(\Sigma\) \(\to\) \mathbb{P}(Q)
 \item |\mathbb{P}(Q)| = 2\textsuperscript{|Q|}
 \end{itemize}
 \section*{01.26.21 - 01.28.20}
-\label{sec:org765ff16}
+\label{sec:org6d45c3b}
 \subsection*{Closure Introduction}
-\label{sec:org70f3317}
+\label{sec:org58b4094}
 \begin{itemize}
 \item The language recognized by a DFA, M, (L(M)) is the set of all string accepted by M
 \item Thus, M = (Q, \(\Sigma\), \(\delta\), q\textsubscript{0},F)
@@ -131,7 +131,7 @@ l** Reviewing \(\delta\)
 \item Therefore, M accepts every string in L(M) and rejects everything in \textlnot{} L(M)
 \end{itemize}
 \subsection*{Closure Continued}
-\label{sec:org35d3d5d}
+\label{sec:org798ffd2}
 \begin{itemize}
 \item A set, A, is closed under a binary operation, OP, if \(\forall\) x , y \(\in\) A [x OP y \(\in\) A]
 \item Ex. Natural Numbers (\(\mathbb{N}\))
@@ -144,7 +144,7 @@ l** Reviewing \(\delta\)
 \item The class of all languages that are recognized by DFAs is closed under \(\cup\)
 \end{itemize}
 \subsection*{Closure Properties of DFAs}
-\label{sec:orgab5c457}
+\label{sec:org0768556}
 \begin{itemize}
 \item Union (\(\cup\))
 \item Intersection (\(\cap\))
@@ -152,13 +152,13 @@ l** Reviewing \(\delta\)
 \item Reverse
 \end{itemize}
 \subsection*{Applying Closure Properties}
-\label{sec:orgbfa7bdd}
+\label{sec:org128474f}
 \begin{itemize}
 \item If L(M\textsubscript{1}) \(\cup\) L(M\textsubscript{2}) are DFAs, then \(\exists\) DFA, M, with L(M) = L(M\textsubscript{1}) \(\cup\) L(M\textsubscript{2})
 \item The purpose of a state machine is to make a yes/no decision
 \end{itemize}
 \subsubsection*{Premise:}
-\label{sec:orge600792}
+\label{sec:orgc76438c}
 \begin{itemize}
 \item M\textsubscript{1} = \{Q\textsubscript{1},\(\Sigma\),\(\delta\)\textsubscript{1},q\textsubscript{0\textsubscript{1}},F\textsubscript{1}\} and M\textsubscript{2} = \{Q\textsubscript{2},\(\Sigma\),\(\delta\)\textsubscript{2},q\textsubscript{0},F\textsubscript{2}\} are DFAs
 \item M\textsubscript{1} accepts binary strings ending in 1
@@ -178,7 +178,7 @@ l** Reviewing \(\delta\)
 \end{itemize}
 \end{itemize}
 \subsubsection*{Coding M}
-\label{sec:org0fc3688}
+\label{sec:orgcd24958}
 \begin{itemize}
 \item Consider Q = Q\textsubscript{1} \(\cdot\) Q\textsubscript{2} = \{q\textsubscript{1}r\textsubscript{1},q\textsubscript{2}r\textsubscript{1},q\textsubscript{1}r\textsubscript{2},q\textsubscript{2}r\textsubscript{2}\}
 \item wherein
@@ -207,7 +207,7 @@ l** Reviewing \(\delta\)
 \end{itemize}
 \end{itemize}
 \subsubsection*{Derivation}
-\label{sec:org2e52b09}
+\label{sec:orgac2badf}
 \begin{itemize}
 \item Construct M and show that L(M) = L(M\textsubscript{1}) \(\cup\) L(M\textsubscript{2}).
 \item Q = Q\textsubscript{1} \(\cdot\) Q\textsubscript{2}
@@ -218,7 +218,7 @@ l** Reviewing \(\delta\)
 \item so that F=\{q\textsubscript{i}r\textsubscript{j}: q\textsubscript{i} \(\in\) F\textsubscript{1} \(\cup\) r\textsubscript{j} \(\in\) F\textsubscript{2}\}
 \end{itemize}
 \subsubsection*{Correctness}
-\label{sec:org3033cfb}
+\label{sec:orgce012ac}
 \begin{itemize}
 \item Show that M accepts exactly the strings that are accepted by M\textsubscript{1} or M\textsubscript{2}
 \item If w \(\in\) \(\Sigma\)*. tjem w is accepted by M and w is accepted by either M\textsubscript{1} or M\{2\}
@@ -226,7 +226,7 @@ l** Reviewing \(\delta\)
 \item We solve with mathematical induction, which is how we prove recurrence relationships
 \end{itemize}
 \subsubsection*{Mathematical Induction}
-\label{sec:org4e50fb6}
+\label{sec:orgf360e99}
 \begin{itemize}
 \item Need base case and induction hypothesis
 \item Induction hypothesis says something is true about k, where k is the length of strings
@@ -240,9 +240,9 @@ l** Reviewing \(\delta\)
 \item Similarly, if delta*\textsubscript{2}(q\textsubscript{0}\textsubscript{2},wx), then \(\delta\)*(q\textsubscript{0,wx}) \(\in\) F
 \end{itemize}
 \section*{01.21.21}
-\label{sec:org8840c68}
+\label{sec:org04eea76}
 \subsection*{Deterministic Finite Automata}
-\label{sec:org070bad9}
+\label{sec:org7a20af2}
 \begin{itemize}
 \item We know that \(\delta\) = Q \texttimes{} \(\Sigma\) \(\to\) Q\textsubscript{2}
 \item We want a function that takes a starting state and a string, then returns the state after the machine has read that string
@@ -266,7 +266,7 @@ l** Reviewing \(\delta\)
 \end{itemize}
 \end{itemize}
 \subsection*{Aside: On \(\Sigma\) and \(\Sigma\)*}
-\label{sec:orga43bc60}
+\label{sec:org446bab0}
 \begin{itemize}
 \item \(\Sigma\)* is the universe of all strings over \(\Sigma\)
 \begin{itemize}
@@ -293,7 +293,7 @@ w & c & w \(\cdot\) c & step\\
 \end{tabular}
 \end{center}
 \subsection*{Recursively Testing 101}
-\label{sec:org8f20fa9}
+\label{sec:org730d442}
 \begin{itemize}
 \item Solve \(\delta\)*(q\textsubscript{1},101)
 \item \(\delta\)(\(\delta\)*(q\textsubscript{1},10),1)
@@ -301,11 +301,11 @@ w & c & w \(\cdot\) c & step\\
 \item \(\delta\)(\(\delta\)*(q\textsubscript{1},1),0)
 \end{itemize}
 \subsubsection*{{\bfseries\sffamily TODO} Complete Recursion Sequence}
-\label{sec:org3b4418e}
+\label{sec:orgb69bfab}
 \section*{01.19.21}
-\label{sec:org46ed4be}
+\label{sec:orge17293a}
 \subsection*{Tuples \& DFAs}
-\label{sec:org3751f80}
+\label{sec:orgb7ab5dd}
 \begin{itemize}
 \item Tuples are sequences which are always finite in length
 \item The deterministic finite automaton shown is a 5-tuple:
@@ -339,13 +339,13 @@ Step & State & Input & Transition\\
 \end{tabular}
 \end{center}
 \subsection*{Domains \& Codomains}
-\label{sec:org184f4ed}
+\label{sec:org1863699}
 \begin{itemize}
 \item Domain: set of all possible function inputs
 \item Codomain: set of all possible outputs
 \end{itemize}
 \subsection*{Strings}
-\label{sec:org9963632}
+\label{sec:orga1a7cf7}
 \begin{itemize}
 \item In computer science, strings are character arrays
 \item In mathematics, strings are sequences of symbols
@@ -355,7 +355,7 @@ Step & State & Input & Transition\\
 \item If c \(\in\) \(\Sigma\), then \(\epsilon\) \(\cdot\) c = c \(\cdot\) \(\epsilon\) = c
 \end{itemize}
 \subsection*{{\bfseries\sffamily TODO} Review Recursive Definitions}
-\label{sec:org3e9c7b4}
+\label{sec:orgfbb59ed}
 \begin{itemize}
 \item Base step: a step that can not be broken down any further, a fact that is always true regardless of the input
 \item Recursive step:
@@ -379,7 +379,7 @@ Step & State & Input & Transition\\
 \end{enumerate}
 \end{itemize}
 \subsection*{Languages}
-\label{sec:org88a83a5}
+\label{sec:orgaab6a5f}
 \begin{itemize}
 \item Languages over \(\Sigma\) - a set of finite strings over \(\Sigma\)
 \item Langauges recognized by an automaton, M, L(M) is the language accepted by M
@@ -389,9 +389,9 @@ Step & State & Input & Transition\\
 \item \(\epsilon\) is not a symbol in any alphabet
 \end{itemize}
 \section*{01.14.21}
-\label{sec:orgfe0be90}
+\label{sec:orge72f3cd}
 \subsection*{Automaton (automata)}
-\label{sec:org758a308}
+\label{sec:org12bc278}
 \begin{itemize}
 \item Self running machine requiring a continuous power source
 \begin{itemize}
@@ -400,9 +400,9 @@ Step & State & Input & Transition\\
 \item Course revolves around defining the mathematics powering machines
 \end{itemize}
 \subsection*{The Mathematics of Automata}
-\label{sec:org007be7f}
+\label{sec:org288dc61}
 \subsubsection*{Mathematicians \& History}
-\label{sec:orgc913b4b}
+\label{sec:orgf5c334d}
 \begin{itemize}
 \item Cantor defines sets as collections of objects
 \item Cantor also argues that infinites can be of different magnitudes - there are infinitely more real numbers than natural numbers
@@ -424,7 +424,7 @@ Step & State & Input & Transition\\
 \end{itemize}
 \end{itemize}
 \subsubsection*{Sequential Logic}
-\label{sec:orgee2c38d}
+\label{sec:org587299b}
 \begin{itemize}
 \item Sentential Logic- based on boolean results
 \begin{itemize}
@@ -433,7 +433,7 @@ Step & State & Input & Transition\\
 \end{itemize}
 \end{itemize}
 \subsection*{Necessary Review}
-\label{sec:org49c16ab}
+\label{sec:orga7b3557}
 \begin{itemize}
 \item Textbook Ch. 0
 \item Logic Statements
@@ -441,7 +441,7 @@ Step & State & Input & Transition\\
 \item Functions
 \end{itemize}
 \subsection*{Functions}
-\label{sec:org0551d0f}
+\label{sec:org5cc029e}
 \begin{itemize}
 \item Functions - something that maps objects from one set to another
 \item Given f: a \(\to\) b;
@@ -459,7 +459,7 @@ Step & State & Input & Transition\\
 \end{itemize}
 \end{itemize}
 \subsection*{{\bfseries\sffamily TODO} Types of Functions - Definition \& Logical Statement}
-\label{sec:org28d2dfa}
+\label{sec:org0c6cd57}
 \begin{itemize}
 \item Injective Functions
 \item Surjective Functions
@@ -467,7 +467,7 @@ Step & State & Input & Transition\\
 \item Proof by Contradiction (\textlnot{}\(\exists\))
 \end{itemize}
 \subsection*{Finite Automaton (Finite State Machine)}
-\label{sec:orgab1821d}
+\label{sec:orge2e49c8}
 \begin{itemize}
 \item States are logical confirgurations
 \item States are generally based upon input
