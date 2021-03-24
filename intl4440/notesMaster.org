@@ -1,7 +1,20 @@
 #+TITLE: Strategic Intelligence
 #+AUTHOR: Sudhan Chitgopkar
 #+EMAIL: sudhanchitgopkar@uga.edu
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="rethink.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="rethink.css"/>
+* Counterintelligence
+** Definition + General
+- Multiple different definitions
+- Intelligence gathered in activities to protect against espionage, sabotage, assasinations, terrorist activities, or other intelligence collection efforts
+- Ehrman finds counterintelligence is the study of an organization in the behavior of intelligence services of foreign states and organizations
+- Taylor efforts taken to protect ones own intelligence operations
+- Generally, shield for national security from foreign influences
+- Counterintelligence protects nations assets, gains information regarding other states assets
+** Assumptions of Counterintelligence
+- Governments have secrets
+- Intelligence services collect those secrets
+- Foreign governments will try to steal those secrets
+- Trust is low
 * Intelligence Analysis
 - Analysts have the most direct contact with the consumer
 - Purpose of analysis:

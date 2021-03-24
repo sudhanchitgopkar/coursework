@@ -9,24 +9,27 @@
 Table of Contents
 _________________
 
-1. Intelligence Analysis
+1. Counterintelligence
+.. 1. Definition + General
+.. 2. Assumptions of Counterintelligence
+2. Intelligence Analysis
 .. 1. Going Wrong in Analysis
 ..... 1. Heuristics
 ..... 2. Cognitive Biases
 ..... 3. Intuitive Traps
 ..... 4. Logical Fallacies
 ..... 5. Analytical Traps
-2. Intelligence Processing
+3. Intelligence Processing
 .. 1. Processing
 .. 2. Evaluation
 ..... 1. Reliability
 ..... 2. Validity
 .. 3. Collation
-3. Intelligence Collection
+4. Intelligence Collection
 .. 1. Other Intelligence Tyoes
 .. 2. Collection Management
-4. Critiques of the Intelligence Cycle
-5. Intelligence Cycle
+5. Critiques of the Intelligence Cycle
+6. Intelligence Cycle
 .. 1. Planning and Direction
 .. 2. Collection
 .. 3. Processing
@@ -35,22 +38,22 @@ _________________
 .. 6. Critiques
 .. 7. Additional Steps
 .. 8. Additional Questions
-6. Johnson
+7. Johnson
 .. 1. Introduction
 .. 2. The Intelligence Cycle
 .. 3. Planning and Direction
 .. 4. Collection
-7. Turner
+8. Turner
 .. 1. US Intelligence
 .. 2. Constructivism
 .. 3. American Strategic Culture
 .. 4. Distinguishing Norms
 .. 5. Road to Failure
-8. Warner
+9. Warner
 .. 1. Intelligence Definitions
 .. 2. Definition Analysis
 .. 3. Final Steps
-9. Intelligence Structure
+10. Intelligence Structure
 .. 1. What is Intelligence
 .. 2. Levels of Analysis
 .. 3. US Intelligence Community
@@ -60,7 +63,35 @@ _________________
 .. 4. Questions to Consider
 
 
-1 Intelligence Analysis
+1 Counterintelligence
+=====================
+
+1.1 Definition + General
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+  - Multiple different definitions
+  - Intelligence gathered in activities to protect against espionage,
+    sabotage, assasinations, terrorist activities, or other intelligence
+    collection efforts
+  - Ehrman finds counterintelligence is the study of an organization in
+    the behavior of intelligence services of foreign states and
+    organizations
+  - Taylor efforts taken to protect ones own intelligence operations
+  - Generally, shield for national security from foreign influences
+  - Counterintelligence protects nations assets, gains information
+    regarding other states assets
+
+
+1.2 Assumptions of Counterintelligence
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  - Governments have secrets
+  - Intelligence services collect those secrets
+  - Foreign governments will try to steal those secrets
+  - Trust is low
+
+
+2 Intelligence Analysis
 =======================
 
   - Analysts have the most direct contact with the consumer
@@ -107,10 +138,10 @@ _________________
       - Appendices
 
 
-1.1 Going Wrong in Analysis
+2.1 Going Wrong in Analysis
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1.1.1 Heuristics
+2.1.1 Heuristics
 ----------------
 
   - Cognitive shortcuts, mental simplifications
@@ -131,7 +162,7 @@ _________________
     appropriate)
 
 
-1.1.2 Cognitive Biases
+2.1.2 Cognitive Biases
 ----------------------
 
   - mental errors caused by a simplification in thought
@@ -147,7 +178,7 @@ _________________
     potential scenarios or pieces of evidence)
 
 
-1.1.3 Intuitive Traps
+2.1.3 Intuitive Traps
 ---------------------
 
   - Assuming inevitability of an event
@@ -170,7 +201,7 @@ _________________
   - Relying on first impressions
 
 
-1.1.4 Logical Fallacies
+2.1.4 Logical Fallacies
 -----------------------
 
   - Tautology
@@ -187,7 +218,7 @@ _________________
   - Appeal to authority
 
 
-1.1.5 Analytical Traps
+2.1.5 Analytical Traps
 ----------------------
 
   - Familiarity (Reacting to sources and information you are already
@@ -200,13 +231,13 @@ _________________
   - Vagueness
 
 
-2 Intelligence Processing
+3 Intelligence Processing
 =========================
 
   - Consists of Evaluation and Collation
 
 
-2.1 Processing
+3.1 Processing
 ~~~~~~~~~~~~~~
 
   - Takes raw information and converts it into readable information for
@@ -214,14 +245,14 @@ _________________
   - Accomplished through information management techniques
 
 
-2.2 Evaluation
+3.2 Evaluation
 ~~~~~~~~~~~~~~
 
   - May occur during either the collection or processing phase
   - Focuses on source reliability + Data valididty
 
 
-2.2.1 Reliability
+3.2.1 Reliability
 -----------------
 
   - Generally can be evaluated on an A-F scale
@@ -230,7 +261,7 @@ _________________
     source with no reporting history
 
 
-2.2.2 Validity
+3.2.2 Validity
 --------------
 
   - Based on a 1-6 scale
@@ -238,7 +269,7 @@ _________________
     Improbable -> Cannot be judged
 
 
-2.3 Collation
+3.3 Collation
 ~~~~~~~~~~~~~
 
   - Grouping together of related items which facilitates further
@@ -268,7 +299,7 @@ _________________
     accessibility, resource and time and intel dependent
 
 
-3 Intelligence Collection
+4 Intelligence Collection
 =========================
 
   - HumInt = Human intelligence
@@ -324,7 +355,7 @@ _________________
     - Journalism may be used to decept adversaries
 
 
-3.1 Other Intelligence Tyoes
+4.1 Other Intelligence Tyoes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Medical (MedInt) - looks at Medical status of a person or group
@@ -339,7 +370,7 @@ _________________
     trends
 
 
-3.2 Collection Management
+4.2 Collection Management
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Intelligence Collection Plans (ICP)
@@ -354,7 +385,7 @@ _________________
     - Support Resource Management
 
 
-4 Critiques of the Intelligence Cycle
+5 Critiques of the Intelligence Cycle
 =====================================
 
   - Hulnick argues that while the intelligence model is basic, it is
@@ -364,7 +395,7 @@ _________________
     communication, cooperation, or mishandling of information
 
 
-5 Intelligence Cycle
+6 Intelligence Cycle
 ====================
 
   - Decision-makers are expected to make the best-decision possible, and
@@ -378,7 +409,7 @@ _________________
     - Dissemination
 
 
-5.1 Planning and Direction
+6.1 Planning and Direction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Policy-makers request intelligence on a particular subject or target
@@ -394,7 +425,7 @@ _________________
       steps and deadlines are also set up here.
 
 
-5.2 Collection
+6.2 Collection
 ~~~~~~~~~~~~~~
 
   - Collection of raw information and intelligence
@@ -404,7 +435,7 @@ _________________
     technological, social media, etc.)
 
 
-5.3 Processing
+6.3 Processing
 ~~~~~~~~~~~~~~
 
   - Pre-analytical filtering
@@ -420,7 +451,7 @@ _________________
       that information
 
 
-5.4 Analysis
+6.4 Analysis
 ~~~~~~~~~~~~
 
   - Analysts are generally subject matter experts and are tasked with
@@ -428,14 +459,14 @@ _________________
   - Creation of written reports occurs here
 
 
-5.5 Dissemination
+6.5 Dissemination
 ~~~~~~~~~~~~~~~~~
 
   - Distribution of final information and reports, leading to decisions
     and more intelligence tasks
 
 
-5.6 Critiques
+6.6 Critiques
 ~~~~~~~~~~~~~
 
   - Cycle is over-simplified, doesn't account for specific types of
@@ -445,7 +476,7 @@ _________________
     others are done, states of the cycle are not discrete
 
 
-5.7 Additional Steps
+6.7 Additional Steps
 ~~~~~~~~~~~~~~~~~~~~
 
   - Some argue that consumption should be included in the cycle.
@@ -459,7 +490,7 @@ _________________
     operations
 
 
-5.8 Additional Questions
+6.8 Additional Questions
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Does the cycle's past affect its current use?
@@ -470,10 +501,10 @@ _________________
       - barebones basics?
 
 
-6 Johnson
+7 Johnson
 =========
 
-6.1 Introduction
+7.1 Introduction
 ~~~~~~~~~~~~~~~~
 
   - Intelligence is defined as a set of activities carried out by
@@ -485,7 +516,7 @@ _________________
     abroad
 
 
-6.2 The Intelligence Cycle
+7.2 The Intelligence Cycle
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - describes the flow of activities for collection and analysis of info
@@ -499,7 +530,7 @@ _________________
     - dissemination
 
 
-6.3 Planning and Direction
+7.3 Planning and Direction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - intel managers and policy officials must decide what data should be
@@ -518,14 +549,14 @@ _________________
     chances of relevant intelligence successes increases
 
 
-6.4 Collection
+7.4 Collection
 ~~~~~~~~~~~~~~
 
 
-7 Turner
+8 Turner
 ========
 
-7.1 US Intelligence
+8.1 US Intelligence
 ~~~~~~~~~~~~~~~~~~~
 
   - While US intelligence is not funadmentally unique, it has a series
@@ -536,7 +567,7 @@ _________________
     culture, creating the US intelligence identity
 
 
-7.2 Constructivism
+8.2 Constructivism
 ~~~~~~~~~~~~~~~~~~
 
   - Constructivists see intelligence as highly malleable, made up of
@@ -544,7 +575,7 @@ _________________
     and interests
 
 
-7.3 American Strategic Culture
+8.3 American Strategic Culture
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - While American culture and opinion is very varied, there are central
@@ -560,7 +591,7 @@ _________________
          constitutionalism
 
 
-7.4 Distinguishing Norms
+8.4 Distinguishing Norms
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Institutional Survival - all intelligence agencies are bureaucracies
@@ -601,7 +632,7 @@ _________________
     mantra within USIC and shows main principles of intelligence work
 
 
-7.5 Road to Failure
+8.5 Road to Failure
 ~~~~~~~~~~~~~~~~~~~
 
   - Norms of USIC indicate uncertainty about the role of intelligence in
@@ -617,13 +648,13 @@ _________________
     some cases.
 
 
-8 Warner
+9 Warner
 ========
 
   - No official definition for intelligence exists
 
 
-8.1 Intelligence Definitions
+9.1 Intelligence Definitions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - National Security Act of 1947 defines foreign intelligence as
@@ -647,7 +678,7 @@ _________________
     policymakers"
 
 
-8.2 Definition Analysis
+9.2 Definition Analysis
 ~~~~~~~~~~~~~~~~~~~~~~~
 
   - Most definitions stress information over organization
@@ -659,7 +690,7 @@ _________________
     critical aspect of intelligence
 
 
-8.3 Final Steps
+9.3 Final Steps
 ~~~~~~~~~~~~~~~
 
   - Intelligence is then an activity and a product conducted through
@@ -669,11 +700,11 @@ _________________
   - Difference between law enforcement and intelligence is secrecy
 
 
-9 Intelligence Structure
-========================
+10 Intelligence Structure
+=========================
 
-9.1 What is Intelligence
-~~~~~~~~~~~~~~~~~~~~~~~~
+10.1 What is Intelligence
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Process
   - Activity - the actual job conducted by an individual or organization
@@ -693,8 +724,8 @@ _________________
     understand or influence foreign entities
 
 
-9.2 Levels of Analysis
-~~~~~~~~~~~~~~~~~~~~~~
+10.2 Levels of Analysis
+~~~~~~~~~~~~~~~~~~~~~~~
 
   - Strategic Intelligence - broad, policy-oriented approach to
     intelligence. Understands the effects of intelligence and
@@ -705,11 +736,11 @@ _________________
     scenarios and day-to-day operations of intelligence
 
 
-9.3 US Intelligence Community
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+10.3 US Intelligence Community
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-9.3.1 Independent
------------------
+10.3.1 Independent
+------------------
 
   - Office of the Director of National Intelligence (ODNI) -
     intermediary oversight agency consolidating all of the intelligence
@@ -719,8 +750,8 @@ _________________
     agency that runs operations
 
 
-9.3.2 Departments of Agencies
------------------------------
+10.3.2 Departments of Agencies
+------------------------------
 
   - Department of Energy Office of Intelligence and Counterintelligence
     (DOE-OIC) - leading experts in nuclear weapons, energy
@@ -739,8 +770,8 @@ _________________
     waterways, cargo, and coasts safe
 
 
-9.3.3 Department of Defense
----------------------------
+10.3.3 Department of Defense
+----------------------------
 
   - Defense Intelligence Agency (DIA) - DoD's version of the CIA,
     focused on troop movements, troop aquisitions
@@ -763,8 +794,8 @@ _________________
     countermeasures, telecommunications
 
 
-9.4 Questions to Consider
-~~~~~~~~~~~~~~~~~~~~~~~~~
+10.4 Questions to Consider
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   - Do you agree with the concise definition of intelligence?
   - Which level of analysis would you most focus on?
