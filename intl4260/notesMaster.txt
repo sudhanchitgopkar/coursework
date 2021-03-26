@@ -6,7 +6,50 @@
                      ______________________________
 
 
-03.15.21
+03.26.21
+========
+
+Groupthink
+~~~~~~~~~~
+
+  - Foreign policy is, almost structurally, based on the existence of
+    in-groups and out-groups
+  - While groupthink is important in many business and decision-making
+    contexts, it is problematic in foreign-policy
+  - Groupthink can be seen as a decision-making pathology that
+    fundamentally distorts our view of the incentive structure
+  - The impulse to be accepted creates strong conformity to the group
+  - Once groupthink starts to take hold, individuals that disagree are
+    ostracized
+  - Experimental and observational evidence shows that when standing in
+    a group is threatened, that is equated to a diminishing status,
+    which is registered in the brain as physical pain
+  - When the leader makes a decision, the rest of the group stops
+    debating and doesn't challenge the group concensus
+  - This lack of debate distorts the incentive structure and leads to
+    improper cost-benefit analysis
+  - Rather, a strategy is selected and everyone convinces themselves
+    that it is good
+  - Requires:
+    - that the group leader has a strong preference
+    - that the group be relatively small
+    - the group has some "soliders" or "mind-guards" that police the
+      group
+  - Given the above requirements, groupthink occurs relatively quickly
+  - The more criticism the group recieves, the less likely they are to
+    change their perspective and seek out alternatives
+  - Groupthink has nothing to do with intelligence
+  - Consider Kennedy & The Bay of Pigs
+    - Despite having significant experts and experience, the group
+      group-think'd their way to the Bay of Pigs invasion and the Cuban
+      Missile Crisis
+
+
+Application
+~~~~~~~~~~~
+
+
+03.17.21
 ========
 
 Gender and Conflict Tendencies
