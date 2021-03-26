@@ -1,0 +1,63 @@
+__ Multitape Turing Machines
+Theorem: Let M be a multi-tape TM. Then \E some single-tape TM, M_2, that is equivalent to M
+Simpler: Any 2-tape TM can be simulated using a 1-tape TM
+@{idea} TM M_1 simulates TM M_2 on w if the computation history for M_1 on w can derive the computation history for M_2 on w
+\+ tm
+{
+Q={qi,qj}
+S={a,b}
+T={a,b,\_,x}
+q0=qi
+tapes = 2
+moves={L,R,S}
+
+qi->qj:a->x,R//b->x,R
+}
+
+a_i: ~ [a] a ~ \_...
+\tab ~[b]b~\_...
+q_j:~ x[a]~\_...
+\tab ~ x [b] \_ ...
+
+___ Want:
+q_i: single tape
+\:
+q_j: single tape
+
+@{?} How do we represent 2 tapes with 1?
+@{idea} use the physical tape to encode the two virtual tapes
+q_i: [#]~aa~#~bb~#\_...
+@{!} The positions of the tape heads are missing from the above configuration. There is only 1 physical tape head.
+
+Let \T = {a,b,x,\_,A,B,X,-}
+q_i:#~Aa~#~Bb~#\_...
+@{comment} A represents a with the virtual tape head pointing to it. B, -,  and X work similarly
+q_j:#~xA~#~xB~#\_...
+
+1. fast forward to the first virtual tape head
+\tab state: #~[A]a~#~Bb~#\_...
+2. read A, write x, move R
+\tab state: #~x[a]~#~Bb~#\_...
+3. read a, write A, move R
+\tab state: #~xA[~]~#~Bb~#\_...
+4. fast forward virtual tape head 2 (#)
+5. fast forward to second virtual tape head (B)
+\tab state: #~xA~#~[B]b~#\_...
+6. read B, write x, move R
+\tab state: #~xA~#~x[b]~#\_...
+7. read b, write B, move R
+\tab state: #~xA~#~xB[~]#\_...
+8. fast forward to the end of tape 2 (#)
+9. rewind tape head to q_j
+\tab state: [#]~xA~#~xB~#\_...
+
+___ Non-Determinism
+\d:Q\*\T->\P(Q\*\T\*moves)
+
+Let N be a non-deterministic TM.
+If we run N on a string, w, then the produced computation is a non-determinism tree.
+\tab each node in the tree represents a configuration.
+\tab each branch represents a computation history
+\tab each edge represents a transition
+
+Theorem: If N is a NTM, then \E some DTM, M, that is equivalent to N.

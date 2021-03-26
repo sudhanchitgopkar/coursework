@@ -1,0 +1,191 @@
+__ Multitape Turing Machines
+___ Review 1 Tape
+@{def} A configuration of a Tm, M, running a string, w, is a snapshot of the computation consisting of 3 pieces of information:
+\tab 1. current state
+\tab 2.tape contents
+\tab 3. tape head position
+TM, M, and input string w = w_1w_2...w_n - initial configuration
+\tab q_0: [w_1] w_2...w_n\_...
+@{def} A computation history is a sequence of configurations of a TM running a string w starting from the initial configuration
+3 possibilities exist for the end of a computation history:
+\tab 1. last configuration is in q_a (string accepted)
+\tab 2. last configuration is q_r (string rejected)
+\tab 3. the TM goes into an infinite loop and the computation history does not terminate
+
+Each transition from q_i->q_j:
+\tab 1. read
+\tab 2. write
+\tab 3. move head
+\d: Q \* \T -> Q \*\T\* moves
+
+___ n tapes
+A configuration:
+\tab 1. current state
+\tab 2. contents of each tape
+\tab 3. position of each tape head
+Each tape head is independent from all other tape heads
+All tape instructions in a single transition are executed in parallel
+___ Example with 2 tapes
+Each transition:
+\tab 1. read from tape 1
+\tab read from tape 2
+\tab 2. write to tape 1
+\tab    write to tape 2
+\tab 3. move tape head 1
+\tab move tape head 2
+\d:Q\*\T\*\T->Q\*\T\*\T\*moves\*moves
+\d:Q\*\T^n->Q\*\T^n\*moves^n
+
+\+ tm
+{
+Q={qi,qj};
+S={a,b};
+T={a,b,\_};
+tapes=2;
+moves={L,R,S};
+q0=qi;
+
+qi->qj:a->b,R//b->\_,L;
+
+
+
+
+
+
+
+
+
+
+
+}
+q_i: \tape{\_aa[b]a}//\tab\tape{b[a]aa}
+Initial configuration:
+\tab q_0: [w1] w2...wn\_...
+\tab\tape{[\_]\_}
+
+___ Example
+L = {a^n b^n | n \ge 0}
+@{idea} have one tape keep up with a's and another keep up with b's
+@{comment} copy the a's from tape 1 to tape . When b is reached, compare b's on 1 with a's on 2
+\+ tm
+{
+Q={q1};
+q0=q1;
+tapes=2;
+moves={L,R,S};
+S={a,b};
+T= {a,b,\_};
+/* copy a-s from tape 1 to tape 2*/
+q1->q1:a->a,R//\_->a,R
+
+
+
+
+
+
+
+
+}
+q_1:\tape{[a]aabbb}//\tab\tape{\_}
+q_1:\tape{aaa[b]bb}//\tab\tape{aaa[\_]}
+\+ tm
+{
+Q={q1,q2};
+q0=q1;
+tapes=2;
+moves={L,R,S};
+S={a,b};
+T= {a,b,\_};
+/* copy a-s from tape 1 to tape 2*/
+q1->q1:a->a,R//\_->a,R
+
+/*align tape heads*/
+q1->q2:b->b,S//\_->\_,L;
+
+
+
+
+
+}
+
+q_2:\tape{aaa[b]bb}//\tab\tape{aa[a]}
+
+\+ tm
+{
+Q={q1,q2};
+q0=q1;
+tapes=2;
+moves={L,R,S};
+S={a,b};
+T= {a,b,\_};
+/* copy a-s from tape 1 to tape 2*/
+q1->q1:a->a,R//\_->a,R
+
+/*align tape heads*/
+q1->q2:b->b,S//\_->\_,L;
+
+/*match b-s to a-s*/
+q2->q2:b->b,R//a->\_,L;
+
+
+
+
+
+}
+q2:\tape{aaabbb[\_]}//\tab\tape{[\_]}
+
+\+ tm
+{
+Q={q1,q2,qa};
+q0=q1;
+tapes=2;
+moves={L,R,S};
+S={a,b};
+T= {a,b,\_};
+/* copy a-s from tape 1 to tape 2*/
+q1->q1:a->a,R//\_->a,R;
+
+/*align tape heads*/
+q1->q2:b->b,S//\_->\_,L;
+
+/*match b-s to a-s*/
+q2->q2:b->b,R//a->\_,L;
+
+/*accept*/
+q2->qa:\_->\_,S//\_->\_,S;
+
+
+}
+
+___ Rejected strings
+1. more b's than a's
+2. more a's than b's
+3. an a following a b
+
+
+\+ tm
+{
+Q={q1,q2,qa,qr};
+q0=q1;
+tapes=2;
+moves={L,R,S};
+S={a,b};
+T= {a,b,\_};
+/* copy a-s from tape 1 to tape 2*/
+q1->q1:a->a,R//\_->a,R;
+
+/*align tape heads*/
+q1->q2:b->b,S//\_->\_,L;
+
+/*match b-s to a-s*/
+q2->q2:b->b,R//a->\_,L;
+
+/*accept*/
+q2->qa:\_->\_,S//\_->\_,S;
+
+/*reject*/
+q2->qr:b->\_,S//\_->\_,S;
+q2->qr:a->\_,S//\_->\_,S;
+q2->qr:\_->\_,S//a->\_,S;
+
+}
