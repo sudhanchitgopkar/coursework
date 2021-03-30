@@ -1,8 +1,0 @@
-_ Sudhan Chitgopkar CW 5
-\+ cfg
-{
-V={A};
-S={0,1};
-v0=A;
-A-> \e | 0 | 0 1 A | A 1 | A 1 A;
-}
