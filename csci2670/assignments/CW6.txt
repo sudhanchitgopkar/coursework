@@ -1,0 +1,62 @@
+__ Sudhan Chitgopkar CW6
+___ Q1:
+1. the dog chases the cat
+2. the dog chases the dog
+3. the cat chases the cat
+4. the cat chases the dog
+
+___ Q2:
+V={S,NP,VP,D,N,V};
+v0=S;
+
+/* phrase rules */
+S->NP VP;
+NP->D N;
+VP->V NP;
+
+/* lexical rules */
+D->the;
+N->cat|dog|cats|dogs;
+V->chases|chase;
+
+This code has been implemented into the new Grafstate PSG function to produce the following:
+\+ psg
+{
+V={S,NP,VP,D,N,V};;v0=S;;/* phrase rules */;S->NP VP;;NP->D N;;VP->V NP;;/* lexical rules */;D->the;;N->dog | cat | dogs | cats;;V->chases | chase;;;;;
+}
+
+___ Q3:
+1. the dogs chase the cats
+2. the cats chase the dogs
+
+___ Q4:
+1. the dog chase the cats
+2. the cats chases the dogs
+
+___ Q5:
+Because the structure of the PSG is such that it cannot differentiate between singular and plural nouns, it can not assign the appropriate verb to such nouns. Because of this, sentences that are ungrammatical in English are still accepted by this new grammar.
+
+__ Q6:
+V={S,NP1,NP2,VP1,VP2,D,N1,N2,V1,V2};
+v0=S;
+
+/* phrase rules */
+S->NP2 VP1|NP1 VP2;
+NP1->D N1;
+NP2->D N2;
+VP1->V1 NP1|V1 NP2;
+VP2->V2 NP1|V2 NP2;
+
+
+/* lexical rules */
+D->the;
+N1->cat|dog;
+N2->cats|dogs;
+V1->chase;
+V2->chases;
+
+This code has been implemented into the new Grafstate PSG function to produce the following:
+\+ psg
+{
+V={S,NP1,NP2,VP1,VP2,D,N1,N2,V1,V2};;v0=S;;/* phrase rules */;S->NP2 VP1|NP1 VP2;;NP1->D N1;;NP2->D N2;;VP1->V1 NP1|V1 NP2;;VP2->V2 NP1|V2 NP2;;/* lexical rules */;D->the;;N1->cat|dog;;N2->cats|dogs;;V1->chase;;V2->chases;;
+}
