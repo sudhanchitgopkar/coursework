@@ -3,6 +3,18 @@
 #+EMAIL: sudhanchitgopkar@uga.edu
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="rethink.css" />
 #+OPTIONS: toc:nil num:nil html-style:nil
+* 03.29.21 (Sorting)
+** Sorting
+- Sorting indicates ascending order
+- Assumed that there are no duplicates
+- Comparison based algorithms are any algorithms that are based upon comparing two elements
+- Best efficiency achievable is O(n*log(n))
+* 03.15.21 (Recursion)
+** Recursion
+- Base cases: Non-recursive
+- General case: Recursive
+- Any recursive function can be expressed as an iterative function and vice versa.
+- There may be more than one base case for a given recursive function
 * 02.23.21 (Stacks & Queues)
 - Stacks operate in LIFO (Last in, First out)
 ** Standard Operations
