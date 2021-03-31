@@ -2,6 +2,109 @@
 #+AUTHOR: Sudhan Chitgopkar
 #+EMAIL: sudhanchitgopkar@uga.edu
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="rethink.css"/>
+* Counterintelligence (Cont.)
+** Counterintelligence & Civil Liberties
+- Consider "who is the enemy?"
+  - Enemies of the US are not obvious
+  - Must assume that enemies could be friends, family members, etc.
+- Not knowing the enemy or their location may put into jeopardy the civil liberties of individuals?
+- Consider "who should determine what kinds of operations are acceptable to thwart hostile foreign intelligence services?"
+  - Must accordingly consider legitimate collection methods and the conditions under which particular collection methods are legitimate
+- Should we discriminate when it comes to intelligence collection, investigations (stereotyping) or should we be indiscriminate with domestic intelligence collection (everyone)
+  - Japanese Internment
+  - Red Scare
+  - Religious discrimination today
+** Current Civil Liberties Infrastructure
+- Office of Civil Liberties, Privacy and Transparency (CLPT)
+  - Integrrate civil liberty protection into the IC and policy
+  - Provides appropriate transparency
+  - Earns, retains trust of citizens
+  - Responsibilities:
+    - Ensure protections are addressed
+    - Oversees compliance
+    - Ensure against erosion of privacy
+- Rules
+  - Statutes:
+    - Foreign Intelligence Surveillance Act (FISA) - Must have a government approved procedure to conduct surveillance of US citizens and lawful residents. Does not allow for individual targeting without cause.
+    - Freedom of Information Act (FOIA)
+  - Executive Orders:
+    - EO 12333 - Imposes key restrictions on intelligence activities, including how intelligence on US nationals can be collected, retained, and distributed
+  - Presidential Policy Directives:
+    - PPD-28 - Requires that for SigInt, everyone has certain protections regardless of their nationality
+- Transparency Guidelines
+  - Principles:
+    - Provision
+    - Proaction
+    - Protection
+    - Alignment
+  - Done to increase trust, which is critical to intelligence
+- Public Information Guidelines
+  - Factors to consider:
+    - Publicly available (info must be publicly available)
+    - Lawfully obtained (no special legal authorization needed for collection, but does not discriminate)
+    - Affiliation (IC professional must comply with any obligations to disclose their affiliation)
+    - US Personal information (If information focuses on US Persons, special protections exist under EO 12333)
+    - Accuracy (Safeguards to ensure intelligence accuracy)
+** Counterintelligence Tradecraft
+- Overview:
+  - Protection - Protect classified information
+  - Collection - Collect information about foreign intelligence, other groups to prevent them from obtaining classified info
+  - Prevention - collect information to prevent disruptions
+  - Recruitment - Recruit other intelligence agents to turn them against their original main actor
+- Operation Types:
+  - Collective: Collecting information about threats
+  - Denial: Defensive posture
+  - Deception: Offensive posture
+- Mission types:
+  - Special
+  - General
+*** Special Missions
+- National foreign counterintelligence program
+- Direct or indirect engagement
+- Special Operations:
+  - Counterintelligence operations
+  - Counterespionage projects
+  - Defensive source programs
+    - Protect designated activities against HUMINT threats
+*** General Missions
+- Defensive in nature
+- Support force protection and formal security
+- General operations:
+  - Advice and assistance programs
+  - Technical support activities
+  - Automated security systems
+  - Support to acquisition
+  - Support to treaty verification
+  - Support to intelligence disciplines
+    - Counter-Humint
+*** C-HUMINT
+- Strategies:
+  - Offensive:
+    - Targeting
+    - Counterespionage
+    - Counter Reconnaissance
+    - Counter Sabotage
+    - Penetration and Exploitation
+  - Defensive
+    - Deception Operations (Operations Security (OPSEC))
+    - Physical, Information, and Personnel Security
+*** C-SIGINT
+- Enhance force protection, survivability, and mbility by fully identifying any signals threat and designing countermeasures to that threat
+- Strategies
+  - Offensive
+    - Targeting
+    - Electronic Attack
+  - Defensive
+    - Radio OPSEC Countermeasures
+    - Secure telecommunications
+    - Signal Security (SIGSEC) Procedures
+    - Deception operations
+*** C-IMINT
+- Areial cameras
+- Infrared sensors
+- Imaging radars
+- Electro-optical sensors
+- Multispectral and digital imagery products
 * Counterintelligence
 ** Definition + General
 - Multiple different definitions
