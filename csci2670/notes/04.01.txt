@@ -1,0 +1,101 @@
+__ Decidability
+EQ_{DFA}
+___ Acceptance Problems
+A_{CFG} = {<G,w>: G is a CFG and G derives w}
+!! we cannot convert a general CFG to an equivalent DFA
+
+CYK Algorithm - quick process for taking a CFG, G, and a string, w, and deciding if G |- w
+
+To deal with A_{PDA}, we may convert a PDA -> CFG
+
+___ Emptiness
+E_{CFG} = {<G>: G is a CFG and L(G) = \0}
+\tab Decide if G does not derive any strings
+
+:task Construct TM,M, to decide E_{CFG}
+
+@{idea} start with v_0 and try to create a left most derivation by following the shortest choices
+@{!} this causes an infinite loop if S->SA
+
+:observe Any leftmost derivation must use terminal rules
+
+Every variable with a terminal rule derives a string
+1. mark every variable that has a terminal rule
+:comment translate the question for E{CFG} to "does v_0 derive strings?"
+2. mark every variable that expands to only marked variables and symbols
+/* still the case that every marked variable derives a string */
+3. repeat 2 until it is not possible to mark any new variables
+/* this loop terminates because there are a finite number of variables and rules*/
+4. check if v_0 is marked
+5. if so, reject
+/* v_0 derives a string*/
+6. accept
+
+@{info} EQ_{CFG} is not decidable
+___ Theorem
+If L is a decidable language, then L is semi decidable and ~L is semidecidable
+
+@{definition} A language L is semi decidable if \E a TM, M that:
+\tab 1. accepts every string in L
+2. does not accept any string in ~L
+
+____ Know
+L is decidable
+\tab \E a TM, M, that decides L
+\tab M accepts everything in L and rejects everything not in L
+
+____ Show
+1. L is semi-decidable
+\tab \E TM M_2 that semi decides L
+2. ~{L} is semi decidable
+\tab \E TM, M_3, that semi decides ~{L}
+
+____ Proof
+Suppose that L is decidable. Then \E some TM, M, that decides L.
+
+M decides L so M semi decides L
+:task construct a TM M_3 that semi decides ~{L}
+Construct TM M_3:
+input: w
+1. run M on w
+[I] L and ~{L} have the same alphabet
+2. if accept, reject
+3. accept
+M_3 decides ~{L} so M_3 semi decides ~{L}
+
+____ Theorem
+If L is decidable, then ~{L} is decidable
+____ Know
+L is decidable
+\E TM M that decides L
+____ Show
+~{L} is decidable
+\E TM M_2 that decides ~{L}
+____ Proof
+Suppose that L is decidable. Then \E TM M that decides L
+Construct TM M_2:
+input:w
+1. Run M on w
+2. if accept, reject
+3. accept
+@{comment} step 1 terminates since M decides L
+
+Suppose that w \in ~{L}. Then M rejects w so M_2 accepts w by step 3.
+Now suppose that w \in L. M accepts w, so M_2 rejects w by step 2.
+Therefore M_2 decides L
+
+___ Mapping Reductions
+Language is mapping reducible to language B (A \le _m b) if \E some computable function f: \S_A* -> \S_B* with:
+\tab w \in A <=> f(w) \in B
+!! f does not go from A to B
+
+w \in A <=> f(w) \in B
+w\in A => f(w) \in B and f(w) \in B => w \in A
+/*The purpose of a state machine M running on a string w is to answer the YES/NO question: does w belong to the language
+@{idea} w \in A is the answer YES for A
+:concept A mapping reduction from A to B is a computable function that maps strings from the universe of A to some string in the universe of B and always maps YES to YES and NO to NO
+
+w \in A <=> f(w) \in B
+\tab 1. w \in A => f(w) \in B
+\tab 2. w \in ~{A} => f(w) \in ~{B}
+:task show that A_{DFA} \e + m A_{NFA}

@@ -1,0 +1,82 @@
+__ Mapping Reductions
+:def A\|e_m B if \E a computable function f:\s_A*->\S_N* with //\tab1. w\in B //\tab 2. w !\in A
+Concept: A mapping reduction from A to B is a computable function from the universe of A to the universe of B that maps a YES to YES and NO to NO
+YES for A means w \in A
+No for A means w !\in A
+___ A_{NFA} \le _mA_{DFA}
+____ 1. construct computable function
+:task prove that A_{NFA} \le _mA_{DFA}
+/* f:\S_{A_{NFA}}*->\S_{A_{DFA}}*
+construct a TM, F, to compute f as follows:
+> input: w = <N,x> where N is an NFA (that may or may not accept x)
+> output: f(w) = <M,x> where M is a DFA
+> 1. convert N to an equivalent DFA, M
+> 2. write <M,x> to the tape
+> 3. halt
+____ 2. prove that f has the mapping reduction property
+/* f maps YES to YES and NO to NO
+? YES for A_{NFA}
+! given given <N,x>, N is an NFA that accepts x
+? NO for A_{NFA}
+! given <N,x> , <N,x> !\in A_{NFA}
+
+? YES for A_{DFA}
+! given <M,x>, M is a DFA that accepts x
+? NO for A_{DFA}
+! given <M,x> , x !\in A_{DFA}
+____ Proof Pt 1. (YES -> YES)
+Suppose that w  = <N,x> \in A_{NFA}
+Then N is an NFA that accepts x
+f(w) = <M,x> where M == N
+M accepts x since M == N
+Therefore f(x) \in A_{DFA}
+____ Proof Pt. 2 (NO->NO)
+Suppose that w ＝ ＜ N,x ＞ !\in A_{NFA}
+Then N is not an NFA that accepts x.
+If N is not a well formed NFA then f(w) !\in A_{DFA}
+f(w) => <M,x> where M is a DFA and M == N
+M does not accept x because N does not accept x
+Therefore, f(w) = <M,x> !\in A_{DFA}
+
+A_{DFA} \le _mA_{NFA}
+! A \le _mB does not imply that B \le _mA!
+:task construct a computable function f:\S_{A_{DFA}}*->\S_{A_{NFA}}*
+input: <M,x> where M is a DFA /* candidate solution for A_{DFA}
+output: <N,x> where N is an NFA /* candidate solution for A_{NFA}
+1. Convert M to an equivalent NFA N
+2. write <N,x> to the tape
+3. halt
+
+
+___ Theorem
+If A \le _m B and B is decidable, then A is decidable
+_____ Know:
+A \le _m B
+> \E a TM M_B that accepts every string in w \in B and rejects every string w !\in B
+_____ Show:
+is decidable
+> \E a TM M_A that decides A
+_____ Proof
+Suppose that A \le _m B and B is decidable
+Then \E a computable function f: \S_A* -> \S_B* with
+> 1. w \in A => f(w) \in B
+2/ w !\in A => f(w) !\in B
+We also know that \E a TM M_B that decides B
+Construct a TM M_A as follows:
+> input w\in \S_A*
+> 1. compute f(w)
+> 2. run M_B on f(w)
+> 3. if accept, accept
+> 4. reject
+
+We want to show that M_A decides A
+Suppose that w \in A
+Then f(w) \in B since f is a mapping reduction
+M_B accepts f(w)  since M_B decides B
+By line 3 of M_A, M_A accepts w
+@{yes}
+Now suppose w !\in A
+Then f(w) !\in B since f is a mapping reduction
+M_B rejects f(w) since M_B decides B/
+Therefore M_A rejects f(w) on line 4
+Thus M_A decides A

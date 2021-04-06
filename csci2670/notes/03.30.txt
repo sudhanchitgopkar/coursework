@@ -1,0 +1,113 @@
+__ Decidability
+A language, L, is decidable if \E some TM, M, that decides L
+\+ table
+{
+Name#Problem#Language
+A_{DFA}#Acceptance problem for DFAs#A_{DFA} = {<M,w>:M is a DFA that accepts w}
+A_{NFA}#Acceptance problem for NFAs#A_{NFA} = <N,w>:N is an NFA that accepts w}
+A_{REX}#Acceptance problem for regular expressions#A_{REX} = {<R,w>:R is a regular expression and w is a string}
+
+
+}
+Recall that an element of a language is a string.
+
+@{idea} Acceptance problem for DFAs
+\tab - Given any DFA,M, and any strings, w, decide if M accepts w
+
+@{?} How can we prove that A_{NFA} is decidable?
+! We need a TM that decide A_{NFA}
+We constructed M_{ADFA} to decide A_{DFA}
+Construct a TM, M_{ANFA}
+input: <N,w> where N is an NFA and w is a string
+1. convert N to an equivalent DFA,M
+2. run M_{ADFA} on <M,w>
+3. if accept, accept
+4. otherwise, reject
+Step 1 is correct and terminates (From ch.1)
+Step 2 is correct and terminates (Because M_{ADFA} decides A_{DFA}
+M accepts w <=> N accepts w because M == N
+
+Construct TM M_{AREX}
+input: <R,w> where R is a regular expression and w is a string
+1. convert R to an equivalent NFA, N
+2. run M_{ANFA} on <N,w>
+3. if accept, accept
+4. reject
+Step 1 is correct and terminates (from ch. 1)
+Step 2 is correct and terminates (because M_{ANFA} decides A_{NFA}
+R accepts w <=> N accepts w because R == N (from step 1)
+
+
+
+!! M_{ADFA} and A_{DFA} are different
+A_DFA is a language. M_{ADFA} is a Turing Machine
+
+__ Emptiness Problems
+\+ table
+{
+Name#Problem#Language
+E_{DFA}#Emptiness problem for DFAs#E_{DFA}={<M>:M is a DFA with L(M) = \0}
+E_{NFA}#Emptiness problem for NFAs#E_{NFA}={<N>:N is an NFA with L(N) = \0}
+E_{REX}#Emptiness problem for regular expressions#E_{REX}={<R>:R is a regular expression with L(R) = \0}
+
+
+}
+@{idea} Emptiness problem for DFAs
+Given any DFA,M, decide if L(M) = \0
+@{?} How can we construct a TM M_{EDFA} to decide E_{DFA}
+@{!} for each w \in \S*, run A_{DFA} on <M,w>
+@{!} M_{EDFA} on <M> should reject any string w that M accepts
+@{info} if M does not accept any input, then the algorithm above goes into an infinite loop
+
+@{idea} if there is a path from q_0 to a finishing state, then M accepts something
+@{?} Can we just check if M has finishing states
+\+ fa
+{
+Q={q1,q2};
+S={0,1};
+d:Q\*S->Q;
+q0=q1;
+d(q1,0)=q1;
+d(q1,1)=q1;
+d(q2,0)=q1;
+d(q2,1)=q1;
+F={q2};
+
+
+
+
+}
+__ Construct M_{EDFA}
+@{comment} check if there is a path from q0 to some finishing state
+input: <M> where M is a DFA
+1. find q_0; make q_0 the current state and mark it.
+2. find \d
+3. check for \d from q
+4. mark the target state
+5. repeat from 2 to find all outgoing transitions from all marked states till no more states can be marked
+6. check if any of the marked states are finishing states
+7. if there is a state in F that is marked, reject.
+8. accept.
+__ Equivalence Problems
+\+ table
+{
+Name#Problem#Language
+EQ_{DFA}#Equivalence problem for DFAs#EQ_{DFA}={<M_1,M_2>:M_1 and M_2 are DFAs and L(M_1) = L(M_2))}
+
+}
+@{idea} Equivalence problem for DFAs
+@{?} How can we compare M_1 and M_2
+@{idea} This is a problem to compare languages, not actual machines
+Let A and B be sets. A = B <=> A XOR B = \0
+A XOR B = (A\n~{B}) \u (B\n~{A})
+@{?} Given DFAs M_1 and M_2, can we create a DFA to recognize L(M_1) XOR L(M_2)
+\tab use union, intersection, and complement (from ch.1)
+\tab @{!} This works because regular languages are closed under union, intersection, and complement
+Construct M_{EQDFA}
+Input: <M_1,M_2>
+1. create DFA S_1 to recognize L(M_1) - L(M_2)
+2. create DFA S_2 to recognize L(M_2)-L(M_1)
+3. construct M_3 to recognize L(S_1) \u L(S_2)
+4. run M_{EDFA} on <M_3>
+5. if accept, accept
+6. reject
