@@ -2,6 +2,24 @@
 #+TITLE: Foreign Pol. Decision Making
 #+AUTHOR: Sudhan Chitgopkar
 #+EMAIL: sudhanchitgopkar@uga.edu
+* 04.07.21
+** Ingroups and Outgroups
+* 04.05.21
+** Implicit Associations
+- Much of the research in implicit association was done in the US to understand race relations in the US
+- Three parts of brain:
+  - Primitive brain: basic actions (breathing)
+  - Middle brain: threat perception
+  - Cortex: higher order thinking
+- Implicit association heavily involves the middle part of the brain and threat perception
+- fMRI and neuro-imaging allows us to understand implicit associations
+- On average, one study finds that with white participants, activity in the brain that is required for face perception is lower when looking at black people as opposed to white people
+  - Activity during this time in the amygdala which is active in threat perception increases more when looking at black faces than white faces
+  - Impacts can be seen in the real world: police officers are more likely to shoot black people than white people when they're required to make a split-second judgement
+- People with strong negative outgroup associations on an implicit paper-pencil test has a correlation with neuroimaging done when percieving images of in-groups and out-groups. This correlation can not be seen in explicit surveys when asking people about their thoughts on race relations and other related issues.
+** Democratic Consolidation
+- What should partipants in the international community do to help build democracies in failed or broken states
+- Countries with a history of ethnic conflict that are in the process of democratizing may sometimes fail. These failures have created some of the bloodiest conflicts in human history (Weimar Germany, Amernian dispute, Rwandan Genocide, former Yugoslavia, etc.)
 * 03.26.21
 ** Groupthink
 - Foreign policy is, almost structurally, based on the existence of in-groups and out-groups

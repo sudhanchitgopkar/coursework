@@ -1,0 +1,52 @@
+\documentclass{article}
+
+\usepackage [margin = 1 in] {geometry'}
+\usepackage [utf8] {inputenc}
+\usepackage {amsmath}
+\usepackage {fancyhdr}
+\usepackage {setspacing}
+
+\title {Analogical Reasoning in Foreign Policy Decision-Making}
+\author {Sudhan Chitgopkar \\ Sydney Buchanan \\ Sarah Wakeman \\ Sophia Hanchey}
+\date {\today}
+
+\lhead {INTL4260}
+\chead {Analogies in Foreign Pol.}
+\rhead {\today}
+
+\setlength {\parindent} {0 pt}
+
+\begin {document}
+\section {Introduction \& Question}
+Analogical reasoning, though sometimes considered trivial, may play a nuanced role in decision-making. Understanding the effects of analogical reasoning is therefore critical to a complete understanding of foreign policy decision-making. Contemporary literature on the subject indicates that analogies serve to define an entire context, constrain a decision maker’s win-set, and fundamentally affect an individual’s understanding of a situation. To further understand this phenomenon, this study investigates the role of analogical reasoning in altering individuals’ foreign policy opinions towards artificial intelligence (AI) weapon development. The core research question proposed is as follows:
+\bigbreak
+\textit{Can the use of an analogy affect an individual’s opinion towards the development of U.S AI weaponry?}
+\bigbreak
+This study provides participants with a brief research vignette regarding U.S. AI weapon development and analyzes whether the inclusion of an analogy in the vignette affects individual opinion.
+\section {Literature Review}
+As previously mentioned, contemporary literature discusses the effects of analogical reasoning on foreign policy decision-making. Firstly, the literature defines analogies as “shortcuts that are used to compare one thing to another” (Houghton 1996). Interestingly, there is widespread agreement amongst cognitive decision-making scholars that analogical reasoning is an innate function of the human brain. Accordingly, humans often rely on analogies to simplify complex problems and situations.
+Analogical reasoning also seems to be an effective method to make sense of novel scenarios (Houghton 1996). Because analogies allow people to understand an issue and develop a framework for future action, they are effective in providing direction during unfamiliar situations (Houghton 1996, Khong 1992). Specifically, analogies are effective in providing actors a framework of (1) which strategies will and will not be effective responses to a given situation, and (2) the potential risks of action or inaction. The use of analogical reasoning in novel situations should be approached cautiously, though. Because novel situations are, by definition, unprecedented, few analogies are likely to be applicable. This is problematic, as the application of an ill-fitting analogy to a novel foreign policy situation will likely yield a malformed incentive structure that does not properly consider the effects of each strategy.
+\bigbreak
+Decision makers also use analogies to legitimize and support an already-made policy decision (Taylor and Rourke 1995). Consequently, analogies have the potential to be powerful foreign policy tools during crisis decision-making.
+\bigbreak
+Importantly, the literature does not address all questions regarding the effects of analogical reasoning in foreign policy. More specifically, it doesn’t quantify how useful analogical reasoning may be in preemptively creating support for foreign policy endeavors, nor does it explain how severe an analogy must be for it to be effective in influencing actors’ decisions.
+
+\section {Significance}
+
+\section {Theory}
+
+\section {Research Design}
+
+\section {Results \& Implications}
+
+\section {Works Cited}
+\begin {enumerate}
+
+\end {enumerate}
+\section {Appendix}
+\subsection {Significance Calculations}
+\subsection {Experimental Text}
+\subsubsection {Control}
+\subsubsection {Treatment}
+\subsubsection {Question}
+\end {document}
